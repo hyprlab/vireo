@@ -37,6 +37,7 @@ dirs = "5"
 md5 = "0.7"
 ureq = { version = "2", features = ["json"] }
 serde_json = "1"
+base64 = "0.22"
 
 # GNOME Contacts integration via Evolution Data Server (D-Bus)
 zbus = "4"

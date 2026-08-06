@@ -108,7 +108,12 @@ impl FactoryComponent for MessageRow {
     type Init = RowInit;
     type Input = MessageRowInput;
     type Output = MessageRowOutput;
-    type CommandOutput = Option<Vec<u8>>;
+    type CommandOutput = (
+        String,
+        u64,
+        crate::avatar::FetchMode,
+        crate::avatar::FetchOutcome,
+    );
     type ParentWidget = gtk::ListBox;
 
     view! {
@@ -363,17 +368,25 @@ impl FactoryComponent for MessageRow {
             thread_unread,
         };
 
-        if model.gravatar {
-            let email = model.msg.from_addr.clone();
-            if let Some(tex) = crate::avatar::cached(&email) {
-                model.avatar_texture = Some(tex);
-            } else if !email.is_empty() {
-                sender.oneshot_command(async move {
-                    tokio::task::spawn_blocking(move || crate::avatar::fetch(&email))
+        let email = model.msg.from_addr.clone();
+        if !email.is_empty() {
+            match crate::avatar::lookup(&email, model.gravatar) {
+                crate::avatar::CacheLookup::Texture(texture) => {
+                    model.avatar_texture = Some(texture);
+                }
+                crate::avatar::CacheLookup::Missing => {}
+                crate::avatar::CacheLookup::Fetch { generation, mode } => {
+                    let requested_email = email.clone();
+                    sender.oneshot_command(async move {
+                        let lookup_email = requested_email.clone();
+                        let outcome = tokio::task::spawn_blocking(move || {
+                            crate::avatar::fetch(&lookup_email, mode)
+                        })
                         .await
-                        .ok()
-                        .flatten()
-                });
+                        .unwrap_or(crate::avatar::FetchOutcome::Retry);
+                        (requested_email, generation, mode, outcome)
+                    });
+                }
             }
         }
 
@@ -421,9 +434,34 @@ impl FactoryComponent for MessageRow {
         }
     }
 
-    fn update_cmd(&mut self, bytes: Self::CommandOutput, _sender: FactorySender<Self>) {
-        if let Some(bytes) = bytes {
-            self.avatar_texture = crate::avatar::decode_and_cache(&self.msg.from_addr, &bytes);
+    fn update_cmd(
+        &mut self,
+        (email, generation, mode, outcome): Self::CommandOutput,
+        sender: FactorySender<Self>,
+    ) {
+        let retry_stale = crate::avatar::cache_result(&email, generation, mode, outcome);
+        if self.msg.from_addr.eq_ignore_ascii_case(&email) {
+            match crate::avatar::lookup(&email, self.gravatar) {
+                crate::avatar::CacheLookup::Texture(texture) => {
+                    self.avatar_texture = Some(texture);
+                }
+                crate::avatar::CacheLookup::Missing => self.avatar_texture = None,
+                crate::avatar::CacheLookup::Fetch { generation, mode } => {
+                    self.avatar_texture = None;
+                    if retry_stale {
+                        let requested_email = email.clone();
+                        sender.oneshot_command(async move {
+                            let lookup_email = requested_email.clone();
+                            let outcome = tokio::task::spawn_blocking(move || {
+                                crate::avatar::fetch(&lookup_email, mode)
+                            })
+                            .await
+                            .unwrap_or(crate::avatar::FetchOutcome::Retry);
+                            (requested_email, generation, mode, outcome)
+                        });
+                    }
+                }
+            }
         }
     }
 
@@ -774,6 +812,7 @@ pub enum MessageListInput {
     /// Whether conversations start expanded (true) or collapsed (false).
     SetThreadsExpanded(bool),
     SetGravatar(bool),
+    ContactPhotosChanged,
     SetColorize(bool),
     /// The local day rolled over — re-render rows so "Today" stays accurate.
     DayChanged,
@@ -1272,6 +1311,7 @@ impl SimpleComponent for MessageList {
                     self.rebuild();
                 }
             }
+            MessageListInput::ContactPhotosChanged => self.rebuild_preserving_scroll(),
             MessageListInput::SetColorize(on) => {
                 if self.colorize != on {
                     self.colorize = on;

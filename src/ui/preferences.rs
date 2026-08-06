@@ -231,9 +231,9 @@ impl Component for Preferences {
 
                         #[name = "gravatar_row"]
                         adw::SwitchRow {
-                            set_title: "Load sender avatars (Gravatar)",
-                            set_subtitle: "Sends a hash of each sender's email to Gravatar. \
-                                           When off, colored initials are shown instead.",
+                            set_title: "Use Gravatar when a contact has no photo",
+                            set_subtitle: "Local GNOME Contacts photos are always preferred. \
+                                           Gravatar sends a hash of the sender's email.",
                             connect_active_notify[sender] => move |row| {
                                 sender.input(PrefInput::ToggleGravatar(row.is_active()));
                             },

@@ -68,6 +68,8 @@ pub enum MessageViewInput {
     /// Set the message-content theme: `None` follows the system, `Some(dark)`
     /// forces light/dark for email content only (not the app UI).
     SetContentTheme(Option<bool>),
+    /// EDS/CardDAV changed; re-resolve the current sender photo.
+    ContactPhotosChanged,
     /// The WebView finished loading the current document — reveal it.
     Rendered,
     /// A conversation message header was double-clicked — open that message in
@@ -90,8 +92,13 @@ impl Component for MessageView {
     type Init = ();
     type Input = MessageViewInput;
     type Output = MessageViewOutput;
-    /// (message id, fetched Gravatar bytes) — id guards against stale results.
-    type CommandOutput = (u32, Option<Vec<u8>>);
+    /// Requested sender + setting + result, used to reject stale async lookups.
+    type CommandOutput = (
+        String,
+        u64,
+        crate::avatar::FetchMode,
+        crate::avatar::FetchOutcome,
+    );
 
     view! {
         gtk::Stack {
@@ -414,6 +421,7 @@ impl Component for MessageView {
                     }
                 }
             }
+            MessageViewInput::ContactPhotosChanged => self.load_avatar(&sender),
             MessageViewInput::Rendered => {
                 self.webview_ready = true;
             }
@@ -431,32 +439,47 @@ impl Component for MessageView {
 
     fn update_cmd(
         &mut self,
-        (message_id, bytes): Self::CommandOutput,
-        _sender: ComponentSender<Self>,
+        (email, generation, mode, outcome): Self::CommandOutput,
+        sender: ComponentSender<Self>,
         _root: &Self::Root,
     ) {
-        // Ignore results for a message that's no longer shown.
-        let still_current = self
-            .current
-            .as_ref()
-            .is_some_and(|m| m.id == message_id);
-        if !still_current {
-            return;
-        }
-        if let (Some(bytes), Some(m)) = (bytes, self.current.as_ref()) {
-            self.avatar_texture = crate::avatar::decode_and_cache(&m.from_addr, &bytes);
+        let retry_stale = crate::avatar::cache_result(&email, generation, mode, outcome);
+        // IMAP UIDs are only mailbox-scoped, so correlate by the sender that
+        // actually initiated the lookup rather than the numeric message id.
+        let still_current = self.current.as_ref().is_some_and(|message| {
+            message.from_addr.eq_ignore_ascii_case(&email)
+        });
+        if still_current {
+            match crate::avatar::lookup(&email, self.gravatar) {
+                crate::avatar::CacheLookup::Texture(texture) => {
+                    self.avatar_texture = Some(texture);
+                }
+                crate::avatar::CacheLookup::Missing => self.avatar_texture = None,
+                crate::avatar::CacheLookup::Fetch { generation, mode } => {
+                    self.avatar_texture = None;
+                    if retry_stale {
+                        let requested_email = email.clone();
+                        sender.oneshot_command(async move {
+                            let lookup_email = requested_email.clone();
+                            let outcome = tokio::task::spawn_blocking(move || {
+                                crate::avatar::fetch(&lookup_email, mode)
+                            })
+                            .await
+                            .unwrap_or(crate::avatar::FetchOutcome::Retry);
+                            (requested_email, generation, mode, outcome)
+                        });
+                    }
+                }
+            }
         }
     }
 }
 
 impl MessageView {
-    /// Set the sender avatar: cached texture if available, otherwise (when
-    /// Gravatar is enabled) kick off a background fetch keyed to this message.
+    /// Set the sender avatar from local contacts, with optional Gravatar
+    /// fallback, correlating background results by sender address.
     fn load_avatar(&mut self, sender: &ComponentSender<Self>) {
         self.avatar_texture = None;
-        if !self.gravatar {
-            return;
-        }
         let Some(m) = self.current.as_ref() else {
             return;
         };
@@ -464,18 +487,24 @@ impl MessageView {
         if email.is_empty() {
             return;
         }
-        if let Some(tex) = crate::avatar::cached(&email) {
-            self.avatar_texture = Some(tex);
-            return;
+        match crate::avatar::lookup(&email, self.gravatar) {
+            crate::avatar::CacheLookup::Texture(texture) => {
+                self.avatar_texture = Some(texture);
+            }
+            crate::avatar::CacheLookup::Missing => {}
+            crate::avatar::CacheLookup::Fetch { generation, mode } => {
+                let requested_email = email.clone();
+                sender.oneshot_command(async move {
+                    let lookup_email = requested_email.clone();
+                    let outcome = tokio::task::spawn_blocking(move || {
+                        crate::avatar::fetch(&lookup_email, mode)
+                    })
+                    .await
+                    .unwrap_or(crate::avatar::FetchOutcome::Retry);
+                    (requested_email, generation, mode, outcome)
+                });
+            }
         }
-        let id = m.id;
-        sender.oneshot_command(async move {
-            let bytes = tokio::task::spawn_blocking(move || crate::avatar::fetch(&email))
-                .await
-                .ok()
-                .flatten();
-            (id, bytes)
-        });
     }
 
     /// Whether message content should render dark: the user's forced choice, or

@@ -261,6 +261,7 @@ pub enum AppMsg {
     RemoveBlacklist(String),
     MarkSpam,
     SetGravatar(bool),
+    ContactPhotosChanged,
     SetThreading(bool),
     SetThreadsExpanded(bool),
     SetFetchInterval(u64),
@@ -826,6 +827,12 @@ impl SimpleComponent for AppModel {
             gallery_by_account: HashMap::new(),
         };
         model.spawn_workers(&sender);
+        crate::contacts::watch_photo_changes({
+            let input = sender.input_sender().clone();
+            move || {
+                let _ = input.send(AppMsg::ContactPhotosChanged);
+            }
+        });
         // Watch GNOME Online Accounts so an account removed there disappears from
         // Vireo live (no restart needed); reconciliation happens on GoaChanged.
         crate::goa::watch_removals({
@@ -1608,6 +1615,11 @@ impl SimpleComponent for AppModel {
                     let current = self.current.clone();
                     self.show_message(current, false);
                 }
+            }
+
+            AppMsg::ContactPhotosChanged => {
+                self.message_list.emit(MessageListInput::ContactPhotosChanged);
+                self.message_view.emit(MessageViewInput::ContactPhotosChanged);
             }
 
             AppMsg::SetFetchInterval(secs) => {
