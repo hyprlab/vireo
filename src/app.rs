@@ -298,9 +298,8 @@ pub enum AppMsg {
     AccountRemoved { email: String },
     AccountEnabledChanged { email: String, enabled: bool },
     ImportGoaAccount(Box<AccountConfig>),
-    /// GNOME Online Accounts changed on the session bus — re-reconcile and drop
-    /// any imported account whose GOA account was removed.
-    GoaChanged,
+    /// Background GOA snapshot after a debounced session-bus change.
+    GoaChanged(Box<crate::goa::GoaSnapshot>),
     /// The system resumed from sleep — worker IMAP sockets are stale, so
     /// reconnect every account and reload the visible folder.
     SystemResumed,
@@ -666,9 +665,31 @@ impl SimpleComponent for AppModel {
         // Accounts no longer has (removed or Mail-disabled there). Reconciliation
         // is skipped when GOA is unreachable, so a momentary outage never wipes
         // imported accounts. Live changes are handled by the watcher below.
+        let accounts_parseable = config::accounts_file_is_parseable();
         let mut config = config::load().unwrap_or_default();
-        let goa_removed = reconcile_goa(&mut config);
-        if !goa_removed.is_empty() {
+        let (goa_removed, goa_sync) = if accounts_parseable {
+            if let Some(snapshot) = crate::goa::snapshot() {
+                (
+                    reconcile_goa(&mut config, &snapshot.account_ids),
+                    sync_goa_accounts(
+                        &mut config,
+                        &snapshot.accounts,
+                        &snapshot.disabled_mail_ids,
+                    ),
+                )
+            } else {
+                (Vec::new(), GoaSync::default())
+            }
+        } else {
+            (Vec::new(), GoaSync::default())
+        };
+        if !goa_removed.is_empty() || goa_sync.changed {
+            migrate_sidebar_emails(
+                &mut sidebar_state.order,
+                &mut sidebar_state.collapsed,
+                &mut sidebar_state.folders_expanded,
+                &goa_sync.renamed,
+            );
             for email in &goa_removed {
                 config::delete_password(email);
             }
@@ -677,6 +698,9 @@ impl SimpleComponent for AppModel {
             sidebar_state.folders_expanded.retain(|e| !goa_removed.contains(e));
             let _ = config::save(&config);
             config::save_sidebar_state(&sidebar_state);
+        }
+        if goa_sync.imported > 0 {
+            tracing::info!("automatically imported {} GNOME Online Account(s)", goa_sync.imported);
         }
         let order = sidebar_state.order;
         let collapsed = sidebar_state.collapsed;
@@ -826,14 +850,20 @@ impl SimpleComponent for AppModel {
             gallery_by_account: HashMap::new(),
         };
         model.spawn_workers(&sender);
-        // Watch GNOME Online Accounts so an account removed there disappears from
-        // Vireo live (no restart needed); reconciliation happens on GoaChanged.
-        crate::goa::watch_removals({
-            let s = sender.input_sender().clone();
-            move || {
-                let _ = s.send(AppMsg::GoaChanged);
-            }
-        });
+        // Mirror Geary's GOA behaviour: newly added accounts appear immediately,
+        // while removed accounts disappear without an app restart.
+        if accounts_parseable {
+            crate::goa::watch_changes({
+                let s = sender.input_sender().clone();
+                move || {
+                    // The watcher callback runs on its dispatcher thread, keeping
+                    // blocking D-Bus work off GTK's main thread.
+                    if let Some(snapshot) = crate::goa::snapshot() {
+                        let _ = s.send(AppMsg::GoaChanged(Box::new(snapshot)));
+                    }
+                }
+            });
+        }
         // Watch for resume-from-sleep: suspended IMAP sockets die silently, so
         // on wake we reconnect every worker and refresh, otherwise no new mail
         // arrives until the app is restarted.
@@ -1849,12 +1879,20 @@ impl SimpleComponent for AppModel {
                 self.reconnect_all(&sender);
             }
 
-            AppMsg::GoaChanged => {
-                // A GOA account was removed/disabled in GNOME Settings. Drop any
-                // imported account that no longer exists there. (Adding an account
-                // to GOA never auto-imports — that stays a manual choice.)
-                let removed = reconcile_goa(&mut self.config);
-                if !removed.is_empty() {
+            AppMsg::GoaChanged(snapshot) => {
+                let removed = reconcile_goa(&mut self.config, &snapshot.account_ids);
+                let sync = sync_goa_accounts(
+                    &mut self.config,
+                    &snapshot.accounts,
+                    &snapshot.disabled_mail_ids,
+                );
+                if !removed.is_empty() || sync.changed {
+                    migrate_sidebar_emails(
+                        &mut self.account_order,
+                        &mut self.collapsed,
+                        &mut self.folders_expanded,
+                        &sync.renamed,
+                    );
                     for email in &removed {
                         config::delete_password(email);
                         self.account_order.retain(|e| e != email);
@@ -2333,7 +2371,7 @@ impl AppModel {
             }
         } else {
             for (i, account) in self.config.iter().enumerate() {
-                if !account.enabled {
+                if !account.enabled || account.goa_mail_disabled {
                     continue;
                 }
                 let account_id = i as u32 + 1;
@@ -4134,14 +4172,100 @@ fn demo_mode() -> bool {
     std::env::var_os("VIREO_DEMO").is_some()
 }
 
-/// Drop imported accounts whose GNOME Online Account no longer exists (removed or
-/// Mail-disabled in GNOME Settings), returning the emails dropped. Keeps every
-/// account — a no-op — when GOA can't be reached, so a momentarily-unavailable GOA
-/// never wipes imported accounts.
-fn reconcile_goa(config: &mut Vec<AccountConfig>) -> Vec<String> {
-    let Some(live) = crate::goa::live_account_ids() else {
-        return Vec::new();
-    };
+fn migrate_sidebar_emails(
+    order: &mut Vec<String>,
+    collapsed: &mut Vec<String>,
+    folders_expanded: &mut Vec<String>,
+    renamed: &[(String, String)],
+) {
+    for (old, new) in renamed {
+        for list in [&mut *order, &mut *collapsed, &mut *folders_expanded] {
+            for email in list.iter_mut() {
+                if email == old {
+                    *email = new.clone();
+                }
+            }
+        }
+    }
+}
+
+#[derive(Default)]
+struct GoaSync {
+    changed: bool,
+    imported: usize,
+    renamed: Vec<(String, String)>,
+}
+
+/// Import every previously unseen mail-enabled GOA account and refresh GOA-owned
+/// connection settings on existing ones. GOA is authoritative for servers and
+/// authentication; Vireo retains local presentation choices and enabled state.
+fn sync_goa_accounts(
+    config: &mut Vec<AccountConfig>,
+    accounts: &[crate::goa::GoaMailAccount],
+    disabled_mail_ids: &std::collections::HashSet<String>,
+) -> GoaSync {
+    let mut result = GoaSync::default();
+    // Mail disabled in GNOME Settings pauses the account without deleting local
+    // signatures, colours or sidebar state. Remember whether it was enabled so
+    // re-enabling Mail can restore only accounts Vireo paused itself.
+    for existing in config.iter_mut() {
+        let Some(id) = existing.goa_id.as_ref() else {
+            continue;
+        };
+        if disabled_mail_ids.contains(id) && !existing.goa_mail_disabled {
+            existing.goa_enabled_before_mail_disabled = existing.enabled;
+            existing.enabled = false;
+            existing.goa_mail_disabled = true;
+            result.changed = true;
+        }
+    }
+    for goa in accounts {
+        // Like Geary, prefer OAuth when GOA exposes both auth interfaces.
+        let mut fresh = goa.to_config(String::new(), String::new(), goa.oauth2);
+        if let Some(index) = config
+            .iter()
+            .position(|c| c.goa_id.as_deref() == Some(goa.id.as_str()))
+        {
+            let old = &config[index];
+            fresh.enabled = if old.goa_mail_disabled {
+                old.goa_enabled_before_mail_disabled
+            } else {
+                old.enabled
+            };
+            fresh.goa_mail_disabled = false;
+            fresh.goa_enabled_before_mail_disabled = false;
+            fresh.name = old.name.clone();
+            fresh.color = old.color.clone();
+            fresh.emoji = old.emoji.clone();
+            fresh.signature = old.signature.clone();
+            fresh.signature_html = old.signature_html;
+            fresh.label = old.label.clone();
+            if *old != fresh {
+                if old.email != fresh.email {
+                    result.renamed.push((old.email.clone(), fresh.email.clone()));
+                }
+                config[index] = fresh;
+                result.changed = true;
+            }
+        } else if !config
+            .iter()
+            .any(|c| c.email.eq_ignore_ascii_case(&goa.email))
+        {
+            config.push(fresh);
+            result.changed = true;
+            result.imported += 1;
+        }
+    }
+    result
+}
+
+/// Drop imported accounts whose GNOME Online Account no longer exists, returning
+/// the emails dropped. Keeps every account when GOA can't be reached, so a
+/// momentarily-unavailable daemon never wipes imported accounts.
+fn reconcile_goa(
+    config: &mut Vec<AccountConfig>,
+    live: &std::collections::HashSet<String>,
+) -> Vec<String> {
     let mut removed = Vec::new();
     config.retain(|c| match &c.goa_id {
         Some(id) if !live.contains(id) => {
@@ -4479,5 +4603,102 @@ mod tests {
     #[test]
     fn search_pool_is_empty_when_nothing_indexed() {
         assert!(build_search_pool(&HashMap::new()).is_empty());
+    }
+
+    fn goa_account() -> crate::goa::GoaMailAccount {
+        crate::goa::GoaMailAccount {
+            id: "goa-1".into(),
+            email: "user@example.com".into(),
+            name: "GOA Name".into(),
+            provider: "Provider".into(),
+            imap_host: "imap.example.com".into(),
+            imap_port: 143,
+            imap_starttls: true,
+            imap_implicit_tls: false,
+            imap_user: "incoming".into(),
+            smtp_host: "smtp.example.com".into(),
+            smtp_port: 587,
+            smtp_implicit_tls: false,
+            smtp_user: "outgoing".into(),
+            smtp_auth: true,
+            password_based: true,
+            oauth2: false,
+        }
+    }
+
+    #[test]
+    fn goa_sync_imports_then_preserves_local_presentation() {
+        let mut config = Vec::new();
+        let account = goa_account();
+        let first = sync_goa_accounts(
+            &mut config,
+            std::slice::from_ref(&account),
+            &std::collections::HashSet::new(),
+        );
+        assert!(first.changed);
+        assert_eq!(first.imported, 1);
+        assert!(config[0].password.is_empty());
+
+        config[0].name = "Local Sender Name".into();
+        config[0].label = Some("Work".into());
+        config[0].enabled = false;
+        let mut changed = account;
+        changed.imap_host = "new.example.com".into();
+        let second = sync_goa_accounts(
+            &mut config,
+            &[changed],
+            &std::collections::HashSet::new(),
+        );
+        assert!(second.changed);
+        assert_eq!(config[0].imap_host, "new.example.com");
+        assert_eq!(config[0].name, "Local Sender Name");
+        assert_eq!(config[0].label.as_deref(), Some("Work"));
+        assert!(!config[0].enabled);
+    }
+
+    #[test]
+    fn goa_mail_disable_preserves_then_restores_account() {
+        let account = goa_account();
+        let ids = std::collections::HashSet::from([account.id.clone()]);
+        let mut config = vec![account.to_config(String::new(), String::new(), false)];
+        config[0].signature = Some("Local signature".into());
+
+        let paused = sync_goa_accounts(&mut config, &[], &ids);
+        assert!(paused.changed);
+        assert!(!config[0].enabled);
+        assert!(config[0].goa_mail_disabled);
+        assert_eq!(config[0].signature.as_deref(), Some("Local signature"));
+        assert!(reconcile_goa(&mut config, &ids).is_empty());
+
+        let resumed = sync_goa_accounts(
+            &mut config,
+            &[account],
+            &std::collections::HashSet::new(),
+        );
+        assert!(resumed.changed);
+        assert!(config[0].enabled);
+        assert!(!config[0].goa_mail_disabled);
+        assert_eq!(config[0].signature.as_deref(), Some("Local signature"));
+
+        // A user-disabled Vireo account stays disabled across the same GOA cycle.
+        config[0].enabled = false;
+        let paused = sync_goa_accounts(&mut config, &[], &ids);
+        assert!(paused.changed);
+        assert!(!config[0].goa_enabled_before_mail_disabled);
+        let resumed = sync_goa_accounts(
+            &mut config,
+            &[goa_account()],
+            &std::collections::HashSet::new(),
+        );
+        assert!(resumed.changed);
+        assert!(!config[0].enabled);
+    }
+
+    #[test]
+    fn goa_reconcile_removes_deleted_account() {
+        let mut config = vec![goa_account().to_config(String::new(), String::new(), false)];
+        let removed = reconcile_goa(&mut config, &std::collections::HashSet::new());
+        assert_eq!(removed, vec!["user@example.com"]);
+        assert!(config.is_empty());
     }
 }

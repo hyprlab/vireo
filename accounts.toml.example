@@ -15,8 +15,12 @@ name = "Personal"
 email = "you@example.com"
 imap_host = "imap.example.com"
 imap_port = 993            # optional, defaults to 993 (implicit TLS)
+# imap_starttls = true     # use with port 143; credentials are sent only after STARTTLS
+# imap_implicit_tls = true # only needed for implicit TLS on a custom port
 smtp_host = "smtp.example.com"  # optional, derived from imap_host if omitted
 smtp_port = 587            # optional, defaults to 587 (STARTTLS; use 465 for implicit TLS)
+# smtp_implicit_tls = true # only needed for implicit TLS on a custom port
+# smtp_auth = true         # optional, defaults to authenticated SMTP
 username = "you@example.com"
 password = "app-specific-password"
 

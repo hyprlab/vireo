@@ -251,29 +251,53 @@ async fn run(
 // IMAP path
 // ---------------------------------------------------------------------------
 
+/// Resolve account credentials without copying GOA-owned secrets into Vireo's
+/// keyring. GOA remains the source of truth; passwords live only in worker memory.
+async fn resolve_credentials(account: &mut AccountConfig, persist_supplied: bool) {
+    let from_goa = account.goa_id.is_some() && !account.oauth;
+    if let Some(goa_id) = account.goa_id.clone().filter(|_| !account.oauth) {
+        if let Ok((incoming, smtp)) =
+            tokio::task::spawn_blocking(move || crate::goa::mail_passwords(&goa_id)).await
+        {
+            if let Some(password) = incoming.as_ref() {
+                account.password = password.clone();
+            }
+            if let Some(password) = smtp.or(incoming) {
+                // Some GOA backends expose one shared mail password even though
+                // the standard credential ids are separate.
+                account.smtp_password = password;
+            }
+        }
+    }
+
+    if account.password.is_empty() {
+        if let Some(pw) = crate::config::load_password(&account.email) {
+            account.password = pw;
+        }
+    } else if !from_goa && persist_supplied {
+        let _ = crate::config::store_password(&account.email, &account.password);
+        crate::config::strip_passwords_on_disk();
+    }
+    if account.smtp_separate && account.smtp_password.is_empty() {
+        if let Some(pw) = crate::config::load_smtp_password(&account.email) {
+            account.smtp_password = pw;
+        }
+    } else if account.smtp_separate
+        && !account.smtp_password.is_empty()
+        && !from_goa
+        && persist_supplied
+    {
+        let _ = crate::config::store_smtp_password(&account.email, &account.smtp_password);
+    }
+}
+
 async fn run_imap(
     account_id: u32,
     mut account: AccountConfig,
     mut rx: mpsc::UnboundedReceiver<MailRequest>,
     emit: impl Fn(WorkerEvent),
 ) {
-    // Resolve the password off the main thread: migrate a legacy plaintext
-    // password into the keyring (and strip it from disk), otherwise load it from
-    // the keyring.
-    if account.password.is_empty() {
-        if let Some(pw) = crate::config::load_password(&account.email) {
-            account.password = pw;
-        }
-    } else {
-        let _ = crate::config::store_password(&account.email, &account.password);
-        crate::config::strip_passwords_on_disk();
-    }
-    // Resolve the separate SMTP password from the keyring when in use.
-    if account.smtp_separate && account.smtp_password.is_empty() {
-        if let Some(pw) = crate::config::load_smtp_password(&account.email) {
-            account.smtp_password = pw;
-        }
-    }
+    resolve_credentials(&mut account, true).await;
 
     let cache = Cache::open()
         .map_err(|e| tracing::warn!("cache unavailable: {e}"))
@@ -1568,27 +1592,32 @@ fn build_email(account: &AccountConfig, msg: &OutgoingMessage) -> Result<LettreM
 }
 
 async fn send_smtp(account: &AccountConfig, msg: &OutgoingMessage) -> Result<Vec<u8>, SmtpError> {
+    // GOA credentials can change while an IMAP session remains connected.
+    // Resolve them again immediately before SMTP authentication.
+    let mut resolved = account.clone();
+    resolve_credentials(&mut resolved, false).await;
+    let account = &resolved;
     let email = build_email(account, msg)?;
     let raw = email.formatted();
 
     let host = smtp_host(account);
     // Port 465 is implicit TLS; everything else (587, etc.) uses STARTTLS.
-    let transport_builder = if account.smtp_port == 465 {
+    let transport_builder = if account.smtp_uses_implicit_tls() {
         AsyncSmtpTransport::<Tokio1Executor>::relay(&host)?
     } else {
         AsyncSmtpTransport::<Tokio1Executor>::starttls_relay(&host)?
     };
     let mut builder = transport_builder.port(account.smtp_port);
-    if account.oauth {
+    if account.smtp_auth && account.oauth {
         // XOAUTH2: the "password" is a fresh OAuth token from GOA.
         let token = fetch_oauth_token(account).await.ok_or_else(|| -> SmtpError {
             "could not get an OAuth token from GNOME Online Accounts".into()
         })?;
-        let user = oauth_user(account);
+        let user = smtp_oauth_user(account);
         builder = builder
             .credentials(Credentials::new(user, token))
             .authentication(vec![lettre::transport::smtp::authentication::Mechanism::Xoauth2]);
-    } else {
+    } else if account.smtp_auth {
         // Use the separate SMTP credentials when configured, else the IMAP ones.
         let creds = if account.smtp_separate {
             Credentials::new(account.smtp_username.clone(), account.smtp_password.clone())
@@ -1609,6 +1638,16 @@ fn oauth_user(account: &AccountConfig) -> String {
         account.email.clone()
     } else {
         account.username.clone()
+    }
+}
+
+/// SMTP may use a different SASL identity even though both services share the
+/// same GOA OAuth token.
+fn smtp_oauth_user(account: &AccountConfig) -> String {
+    if account.smtp_username.trim().is_empty() {
+        oauth_user(account)
+    } else {
+        account.smtp_username.clone()
     }
 }
 
@@ -1874,15 +1913,52 @@ async fn mark_spam(
     move_or_create(session, path, uid, dest).await
 }
 
+const IMAP_CONNECT_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(30);
+
 async fn connect(account: &AccountConfig) -> Result<ImapSession, Box<dyn std::error::Error>> {
+    // Every retry path eventually comes through here. Refresh GOA/keyring
+    // credentials first so reconnect helpers never reuse a stale worker copy.
+    let mut resolved = account.clone();
+    resolve_credentials(&mut resolved, false).await;
+    match tokio::time::timeout(IMAP_CONNECT_TIMEOUT, connect_inner(&resolved)).await {
+        Ok(result) => result,
+        Err(_) => Err(format!(
+            "IMAP connection to {}:{} timed out",
+            account.imap_host, account.imap_port
+        )
+        .into()),
+    }
+}
+
+async fn connect_inner(account: &AccountConfig) -> Result<ImapSession, Box<dyn std::error::Error>> {
     let tcp = TcpStream::connect((account.imap_host.as_str(), account.imap_port)).await?;
     let tls = async_native_tls::TlsConnector::new();
-    let stream = tls.connect(account.imap_host.as_str(), tcp).await?;
-    let mut client = async_imap::Client::new(stream);
-    // Consume the server greeting before issuing commands. LOGIN tolerates an
-    // unread greeting, but the AUTHENTICATE handshake reads it as the command
-    // reply and deadlocks — so read it explicitly here.
-    let _ = client.read_response().await;
+    let client = if account.imap_uses_starttls() {
+        // GOA distinguishes implicit TLS (`ImapUseSsl`) from STARTTLS
+        // (`ImapUseTls`). Require STARTTLS before sending any credentials.
+        let mut plain = async_imap::Client::new(tcp);
+        plain
+            .read_response()
+            .await
+            .ok_or("IMAP server closed before its greeting")??;
+        // On async-imap 0.10's unauthenticated Client this is the Connection
+        // method; its second argument is the optional unsolicited-response sink.
+        plain.run_command_and_check_ok("STARTTLS", None).await?;
+        let stream = tls
+            .connect(account.imap_host.as_str(), plain.into_inner())
+            .await?;
+        async_imap::Client::new(stream)
+    } else {
+        let stream = tls.connect(account.imap_host.as_str(), tcp).await?;
+        let mut client = async_imap::Client::new(stream);
+        // Consume the greeting before AUTHENTICATE; LOGIN happens to tolerate an
+        // unread greeting, while the OAuth exchange does not.
+        client
+            .read_response()
+            .await
+            .ok_or("IMAP server closed before its greeting")??;
+        client
+    };
     let session = if account.oauth {
         // XOAUTH2 with a fresh access token (from GOA or a native refresh token).
         let token = fetch_oauth_token(account)
@@ -1933,9 +2009,12 @@ async fn test_pop3(account: &AccountConfig) -> Result<(), String> {
 /// Blocking wrapper around [`test_connection`] that spins up its own Tokio
 /// runtime — call it from `spawn_blocking` so the IMAP/SMTP sockets have an I/O
 /// reactor regardless of the caller's runtime.
-pub fn test_connection_blocking(account: AccountConfig) -> ConnTest {
+pub fn test_connection_blocking(mut account: AccountConfig) -> ConnTest {
     match tokio::runtime::Builder::new_current_thread().enable_all().build() {
-        Ok(rt) => rt.block_on(test_connection(&account)),
+        Ok(rt) => rt.block_on(async {
+            resolve_credentials(&mut account, false).await;
+            test_connection(&account).await
+        }),
         Err(e) => ConnTest {
             incoming: Err(e.to_string()),
             smtp: Err(e.to_string()),
@@ -1959,19 +2038,34 @@ async fn test_smtp(account: &AccountConfig) -> Result<(), String> {
     use lettre::transport::smtp::extension::ClientId;
 
     let host = smtp_host(account);
-    let (user, pass) = if account.smtp_separate {
-        (account.smtp_username.clone(), account.smtp_password.clone())
+    let (creds, mechanisms) = if account.oauth {
+        let token = fetch_oauth_token(account)
+            .await
+            .ok_or_else(|| "could not get an OAuth token from GNOME Online Accounts".to_string())?;
+        (
+            Credentials::new(smtp_oauth_user(account), token),
+            vec![Mechanism::Xoauth2],
+        )
     } else {
-        (account.username.clone(), account.password.clone())
+        let (user, pass) = if account.smtp_separate {
+            (account.smtp_username.clone(), account.smtp_password.clone())
+        } else {
+            (account.username.clone(), account.password.clone())
+        };
+        (
+            Credentials::new(user, pass),
+            vec![Mechanism::Plain, Mechanism::Login],
+        )
     };
-    let creds = Credentials::new(user, pass);
     let hello = ClientId::default();
     let tls = TlsParameters::new(host.clone()).map_err(|e| e.to_string())?;
-    let addr = format!("{host}:{}", account.smtp_port);
+    // A tuple keeps IPv6 literals unambiguous; formatting `host:port` would
+    // require manually restoring brackets stripped while parsing GOA settings.
+    let addr = (host.as_str(), account.smtp_port);
     let timeout = Some(std::time::Duration::from_secs(20));
 
     // Port 465 is implicit TLS; everything else uses STARTTLS.
-    let mut conn = if account.smtp_port == 465 {
+    let mut conn = if account.smtp_uses_implicit_tls() {
         AsyncSmtpConnection::connect_tokio1(addr, timeout, &hello, Some(tls), None)
             .await
             .map_err(|e| e.to_string())?
@@ -1982,11 +2076,14 @@ async fn test_smtp(account: &AccountConfig) -> Result<(), String> {
         conn.starttls(tls, &hello).await.map_err(|e| e.to_string())?;
         conn
     };
-    let result = conn
-        .auth(&[Mechanism::Plain, Mechanism::Login], &creds)
-        .await
-        .map(|_| ())
-        .map_err(|e| e.to_string());
+    let result = if account.smtp_auth {
+        conn.auth(&mechanisms, &creds)
+            .await
+            .map(|_| ())
+            .map_err(|e| e.to_string())
+    } else {
+        Ok(())
+    };
     let _ = conn.quit().await;
     result
 }
@@ -3016,20 +3113,7 @@ async fn run_pop3(
     mut rx: mpsc::UnboundedReceiver<MailRequest>,
     emit: impl Fn(WorkerEvent),
 ) {
-    // Resolve credentials from the keyring (same as the IMAP path).
-    if account.password.is_empty() {
-        if let Some(pw) = crate::config::load_password(&account.email) {
-            account.password = pw;
-        }
-    } else {
-        let _ = crate::config::store_password(&account.email, &account.password);
-        crate::config::strip_passwords_on_disk();
-    }
-    if account.smtp_separate && account.smtp_password.is_empty() {
-        if let Some(pw) = crate::config::load_smtp_password(&account.email) {
-            account.smtp_password = pw;
-        }
-    }
+    resolve_credentials(&mut account, true).await;
 
     let cache = Cache::open().map_err(|e| tracing::warn!("cache unavailable: {e}")).ok();
     const INBOX: &str = "INBOX";
