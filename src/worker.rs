@@ -1425,12 +1425,39 @@ async fn load_raw(
 
 /// Parse attachment parts (name, mime, decoded bytes) out of a raw message.
 fn extract_attachments(raw: &[u8]) -> Vec<crate::models::Attachment> {
-    use mail_parser::{MessageParser, MimeHeaders};
+    use mail_parser::{MessageParser, MimeHeaders, PartType};
     let Some(parsed) = MessageParser::default().parse(raw) else {
         return Vec::new();
     };
     let mut out = Vec::new();
-    for (i, part) in parsed.attachments().enumerate() {
+    let mut parts: Vec<&mail_parser::MessagePart> = parsed.attachments().collect();
+
+    // Apple Mail sometimes puts the HTML representation and its files under a
+    // nested multipart/mixed which is itself one branch of multipart/alternative.
+    // mail-parser 0.9 does not expose those inline, non-CID binary leaves through
+    // `attachments()`, even though they are real files. Walk the MIME tree as
+    // well so a filename-bearing inline PDF/image is not lost. Keep both sets:
+    // a message may contain ordinary attachments and inline file parts.
+    fn collect<'a>(
+        message: &'a mail_parser::Message<'a>,
+        id: usize,
+        out: &mut Vec<&'a mail_parser::MessagePart<'a>>,
+    ) {
+        let Some(part) = message.part(id) else { return };
+        if let Some(children) = part.sub_parts() {
+            for &child in children {
+                collect(message, child, out);
+            }
+        } else if matches!(&part.body, PartType::Binary(_) | PartType::InlineBinary(_))
+            && part.content_id().is_none()
+            && !out.iter().any(|existing| std::ptr::eq(*existing, part))
+        {
+            out.push(part);
+        }
+    }
+    collect(&parsed, 0, &mut parts);
+
+    for (i, part) in parts.into_iter().enumerate() {
         // Skip `cid:` resources referenced from the HTML body (newsletter logos):
         // they're rendered in place, and `structure_has_attachment` doesn't count
         // them, so listing them here would contradict the paperclip.
@@ -2280,7 +2307,10 @@ fn summary_from_headers(account_id: u32, fetch: &Fetch, folder_id: u32) -> Messa
     let cc = parsed.as_ref().map(|p| mp_list(p.cc())).unwrap_or_default();
 
     // Best-effort attachment hint from the top-level Content-Type (BODYSTRUCTURE
-    // isn't available on this path). multipart/mixed is the usual attachment case.
+    // isn't available on this path). Apple Mail can wrap a multipart/mixed file
+    // branch inside multipart/alternative, so that container is also a candidate.
+    // The full-body attachment pass reconciles ordinary text alternatives back to
+    // `false` after the message is opened.
     let has_attachment = parsed
         .as_ref()
         .and_then(|p| p.header("Content-Type"))
@@ -2289,7 +2319,10 @@ fn summary_from_headers(account_id: u32, fetch: &Fetch, folder_id: u32) -> Messa
             ct.ctype().eq_ignore_ascii_case("multipart")
                 && ct
                     .subtype()
-                    .is_some_and(|s| s.eq_ignore_ascii_case("mixed"))
+                    .is_some_and(|s| {
+                        s.eq_ignore_ascii_case("mixed")
+                            || s.eq_ignore_ascii_case("alternative")
+                    })
         })
         .unwrap_or(false);
 
@@ -3887,6 +3920,28 @@ mod tests {
         assert_eq!(found.len(), 1);
         assert_eq!(found[0].name, "C21AA3E8.jpeg");
         assert!(!found[0].data.is_empty());
+    }
+
+    #[test]
+    fn nested_apple_alternative_mixed_inline_file_is_listed() {
+        // Apple Mail's forwarded-message form: the mixed file branch is nested
+        // under the HTML alternative, and the file is marked inline without CID.
+        let raw = concat!(
+            "Content-Type: multipart/alternative; boundary=outer\r\n\r\n",
+            "--outer\r\nContent-Type: text/plain\r\n\r\nPlease see attached.\r\n",
+            "--outer\r\nContent-Type: multipart/mixed; boundary=inner\r\n\r\n",
+            "--inner\r\nContent-Type: text/html\r\n\r\n<p>Please see attached.</p>\r\n",
+            "--inner\r\nContent-Type: application/pdf; name=\"Report.pdf\"\r\n",
+            "Content-Disposition: inline; filename=\"Report.pdf\"\r\n",
+            "Content-Transfer-Encoding: base64\r\n\r\n",
+            "JVBERi0xLjQ=\r\n",
+            "--inner--\r\n--outer--\r\n",
+        );
+        let found = extract_attachments(raw.as_bytes());
+        assert_eq!(found.len(), 1);
+        assert_eq!(found[0].name, "Report.pdf");
+        assert_eq!(found[0].data, b"%PDF-1.4");
+
     }
 
     #[test]
