@@ -22,7 +22,7 @@ pub enum Protocol {
     Pop3,
 }
 
-#[derive(Debug, Clone, Deserialize, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize)]
 pub struct AccountConfig {
     pub name: String,
     pub email: String,
@@ -34,11 +34,27 @@ pub struct AccountConfig {
     /// Incoming server port (IMAP or POP3, per `protocol`).
     #[serde(default = "default_imap_port")]
     pub imap_port: u16,
+    /// Upgrade a plaintext IMAP connection with STARTTLS (normally port 143).
+    /// False means TLS from the first byte (normally port 993).
+    #[serde(default)]
+    pub imap_starttls: bool,
+    /// Explicit implicit-TLS mode, needed when GOA uses a custom/nonstandard
+    /// port (including an unusual implicit-TLS service on port 143).
+    #[serde(default)]
+    pub imap_implicit_tls: bool,
     /// SMTP server. If empty, derived from `imap_host` (imap.* → smtp.*).
     #[serde(default)]
     pub smtp_host: String,
     #[serde(default = "default_smtp_port")]
     pub smtp_port: u16,
+    /// Use TLS from the first byte instead of STARTTLS. Port 465 implies this
+    /// for compatibility; GOA may also specify implicit TLS on a custom port.
+    #[serde(default)]
+    pub smtp_implicit_tls: bool,
+    /// Whether the SMTP server requires authentication. GOA exposes this
+    /// explicitly; native accounts default to authenticated SMTP.
+    #[serde(default = "default_smtp_auth")]
+    pub smtp_auth: bool,
     pub username: String,
     /// Read from TOML if present (legacy/manual), but never written back —
     /// passwords belong in the keyring. Usually empty after the first run.
@@ -77,6 +93,13 @@ pub struct AccountConfig {
     /// settings/credentials trace back to the system account).
     #[serde(default)]
     pub goa_id: Option<String>,
+    /// Temporarily disabled because Mail was switched off in GOA. This preserves
+    /// local presentation settings and restores the prior enabled state later.
+    #[serde(default)]
+    pub goa_mail_disabled: bool,
+    /// Local enabled state to restore after GOA Mail is switched back on.
+    #[serde(default)]
+    pub goa_enabled_before_mail_disabled: bool,
     /// Authenticate with OAuth2 (XOAUTH2) instead of a stored password. The token
     /// comes from GOA (`goa_id`) or, for accounts added directly in Vireo, from
     /// refreshing `oauth_settings` with the keyring-stored refresh token.
@@ -92,7 +115,7 @@ pub struct AccountConfig {
 }
 
 /// OAuth2 client configuration for an account added directly in Vireo.
-#[derive(Debug, Clone, Default, Deserialize, Serialize)]
+#[derive(Debug, Clone, Default, PartialEq, Eq, Deserialize, Serialize)]
 pub struct OAuthSettings {
     pub auth_url: String,
     pub token_url: String,
@@ -115,6 +138,18 @@ impl AccountConfig {
             _ => self.email.clone(),
         }
     }
+
+    /// Port 143 is the conventional IMAP STARTTLS endpoint. Treat it as such
+    /// even for older configs written before `imap_starttls` existed; this also
+    /// prevents accidentally attempting implicit TLS against a plaintext port.
+    pub fn imap_uses_starttls(&self) -> bool {
+        !self.imap_implicit_tls
+            && (self.imap_starttls || (self.protocol == Protocol::Imap && self.imap_port == 143))
+    }
+
+    pub fn smtp_uses_implicit_tls(&self) -> bool {
+        self.smtp_implicit_tls || self.smtp_port == 465
+    }
 }
 
 fn default_imap_port() -> u16 {
@@ -123,6 +158,10 @@ fn default_imap_port() -> u16 {
 
 fn default_smtp_port() -> u16 {
     587
+}
+
+fn default_smtp_auth() -> bool {
+    true
 }
 
 #[derive(Debug, Default, Deserialize, Serialize)]
@@ -134,6 +173,20 @@ struct ConfigFile {
 /// Path to the accounts config file (`~/.config/vireo/accounts.toml`).
 pub fn path() -> Option<PathBuf> {
     Some(dirs::config_dir()?.join("vireo").join("accounts.toml"))
+}
+
+/// Whether the accounts file is absent or parses successfully. Automatic
+/// discovery must not overwrite an existing malformed file that the user may
+/// still repair.
+pub fn accounts_file_is_parseable() -> bool {
+    let Some(path) = path() else {
+        return false;
+    };
+    match std::fs::read_to_string(path) {
+        Ok(text) => toml::from_str::<ConfigFile>(&text).is_ok(),
+        Err(e) if e.kind() == std::io::ErrorKind::NotFound => true,
+        Err(_) => false,
+    }
 }
 
 /// Returns the configured accounts, or `None` if there is no usable config
@@ -721,7 +774,38 @@ pub fn save_drawer_collapsed(collapsed: bool) {
 
 #[cfg(test)]
 mod tests {
-    use super::PrivacyFile;
+    use super::{ConfigFile, PrivacyFile};
+
+    #[test]
+    fn old_account_config_gets_secure_transport_defaults() {
+        let cfg: ConfigFile = toml::from_str(
+            r#"[[accounts]]
+name = "Example"
+email = "user@example.com"
+imap_host = "imap.example.com"
+username = "user@example.com"
+"#,
+        )
+        .unwrap();
+        let account = &cfg.accounts[0];
+        assert!(!account.imap_uses_starttls());
+        assert!(account.smtp_auth);
+    }
+
+    #[test]
+    fn old_port_143_config_is_upgraded_to_starttls() {
+        let cfg: ConfigFile = toml::from_str(
+            r#"[[accounts]]
+name = "Example"
+email = "user@example.com"
+imap_host = "imap.example.com"
+imap_port = 143
+username = "user@example.com"
+"#,
+        )
+        .unwrap();
+        assert!(cfg.accounts[0].imap_uses_starttls());
+    }
 
     #[test]
     fn notifications_default_on_when_absent() {

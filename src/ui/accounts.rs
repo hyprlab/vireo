@@ -598,6 +598,7 @@ impl Component for AccountsWindow {
                 self.pending_oauth_refresh = None;
                 clear_editor(widgets);
                 self.apply_provider(widgets);
+                set_connection_editable(widgets, true);
                 self.sig_editor.set_html("");
                 widgets.color_btn.set_rgba(&parse_color(DEFAULT_COLOR));
                 widgets.emoji_btn.set_label("Add");
@@ -626,9 +627,18 @@ impl Component for AccountsWindow {
                 // GOA accounts: no "Remove" (it lives in the system) — offer an
                 // enable/disable toggle and a shortcut to Online Accounts instead.
                 let is_goa = acc.goa_id.is_some();
+                set_connection_editable(widgets, !is_goa);
                 widgets.remove_group.set_visible(!is_goa);
                 widgets.goa_manage_group.set_visible(is_goa);
                 widgets.goa_enabled_row.set_active(acc.enabled);
+                widgets
+                    .goa_enabled_row
+                    .set_sensitive(!acc.goa_mail_disabled);
+                widgets.goa_enabled_row.set_subtitle(if acc.goa_mail_disabled {
+                    "Mail is disabled for this account in GNOME Settings"
+                } else {
+                    ""
+                });
                 widgets.nav.push_by_tag("editor");
             }
 
@@ -656,6 +666,9 @@ impl Component for AccountsWindow {
 
             AccountsInput::ToggleEnabled { index, enabled } => {
                 if let Some(acc) = self.accounts.get_mut(index) {
+                    if acc.goa_mail_disabled {
+                        return;
+                    }
                     if acc.enabled != enabled {
                         acc.enabled = enabled;
                         let email = acc.email.clone();
@@ -667,6 +680,9 @@ impl Component for AccountsWindow {
             AccountsInput::ToggleCurrentEnabled(enabled) => {
                 if let Some(i) = self.editing {
                     if let Some(acc) = self.accounts.get_mut(i) {
+                        if acc.goa_mail_disabled {
+                            return;
+                        }
                         if acc.enabled != enabled {
                             acc.enabled = enabled;
                             let email = acc.email.clone();
@@ -679,14 +695,9 @@ impl Component for AccountsWindow {
 
             AccountsInput::ImportGoa(index) => {
                 if let Some(g) = self.goa.get(index).cloned() {
-                    // Password-based providers: pull the password now. OAuth
-                    // providers: authenticate with a GOA token at connect time.
-                    let (password, oauth) = if g.password_based {
-                        (crate::goa::fetch_password(&g.path, &g.id).unwrap_or_default(), false)
-                    } else {
-                        (String::new(), true)
-                    };
-                    let account = g.to_config(password, oauth);
+                    // GOA remains authoritative for secrets even on this legacy
+                    // manual path; workers fetch them directly when connecting.
+                    let account = g.to_config(String::new(), String::new(), g.oauth2);
                     self.goa.remove(index);
                     self.accounts.push(account.clone());
                     self.rebuild_account_list(&widgets.accounts_list, &sender);
@@ -707,7 +718,15 @@ impl Component for AccountsWindow {
             }
 
             AccountsInput::TestConnection => {
-                let account = read_account(widgets, self.emoji.clone());
+                let mut account = read_account(widgets, self.emoji.clone());
+                if let Some(orig) = self.editing.and_then(|i| self.accounts.get(i)) {
+                    preserve_hidden_transport(&mut account, orig);
+                    account.goa_id = orig.goa_id.clone();
+                    if orig.goa_id.is_some() {
+                        account.oauth = orig.oauth;
+                        account.oauth_settings = orig.oauth_settings.clone();
+                    }
+                }
                 widgets.test_btn.set_sensitive(false);
                 widgets.test_result.set_visible(true);
                 widgets.test_result.set_css_classes(&["dim-label"]);
@@ -783,8 +802,12 @@ impl Component for AccountsWindow {
                 // (GOA-driven) OAuth mechanism regardless of the Authentication combo.
                 let editing_orig = self.editing.and_then(|i| self.accounts.get(i)).cloned();
                 if let Some(orig) = &editing_orig {
+                    preserve_hidden_transport(&mut account, orig);
                     account.enabled = orig.enabled;
                     account.goa_id = orig.goa_id.clone();
+                    account.goa_mail_disabled = orig.goa_mail_disabled;
+                    account.goa_enabled_before_mail_disabled =
+                        orig.goa_enabled_before_mail_disabled;
                     if orig.goa_id.is_some() {
                         account.oauth = orig.oauth;
                         account.oauth_settings = orig.oauth_settings.clone();
@@ -830,13 +853,17 @@ impl Component for AccountsWindow {
                 } else {
                     true
                 };
-                let password_ok = account.oauth || !account.password.is_empty();
+                // GOA-managed secrets are intentionally absent from this form:
+                // workers fetch them directly from GOA when they connect.
+                let goa_managed = account.goa_id.is_some();
+                let password_ok = account.oauth || goa_managed || !account.password.is_empty();
                 if account.imap_host.is_empty()
                     || account.username.is_empty()
                     || !password_ok
                     || !oauth_ready
                     || (account.smtp_separate
-                        && (account.smtp_username.is_empty() || account.smtp_password.is_empty()))
+                        && (account.smtp_username.is_empty()
+                            || (!goa_managed && account.smtp_password.is_empty())))
                 {
                     widgets.host_row.add_css_class("error");
                     return;
@@ -1002,8 +1029,13 @@ impl AccountsWindow {
             // sync or appear in the sidebar.
             let toggle = gtk::Switch::new();
             toggle.set_valign(gtk::Align::Center);
-            toggle.set_tooltip_text(Some("Enable this account"));
+            toggle.set_tooltip_text(Some(if acc.goa_mail_disabled {
+                "Mail is disabled for this account in GNOME Settings"
+            } else {
+                "Enable this account"
+            }));
             toggle.set_active(acc.enabled);
+            toggle.set_sensitive(!acc.goa_mail_disabled);
             let ti = sender.input_sender().clone();
             let tpos = pos;
             toggle.connect_state_set(move |_, state| {
@@ -1247,6 +1279,35 @@ fn display_name(acc: &AccountConfig) -> String {
     }
 }
 
+fn preserve_hidden_transport(account: &mut AccountConfig, original: &AccountConfig) {
+    // The editor exposes ports but not the transport/authentication switches.
+    // Keep custom modes when the corresponding port was not changed.
+    if account.imap_port == original.imap_port {
+        account.imap_starttls = original.imap_starttls;
+        account.imap_implicit_tls = original.imap_implicit_tls;
+    }
+    if account.smtp_port == original.smtp_port {
+        account.smtp_implicit_tls = original.smtp_implicit_tls;
+    }
+    account.smtp_auth = original.smtp_auth;
+}
+
+fn set_connection_editable(widgets: &AccountsWindowWidgets, editable: bool) {
+    widgets.provider_row.set_sensitive(editable);
+    widgets.name_row.set_sensitive(true); // local From/display name
+    widgets.email_row.set_sensitive(editable);
+    widgets.protocol_row.set_sensitive(editable);
+    widgets.host_row.set_sensitive(editable);
+    widgets.port_row.set_sensitive(editable);
+    widgets.smtp_row.set_sensitive(editable);
+    widgets.smtp_port_row.set_sensitive(editable);
+    widgets.user_row.set_sensitive(editable);
+    widgets.pass_row.set_sensitive(editable);
+    widgets.smtp_separate_row.set_sensitive(editable);
+    widgets.smtp_user_row.set_sensitive(editable);
+    widgets.smtp_pass_row.set_sensitive(editable);
+}
+
 /// Build an `AccountConfig` from the current editor form values.
 fn read_account(widgets: &AccountsWindowWidgets, emoji: Option<String>) -> AccountConfig {
     let protocol = if widgets.protocol_row.selected() == 1 {
@@ -1261,8 +1322,16 @@ fn read_account(widgets: &AccountsWindowWidgets, emoji: Option<String>) -> Accou
         protocol,
         imap_host: trimmed(&widgets.host_row),
         imap_port: trimmed(&widgets.port_row).parse().unwrap_or(default_port),
+        // The native editor follows the conventional ports: 143 is STARTTLS,
+        // while 993 is implicit TLS. GOA supplies this flag explicitly.
+        imap_starttls: protocol == Protocol::Imap
+            && trimmed(&widgets.port_row).parse::<u16>().unwrap_or(default_port) == 143,
+        imap_implicit_tls: protocol == Protocol::Imap
+            && trimmed(&widgets.port_row).parse::<u16>().unwrap_or(default_port) == 993,
         smtp_host: trimmed(&widgets.smtp_row),
         smtp_port: trimmed(&widgets.smtp_port_row).parse().unwrap_or(587),
+        smtp_implicit_tls: trimmed(&widgets.smtp_port_row).parse::<u16>().unwrap_or(587) == 465,
+        smtp_auth: true,
         username: trimmed(&widgets.user_row),
         password: widgets.pass_row.text().to_string(),
         smtp_separate: widgets.smtp_separate_row.is_active(),
@@ -1286,6 +1355,8 @@ fn read_account(widgets: &AccountsWindowWidgets, emoji: Option<String>) -> Accou
         // Defaults for a new account; preserved from the original when editing.
         enabled: true,
         goa_id: None,
+        goa_mail_disabled: false,
+        goa_enabled_before_mail_disabled: false,
         oauth: false,
         oauth_settings: None,
         oauth_refresh: String::new(),
