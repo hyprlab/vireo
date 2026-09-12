@@ -1,0 +1,3855 @@
+# Translation template for Vireo.
+# This file is distributed under the same license as the Vireo package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vireo\n"
+"Report-Msgid-Bugs-To: https://github.com/hyprlab/vireo/issues\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
+
+msgid "Refresh or long-press for Status Bar"
+msgstr "Обновите или удерживайте для строки состояния"
+
+msgid "Main Menu"
+msgstr "Главное меню"
+
+msgid "Expand sidebar"
+msgstr "Развернуть боковую панель"
+
+msgid "Collapse sidebar"
+msgstr "Свернуть боковую панель"
+
+msgid "Search messages (Ctrl+F)"
+msgstr "Поиск сообщений (Ctrl+F)"
+
+msgid "Show only unread"
+msgstr "Только непрочитанные"
+
+msgid "Show only starred"
+msgstr "Только избранные"
+
+msgid "Sort messages"
+msgstr "Сортировка сообщений"
+
+msgid "Edit this message"
+msgstr "Редактировать сообщение"
+
+msgid "Try to send this message now"
+msgstr "Попробовать отправить сейчас"
+
+msgid "Send all"
+msgstr "Отправить все"
+
+msgid "Reply"
+msgstr "Ответить"
+
+msgid "Reply All"
+msgstr "Ответить всем"
+
+msgid "Forward"
+msgstr "Переслать"
+
+msgid "Mark as Read"
+msgstr "Отметить как прочитанное"
+
+msgid "Mark as Unread"
+msgstr "Отметить как непрочитанное"
+
+msgid "Flag"
+msgstr "Отметить"
+
+msgid "Print Preview (Ctrl+Shift+P)"
+msgstr "Предпросмотр печати (Ctrl+Shift+P)"
+
+msgid "Find in message (Ctrl+F)"
+msgstr "Найти в сообщении (Ctrl+F)"
+
+msgid "Not Spam"
+msgstr "Не спам"
+
+msgid "Mark as Spam"
+msgstr "Пометить как спам"
+
+msgid "Archive"
+msgstr "Архивировать"
+
+msgid "Downloading attachments…"
+msgstr "Загрузка вложений…"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Previous"
+msgstr "Назад"
+
+msgid "Next"
+msgstr "Вперёд"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Download…"
+msgstr "Скачать…"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Show Accounts"
+msgstr "Показывать учётные записи"
+
+msgid "Print Preview…"
+msgstr "Предпросмотр печати…"
+
+msgid "Print Message…"
+msgstr "Печать сообщения…"
+
+msgid "Quit"
+msgstr "Выйти"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Double-click to open in a new window"
+msgstr "Двойной клик — открыть в новом окне"
+
+msgid "Tags"
+msgstr "Теги"
+
+msgid "Move To…"
+msgstr "Переместить в…"
+
+msgid "Attachments"
+msgstr "Вложения"
+
+msgid "Toggle sidebar"
+msgstr "Показать/скрыть боковую панель"
+
+msgid "Date (Newest first)"
+msgstr "Дата (сначала новые)"
+
+msgid "Date (Oldest first)"
+msgstr "Дата (сначала старые)"
+
+msgid "Sender (A–Z)"
+msgstr "Отправитель (A–Я)"
+
+msgid "Subject (A–Z)"
+msgstr "Тема (А–Я)"
+
+msgid "Unread first"
+msgstr "Сначала непрочитанные"
+
+msgid "Flagged first"
+msgstr "Сначала отмеченные"
+
+msgid "Added to Contacts"
+msgstr "Добавлено в контакты"
+
+msgid "Added email to {name}"
+msgstr "Адрес электронной почты добавлен к контакту {name}"
+
+msgid "Already in Contacts ({name})"
+msgstr "Уже есть в контактах ({name})"
+
+msgid "Could not add contact: {e}"
+msgstr "Не удалось добавить контакт: {e}"
+
+msgid "Save Attachment"
+msgstr "Сохранить вложение"
+
+msgid ""
+"Couldn't restart automatically — quit and reopen Vireo to finish switching "
+"the icon."
+msgstr ""
+"Не удалось перезапустить автоматически — закройте и снова откройте Vireo, "
+"чтобы завершить смену иконки."
+
+msgid "Open a message first, then print it."
+msgstr "Сначала откройте сообщение, затем распечатайте его."
+
+msgid "Nothing to undo"
+msgstr "Нечего отменять"
+
+msgid "Undoing move…"
+msgstr "Отменяем перемещение…"
+
+msgid "No message with the ID {id} was found"
+msgstr "Ни одного сообщения с ID {id} не найдено"
+
+msgid "No Drafts folder available for this account"
+msgstr "Для этой учётной записи недоступна папка «Черновики»"
+
+msgid "Could not save account: {e}"
+msgstr "Не удалось сохранить учетную запись: {e}"
+
+msgid "Enable Console mode in Settings → System & Appearance"
+msgstr "Включите режим консоли в Настройки → Система и внешний вид"
+
+msgid "Export Settings"
+msgstr "Экспорт настроек"
+
+msgid "Settings exported to {display}"
+msgstr "Настройки экспортированы в {display}"
+
+msgid "Export failed: {e}"
+msgstr "Ошибка экспорта: {e}"
+
+msgid "Export Log"
+msgstr "Экспортировать журнал"
+
+msgid "Log exported to {display}"
+msgstr "Журнал экспортирован в {display}"
+
+msgid "Import Settings"
+msgstr "Импорт настроек"
+
+msgid "Settings Imported"
+msgstr "Настройки импортированы"
+
+msgid ""
+"{n} mail account(s), the cloud storage accounts and all preferences were "
+"imported. Restart Vireo to apply them. Passwords and sign-ins are not part "
+"of a backup; re-enter them on first use if this is a new machine."
+msgstr ""
+"Импортировано почтовых аккаунтов: {n}, а также аккаунты облачного хранилища "
+"и все настройки. Перезапустите Vireo, чтобы применить их. Пароли и данные "
+"для входа не входят в резервную копию — введите их заново при первом "
+"использовании, если это новый компьютер."
+
+msgid "Later"
+msgstr "Позже"
+
+msgid "Restart Vireo"
+msgstr "Перезапустить Vireo"
+
+msgid "Import failed: {e}"
+msgstr "Ошибка импорта: {e}"
+
+msgid "Could not import account: {e}"
+msgstr "Не удалось импортировать учетную запись: {e}"
+
+msgid "No address book available"
+msgstr "Адресная книга недоступна"
+
+msgid "Could not update contact: {e}"
+msgstr "Не удалось обновить контакт: {e}"
+
+msgid "Reveal Status Bar"
+msgstr "Показать строку состояния"
+
+msgid "Console"
+msgstr "Консоль"
+
+msgid "Keyboard Shortcuts"
+msgstr "Сочетания клавиш"
+
+msgid ""
+"Single-key shortcuts are switched off. Turn them on in Settings → System & "
+"Appearance."
+msgstr ""
+"Одноклавишные сочетания отключены. Включите их в меню «Настройки» → «Система "
+"и внешний вид»."
+
+msgid "Your tags"
+msgstr "Ваши теги"
+
+msgid "Restarting Vireo"
+msgstr "Перезапуск Vireo"
+
+msgid "Applying your new app icon. Vireo will close and reopen in a moment."
+msgstr "Применяем новый значок приложения. Vireo закроется и снова откроется через мгновение."
+
+msgid "Restart to finish switching icons?"
+msgstr "Перезапустить, чтобы завершить изменение иконки?"
+
+msgid ""
+"The dock and Vireo's own windows keep the old icon until Vireo restarts."
+msgstr ""
+"В доке и окнах Vireo будет отображаться старая иконка до перезапуска "
+"программы."
+
+msgid "Restart Now"
+msgstr "Перезапустить сейчас"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Send Now"
+msgstr "Отправить сейчас"
+
+msgid "Send All"
+msgstr "Отправить всё"
+
+msgid "View Source"
+msgstr "Просмотр исходного кода"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Remove Flag"
+msgstr "Снять метку"
+
+msgid "Print Preview"
+msgstr "Предпросмотр печати"
+
+msgid "Move to Inbox"
+msgstr "Переместить во Входящие"
+
+msgid "Message Source"
+msgstr "Исходный код сообщения"
+
+msgid "Delete {n} messages"
+msgstr "Удалить {n} сообщений"
+
+msgid "New Message"
+msgstr "Новое сообщение"
+
+msgid "Delete this conversation?"
+msgstr "Удалить эту переписку?"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Delete Conversation"
+msgstr "Удалить переписку"
+
+msgid "Delete this message permanently?"
+msgid_plural "Delete {n} messages permanently?"
+msgstr[0] "Удалить это сообщение безвозвратно?"
+msgstr[1] "Удалить эти {n} сообщения безвозвратно?"
+msgstr[2] "Удалить эти {n} сообщений безвозвратно?"
+
+msgid ""
+"It is already in Trash, so it will be erased from the server. This can’t be "
+"undone."
+msgstr ""
+"Оно уже находится в «Корзине», поэтому будет удалено с сервера. Это действие "
+"нельзя отменить."
+
+msgid ""
+"They are already in Trash, so they will be erased from the server. This "
+"can’t be undone."
+msgstr ""
+"Они уже находятся в «Корзине», поэтому будут удалены с сервера. Это действие "
+"нельзя отменить."
+
+msgid "No {v1} folder available"
+msgstr "Нет доступной папки {v1}"
+
+msgid "One message stayed put — mail can't be moved between accounts"
+msgstr "Одно сообщение осталось на месте — почту нельзя перемещать между учётными записями"
+
+msgid "{foreign} messages stayed put — mail can't be moved between accounts"
+msgstr "{foreign} сообщений осталось на месте — почту нельзя перемещать между учётными записями"
+
+msgid "Vireo couldn’t save your password"
+msgstr "Vireo не смог сохранить ваш пароль"
+
+msgid "Keyring setup on Linux Mint"
+msgstr "Настройка связки ключей в Linux Mint"
+
+msgid "Got it"
+msgstr "Понятно"
+
+msgid "New Folder"
+msgstr "Новая папка"
+
+msgid "Create a new folder for this account."
+msgstr "Создать новую папку для этого аккаунта."
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Folder name"
+msgstr "Название папки"
+
+msgid "Sub-folders keep their place under the new name."
+msgstr "Вложенные папки остаются на своих местах под новым именем."
+
+msgid "Rename"
+msgstr "Переименовать"
+
+msgid "A folder named {new_name} is already there."
+msgstr "Папка с именем {new_name} уже существует."
+
+msgid "Its messages are moved to Trash and the folder is removed."
+msgstr "Её сообщения будут перемещены в «Корзину», а сама папка — удалена."
+
+msgid "Empty “{name}”?"
+msgstr "Очистить «{name}»?"
+
+msgid ""
+"Every message in it will be erased from the server. This can’t be undone."
+msgstr ""
+"Все сообщения в нем будут удалены с сервера. Это действие нельзя отменить."
+
+msgid "Empty"
+msgstr "Очистить"
+
+msgid "No Junk folder available for this account"
+msgstr "Для этой учётной записи недоступна папка «Спам»"
+
+msgid "No Inbox folder available for this account"
+msgstr "Для этой учётной записи недоступна папка «Входящие»"
+
+msgid "No address book available to add contacts"
+msgstr "Нет адресной книги для добавления контактов"
+
+msgid "Add to Contacts"
+msgstr "Добавить в Контакты"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Address book"
+msgstr "Адресная книга"
+
+msgid "Remove Account?"
+msgstr "Удалить аккаунт?"
+
+msgid "Remove"
+msgstr "Удалить"
+
+#. One-sentence description, directly under the version chip.
+msgid "A clean, fast, GNOME-native email client."
+msgstr "Простой, быстрый, нативный почтовый клиент для GNOME."
+
+msgid ""
+"This is a beta build for trying upcoming changes early. Expect bugs and "
+"instability — please report anything broken on GitHub. It shares your "
+"accounts and mail with the stable Vireo install."
+msgstr ""
+"Это бета-версия для раннего тестирования предстоящих изменений. Возможны "
+"ошибки и нестабильная работа — пожалуйста, сообщайте о неполадках на GitHub. "
+"Она использует те же учетные записи и почту, что и стабильная версия Vireo."
+
+msgid "Release Notes"
+msgstr "Примечания к выпуску"
+
+msgid "Changelog"
+msgstr "Список изменений"
+
+msgid "Full version history"
+msgstr "Полная история версий"
+
+msgid "Keyring Setup Help"
+msgstr "Справка по настройке связки ключей"
+
+msgid "Make account passwords persist on Linux Mint"
+msgstr "Сохранять пароли учетных записей в Linux Mint"
+
+#. Project links. Each row shows its URL as a hover tooltip.
+msgid "Project"
+msgstr "Проект"
+
+msgid "Website"
+msgstr "Веб-сайт"
+
+msgid "Contact — hyprlab@proton.me"
+msgstr "Контакт — hyprlab@proton.me"
+
+msgid "Discord — Join the community"
+msgstr "Discord — присоединиться к сообществу"
+
+msgid "Source Code"
+msgstr "Исходный код"
+
+msgid "License (GNU AGPL v3)"
+msgstr "Лицензия (GNU AGPL v3)"
+
+msgid "Buy Me a Coffee"
+msgstr "Поддержать проект"
+
+#. Contributors — people outside Hyprlab whose patches are in the app.
+msgid "Special thanks to these contributors"
+msgstr "Отдельная благодарность участникам разработки"
+
+#. Footer.
+msgid "© 2026 Hyprlab"
+msgstr "© 2026 Hyprlab"
+
+msgid "No {v1} folder available for some messages"
+msgstr "Для некоторых сообщений нет доступной папки {v1}"
+
+msgid "Move around"
+msgstr "Перемещаться"
+
+msgid "Next message"
+msgstr "Следующее сообщение"
+
+msgid "Previous message"
+msgstr "Предыдущее сообщение"
+
+msgid "Open the selected message"
+msgstr "Открыть выбранное сообщение"
+
+msgid "Back to the message list"
+msgstr "Вернуться к списку сообщений"
+
+msgid "Next message in the conversation"
+msgstr "Следующее сообщение в беседе"
+
+msgid "Previous message in the conversation"
+msgstr "Предыдущее сообщение в беседе"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Act on a message"
+msgstr "Действовать по сообщению"
+
+msgid "Reply to all"
+msgstr "Ответить всем"
+
+msgid "Mark as spam"
+msgstr "Отметить как спам"
+
+msgid "Star or unstar"
+msgstr "Добавить/убрать из избранного"
+
+msgid "Mark read or unread"
+msgstr "Отметить прочитанным/непрочитанным"
+
+msgid "Select this row (for a bulk action)"
+msgstr "Выберите эту строку (для массового действия)"
+
+msgid "Add or remove a tag (the first nine, in Settings order)"
+msgstr "Добавить или удалить метку (первые девять — в порядке настроек)"
+
+msgid "Remove every tag"
+msgstr "Удалить все теги"
+
+msgid "Everything else"
+msgstr "Всё остальное"
+
+msgid "Compose"
+msgstr "Написать"
+
+msgid "Back out of a reply and return to the list"
+msgstr "Отменить ответ и вернуться к списку"
+
+msgid "Undo the last move or delete"
+msgstr "Отменить последнее перемещение или удаление"
+
+msgid "Print the message you are reading"
+msgstr "Печать открытого сообщения"
+
+msgid "Preview it as a PDF first"
+msgstr "Предпросмотр в формате PDF"
+
+msgid "Reveal the status bar (also: long-press Refresh)"
+msgstr "Показать строку состояния (также: удерживание «Обновить»)"
+
+msgid "Show or hide the accounts in the sidebar"
+msgstr "Показывать или скрывать учётные записи на боковой панели"
+
+msgid "Console mode (when enabled in Settings)"
+msgstr "Консольный режим (если включен в Настройках)"
+
+msgid "Close the window (background sync keeps running)"
+msgstr "Закрыть окно (фоновая синхронизация продолжит работу)"
+
+msgid "Quit Vireo entirely"
+msgstr "Полностью выйти из Vireo"
+
+msgid "This list"
+msgstr "Этот список"
+
+msgid "Save All Attachments"
+msgstr "Сохранить все вложения"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid ""
+"Vireo checks for new mail and shows notifications while its window is closed."
+msgstr ""
+"Vireo проверяет наличие новой почты и показывает уведомления, когда окно "
+"закрыто."
+
+msgid "Checking for new mail"
+msgstr "Проверка новой почты"
+
+msgid "{n} unread message"
+msgid_plural "{n} unread messages"
+msgstr[0] "{n} непрочитанное сообщение"
+msgstr[1] "{n} непрочитанных сообщения"
+msgstr[2] "{n} непрочитанных сообщений"
+
+msgid "On This Computer"
+msgstr "На этом компьютере"
+
+msgid "CardDAV Address Book"
+msgstr "Адресная книга CardDAV"
+
+msgid "Encrypted message"
+msgstr "Зашифрованное сообщение"
+
+msgid "Encrypted with OpenPGP; could not be decrypted"
+msgstr "Зашифровано с помощью OpenPGP; не удалось расшифровать"
+
+msgid "Encrypted with OpenPGP"
+msgstr "Зашифровано с помощью OpenPGP"
+
+msgid "Encrypted, and signed by {signer}"
+msgstr "Зашифровано и подписано {signer}"
+
+msgid ""
+"Encrypted; the signature does not match, the message may have been altered"
+msgstr "Зашифровано; подпись не совпадает, возможно, сообщение было изменено"
+
+msgid "Encrypted; signed with a key you don't have ({id})"
+msgstr "Зашифровано; подписано ключом, которого у вас нет ({id})"
+
+msgid "Encrypted, and signed by {signer} with an expired key"
+msgstr "Зашифровано, подписано {signer} при помощи ключа с истёкшим сроком действия"
+
+msgid "Encrypted, and signed by {signer} with a revoked key"
+msgstr "Зашифровано и подписано {signer} с использованием отозванного ключа"
+
+msgid "Encrypted, and signed by {signer}; the signature has expired"
+msgstr "Зашифровано и подписано {signer}; срок действия подписи истёк"
+
+msgid "OpenPGP-signed; the signature could not be checked"
+msgstr "Подписано OpenPGP; не удалось проверить подпись"
+
+msgid "Signed by {signer}"
+msgstr "Подписано {signer}"
+
+msgid "The OpenPGP signature does not match; the message may have been altered"
+msgstr "Подпись OpenPGP не совпадает; возможно, сообщение было изменено"
+
+msgid "Signed with a key you don't have ({id})"
+msgstr "Подписано ключом, которого у вас нет ({id})"
+
+msgid "Signed by {signer} with an expired key"
+msgstr "Подписано {signer} с помощью ключа с истёкшим сроком действия"
+
+msgid "Signed by {signer} with a revoked key"
+msgstr "Подписано {signer} с помощью отозванного ключа"
+
+msgid "Signed by {signer}; the signature has expired"
+msgstr "Подписано {signer}; срок действия подписи истёк"
+
+msgid "This message hasn't been checked."
+msgstr "Это сообщение не проверялось."
+
+msgid "{n} hours ago"
+msgstr "{n} ч. назад"
+
+msgid "yesterday"
+msgstr "вчера"
+
+msgid "{n} days ago"
+msgstr "{n} дн. назад"
+
+msgid "Waiting since {ago}"
+msgstr "Ожидает с {ago}"
+
+msgid "Scheduled for {when}"
+msgstr "Запланировано на {when}"
+
+msgid "New message"
+msgstr "Новое сообщение"
+
+msgid "GnuPG (gpg) is not installed, so this message cannot be read."
+msgstr "GnuPG (gpg) не установлен, поэтому это сообщение нельзя прочитать."
+
+msgid "Decrypted with your key."
+msgstr "Расшифровано с помощью вашего ключа."
+
+msgid "Encrypted to key {id}, which is not in your keyring."
+msgstr "Зашифровано для ключа {id}, которого нет в вашей связке ключей."
+
+msgid "The encrypted block is damaged or not OpenPGP data."
+msgstr "Зашифрованный блок повреждён или не содержит данных OpenPGP."
+
+msgid "Signing key {id} is trusted in your keyring."
+msgstr "Ключ подписи {id} является доверенным в вашей связке ключей."
+
+msgid "Signing key {id} is only marginally trusted in your keyring."
+msgstr "Ключ подписи {id} лишь ограниченно доверен в вашей связке ключей."
+
+msgid "Signing key {id} is marked as not trusted in your keyring."
+msgstr "Ключ подписи {id} помечен в вашей связке ключей как недоверенный."
+
+msgid ""
+"Signing key {id} is in your keyring but not marked as trusted; check its "
+"fingerprint with the sender."
+msgstr ""
+"Ключ подписи {id} есть в вашей связке ключей, но не помечен как доверенный; "
+"сверьте его отпечаток с отправителем."
+
+msgid "Signed with key {id}."
+msgstr "Подписано ключом {id}."
+
+msgid "Import the sender's public key to verify it."
+msgstr "Импортируйте открытый ключ отправителя, чтобы проверить подпись."
+
+msgid "No key was found in that file."
+msgstr "В этом файле не найдено ни одного ключа."
+
+msgid "Nothing to export."
+msgstr "Нечего экспортировать."
+
+msgid "gpg did not create the key."
+msgstr "Программе gpg не удалось создать ключ."
+
+msgid "No key was found for that address."
+msgstr "Для этого адреса ключ не найден."
+
+msgid "gpg could not sign the key."
+msgstr "Программе gpg не удалось подписать ключ."
+
+msgid "gpg could not delete the key."
+msgstr "Программе gpg не удалось удалить ключ."
+
+msgid "gpg did not sign the message."
+msgstr "Программе gpg не удалось подписать сообщение."
+
+msgid "gpg did not encrypt the message."
+msgstr "Программе gpg не удалось зашифровать сообщение."
+
+msgid "Open Vireo"
+msgstr "Открыть Vireo"
+
+msgid "No unread mail"
+msgstr "Нет непрочитанных писем"
+
+msgid "View all {n} unread…"
+msgstr "Посмотреть все непрочитанные: {n}…"
+
+msgid "Accounts"
+msgstr "Учётные записи"
+
+msgid "Requires an app-specific password (not your normal login password)."
+msgstr "Требуется пароль приложения (не ваш обычный пароль для входа)."
+
+msgid "Enter your server details manually."
+msgstr "Введите параметры сервера вручную."
+
+msgid "Sign in with your browser — no password needed."
+msgstr "Войдите через браузер — пароль не требуется."
+
+msgid "Sign in through GNOME Online Accounts."
+msgstr "Войдите через «Сетевые учётные записи GNOME»."
+
+msgid "Requires Proton Mail Bridge running locally."
+msgstr "Требуется локально запущенный Proton Mail Bridge."
+
+msgid "Enable POP/IMAP access in GMX settings first."
+msgstr "Сначала включите доступ по POP/IMAP в настройках GMX."
+
+msgid "Enter your provider's OAuth endpoints, then sign in."
+msgstr "Укажите конечные точки OAuth вашего провайдера и войдите."
+
+msgid "Mail Accounts"
+msgstr "Почтовые учётные записи"
+
+msgid "Drag to set the order they appear in the sidebar."
+msgstr "Перетащите, чтобы изменить порядок отображения на боковой панели."
+
+msgid "Add Account…"
+msgstr "Добавить учётную запись…"
+
+msgid "GNOME Online Accounts"
+msgstr "Сетевые учётные записи GNOME"
+
+msgid "Mail accounts from GNOME Settings. Toggle one on to use it in Vireo."
+msgstr "Учётные записи почты из настроек GNOME. Включите нужную, чтобы использовать её в Vireo."
+
+msgid ""
+"Label messages with one or more coloured tags. Tags are stored on the mail "
+"server as IMAP keywords, so Thunderbird and other clients show the same "
+"tags.\n"
+"\n"
+"Drag a tag to reorder: the order here is the sidebar's, and the first nine "
+"answer to the 1–9 keys."
+msgstr ""
+"Отмечайте сообщения одной или несколькими цветными тегами. Теги хранятся на "
+"почтовом сервере как ключевые слова IMAP, поэтому Thunderbird и другие "
+"клиенты будут отображать их так же.\n"
+"\n"
+"Перетащите тег, чтобы изменить порядок: порядок здесь соответствует боковой "
+"панели, а первые девять вызываются клавишами 1–9."
+
+msgid "Add Tag…"
+msgstr "Добавить тег…"
+
+msgid "Look through every mailbox for tags other clients have set"
+msgstr "Просмотреть все почтовые ящики на предмет меток, заданных другими клиентами"
+
+msgid "Find Tags…"
+msgstr "Найти метки…"
+
+msgid "Search filters"
+msgstr "Поиск фильтров"
+
+msgid "Filters"
+msgstr "Фильтры"
+
+msgid ""
+"File incoming mail into folders or tag it automatically, by sender, subject "
+"or recipients. Applied to each account's Inbox as Vireo syncs it."
+msgstr ""
+"Раскладывайте входящую почту по папкам или автоматически присваивайте ей тег "
+"по отправителю, теме или получателям. Применяется к папке «Входящие» каждой "
+"учётной записи во время синхронизации Vireo."
+
+msgid "Add Filter…"
+msgstr "Добавить фильтр…"
+
+msgid "Search senders"
+msgstr "Поиск отправителей"
+
+msgid "Allowed Senders"
+msgstr "Разрешённые отправители"
+
+msgid "Messages from these senders load remote content automatically."
+msgstr "Сообщения от этих отправителей загружают удалённое содержимое автоматически."
+
+msgid "Email address"
+msgstr "Адрес электронной почты"
+
+msgid "Allow this sender"
+msgstr "Разрешить этого отправителя"
+
+msgid "Blacklist"
+msgstr "Заблокированные отправители"
+
+msgid ""
+"Incoming mail from these senders is deleted automatically (moved to Trash). "
+"Enter an email address, or a whole domain like \"example.com\" to block "
+"every sender there."
+msgstr ""
+"Входящая почта от этих отправителей удаляется автоматически (перемещается в "
+"«Корзину»). Введите адрес электронной почты или целый домен, например "
+"«example.com», чтобы заблокировать всех отправителей с него."
+
+msgid "Address or domain"
+msgstr "Адрес или домен"
+
+msgid "Block this sender"
+msgstr "Заблокировать этого отправителя"
+
+msgid "Account"
+msgstr "Учётная запись"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "GNOME Online Account"
+msgstr "Сетевая учётная запись GNOME"
+
+msgid "Show in Vireo"
+msgstr "Отображать в Vireo"
+
+msgid ""
+"Switching this off returns the account to the import list — it stays in "
+"GNOME Online Accounts."
+msgstr ""
+"Отключение этого параметра вернёт учётную запись в список импорта — она "
+"останется в «Сетевых учётных записях GNOME»."
+
+msgid ""
+"This account is managed by GNOME Online Accounts.\n"
+"Its address, servers and password are changed in Settings → Online Accounts."
+msgstr ""
+"Эта учётная запись управляется сервисом «Сетевые учётные записи GNOME».\n"
+"Её адрес, сервера и пароль можно изменить в меню «Настройки» → «Сетевые "
+"учётные записи»."
+
+msgid "Open Online Accounts…"
+msgstr "Открыть «Сетевые учётные записи»…"
+
+msgid "Mail Account"
+msgstr "Почтовая учётная запись"
+
+msgid "Provider"
+msgstr "Провайдер"
+
+msgid "Choose your email provider."
+msgstr "Выберите почтового провайдера."
+
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+msgid "Email Address"
+msgstr "Адрес электронной почты"
+
+msgid "Incoming Protocol"
+msgstr "Протокол входящей почты"
+
+msgid "Incoming Server"
+msgstr "Сервер входящей почты"
+
+msgid "Port (IMAP 993 / POP3 995)"
+msgstr "Порт (IMAP 993 / POP3 995)"
+
+msgid "SMTP Server (optional)"
+msgstr "Сервер SMTP (необязательно)"
+
+msgid "SMTP Port (default 587)"
+msgstr "Порт SMTP (по умолчанию 587)"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "OAuth Client ID"
+msgstr "Идентификатор клиента OAuth (Client ID)"
+
+msgid "OAuth Client Secret (optional)"
+msgstr "Секретный ключ клиента OAuth (Client Secret, необязательно)"
+
+msgid "Authorization URL"
+msgstr "URL авторизации"
+
+msgid "Token URL"
+msgstr "URL токена"
+
+msgid "Scopes (space-separated)"
+msgstr "Области доступа (через пробел)"
+
+msgid "Sign In with Browser"
+msgstr "Войти через браузер"
+
+msgid ""
+"Google and Microsoft sign-in use GNOME Online Accounts.\n"
+"\n"
+"1. Open Online Accounts and sign in there.\n"
+"2. Come back to Vireo and reopen this window — the account then appears "
+"under “GNOME Online Accounts” at the top of this window. Enable it there."
+msgstr ""
+"Для входа через Google и Microsoft используются «Сетевые учётные записи "
+"GNOME».\n"
+"\n"
+"1. Откройте «Сетевые учётные записи» и войдите в систему.\n"
+"2. Вернитесь в Vireo и снова откройте это окно — учётная запись появится в "
+"разделе «Сетевые учётные записи GNOME» вверху этого окна. Включите её там."
+
+msgid "Separate SMTP credentials"
+msgstr "Отдельные учётные данные SMTP"
+
+msgid ""
+"Use a different username and password for sending. Off = use the credentials "
+"above."
+msgstr ""
+"Использовать другие имя пользователя и пароль для отправки. Выключено = "
+"использовать учётные данные выше."
+
+msgid "SMTP Username"
+msgstr "Имя пользователя SMTP"
+
+msgid "SMTP Password"
+msgstr "Пароль SMTP"
+
+msgid "Test Connection"
+msgstr "Проверить соединение"
+
+#. Rendered as Pango markup — a bare "&" breaks it.
+msgid "Appearance"
+msgstr "Внешний вид"
+
+msgid "How this account is shown in the sidebar and the Inboxes view."
+msgstr "Как эта учётная запись отображается на боковой панели и во «Всех входящих»."
+
+msgid "Label (defaults to email address)"
+msgstr "Метка (по умолчанию адрес электронной почты)"
+
+msgid "Account accent color"
+msgstr "Цвет учётной записи"
+
+msgid "The circle, and this account's marks in the sidebar and lists"
+msgstr "Кружок и метки этой учётной записи на боковой панели и в списках"
+
+msgid "Circle shows"
+msgstr "Что показывает кружок"
+
+msgid "Initials or emoji"
+msgstr "Инициалы или эмодзи"
+
+msgid "Picture"
+msgstr "Картинка"
+
+msgid "Emoji"
+msgstr "Эмодзи"
+
+msgid "Shown in the circle instead of the initials"
+msgstr "Показывается в кружке вместо инициалов"
+
+msgid "Choose…"
+msgstr "Выбрать…"
+
+msgid "Use initials"
+msgstr "Использовать инициалы"
+
+msgid "A photo or logo from this computer"
+msgstr "Фотография или логотип с этого компьютера"
+
+msgid "Send-as aliases"
+msgstr "Псевдонимы для отправки"
+
+msgid ""
+"Extra addresses this account can send as. An alias can use this account's "
+"SMTP server, or bring its own."
+msgstr ""
+"Дополнительные адреса, от имени которых может отправлять эта учётная запись. "
+"Псевдоним может использовать SMTP-сервер этой учётной записи или собственный."
+
+msgid "Add Alias…"
+msgstr "Добавить псевдоним…"
+
+msgid "Syncing"
+msgstr "Синхронизация"
+
+msgid "Instant new mail (IMAP push)"
+msgstr "Мгновенное получение новых сообщений (IMAP Push)"
+
+msgid "Turn off for servers that stall on push connections."
+msgstr "Отключите для серверов, которые зависают при push-подключениях."
+
+msgid "Empty Junk automatically"
+msgstr "Автоматически очищать «Спам»"
+
+msgid "Delete junk mail older than this for good, checked at each sync."
+msgstr "Безвозвратно удалять спам старше этого срока при каждой синхронизации."
+
+msgid "Empty Trash automatically"
+msgstr "Автоматически очищать «Корзину»"
+
+msgid ""
+"Delete mail in the Trash older than this for good, checked at each sync."
+msgstr ""
+"Безвозвратно удалять письма из «Корзины» старше этого срока при каждой "
+"синхронизации."
+
+msgid "Special Folders"
+msgstr "Специальные папки"
+
+msgid ""
+"Where sent, deleted and junk mail goes. "
+"Automatic                                      follows the server's own "
+"markings; pick a folder                                      when a role "
+"isn't detected or lands wrong."
+msgstr ""
+"Папки для отправленных, удалённых писем и спама. Автоматический "
+"режим                                      следует меткам сервера; выберите "
+"папку вручную,                                      если роль не "
+"определилась или назначена неверно."
+
+msgid "Sent"
+msgstr "Отправленные"
+
+msgid "Drafts"
+msgstr "Черновики"
+
+msgid "Trash"
+msgstr "Корзина"
+
+msgid "Junk"
+msgstr "Спам"
+
+msgid "OpenPGP"
+msgstr "OpenPGP"
+
+msgid ""
+"The key that signs mail sent from this account and opens what is encrypted "
+"to it. Keys are managed under OpenPGP in the sidebar."
+msgstr ""
+"Ключ, который подписывает письма, отправляемые с этой учётной записи, и "
+"расшифровывает адресованные ей сообщения. Управление ключами находится в "
+"разделе OpenPGP на боковой панели."
+
+msgid "Key"
+msgstr "Ключ"
+
+msgid "Automatic uses the key whose address matches."
+msgstr "В автоматическом режиме используется ключ с совпадающим адресом."
+
+msgid "Signature"
+msgstr "Подпись"
+
+msgid "Appended to new messages sent from this account."
+msgstr "Добавляется к новым сообщениям, отправляемым с этой учётной записи."
+
+msgid "Edit HTML…"
+msgstr "Редактировать HTML…"
+
+msgid "Import File…"
+msgstr "Импортировать файл…"
+
+msgid ""
+"Your password is stored in the system keyring (secret-service), never in "
+"plain text on disk."
+msgstr ""
+"Ваш пароль хранится в системной связке ключей (secret-service), а не в "
+"открытом виде на диске."
+
+msgid "Follow Settings"
+msgstr "Из системных настроек"
+
+msgid "On"
+msgstr "Вкл."
+
+msgid "Off"
+msgstr "Выкл."
+
+msgid "Choose a Picture"
+msgstr "Выбрать картинку"
+
+msgid "Images"
+msgstr "Изображения"
+
+msgid "Testing…"
+msgstr "Проверка…"
+
+msgid "Enter a client ID (and endpoints for a custom provider) first"
+msgstr "Сначала введите идентификатор клиента (и адреса серверов для нестандартного провайдера)"
+
+msgid "Opening browser… complete sign-in there."
+msgstr "Открытие браузера… завершите вход в нём."
+
+msgid "Signature HTML"
+msgstr "HTML-код подписи"
+
+msgid ""
+"Paste or edit the signature's HTML. Scripts and style sheets are removed; "
+"inline styles, tables and images are kept."
+msgstr ""
+"Вставьте или отредактируйте HTML-код подписи. Скрипты и таблицы стилей "
+"удаляются; встроенные стили, таблицы и изображения сохраняются."
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Import Signature"
+msgstr "Импортировать подпись"
+
+msgid "HTML and text files"
+msgstr "Файлы HTML и текстовые файлы"
+
+msgid "Could Not Read the File"
+msgstr "Не удалось прочитать файл"
+
+msgid "OK"
+msgstr "ОК"
+
+msgid "Enter a client ID and sign in before saving"
+msgstr "Введите идентификатор клиента и войдите перед сохранением"
+
+msgid "✓ Signed in — save the account to finish"
+msgstr "✓ Вход выполнен — сохраните учётную запись для завершения"
+
+msgid "Sign-in failed: {e}"
+msgstr "Ошибка входа: {e}"
+
+msgid "✓ SMTP: connected"
+msgstr "✓ SMTP: подключено"
+
+msgid "✗ SMTP: {e}"
+msgstr "✗ SMTP: {e}"
+
+msgid "Sends through {host}"
+msgstr "Отправляет через {host}"
+
+msgid "Sends through this account"
+msgstr "Отправляет через эту учётную запись"
+
+msgid "Remove this alias"
+msgstr "Удалить этот псевдоним"
+
+msgid "Display name (optional)"
+msgstr "Необязательно. Отображается вместо инициалов."
+
+msgid "Sending"
+msgstr "Отправка"
+
+msgid "Own SMTP server"
+msgstr "Собственный сервер SMTP"
+
+msgid "SMTP server"
+msgstr "Сервер SMTP"
+
+msgid "SMTP port"
+msgstr "Порт SMTP"
+
+msgid "SMTP username"
+msgstr "Имя пользователя SMTP"
+
+msgid "SMTP password"
+msgstr "Пароль SMTP"
+
+msgid "Test SMTP"
+msgstr "Проверить SMTP"
+
+msgid "Vireo"
+msgstr "Vireo"
+
+msgid "Imported from GNOME Online Accounts"
+msgstr "Импортировано из «Сетевых учётных записей GNOME»"
+
+msgid "Added directly in Vireo"
+msgstr "Добавлено непосредственно в Vireo"
+
+msgid "Enable this account"
+msgstr "Включить эту учётную запись"
+
+msgid "Use this account in Vireo"
+msgstr "Использовать эту учётную запись в Vireo"
+
+msgid "Automatic"
+msgstr "Автоматически"
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "After {n} day"
+msgid_plural "After {n} days"
+msgstr[0] "Через {n} день"
+msgstr[1] "Через {n} дня"
+msgstr[2] "Через {n} дней"
+
+msgid ", tagged {tag}"
+msgstr ", с тегом {tag}"
+
+msgid "Remove filter"
+msgstr "Удалить фильтр"
+
+msgid "Searching…"
+msgstr "Поиск…"
+
+msgid "No New Tags"
+msgstr "Новых меток нет"
+
+msgid "No tags were found in your mailboxes that are not already set up here."
+msgstr "В ваших почтовых ящиках не найдено меток, которых ещё нет в настройках."
+
+msgid "Tags Found"
+msgstr "Найденные метки"
+
+msgid ""
+"{n} tags are in use in your mailboxes but not set up here. Import them all, "
+"or choose which to add. Names and colours can be changed afterwards."
+msgstr ""
+
+msgid "Import Selected"
+msgstr "Импортировать выбранные"
+
+msgid "Import All"
+msgstr "Импортировать все"
+
+msgid "{n} messages"
+msgstr "{n} сообщений"
+
+msgid ""
+"Press this key on a message to add or remove the tag (with single-key "
+"shortcuts on)"
+msgstr ""
+"Нажмите эту клавишу на сообщении, чтобы добавить или снять тег (при "
+"включенных одноклавишных комбинациях)"
+
+msgid "Remove tag"
+msgstr "Удалить тег"
+
+msgid "Edit Tag"
+msgstr "Редактировать тег"
+
+msgid "Add Tag"
+msgstr "Добавить тег"
+
+msgid "Keyword"
+msgstr "Ключевое слово"
+
+msgid ""
+"How the tag is stored on the server: letters, digits and most punctuation, "
+"no spaces. Thunderbird's built-in tags are $label1 to $label5."
+msgstr ""
+"Как метка хранится на сервере: буквы, цифры и большинство знаков препинания, "
+"без пробелов. Встроенные теги Thunderbird — от $label1 до $label5."
+
+msgid "Colour"
+msgstr "Цвет"
+
+msgid "Custom colour…"
+msgstr "Другой цвет…"
+
+msgid "Tag Colour"
+msgstr "Цвет тега"
+
+msgid "Edit Filter"
+msgstr "Редактировать фильтр"
+
+msgid "Add Filter"
+msgstr "Добавить фильтр"
+
+msgid "Where"
+msgstr "Где искать"
+
+msgid "From address"
+msgstr "Адрес отправителя"
+
+msgid "From name"
+msgstr "Имя отправителя"
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "To or Cc"
+msgstr "Кому или копия"
+
+msgid "Match"
+msgstr "Совпадение"
+
+msgid "contains"
+msgstr "содержит"
+
+msgid "is exactly"
+msgstr "совпадает с"
+
+msgid "starts with"
+msgstr "начинается с"
+
+msgid "ends with"
+msgstr "заканчивается на"
+
+msgid "Text to match"
+msgstr "Текст для совпадения"
+
+msgid "Move to"
+msgstr "Переместить в"
+
+msgid "Where matching mail is filed; or leave it in the Inbox and only tag it"
+msgstr "Куда складывать подходящие письма; либо оставить во «Входящих» и только присвоить метку"
+
+#. Entry 0 files nowhere (a tag-only rule, #71): its path is "".
+msgid "Leave in Inbox"
+msgstr "Оставить во «Входящих»"
+
+msgid "Tag with"
+msgstr "Присвоить тег"
+
+msgid "None"
+msgstr "Нет"
+
+msgid "Count unread mail"
+msgstr "Учитывать непрочитанную почту"
+
+msgid "Include the folder's unread mail in the tray icon's unread count"
+msgstr "Включать непрочитанные письма этой папки в счётчик непрочитанного у значка в трее"
+
+msgid "Thumbnail size"
+msgstr "Размер миниатюр"
+
+msgid "Sorted Z to A — switch to A to Z"
+msgstr "Сортировка от Я до А — переключить на от А до Я"
+
+msgid "Sorted A to Z — switch to Z to A"
+msgstr "Сортировка от А до Я — переключить на от Я до А"
+
+msgid "Show as thumbnails"
+msgstr "Показывать значками"
+
+msgid "Show as a list"
+msgstr "Показывать списком"
+
+msgid "Save All…"
+msgstr "Сохранить все…"
+
+msgid "Save every attachment to a folder"
+msgstr "Сохранить все вложения в папку"
+
+msgid "Key imported"
+msgstr "Ключ импортирован"
+
+msgid ""
+"The key is in your keyring now. Trust it under Settings, OpenPGP, once you "
+"have checked its fingerprint with its owner."
+msgstr ""
+"Ключ теперь находится в вашей связке ключей. Отметьте его как доверенный в "
+"разделе «Настройки» → «OpenPGP» после того, как сверите его отпечаток с "
+"владельцем."
+
+msgid "Already in your keyring"
+msgstr "Уже в вашей связке ключей"
+
+msgid "That key was imported before."
+msgstr "Этот ключ был импортирован ранее."
+
+msgid "Could not import the key"
+msgstr "Не удалось импортировать ключ"
+
+msgid "Import OpenPGP key"
+msgstr "Импортировать ключ OpenPGP"
+
+msgid "Search by sender, subject, type, filename…"
+msgstr "Поиск по отправителю, теме, типу, имени файла…"
+
+msgid "Loading attachments…"
+msgstr "Загрузка вложений…"
+
+msgid "No attachments"
+msgstr "Нет вложений"
+
+msgid "Attachments from your inboxes will appear here."
+msgstr "Вложения из ваших почтовых ящиков появятся здесь."
+
+msgid "No matching attachments"
+msgstr "Вложения не найдены"
+
+msgid "Try a different search or clear the filter."
+msgstr "Попробуйте изменить поисковый запрос или сбросить фильтр."
+
+msgid "Thumbnail grid"
+msgstr "Сетка миниатюр"
+
+msgid "Table"
+msgstr "Таблица"
+
+msgid "Show only this type"
+msgstr "Показывать только этот тип"
+
+msgid "All types"
+msgstr "Все типы"
+
+msgid "PDFs"
+msgstr "Документы PDF"
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Archives"
+msgstr "Архивы"
+
+msgid "Audio & Video"
+msgstr "Аудио и видео"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "Sort"
+msgstr "Сортировка"
+
+msgid "Newest first"
+msgstr "Сначала новые"
+
+msgid "Oldest first"
+msgstr "Сначала старые"
+
+msgid "Name (A–Z)"
+msgstr "По имени (А–Я)"
+
+msgid "Name (Z–A)"
+msgstr "По имени (Я–А)"
+
+msgid "Sender (Z–A)"
+msgstr "Отправитель (Я–А)"
+
+msgid "Largest first"
+msgstr "Сначала большие"
+
+msgid "Smallest first"
+msgstr "Сначала маленькие"
+
+msgid "Type (A–Z)"
+msgstr "По типу (А–Я)"
+
+msgid "Type (Z–A)"
+msgstr "По типу (Я–А)"
+
+msgid "Open in the default app"
+msgstr "Открыть в приложении по умолчанию"
+
+msgid "Go to Message"
+msgstr "Перейти к сообщению"
+
+msgid "The file could not be opened"
+msgstr "Не удалось открыть файл"
+
+msgid "Response"
+msgstr "Ответ"
+
+msgid "Cloud Storage"
+msgstr "Облачное хранилище"
+
+msgid "Cloud storage"
+msgstr "Облачное хранилище"
+
+msgid ""
+"Connect your cloud storage provider to upload and share large files instead "
+"of an attachment. A cloud icon appears in the compose toolbar once a "
+"provider is added.\n"
+"\n"
+"Supported providers: Nextcloud, ownCloud, OpenCloud, OneDrive, Dropbox and "
+"Seafile."
+msgstr ""
+"Подключите ваше облачное хранилище для загрузки и отправки больших файлов "
+"вместо обычных вложений. Значок облака появится на панели инструментов "
+"редактора после добавления провайдера.\n"
+"\n"
+"Поддерживаемые сервисы: Nextcloud, ownCloud, OpenCloud, OneDrive, Dropbox и "
+"Seafile."
+
+msgid "No cloud accounts yet."
+msgstr "Облачные учётные записи ещё не добавлены."
+
+msgid "Cloud Account"
+msgstr "Облачная учётная запись"
+
+msgid "Remove {name}?"
+msgstr "Удалить {name}?"
+
+msgid ""
+"Vireo forgets the account and its sign-in. Files already uploaded, and the "
+"links in messages you sent, stay where they are."
+msgstr ""
+"Vireo удалит информацию об учётной записи и данные входа. Уже загруженные "
+"файлы и ссылки в отправленных сообщениях останутся без изменений."
+
+msgid "Removed {name}"
+msgstr "Удалено: {name}"
+
+msgid "Could not store the sign-in in the keyring: {e}"
+msgstr "Не удалось сохранить данные входа в связке ключей: {e}"
+
+msgid "Edit Cloud Account"
+msgstr "Редактировать облачную учётную запись"
+
+msgid "Add Cloud Account"
+msgstr "Добавить облачную учётную запись"
+
+msgid "links expire after {n} days"
+msgstr "срок действия ссылок истекает через {n} дн."
+
+msgid "password-protected"
+msgstr "защищено паролем"
+
+msgid "Offer this account in the composer"
+msgstr "Предлагать эту учётную запись в редакторе"
+
+msgid "Service"
+msgstr "Сервис"
+
+msgid "Nickname (optional)"
+msgstr "Псевдоним (необязательно)"
+
+msgid "Server URL"
+msgstr "URL сервера"
+
+msgid "Two-step verification code, if the account uses it"
+msgstr "Код двухэтапной аутентификации (если используется для учётной записи)"
+
+msgid ""
+"Sign in with your Seafile password. If the account uses two-step "
+"verification, also enter the current code from your authenticator app: Vireo "
+"turns it into an API token once and keeps that instead of the password. A "
+"token obtained another way can be pasted in the password field."
+msgstr ""
+"Войдите с помощью пароля Seafile. Если для учётной записи используется "
+"двухэтапная аутентификация, также введите текущий код из приложения-"
+"аутентификатора: Vireo однократно обменяет его на токен API и сохранит его "
+"вместо пароля. Токен, полученный другим способом, можно вставить в поле "
+"пароля."
+
+msgid "Online account"
+msgstr "Сетевая учётная запись"
+
+msgid "Dropbox app key"
+msgstr "Ключ приложения Dropbox"
+
+msgid "Library"
+msgstr "Библиотека"
+
+msgid "Upload folder"
+msgstr "Папка для загрузки"
+
+msgid "Links expire after"
+msgstr "Срок действия ссылок истекает через"
+
+msgid "Days; 0 keeps the link indefinitely"
+msgstr "Дней; 0 — бессрочная ссылка"
+
+msgid "Protect links with a password"
+msgstr "Защищать ссылки паролем"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately"
+msgstr ""
+"Пароль для скачивания создаётся для каждого файла и отображается вам, чтобы "
+"вы могли передать его отдельно"
+
+msgid "Link defaults"
+msgstr "Параметры ссылок по умолчанию"
+
+msgid ""
+"How share links from this account are made unless you choose otherwise for "
+"an email: the upload dialog in the composer shows these values and lets you "
+"change them for that upload alone."
+msgstr ""
+"Параметры создания публичных ссылок для этой учётной записи по умолчанию: "
+"диалог загрузки в редакторе покажет эти значения и позволит изменить их для "
+"конкретной загрузки."
+
+msgid "Check Connection"
+msgstr "Проверить соединение"
+
+msgid "{email} (Files is off)"
+msgstr "{email} (Файлы отключены)"
+
+msgid ""
+"No Microsoft 365 account in GNOME Online Accounts yet. Add one under "
+"Settings, Online Accounts; OneDrive then signs in through it, and nothing "
+"more is needed here."
+msgstr ""
+"В «Сетевых учётных записях GNOME» пока нет учётной записи Microsoft 365. "
+"Добавьте её в меню «Настройки» → «Сетевые учётные записи»; OneDrive "
+"автоматически авторизуется через неё, и больше ничего делать не потребуется."
+
+msgid ""
+"OneDrive signs in through the GNOME Online Accounts account chosen above; "
+"there is no password to enter. An account marked Files is off still works "
+"here, but you may want to turn Files on for it under Settings, Online "
+"Accounts."
+msgstr ""
+"OneDrive авторизуется через учётную запись «Сетевых учётных записей GNOME», "
+"выбранную выше; пароль вводить не нужно. Учётная запись с отметкой «Файлы "
+"отключены» всё равно будет работать здесь, но вы можете включить параметр "
+"«Файлы» в меню «Настройки» → «Сетевые учётные записи»."
+
+msgid ""
+"Uploads and plain share links work with any OneDrive. Link expiry and "
+"download passwords are a Microsoft 365 subscription or OneDrive for Business "
+"feature: on a free personal OneDrive the link is refused when either is set, "
+"so keep Links expire after at 0 and the password switch off there."
+msgstr ""
+"Загрузка файлов и обычные публичные ссылки работают с любым OneDrive. "
+"Ограничение срока действия ссылок и пароли для скачивания доступны только по "
+"подписке Microsoft 365 или в OneDrive для бизнеса: на бесплатном личном "
+"OneDrive ссылка будет отклонена при включении любого из этих параметров, "
+"поэтому оставьте значение «0» для срока действия и выключите защиту паролем."
+
+msgid ""
+"Days; 0 keeps the link indefinitely. Needs Microsoft 365 or OneDrive for "
+"Business"
+msgstr ""
+"Дней; 0 — бессрочная ссылка. Требуется Microsoft 365 или OneDrive для бизнеса"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Needs Microsoft 365 or OneDrive for Business"
+msgstr ""
+"Пароль для скачивания создаётся для каждого файла и отображается вам, чтобы "
+"вы могли передать его отдельно. Требуется Microsoft 365 или OneDrive для "
+"бизнеса"
+
+msgid "User name"
+msgstr "Имя пользователя"
+
+msgid "App password (leave empty to keep)"
+msgstr "Пароль приложения (оставьте пустым, чтобы сохранить текущий)"
+
+msgid "App password"
+msgstr "Пароль приложения"
+
+msgid "E-mail"
+msgstr "Электронная почта"
+
+msgid "Password (leave empty to keep)"
+msgstr "Пароль (оставьте пустым, чтобы сохранить текущий)"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Dropbox allows link passwords and expiry dates on paid plans "
+"only."
+msgstr ""
+"Пароль для скачивания создаётся для каждого файла и отображается вам, чтобы "
+"вы могли передать его отдельно. Dropbox поддерживает пароли для ссылок и "
+"срок их действия только на платных тарифах."
+
+msgid "Connect with Dropbox…"
+msgstr "Подключиться к Dropbox…"
+
+msgid ""
+"Dropbox only lets an app sign in when it is registered, so make one for "
+"yourself (it takes a minute and stays private):\n"
+"1. Open dropbox.com/developers/apps, signed in to your Dropbox, and press "
+"Create app.\n"
+"2. Choose Scoped access, then App folder (Vireo sees only its own folder "
+"under Apps) or Full Dropbox (uploads go to the folder named above).\n"
+"3. Give the app a name that no one else has used, such as Vireo for your "
+"name, and press Create app.\n"
+"4. On the Permissions tab, tick account_info.read, files.content.write and "
+"sharing.write, then press Submit.\n"
+"5. On the Settings tab, under OAuth 2, add the redirect URI {uri} and press "
+"Add.\n"
+"6. Copy the App key from the top of the Settings tab into the field above.\n"
+"The app may stay in Development status; that allows your own account. Leave "
+"the field empty to use the app key this build was made with, when it has one."
+msgstr ""
+"Dropbox разрешает вход только зарегистрированным приложениям, поэтому "
+"создайте его для себя (это займёт минуту и останется приватным):\n"
+"1. Откройте dropbox.com/developers/apps под своей учётной записью Dropbox и "
+"нажмите «Create app».\n"
+"2. Выберите «Scoped access», затем «App folder» (Vireo будет видеть только "
+"свою папку в разделе Приложения) или «Full Dropbox» (файлы будут загружаться "
+"в папку, указанную выше).\n"
+"3. Укажите уникальное имя приложения, например «Vireo для [ваше имя]», и "
+"нажмите «Create app».\n"
+"4. На вкладке «Permissions» отметьте account_info.read, files.content.write "
+"и sharing.write, затем нажмите «Submit».\n"
+"5. На вкладке «Settings» в разделе «OAuth 2» добавьте URI перенаправления "
+"{uri} и нажмите «Add».\n"
+"6. Скопируйте «App key» из верхней части вкладки «Settings» и вставьте в "
+"поле выше.\n"
+"Приложение может оставаться в статусе «Development» — этого достаточно для "
+"использования вашей учётной записью. Оставьте поле пустым, чтобы "
+"использовать ключ приложения, встроенный в эту сборку (если он есть)."
+
+msgid "Connected as {who}."
+msgstr "Подключено как {who}."
+
+msgid "Choose an online account first."
+msgstr "Сначала выберите сетевую учётную запись."
+
+msgid "Signing in…"
+msgstr "Выполняется вход…"
+
+msgid "Enter the app key of a Dropbox app first."
+msgstr "Сначала введите ключ приложения Dropbox."
+
+msgid "Waiting for the sign-in in your browser…"
+msgstr "Ожидание завершения входа в браузере…"
+
+msgid "Fill in the server URL, e-mail and password first."
+msgstr "Сначала укажите URL сервера, электронную почту и пароль."
+
+msgid "Fill in the server URL, user name and app password first."
+msgstr "Сначала укажите URL сервера, имя пользователя и пароль приложения."
+
+msgid "Signed in as {who}."
+msgstr "Вход выполнен как {who}."
+
+msgid ""
+"You can upload files and share plain links with this OneDrive. Link expiry "
+"and download passwords are not available on a free personal OneDrive (they "
+"need a Microsoft 365 subscription), so both are turned off for this account."
+msgstr ""
+"С этим OneDrive вы можете загружать файлы и делиться обычными ссылками. "
+"Ограничение срока действия ссылок и пароли для скачивания недоступны в "
+"бесплатной личной версии OneDrive (для них требуется подписка Microsoft "
+"365), поэтому оба параметра отключены для этой учётной записи."
+
+msgid ""
+"You can upload files, share links and set an expiry with this OneDrive. "
+"Download passwords are not available on OneDrive for Business links, so that "
+"option is turned off for this account."
+msgstr ""
+"С этим OneDrive вы можете загружать файлы, делиться ссылками и задавать срок "
+"их действия. Пароли для скачивания недоступны для ссылок в OneDrive для "
+"бизнеса, поэтому этот параметр отключён для этой учётной записи."
+
+msgid ""
+"You can upload files and share links with this OneDrive, with a download "
+"password. Link expiry is not available on it, so that option is turned off "
+"for this account."
+msgstr ""
+"С этим OneDrive вы можете загружать файлы и делиться ссылками с паролем для "
+"скачивания. Ограничение срока действия ссылок недоступно, поэтому этот "
+"параметр отключён для этой учётной записи."
+
+msgid "Signed in as {who}. {terms}"
+msgstr "Выполнен вход как {who}. {terms}"
+
+msgid "Collapse into reader"
+msgstr "Свернуть в область чтения"
+
+msgid "Open in window"
+msgstr "Открыть в отдельном окне"
+
+msgid "Save Draft"
+msgstr "Сохранить черновик"
+
+msgid "Save to Drafts"
+msgstr "Сохранить в «Черновики»"
+
+msgid "Delete Draft"
+msgstr "Удалить черновик"
+
+msgid "Move this draft to Trash"
+msgstr "Переместить этот черновик в «Корзину»"
+
+msgid "Schedule"
+msgstr "Запланировать"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "Send later"
+msgstr "Отправить позже"
+
+msgid "Send now"
+msgstr "Отправить сейчас"
+
+msgid "Tomorrow morning (8:00)"
+msgstr "Завтра утром (8:00)"
+
+msgid "Tomorrow afternoon (13:00)"
+msgstr "Завтра днем (13:00)"
+
+msgid "Monday morning (8:00)"
+msgstr "В понедельник утром (8:00)"
+
+msgid "Pick a date and time…"
+msgstr "Выбрать дату и время…"
+
+msgid "Encrypt with OpenPGP to every recipient's key"
+msgstr "Зашифровать с помощью OpenPGP для каждого получателя"
+
+msgid "Sign with your OpenPGP key"
+msgstr "Подписать вашим ключом OpenPGP"
+
+msgid "Attach files"
+msgstr "Прикрепить файлы"
+
+msgid "Upload to cloud storage and share a link"
+msgstr "Загрузить в облачное хранилище и поделиться ссылкой"
+
+msgid "Open Contacts"
+msgstr "Открыть «Контакты»"
+
+msgid "Show From, To and Subject"
+msgstr "Показать поля «От», «Кому» и «Тема»"
+
+msgid "Send now instead"
+msgstr "Отправить сейчас вместо запланированного"
+
+msgid "Download password for {name}: {password}"
+msgstr "Пароль для скачивания {name}: {password}"
+
+msgid "Copy"
+msgstr "Копировать"
+
+msgid "From"
+msgstr "От"
+
+msgid "To"
+msgstr "Кому"
+
+msgid "Cc"
+msgstr "Копия"
+
+msgid "Bcc"
+msgstr "Скрытая копия"
+
+msgid "Reply-To"
+msgstr "Адрес для ответа"
+
+msgid "More"
+msgstr "Ещё"
+
+msgid "Show Cc, Bcc and Reply-To"
+msgstr "Показать «Копия», «Скрытая копия» и «Адрес для ответа»"
+
+msgid "Upload to Cloud Storage"
+msgstr "Загрузить в облачное хранилище"
+
+msgid "Not signed in"
+msgstr "Вход не выполнен"
+
+msgid ""
+"The sign-in for {name} is not in the keyring. Open Settings, Cloud Storage, "
+"and enter it again."
+msgstr ""
+"Данные входа для {name} отсутствуют в связке ключей. Откройте «Настройки» → "
+"«Облачное хранилище» и введите их снова."
+
+msgid "link expires {date}"
+msgstr "срок действия ссылки истекает {date}"
+
+msgid "Could not upload {name}"
+msgstr "Не удалось загрузить {name}"
+
+msgid "Attach Files"
+msgstr "Прикрепить файлы"
+
+msgid "Cannot send with OpenPGP"
+msgstr "Невозможно отправить с помощью OpenPGP"
+
+msgid "{name} (link)"
+msgstr "{name} (ссылка)"
+
+msgid "Uploading…"
+msgstr "Загрузка…"
+
+msgid "Upload {n} file and put its share link in the message."
+msgid_plural "Upload {n} files and put their share links in the message."
+msgstr[0] "Загрузить {n} файл и вставить ссылку на него в сообщение."
+msgstr[1] "Загрузить {n} файла и вставить ссылки на них в сообщение."
+msgstr[2] "Загрузить {n} файлов и вставить ссылки на них в сообщение."
+
+msgid "Upload"
+msgstr "Загрузить"
+
+msgid "Protect with a password"
+msgstr "Защитить паролем"
+
+msgid "Download password (empty: generated)"
+msgstr "Пароль для скачивания (если пусто: будет сгенерирован)"
+
+msgid ""
+"There is no OpenPGP key of your own for {addr}. Generate one under Settings, "
+"OpenPGP, or choose a key in the account's settings."
+msgstr ""
+"У вас нет собственного ключа OpenPGP для {addr}. Сгенерируйте его в разделе "
+"«Настройки» → «OpenPGP» или выберите ключ в настройках учётной записи."
+
+msgid ""
+"There is no OpenPGP key for {addr}. Ask them for their public key, or fetch "
+"it under Settings, OpenPGP."
+msgstr ""
+"Отсутствует ключ OpenPGP для {addr}. Запросите у адресата его открытый ключ "
+"или получите его в разделе «Настройки» → «OpenPGP»."
+
+msgid "That time has passed"
+msgstr "Это время уже прошло"
+
+msgid "Choose a time later than now."
+msgstr "Выберите время позже текущего."
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "Open in GNOME Contacts"
+msgstr "Открыть в «Контактах GNOME»"
+
+msgid "Search contacts"
+msgstr "Поиск контактов"
+
+msgid "No Contacts"
+msgstr "Нет контактов"
+
+msgid "Add contacts in GNOME Contacts to see them here."
+msgstr "Добавьте контакты в «Контактах GNOME», чтобы увидеть их здесь."
+
+msgid "Open GNOME Contacts"
+msgstr "Открыть «Контакты GNOME»"
+
+msgid "New contact"
+msgstr "Новый контакт"
+
+msgid "Contacts you add in GNOME Contacts appear here."
+msgstr "Контакты, добавленные в «Контактах GNOME», появятся здесь."
+
+msgid "Sort contacts"
+msgstr "Сортировка контактов"
+
+msgid "Edit contact"
+msgstr "Редактировать контакт"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Delete Contact?"
+msgstr "Удалить контакт?"
+
+msgid "Delete…"
+msgstr "Удалить…"
+
+msgid "View photo"
+msgstr "Просмотреть фото"
+
+msgid "Edit Contact"
+msgstr "Редактировать контакт"
+
+msgid "New Contact"
+msgstr "Новый контакт"
+
+msgid "Add email"
+msgstr "Добавить адрес"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Add phone"
+msgstr "Добавить телефон"
+
+msgid "Add website"
+msgstr "Добавить веб-сайт"
+
+msgid "Search folders"
+msgstr "Папки поиска"
+
+msgid "Mark as read"
+msgstr "Отметить как прочитанное"
+
+msgid "Star"
+msgstr "Отметить звёздочкой"
+
+msgid "Not spam"
+msgstr "Не спам"
+
+msgid "Add sender to Contacts"
+msgstr "Добавить отправителя в «Контакты»"
+
+msgid "Mark as unread"
+msgstr "Отметить как непрочитанное"
+
+msgid "Remove star"
+msgstr "Снять звёздочку"
+
+msgid "Show conversation"
+msgstr "Показать обсуждение"
+
+msgid "Choose which folders to search"
+msgstr "Выберите папки для поиска"
+
+msgid "All folders"
+msgstr "Все папки"
+
+msgid "This folder"
+msgstr "Эта папка"
+
+msgid "Clear selection"
+msgstr "Снять выделение"
+
+msgid "Loading more…"
+msgstr "Загрузка остальных…"
+
+msgid "No Messages"
+msgstr "Нет сообщений"
+
+msgid "There's nothing here right now."
+msgstr "Здесь пока ничего нет."
+
+msgid "Remove Stars"
+msgstr "Снять звёздочки"
+
+msgid "Star Conversation"
+msgstr "Отметить обсуждение звёздочкой"
+
+msgid "Remove Star"
+msgstr "Снять звёздочку"
+
+msgid "Mark All as Read"
+msgstr "Отметить все как прочитанные"
+
+msgid "Mark All as Unread"
+msgstr "Отметить все как непрочитанные"
+
+msgid "Add Sender to Contacts"
+msgstr "Добавить отправителя в «Контакты»"
+
+msgid "Fetch the sender's key"
+msgstr "Получить ключ отправителя"
+
+msgid "Trust this key…"
+msgstr "Отметить ключ как доверенный…"
+
+msgid "A pass proves the address wasn't forged — not that the message is safe."
+msgstr "Пройденная проверка доказывает лишь, что адрес не подделан, — но не безопасность письма."
+
+msgid "No message selected"
+msgstr "Сообщение не выбрано"
+
+msgid "Choose a message from the list to read it here."
+msgstr "Выберите сообщение из списка, чтобы прочитать его здесь."
+
+msgid "Remote content (images, trackers) is blocked to protect your privacy."
+msgstr "Удалённое содержимое (картинки, трекеры) блокируется для защиты вашей конфиденциальности."
+
+msgid "Load"
+msgstr "Загрузить"
+
+msgid "Always allow sender"
+msgstr "Всегда разрешать для этого отправителя"
+
+msgid "Find in message"
+msgstr "Найти в сообщении"
+
+msgid "No matches"
+msgstr "Совпадений не найдено"
+
+msgid "{cur} of {total}"
+msgstr "{cur} из {total}"
+
+msgid "Previous match"
+msgstr "Предыдущее совпадение"
+
+msgid "Next match"
+msgstr "Следующее совпадение"
+
+msgid "Close find"
+msgstr "Закрыть поиск"
+
+#. Dimming comes from the cover's own foreground, which
+#. is picked for the message theme — `dim-label` would
+#. fade it against the app's instead.
+msgid "Loading…"
+msgstr "Загрузка…"
+
+msgid "That key is no longer in your keyring."
+msgstr "Этого ключа больше нет в вашей связке ключей."
+
+msgid "Trust this key?"
+msgstr "Отметить этот ключ как доверенный?"
+
+msgid ""
+"Compare the fingerprint with the one {uid} gives you in person or over "
+"another channel. Trusting a key you have not checked lets an impostor's "
+"signature pass as theirs."
+msgstr ""
+"Сверьте отпечаток с тем, который {uid} передаст вам лично или по другому "
+"каналу связи. Доверие непроверенному ключу позволит подписи злоумышленника "
+"выглядеть как подлинная."
+
+msgid "Trust"
+msgstr "Доверять"
+
+msgid "Key trusted."
+msgstr "Ключ отмечен как доверенный."
+
+msgid ""
+"Generate a key of your own first (Settings, OpenPGP): trusting a key means "
+"signing it with yours."
+msgstr ""
+"Сначала сгенерируйте собственный ключ («Настройки» → «OpenPGP»): доверие "
+"ключу означает его подписание вашим ключом."
+
+msgid "Copied"
+msgstr "Скопировано"
+
+#. Same order as the reader toolbar and the list's
+#. Actions Palette, View Source closing the line.
+msgid "Reply to this message"
+msgstr "Ответить на это сообщение"
+
+msgid "Reply to everyone on this message"
+msgstr "Ответить всем участникам этого сообщения"
+
+msgid "Forward this message"
+msgstr "Переслать это сообщение"
+
+msgid "Mark as read or unread"
+msgstr "Отметить как прочитанное или непрочитанное"
+
+msgid "Flag this message"
+msgstr "Отметить это сообщение"
+
+msgid "Archive this message"
+msgstr "Архивировать это сообщение"
+
+msgid "Delete this message"
+msgstr "Удалить это сообщение"
+
+msgid "View source"
+msgstr "Просмотреть исходный текст"
+
+msgid "Back to my fonts and colours"
+msgstr "Вернуться к моим шрифтам и цветам"
+
+msgid "Show the sender's fonts and colours"
+msgstr "Показывать шрифты и цвета отправителя"
+
+msgid "{n} recipient"
+msgid_plural "{n} recipients"
+msgstr[0] "{n} получатель"
+msgstr[1] "{n} получателя"
+msgstr[2] "{n} получателей"
+
+msgid "Hide recipients"
+msgstr "Скрыть получателей"
+
+msgid "Show recipients"
+msgstr "Показать получателей"
+
+msgid "Save Image"
+msgstr "Сохранить изображение"
+
+msgid "The sender's key was imported from the message."
+msgstr "Ключ отправителя импортирован из сообщения."
+
+msgid "The sender's key was fetched and imported."
+msgstr "Ключ отправителя получен и импортирован."
+
+msgid "The sender's key was already in your keyring."
+msgstr "Ключ отправителя уже находился в вашей связке ключей."
+
+msgid "Load attachments from server"
+msgstr "Загрузить вложения с сервера"
+
+msgid "Clear all"
+msgstr "Очистить всё"
+
+msgid "Collapse status bar"
+msgstr "Свернуть строку состояния"
+
+msgid "Export log"
+msgstr "Экспортировать журнал"
+
+msgid "Status bar ({n})"
+msgstr "Строка состояния ({n})"
+
+msgid "2 years"
+msgstr "2 года"
+
+msgid "1 year"
+msgstr "1 год"
+
+msgid "5 years"
+msgstr "5 лет"
+
+msgid "GnuPG"
+msgstr "GnuPG"
+
+msgid ""
+"Vireo reads and writes the keyring of the GnuPG on this computer, the same "
+"one the gpg command and other mail programs use."
+msgstr ""
+"Vireo использует связку ключей GnuPG на этом компьютере — ту же самую, "
+"которую используют команда gpg и другие почтовые клиенты."
+
+msgid "Your keys"
+msgstr "Ваши ключи"
+
+msgid ""
+"A key of your own signs what you send and opens what is encrypted to you. "
+"Send its public half to the people who should write to you encrypted."
+msgstr ""
+"Ваш собственный ключ подписывает исходящие сообщения и расшифровывает "
+"входящие. Отправьте его открытую часть тем, кто должен писать вам в "
+"зашифрованном виде."
+
+msgid "Import…"
+msgstr "Импортировать…"
+
+msgid "Generate…"
+msgstr "Сгенерировать…"
+
+msgid "Other people's keys"
+msgstr "Ключи других людей"
+
+msgid ""
+"The keys you encrypt to and check signatures with. A key is trusted once you "
+"have vouched for it; check its fingerprint with its owner first."
+msgstr ""
+"Ключи, используемые для шифрования и проверки подписей. Ключ считается "
+"доверенным после вашего подтверждения; перед этим сверьте его отпечаток с "
+"владельцем."
+
+msgid "Fetch by address…"
+msgstr "Получить по адресу…"
+
+msgid ""
+"GnuPG {version} found. Vireo reads and writes its keyring, the same one the "
+"gpg command and other mail programs use."
+msgstr ""
+"Обнаружена GnuPG {version}. Vireo использует её связку ключей — ту же самую, "
+"которую используют команда gpg и другие почтовые клиенты."
+
+msgid ""
+"GnuPG was not found. Install the gnupg package to read encrypted mail and "
+"check signatures; the Flatpak build carries it."
+msgstr ""
+"Пакет GnuPG не найден. Установите пакет gnupg для чтения зашифрованной почты "
+"и проверки подписей; сборка Flatpak содержит его по умолчанию."
+
+msgid "No key of your own yet. Generate one for your address."
+msgstr "У вас пока нет собственного ключа. Сгенерируйте его для вашего адреса."
+
+msgid "No keys from other people yet."
+msgstr "Ключей других людей пока нет."
+
+msgid "Generating the key…"
+msgstr "Генерация ключа…"
+
+msgid "Import Key"
+msgstr "Импортировать ключ"
+
+msgid "OpenPGP keys"
+msgstr "Ключи OpenPGP"
+
+msgid "All files"
+msgstr "Все файлы"
+
+msgid "Could not import: {e}"
+msgstr "Не удалось импортировать: {e}"
+
+msgid "Export Public Key"
+msgstr "Экспортировать открытый ключ"
+
+msgid "Delete your key?"
+msgstr "Удалить ваш ключ?"
+
+msgid ""
+"{uid} will be removed, secret half included. Mail encrypted to it can never "
+"be read again, unless you have a backup of the key."
+msgstr ""
+"{uid} будет удалён, включая секретную часть. Зашифрованную этим ключом почту "
+"больше никогда нельзя будет прочитать, если у вас нет резервной копии ключа."
+
+msgid "Remove this key?"
+msgstr "Удалить этот ключ?"
+
+msgid ""
+"{uid} will be removed from your keyring. It can be imported or fetched again "
+"later."
+msgstr ""
+"{uid} будет удалён из вашей связки ключей. Позже его можно будет "
+"импортировать или получить снова."
+
+msgid "Could not delete: {e}"
+msgstr "Не удалось удалить: {e}"
+
+msgid "Fetch a Key"
+msgstr "Получить ключ"
+
+msgid ""
+"Looks the address up where its provider publishes keys (WKD), then on the "
+"keyservers."
+msgstr ""
+"Выполняет поиск адреса там, где его провайдер публикует ключи (WKD), а затем "
+"на серверах ключей."
+
+msgid "Fetch"
+msgstr "Получить"
+
+msgid "Looking for a key for {addr}…"
+msgstr "Поиск ключа для {addr}…"
+
+msgid ""
+"Generate a key of your own first: trusting a key means signing it with yours."
+msgstr ""
+"Сначала сгенерируйте собственный ключ: доверие ключу означает его подписание "
+"вашим ключом."
+
+msgid "Could not sign the key: {e}"
+msgstr "Не удалось подписать ключ: {e}"
+
+msgid "Your key is ready."
+msgstr "Ваш ключ готов."
+
+msgid "Could not generate the key: {e}"
+msgstr "Не удалось сгенерировать ключ: {e}"
+
+msgid "No key found: {e}"
+msgstr "Ключ не найден: {e}"
+
+msgid "Generate a Key"
+msgstr "Сгенерировать ключ"
+
+msgid ""
+"A signing key with an encryption subkey, made by GnuPG and kept in its "
+"keyring. The passphrase is asked for when the key is used; the agent "
+"remembers it for a while."
+msgstr ""
+"Ключ подписи с подключом шифрования, созданный GnuPG и хранящийся в её "
+"связке ключей. Парольная фраза запрашивается при использовании ключа; агент "
+"запоминает её на некоторое время."
+
+msgid "Generate"
+msgstr "Сгенерировать"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "Expires"
+msgstr "Срок действия"
+
+msgid "Passphrase"
+msgstr "Парольная фраза"
+
+msgid "Confirm passphrase"
+msgstr "Подтвердите парольную фразу"
+
+msgid "The passphrases differ"
+msgstr "Парольные фразы не совпадают"
+
+msgid "Type the same passphrase twice."
+msgstr "Введите одну и ту же парольную фразу дважды."
+
+msgid "expires {date}"
+msgstr "срок действия истекает {date}"
+
+msgid "expired {date}"
+msgstr "срок действия истёк {date}"
+
+msgid "signs and encrypts"
+msgstr "подписывает и шифрует"
+
+msgid "signs only: no encryption subkey"
+msgstr "только подписывает: нет подключа шифрования"
+
+msgid "{n} more address"
+msgid_plural "{n} more addresses"
+msgstr[0] "ещё {n} адрес"
+msgstr[1] "ещё {n} адреса"
+msgstr[2] "ещё {n} адресов"
+
+msgid "Export public key…"
+msgstr "Экспортировать открытый ключ…"
+
+msgid "Delete this key"
+msgstr "Удалить этот ключ"
+
+msgid "Trusted"
+msgstr "Доверенный"
+
+msgid "Trust…"
+msgstr "Доверять…"
+
+msgid "Remove this key"
+msgstr "Удалить этот ключ"
+
+msgid "{n} key imported."
+msgid_plural "{n} keys imported."
+msgstr[0] "Импортирован {n} ключ."
+msgstr[1] "Импортировано {n} ключа."
+msgstr[2] "Импортировано {n} ключей."
+
+msgid "That key was already in your keyring."
+msgstr "Этот ключ уже находился в вашей связке ключей."
+
+msgid "Vireo icon"
+msgstr "Иконка Vireo"
+
+msgid "Envelope, white"
+msgstr "Конверт, белый"
+
+msgid "Envelope, black"
+msgstr "Конверт, чёрный"
+
+msgid "Follow system"
+msgstr "Как в системе"
+
+msgid "Light"
+msgstr "Светлая"
+
+msgid "Dark"
+msgstr "Тёмная"
+
+msgid "Aug 23, 2026"
+msgstr "23 авг. 2026 г."
+
+msgid "23 Aug 2026"
+msgstr "23 авг 2026"
+
+msgid "2026 Aug 23"
+msgstr "2026 авг 23"
+
+msgid "12-hour (5:40 PM)"
+msgstr "12-часовой формат (5:40 PM)"
+
+msgid "24-hour (17:40)"
+msgstr "24-часовой формат (17:40)"
+
+msgid "Manually"
+msgstr "Вручную"
+
+msgid "Every minute"
+msgstr "Каждую минуту"
+
+msgid "Every 5 minutes"
+msgstr "Каждые 5 минут"
+
+msgid "Every 15 minutes"
+msgstr "Каждые 15 минут"
+
+msgid "Every 30 minutes"
+msgstr "Каждые 30 минут"
+
+msgid "Senders"
+msgstr "Отправители"
+
+msgid "General"
+msgstr "Основные"
+
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+msgid "Message List"
+msgstr "Список сообщений"
+
+msgid "Reading"
+msgstr "Чтение"
+
+msgid "Composing"
+msgstr "Создание писем"
+
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+msgid "Date and Time"
+msgstr "Дата и время"
+
+msgid "System"
+msgstr "Система"
+
+msgid "Backup"
+msgstr "Резервное копирование"
+
+msgid "Save the filter?"
+msgstr "Сохранить фильтр?"
+
+msgid "The filter editor is open. Save what you changed, or discard it, before moving on."
+msgstr "Редактор фильтра открыт. Сохраните изменения или отмените их, прежде чем продолжить."
+
+msgid "Save the tag?"
+msgstr "Сохранить метку?"
+
+msgid "The tag editor is open. Save what you changed, or discard it, before moving on."
+msgstr "Редактор метки открыт. Сохраните изменения или отмените их, прежде чем продолжить."
+
+msgid "Save the account?"
+msgstr "Сохранить учётную запись?"
+
+msgid ""
+"The account editor is open. Save what you changed, or discard it, before "
+"moving on."
+msgstr ""
+"Редактор учётной записи открыт. Сохраните изменения или отмените их, прежде "
+"чем продолжить."
+
+msgid "Discard"
+msgstr "Отменить"
+
+msgid "Check for new mail"
+msgstr "Проверка новой почты"
+
+msgid "Uses IMAP IDLE to receive messages the moment they arrive."
+msgstr "Использует IMAP IDLE для мгновенного получения входящих сообщений."
+
+msgid "Notifications"
+msgstr "Уведомления"
+
+msgid "Desktop notifications"
+msgstr "Уведомления на рабочем столе"
+
+msgid ""
+"Show system notifications for new mail and error alerts when Vireo isn't "
+"focused."
+msgstr ""
+"Показывать системные уведомления о новых письмах и ошибках, когда окно Vireo "
+"не активно."
+
+msgid "Show sender and subject"
+msgstr "Показывать отправителя и тему"
+
+msgid ""
+"Name who wrote and what about in the notification. Turn this off to keep "
+"both off the lock screen."
+msgstr ""
+"Отображать имя отправителя и тему письма в уведомлении. Отключите этот "
+"параметр, чтобы скрыть эти данные на экране блокировки."
+
+msgid "Style"
+msgstr "Стиль оформления"
+
+msgid "The app itself. Message content has its own setting under Reading."
+msgstr "Сам интерфейс приложения. У содержимого сообщений свои настройки в разделе «Чтение»."
+
+msgid "App icon"
+msgstr "Иконка приложения"
+
+msgid "This window opens to"
+msgstr "При открытии окна показывать"
+
+msgid "The view shown first when Settings is opened from the menu."
+msgstr "Раздел, отображаемый первым при открытии параметров из меню."
+
+msgid "Accounts in the sidebar"
+msgstr "Учётные записи на боковой панели"
+
+msgid ""
+"Each account's own section: its folders, filtered folders and tags. Off "
+"leaves the unified section alone. Also in the main menu, and Ctrl+Shift+A."
+msgstr ""
+
+msgid "Chevron placement"
+msgstr "Расположение стрелок сворачивания"
+
+msgid "Which side of Inboxes and the account rows their expand/collapse chevrons sit on."
+msgstr "С какой стороны от строк «Входящие» и учётных записей находятся стрелки раскрытия и сворачивания."
+
+msgid "Attachments in the sidebar"
+msgstr "Вложения на боковой панели"
+
+msgid ""
+"A shortcut for browsing every account's attachments, pinned at the bottom of "
+"the sidebar."
+msgstr ""
+"Ярлык для просмотра вложений всех учётных записей, закреплённый внизу "
+"боковой панели."
+
+msgid "Contacts in the sidebar"
+msgstr "Контакты на боковой панели"
+
+msgid ""
+"A shortcut that opens your contacts, pinned at the bottom of the sidebar."
+msgstr "Ярлык для открытия ваших контактов, закреплённый внизу боковой панели."
+
+msgid "Expand the sidebar on hover"
+msgstr "Раскрывать боковую панель при наведении"
+
+msgid ""
+"Whenever the sidebar is collapsed to its icon rail, hovering it floats the "
+"full sidebar out over the panes; it folds back a moment after the pointer "
+"leaves."
+msgstr ""
+"Когда боковая панель свёрнута до узкой полосы с иконками, наведение курсора "
+"раскрывает её поверх других панелей. Она автоматически сворачивается "
+"обратно, как только курсор уходит."
+
+msgid "Remember the sidebar layout"
+msgstr "Запоминать раскладку боковой панели"
+
+msgid ""
+"Reopen with the accounts, folders and sections as you left them. Off starts "
+"every launch with everything folded up."
+msgstr ""
+
+msgid "Remember icon rail state"
+msgstr "Запоминать состояние панели с иконками"
+
+msgid ""
+"Reopen with icon rail in the last used state. Off starts every launch with "
+"the full sidebar."
+msgstr ""
+
+msgid "Unified"
+msgstr "Общие"
+
+msgid "The section at the top of the sidebar that combines every account. Only shown with more than one account."
+msgstr "Общий ящик «Входящие», объединяющий все учётные записи в верхней части боковой панели. Отображается только при наличии двух и более учётных записей."
+
+msgid "Inboxes"
+msgstr "Входящие"
+
+msgid ""
+"A unified inbox combining every account, at the top of the sidebar. Only "
+"shown with more than one account."
+msgstr ""
+"Общий ящик «Входящие», объединяющий все учётные записи в верхней части "
+"боковой панели. Отображается только при наличии двух и более учётных записей."
+
+msgid "Starred"
+msgstr "Помеченные"
+
+msgid ""
+"Every account's starred folder as one list, opening to each account's own."
+msgstr ""
+
+msgid "Every account's sent mail as one list, opening to each account's own."
+msgstr "Почта из «Отправленных» всех учётных записей одним списком, раскрывающимся по своим учётным записям."
+
+msgid "Every account's drafts as one list, opening to each account's own."
+msgstr "Черновики всех учётных записей одним списком, раскрывающимся по своим учётным записям."
+
+msgid "Every account's archive as one list, opening to each account's own."
+msgstr "Архив всех учётных записей одним списком, раскрывающимся по своим учётным записям."
+
+msgid "List every folder your filter rules file into in a collapsible section of the unified view."
+msgstr "Показывать свёртываемый раздел с папками, в которые раскладываются письма по правилам фильтрации. Каждое правило определяет, появляется ли в нём папка; этот переключатель полностью скрывает весь раздел."
+
+msgid ""
+"The tags, each showing every account's mail with it. Each account keeps its "
+"own Tags section either way."
+msgstr ""
+
+msgid "Unread counts"
+msgstr "Счётчики непрочитанного"
+
+msgid ""
+"Which unified rows show their combined unread chip while folded up. "
+"Expanded, the rows beneath carry the counts. Sent never shows one."
+msgstr ""
+
+msgid "Filters placement"
+msgstr "Расположение фильтров"
+
+msgid ""
+"In the unified section, as a row like Inboxes whose caret opens the folders; "
+"or above or below the accounts as a heading with its own list."
+msgstr ""
+
+msgid "Tags placement"
+msgstr "Расположение тегов"
+
+msgid ""
+"The same choices for the Tags section: a unified row, or a heading above or "
+"below the accounts."
+msgstr ""
+
+msgid "Icon rail"
+msgstr "Полоса с иконками"
+
+msgid "The sidebar collapsed to icons, by its button or in a narrow window."
+msgstr "Боковая панель, свёрнутая до иконок — кнопкой или в узком окне."
+
+msgid "Unread dots instead of counts"
+msgstr "Точки непрочитанного вместо счётчиков"
+
+msgid ""
+"Mark folders and accounts that have unread mail with a dot in the accent "
+"colour rather than the number of messages. The count stays in the tooltip."
+msgstr ""
+
+msgid "Fold up expanded items"
+msgstr "Сворачивать раскрытые элементы"
+
+msgid ""
+"When the sidebar collapses to the icon rail, the items switched on below "
+"start folded up. A long-press in the rail still expands or collapses any of "
+"them, and the full sidebar comes back exactly as you left it."
+msgstr ""
+
+msgid "All accounts"
+msgstr "Все учётные записи"
+
+msgid "Every account's folder list."
+msgstr "Список папок каждой учётной записи."
+
+msgid "The account list under Inboxes."
+msgstr "Список учётных записей под строкой «Входящие»."
+
+msgid "The account list under the unified Starred row."
+msgstr "Список учётных записей под общей строкой «Помеченные»."
+
+msgid "The account list under the unified Sent row."
+msgstr "Список учётных записей под общей строкой «Отправленные»."
+
+msgid "The account list under the unified Drafts row."
+msgstr "Список учётных записей под общей строкой «Черновики»."
+
+msgid "The account list under the unified Archive row."
+msgstr "Список учётных записей под общей строкой «Архив»."
+
+msgid "The folders under the Filters row."
+msgstr "Папки под строкой «Фильтры»."
+
+msgid "The tags under the Tags row."
+msgstr "Метки под строкой «Метки»."
+
+msgid "Sender avatars"
+msgstr "Аватары отправителей"
+
+msgid ""
+"The sender's avatar beside each message, in the list and above the message. "
+"Turning it off gives the sender and subject more room."
+msgstr ""
+"Аватар отправителя рядом с каждым письмом — в списке и над сообщением. "
+"Отключение этой функции освобождает больше места для имени и темы."
+
+msgid "Preview lines"
+msgstr "Строки предпросмотра"
+
+msgid ""
+"How much of each message to show under its subject. Off also stops previews "
+"being downloaded."
+msgstr ""
+"Количество строк текста письма, отображаемых под его темой. При отключении "
+"загрузка предпросмотров также прекращается."
+
+msgid "Actions Palette in the message list"
+msgstr "Палитра действий в списке сообщений"
+
+msgid ""
+"The ⋯ action row under each message summary. Turning it off returns its "
+"space to the row; messages are still acted on from their cards and the right-"
+"click menu."
+msgstr ""
+"Строка действий «⋯» под кратким содержанием письма. При отключении это место "
+"освобождается; управлять сообщениями по-прежнему можно из их карточек и "
+"контекстного меню."
+
+msgid "Open the Actions Palette on hover"
+msgstr "Открывать палитру действий при наведении"
+
+msgid ""
+"The message list's ⋯ palette slides open by itself while the pointer rests "
+"on a row."
+msgstr ""
+"Палитра «⋯» в списке сообщений открывается автоматически при наведении "
+"курсора на строку."
+
+msgid "Actions Palette as a menu"
+msgstr "Палитра действий в виде меню"
+
+msgid ""
+"The ⋯ opens the row's menu, the same one a right-click shows, instead of "
+"sliding the palette out."
+msgstr ""
+
+msgid "Swipe actions"
+msgstr "Действия свайпом"
+
+msgid ""
+"Drag a message sideways with the mouse, or swipe it with two fingers on a "
+"trackpad, to archive or delete it."
+msgstr ""
+"Перетащите сообщение в сторону мышью или смахните двумя пальцами на тачпаде, "
+"чтобы архивировать или удалить его."
+
+msgid "Reverse swipe directions"
+msgstr "Инвертировать направление свайпа"
+
+msgid ""
+"Swipe (mouse-drag or trackpad) a message left to delete it and right to "
+"archive it. Turning this on swaps the two: left archives, right deletes."
+msgstr ""
+"Смахните письмо влево для удаления или вправо для архивации. Включение этой "
+"опции меняет их местами: влево — архивация, вправо — удаление."
+
+msgid "Actions Palette timeout"
+msgstr "Задержка закрытия палитры действий"
+
+msgid ""
+"Seconds an actions palette stays open after the cursor leaves it — the "
+"list's and the message cards' alike."
+msgstr ""
+"Время в секундах, в течение которого палитра действий остаётся открытой "
+"после увода курсора — как в списке, так и на карточках сообщений."
+
+msgid "Conversations"
+msgstr "Обсуждения"
+
+msgid "Group messages by conversation"
+msgstr "Группировать сообщения по обсуждениям"
+
+msgid "Collapse replies into a single threaded conversation."
+msgstr "Сворачивать ответы в единую цепочку писем."
+
+msgid "Expandable conversations"
+msgstr "Раскрываемые обсуждения"
+
+msgid ""
+"Allow a conversation to expand/collapse its messages in the list. When off, "
+"the row keeps its count chip but the messages are displayed only as cards in "
+"the reading pane."
+msgstr ""
+"Разрешить раскрытие и сворачивание писем цепочки прямо в списке. Если "
+"отключено, строка сохраняет счётчик сообщений, но сами письма отображаются "
+"только как карточки на панели чтения."
+
+msgid "Expand conversations by default"
+msgstr "Раскрывать обсуждения по умолчанию"
+
+msgid ""
+"Show every message of a conversation in the list. When off, conversations "
+"start collapsed to their newest message."
+msgstr ""
+"Показывать каждое письмо из цепочки прямо в списке. Если отключено, "
+"обсуждения отображаются свёрнутыми до самого свежего сообщения."
+
+msgid "Newest message first"
+msgstr "Сначала новые сообщения"
+
+msgid ""
+"Show a conversation's latest message at the top of the reading pane. Off "
+"reads oldest to newest, downward."
+msgstr ""
+"Показывать последнее письмо цепочки в самом верху панели чтения. Если "
+"отключено, порядок чтения будет хронологическим — от старых к новым."
+
+msgid "Confirm conversation deletion"
+msgstr "Подтверждать удаление обсуждения"
+
+msgid ""
+"Warn before deleting when a whole conversation is selected, since every "
+"message in the thread goes with it."
+msgstr ""
+"Предупреждать перед удалением, если выбрана вся цепочка писем, так как будут "
+"удалены абсолютно все входящие в неё сообщения."
+
+msgid ""
+"When an opened message counts as read. Conversations mark each message as it "
+"comes into view."
+msgstr ""
+"Условие, при котором открытое письмо считается прочитанным. В обсуждениях "
+"каждое сообщение отмечается прочитанным по мере появления на экране."
+
+msgid "Message appearance"
+msgstr "Оформление сообщений"
+
+msgid "Theme for email content only, not the app itself."
+msgstr "Тема только для содержимого писем, не для самого приложения."
+
+msgid "Use my own font"
+msgstr "Использовать свой шрифт"
+
+msgid "Show every message in the font and size chosen below instead of the sender's. Headings keep their relative size; code stays monospaced."
+msgstr "Показывать каждое сообщение со шрифтом и размером, выбранными ниже, вместо стилей отправителя. Заголовки сохраняют свой относительный размер, а код остаётся моноширинным."
+
+msgid "Message font"
+msgstr "Шрифт сообщений"
+
+msgid "The interface font unless another is chosen."
+msgstr "Шрифт интерфейса, если не выбран другой."
+
+msgid "Use my own colours"
+msgstr "Использовать свои цвета"
+
+msgid ""
+"Ignore the text and background colours senders set, so every message reads "
+"in the same black or white on the reader's ground. Pictures are kept; links "
+"take the accent colour."
+msgstr ""
+"Игнорировать цвета текста и фона, заданные отправителем, чтобы все сообщения "
+"читались в единой чёрной или белой гамме. Изображения сохраняются, а ссылки "
+"окрашиваются в акцентный цвет."
+
+msgid "Message card actions"
+msgstr "Действия на карточке сообщения"
+
+msgid "How each message's action icons show in the reader, single or threaded."
+msgstr "Как значки действий каждого письма показываются в просмотре — одиночном или в ветке."
+
+msgid "Single messages as cards"
+msgstr "Одиночные сообщения в виде карточек"
+
+msgid ""
+"Show a lone message as an inset card with the same border as a "
+"conversation's messages. Off fills the pane edge to edge."
+msgstr ""
+"Отображать отдельное сообщение в виде вложенной карточки с такой же рамкой, "
+"как у писем в обсуждении. При отключении письмо заполняет панель от края до "
+"края."
+
+msgid "Always show recipients"
+msgstr "Всегда показывать получателей"
+
+msgid ""
+"Show who each message went to under its sender, without clicking the "
+"recipients chip. With one recipient the chip is dropped entirely."
+msgstr ""
+"Показывать адресатов каждого письма под именем отправителя без необходимости "
+"нажимать на плашку получателей. Если получатель один, плашка полностью "
+"скрывается."
+
+msgid "Compose in the main window"
+msgstr "Создавать письма в основном окне"
+
+msgid ""
+"New message slides down over the reading pane, like a reply — pop it out to "
+"a window from its header. Off = open a separate window directly."
+msgstr ""
+"Новое сообщение открывается поверх панели чтения, как ответ (его можно "
+"отделить в отдельное окно из заголовка). Если отключено — сразу открывается "
+"отдельное окно."
+
+msgid "Show From, To and Subject in the reply panel"
+msgstr "Показывать поля «От», «Кому» и «Тема» в панели ответа"
+
+msgid ""
+"The inline reply opens with its address and subject rows showing. Off, they "
+"stay folded away behind a button in the panel's header."
+msgstr ""
+"Встроенная панель ответа открывается с видимыми строками адресов и темы. "
+"Если отключено, они остаются скрытыми за кнопкой в заголовке панели."
+
+msgid "Send new messages from"
+msgstr "Отправлять новые сообщения с адреса"
+
+msgid "Replies still answer from the address the original was sent to."
+msgstr "Ответы по-прежнему отправляются с того адреса, на который пришло исходное письмо."
+
+msgid "Paste as plain text"
+msgstr "Вставлять как обычный текст"
+
+msgid ""
+"Pasting into a message strips the clipboard's formatting. Off, a paste keeps "
+"its formatting. Right-clicking the editor always offers both."
+msgstr ""
+"При вставке в письмо форматирование из буфера обмена удаляется. Если "
+"отключено, форматирование сохраняется. Правый клик в редакторе всегда "
+"предлагает оба варианта."
+
+msgid "Spelling"
+msgstr "Орфография"
+
+msgid "Check spelling as you type"
+msgstr "Проверять орфографию при вводе"
+
+msgid ""
+"Misspelled words in the message body are underlined; right-click a word for "
+"corrections."
+msgstr ""
+"Слова с ошибками в тексте письма подчёркиваются; нажмите правой кнопкой мыши "
+"на слово для просмотра вариантов исправления."
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Dictionaries the app can see"
+msgstr "Доступные приложению словари"
+
+msgid "Added words"
+msgstr "Добавленные слова"
+
+msgid ""
+"Words the spell checker was taught. The message body applies changes after a "
+"restart."
+msgstr ""
+"Слова, добавленные в словарь проверки орфографии. Изменения применятся к "
+"тексту письма после перезапуска."
+
+msgid ""
+"Vireo collects no telemetry and sends no analytics. Remote content (images, "
+"trackers) is blocked by default. Allow it per message, trust a sender to "
+"always load it, or turn on \"Always load remote content\" below."
+msgstr ""
+"Vireo не собирает телеметрию и не отправляет аналитические данные. Удалённое "
+"содержимое (изображения, трекеры) заблокировано по умолчанию. Вы можете "
+"разрешать его для каждого письма отдельно, добавить отправителя в доверенные "
+"или включить параметр «Всегда загружать удалённое содержимое» ниже."
+
+msgid "Always load remote content"
+msgstr "Всегда загружать удалённое содержимое"
+
+msgid ""
+"Show images and other remote content in every new message without asking. "
+"Off by default, since remote content can be used to track when and where you "
+"read a message."
+msgstr ""
+"Показывать изображения и другое удалённое содержимое во всех новых письмах "
+"без запроса. Отключено по умолчанию, так как удалённый контент может "
+"использоваться для отслеживания времени и места чтения письма."
+
+msgid "Warn when remote content is blocked"
+msgstr "Предупреждать о блокировке удалённого содержимого"
+
+msgid ""
+"Shows the banner offering to load it. Turning this off only hides the notice "
+"— remote content is still blocked just the same."
+msgstr ""
+"Показывает баннер с предложением загрузить контент. Отключение этого "
+"параметра лишь скрывает уведомление — само удалённое содержимое по-прежнему "
+"блокируется."
+
+msgid "Use Gravatar when a contact has no photo"
+msgstr "Использовать Gravatar, если у контакта нет фото"
+
+msgid ""
+"Local GNOME Contacts photos are always preferred. Gravatar sends a hash of "
+"the sender's email."
+msgstr ""
+"Локальные фотографии из «Контактов GNOME» всегда имеют приоритет. Сервис "
+"Gravatar получает хэш адреса электронной почты отправителя."
+
+msgid "Show sender logos"
+msgstr "Показывать логотипы отправителей"
+
+msgid ""
+"Fills the sender's avatar with the brand's own site icon, fetched from the "
+"sender's domain. That domain learns your IP address, which is what blocking "
+"remote content otherwise avoids."
+msgstr ""
+"Отображает на аватаре отправителя иконку сайта бренда, полученную с его "
+"домена. При этом владелец домена узнаёт ваш IP-адрес — то, чего "
+"предотвращает блокировка удалённого содержимого."
+
+msgid ""
+"By default dates follow the system's own arrangement — its field order, "
+"month names and clock. Choose a format here to use it whatever the system is "
+"set to."
+msgstr ""
+"По умолчанию формат даты соответствует системным настройкам — порядку полей, "
+"названиям месяцев и формату времени. Выберите формат здесь, чтобы "
+"использовать его независимо от настроек системы."
+
+msgid "Date format"
+msgstr "Формат даты"
+
+msgid "Clock"
+msgstr "Часы"
+
+msgid "Keep running in the background"
+msgstr "Продолжать работу в фоновом режиме"
+
+msgid ""
+"Closing the window hides it instead of quitting, so new mail still arrives. "
+"Vireo then appears under Background Apps in the system menu, where it can be "
+"quit."
+msgstr ""
+"Закрытие окна скрывает его вместо выхода, поэтому новая почта продолжает "
+"поступать. Vireo появится в разделе «Фоновые приложения» системного меню, "
+"откуда приложение можно будет закрыть."
+
+msgid "Start at login"
+msgstr "Запускать при входе в систему"
+
+msgid ""
+"Start checking for mail when you log in. Vireo starts without a window and "
+"waits in the system menu."
+msgstr ""
+"Начинать проверку почты при входе в систему. Vireo запускается без окна и "
+"находится в системном меню."
+
+msgid "Show a tray icon"
+msgstr "Показывать значок в трее"
+
+msgid ""
+"An icon in the system tray, with a red dot while any inbox has unread mail. "
+"Click it to open Vireo. GNOME needs the AppIndicator extension; other "
+"desktops show it as they are."
+msgstr ""
+"Значок в системном трее с красной точкой, когда в любом ящике есть "
+"непрочитанная почта. Нажмите на него, чтобы открыть Vireo. В GNOME требуется "
+"расширение AppIndicator; в других рабочих средах значок отображается "
+"стандартно."
+
+msgid "Tray icon"
+msgstr "Значок в трее"
+
+msgid ""
+"The Vireo icon, or a plain envelope in white or black to match the panel."
+msgstr ""
+"Иконка Vireo или обычный конверт белого либо чёрного цвета под стиль панели."
+
+msgid "Unread mail in the tray menu"
+msgstr "Непрочитанная почта в меню трея"
+
+msgid ""
+"List the newest unread inbox messages in the icon's menu; click one to open "
+"it."
+msgstr ""
+"Отображать список последних непрочитанных сообщений в меню значка; нажмите "
+"на письмо, чтобы открыть его."
+
+msgid "Single-key shortcuts"
+msgstr "Одноклавишные сочетания"
+
+msgid ""
+"Act on mail with one key and no modifier — j/k to move, r to reply, a to "
+"archive. Press Ctrl+? for the full list."
+msgstr ""
+"Управляйте почтой нажатием одной клавиши без модификаторов: j/k для "
+"перемещения, r — ответить, a — архивировать. Нажмите Ctrl+? для просмотра "
+"полного списка."
+
+msgid "Console mode"
+msgstr "Режим консоли"
+
+msgid ""
+"A verbose live console in the status bar showing everything Vireo is doing "
+"under the hood."
+msgstr ""
+"Подробная консоль в реальном времени в строке состояния, показывающая все "
+"фоновые процессы Vireo."
+
+msgid ""
+"Save everything the console has recorded since Vireo started, to attach to a "
+"bug report. Email addresses are shortened to their domain."
+msgstr ""
+"Сохранить все записи консоли с момента запуска Vireo для прикрепления к "
+"отчёту об ошибке. Адреса электронной почты сокращаются до домена."
+
+msgid ""
+"Everything Vireo keeps, as one file: mail and cloud storage accounts, "
+"preferences, filters, tags, the sidebar and window layout, the app icon "
+"choice and the words taught to the spell checker. Passwords and sign-ins "
+"stay in the system keyring and are never exported; OpenPGP keys stay in "
+"GnuPG."
+msgstr ""
+"Всё, что хранит Vireo, в одном файле: учётные записи почты и облачных "
+"хранилищ, настройки, фильтры, теги, макет боковой панели и окна, выбор "
+"иконки приложения и пользовательский словарь. Пароли и данные входа остаются "
+"в системной связке ключей и не экспортируются; ключи OpenPGP остаются в "
+"GnuPG."
+
+msgid "Export settings"
+msgstr "Экспортировать настройки"
+
+msgid "Import settings"
+msgstr "Импортировать настройки"
+
+msgid ""
+"Replaces the current accounts and preferences in place. Don't remove "
+"accounts first: removal also deletes their keyring passwords, which no "
+"backup carries."
+msgstr ""
+"Заменяет текущие учётные записи и параметры. Не удаляйте учётные записи "
+"предварительно: удаление также стирает их пароли из связки ключей, которые "
+"не содержатся в резервной копии."
+
+msgid "In the unified section"
+msgstr "В общем разделе"
+
+msgid "Above the accounts"
+msgstr "Над учётными записями"
+
+msgid "Below the accounts"
+msgstr "Под учётными записями"
+
+msgid "Left"
+msgstr "Слева"
+
+msgid "Right"
+msgstr "Справа"
+
+msgid "1 line"
+msgstr "1 строка"
+
+msgid "2 lines"
+msgstr "2 строки"
+
+msgid "3 lines"
+msgstr "3 строки"
+
+msgid "Shown in the dock, app grid and switcher, and by the tray icon."
+msgstr "Показывается в доке, списке приложений, переключателе окон и значке в трее."
+
+msgid "When displayed"
+msgstr "Условие отметки прочитанным"
+
+msgid "After two seconds"
+msgstr "Через две секунды"
+
+msgid "Hidden behind a toggle"
+msgstr "Скрыто за переключателем"
+
+msgid "Shown while hovering"
+msgstr "Показывать при наведении"
+
+msgid "Always visible"
+msgstr "Всегда показывать"
+
+msgid "Account of the current folder"
+msgstr "Учётная запись текущей папки"
+
+msgid "System language — {language}"
+msgstr "Системный язык — {language}"
+
+msgid "Add a word"
+msgstr "Добавить слово"
+
+msgid "Forget this word"
+msgstr "Удалить это слово"
+
+msgid "Print Message"
+msgstr "Печать сообщения"
+
+msgid "Save as PDF"
+msgstr "Сохранить как PDF"
+
+msgid "Could not save the PDF: {error}"
+msgstr "Не удалось сохранить PDF: {error}"
+
+msgid "Print…"
+msgstr "Печать…"
+
+msgid "Save as PDF…"
+msgstr "Сохранить как PDF…"
+
+msgid "Send as Attachment Instead"
+msgstr "Отправить вложением"
+
+msgid "Small"
+msgstr "Маленький"
+
+msgid "Medium"
+msgstr "Средний"
+
+msgid "Large"
+msgstr "Большой"
+
+msgid "Original Size"
+msgstr "Исходный размер"
+
+msgid "Will be recompressed to the size shown when this is sent"
+msgstr "Размер будет уменьшен до указанного при отправке"
+
+msgid "Recompress to This Size on Send"
+msgstr "Сжать до этого размера при отправке"
+
+msgid "Paste with Formatting"
+msgstr "Вставить с форматированием"
+
+msgid "Paste as Plain Text"
+msgstr "Вставить как обычный текст"
+
+msgid "Bold"
+msgstr "Полужирный"
+
+msgid "Italic"
+msgstr "Курсив"
+
+msgid "Underline"
+msgstr "Подчёркнутый"
+
+msgid "Strikethrough"
+msgstr "Зачёркнутый"
+
+msgid "Bulleted list"
+msgstr "Маркированный список"
+
+msgid "Numbered list"
+msgstr "Нумерованный список"
+
+#. Adwaita has no blockquote glyph; the indent icon reads as "quote".
+msgid "Quote"
+msgstr "Цитата"
+
+#. `LINK` is a sentinel command (handled specially); the icon is real.
+msgid "Insert link"
+msgstr "Вставить ссылку"
+
+msgid "Clear formatting"
+msgstr "Очистить форматирование"
+
+msgid "Insert Link"
+msgstr "Вставить ссылку"
+
+msgid "Insert"
+msgstr "Вставить"
+
+msgid "Folder"
+msgstr "Папка"
+
+msgid "Add account"
+msgstr "Добавить учётную запись"
+
+msgid "Add first account"
+msgstr "Добавить первую учётную запись"
+
+msgid "No accounts yet"
+msgstr "Учётные записи пока не добавлены"
+
+msgid "Outbox"
+msgstr "Исходящие"
+
+msgid "Mark Inbox as Read"
+msgstr "Отметить входящие как прочитанные"
+
+msgid "Refresh"
+msgstr "Обновить"
+
+msgid "New Folder…"
+msgstr "Создать папку…"
+
+msgid "Account Settings…"
+msgstr "Параметры учётной записи…"
+
+msgid "Remove Account…"
+msgstr "Удалить учётную запись…"
+
+msgid "Show or hide sub-folders"
+msgstr "Показать или скрыть вложенные папки"
+
+msgid "Folders"
+msgstr "Папки"
+
+msgid "Folders ({len})"
+msgstr "Папки ({len})"
+
+msgid "Add Folder"
+msgstr "Добавить папку"
+
+msgid "Show each inbox"
+msgstr "Показывать каждую папку «Входящие»"
+
+msgid "Show each account"
+msgstr "Показывать каждую учётную запись"
+
+msgid "Show each folder"
+msgstr "Показывать каждую папку"
+
+msgid "Show each tag"
+msgstr "Показывать каждую метку"
+
+msgid "Long-press to expand or collapse"
+msgstr "Долгое нажатие — развернуть или свернуть"
+
+msgid "Edit Filter…"
+msgstr "Редактировать фильтр…"
+
+msgid "Rename Folder…"
+msgstr "Переименовать папку…"
+
+msgid "Delete Folder…"
+msgstr "Удалить папку…"
+
+msgid "Empty Trash…"
+msgstr "Очистить корзину…"
+
+msgid "Empty Junk…"
+msgstr "Очистить спам…"
+
+msgid "Edit Tag…"
+msgstr "Редактировать метку…"
+
+msgid "Welcome to Vireo"
+msgstr "Добро пожаловать в Vireo"
+
+msgid ""
+"A clean, fast home for your mail.\n"
+"Let's set things up — it takes about a minute."
+msgstr ""
+"Простой и быстрый почтовый клиент.\n"
+"Давайте всё настроим — это займёт около минуты."
+
+msgid "Get Started"
+msgstr "Перейти к почте"
+
+msgid "Add your email account"
+msgstr "Добавление учётной записи электронной почты"
+
+msgid "Found in GNOME Online Accounts"
+msgstr "Найдено в «Сетевых учётных записях GNOME»"
+
+msgid "Your name"
+msgstr "Ваше имя"
+
+msgid "Server details"
+msgstr "Данные сервера"
+
+msgid "Filled in for known providers"
+msgstr "Заполняется автоматически для известных провайдеров"
+
+msgid "IMAP server"
+msgstr "Сервер IMAP"
+
+msgid "IMAP port"
+msgstr "Порт IMAP"
+
+msgid "Test & Add"
+msgstr "Проверить и добавить"
+
+msgid ""
+"Google and Microsoft accounts sign in through GNOME Settings → Online "
+"Accounts, then appear above."
+msgstr ""
+"Учётные записи Google и Microsoft подключаются через Параметры GNOME → "
+"Сетевые учётные записи, после чего отображаются выше."
+
+msgid "Scan Again"
+msgstr "Повторить поиск"
+
+msgid "Privacy, your way"
+msgstr "Конфиденциальность под вашим контролем"
+
+msgid ""
+"Vireo sends no telemetry, ever. These control what leaves your machine while "
+"you read."
+msgstr ""
+"Vireo никогда не отправляет телеметрию. Эти параметры определяют, какие "
+"данные передаются с вашего устройства при чтении."
+
+msgid "Block remote images"
+msgstr "Блокировать удалённые изображения"
+
+msgid "Stops senders tracking when and where you open mail"
+msgstr "Запрещает отправителям отслеживать время и место открытия писем"
+
+msgid "Fetch Gravatar portraits"
+msgstr "Загружать аватары Gravatar"
+
+msgid "Asks gravatar.com about each sender's address"
+msgstr "Запрашивает информацию у gravatar.com для каждого адреса отправителя"
+
+msgid "Fetch sender logos"
+msgstr "Загружать логотипы отправителей"
+
+msgid "Looks up company icons for the message list"
+msgstr "Ищет иконки компаний для отображения в списке сообщений"
+
+msgid "Show message content in notifications"
+msgstr "Показывать содержимое писем в уведомлениях"
+
+msgid "Off keeps senders and subjects off the lock screen"
+msgstr "При отключении скрывает имена отправителей и темы на экране блокировки"
+
+msgid "Make it yours"
+msgstr "Персонализация"
+
+msgid "A few popular choices — everything can be changed later in Settings."
+msgstr "Популярные параметры — всё это можно изменить позже в Параметрах."
+
+msgid "Message text shown under each subject"
+msgstr "Текст письма, отображаемый под его темой"
+
+msgid "Colourful initials beside each message"
+msgstr "Цветные инициалы рядом с каждым сообщением"
+
+msgid "Conversation view"
+msgstr "Режим обсуждения"
+
+msgid "Group messages into threads"
+msgstr "Группировать сообщения в цепочки"
+
+#. The app icon: the whole set as one sideways-scrolling row on its
+#. own card, the default ringed.
+msgid "Pick your app icon"
+msgstr "Выберите значок приложения"
+
+msgid "You're all set"
+msgstr "Всё готово"
+
+msgid ""
+"Enjoy! If you encounter an issue or have a feature request,\n"
+"please open an issue on our <a href=\"{url}\">Github</a>."
+msgstr ""
+"Приятного использования! Если вы столкнётесь с проблемой или захотите "
+"предложить новую функцию,\n"
+"пожалуйста, создайте обращение на нашем <a href=\"{url}\">GitHub</a>."
+
+msgid "Start Reading"
+msgstr "Начать работу"
+
+#. Fixed footer: Continue lives with the dots so it never scrolls
+#. away with a tall page. Hidden on the hero and final pages, which
+#. carry their own calls to action.
+msgid "Continue"
+msgstr "Продолжить"
+
+msgid "Enter your email address and password first."
+msgstr "Сначала введите адрес электронной почты и пароль."
+
+msgid "Checking the connection…"
+msgstr "Проверка соединения…"
+
+msgid "✓ {email} — added"
+msgstr "✓ {email} — добавлено"
+
+msgid "✓ {email} — connected and added"
+msgstr "✓ {email} — подключено и добавлено"
+
+msgid "{email} — mail server: {e}"
+msgstr "{email} — почтовый сервер: {e}"
+
+msgid "{email} — sending (SMTP): {e}"
+msgstr "{email} — отправка (SMTP): {e}"
+
+msgid "Your mail provider confirmed this really came from {from}."
+msgstr "Ваш почтовый провайдер подтвердил, что это письмо действительно от {from}."
+
+msgid ""
+"This message failed the checks that prove it came from {from}. Treat it as a "
+"forgery."
+msgstr ""
+"Сообщение не прошло проверку подлинности отправки с адреса {from}. Возможно, "
+"это подделка."
+
+msgid "This message carries a valid signature from {from}."
+msgstr "Сообщение содержит действительную подпись от {from}."
+
+msgid ""
+"This message couldn't be confirmed as coming from {from}, and the checks "
+"that ran on it failed."
+msgstr ""
+"Не удалось подтвердить, что письмо отправлено с адреса {from}. Выполненные "
+"проверки завершились ошибкой."
+
+msgid "Your mail provider didn't report any sender checks for this message."
+msgstr "Ваш почтовый провайдер не сообщил о проверках отправителя для этого письма."
+
+msgid "Nothing here proves this came from {from} — or that it didn't."
+msgstr "Нет данных, подтверждающих или опровергающих отправку с адреса {from}."
+
+msgid "{name}: passed"
+msgstr "{name}: пройден"
+
+msgid "{name}: FAILED"
+msgstr "{name}: ОШИБКА"
+
+msgid "{name}: inconclusive"
+msgstr "{name}: не определено"
+
+msgid "DMARC (is the From: address genuine)"
+msgstr "DMARC (подлинность адреса в поле «От»)"
+
+msgid "DKIM (signature)"
+msgstr "DKIM (цифровая подпись)"
+
+msgid "SPF (sending server)"
+msgstr "SPF (сервер отправки)"
+
+msgid "Signed by: {d}"
+msgstr "Подписано: {d}"
+
+msgid "Checked by: {who}"
+msgstr "Проверено: {who}"
+
+msgid "From: {from}"
+msgstr "От: {from}"
+
+msgid "Replies would go to {reply}, not {from}"
+msgstr "Ответы будут отправлены на {reply}, а не на {from}"
+
+msgid "Bounces would go to {rp}"
+msgstr "Уведомления о недоставке будут отправлены на {rp}"
+
+msgid "The sender's name says \"{claimed}\" but the address is {from}"
+msgstr "В имени отправителя указано «{claimed}», но адрес — {from}"
+
+msgid "runtime error: {e}"
+msgstr "ошибка выполнения: {e}"
+
+msgid "Syncing…"
+msgstr "Синхронизация…"
+
+msgid "Could not load {path}: {e}"
+msgstr "Не удалось загрузить {path}: {e}"
+
+msgid "Could not load message: {e}"
+msgstr "Не удалось загрузить сообщение: {e}"
+
+msgid "Could not load conversation: {e}"
+msgstr "Не удалось загрузить обсуждение: {e}"
+
+msgid "Could not load source: {e}"
+msgstr "Не удалось загрузить исходный код: {e}"
+
+msgid "Could not load attachments: {e}"
+msgstr "Не удалось загрузить вложения: {e}"
+
+msgid "Could not update message: {e}"
+msgstr "Не удалось обновить сообщение: {e}"
+
+msgid "Could not flag message: {e}"
+msgstr "Не удалось отметить на сообщение: {e}"
+
+msgid ""
+"This server does not store tags, so Vireo keeps them on this computer only"
+msgstr ""
+"Этот сервер не поддерживает хранение тегов, поэтому Vireo сохраняет их "
+"только на этом компьютере"
+
+msgid "Could not tag message: {e}"
+msgstr "Не удалось добавить тег к сообщению: {e}"
+
+msgid "Could not mark folder read: {e}"
+msgstr "Не удалось отметить папку прочитанной: {e}"
+
+msgid "Could not mark as spam: {e}"
+msgstr "Не удалось отметить как спам: {e}"
+
+msgid "Could not mark as not spam: {e}"
+msgstr "Не удалось пометить как не спам: {e}"
+
+msgid "Could not mark {len} messages as not spam: {e}"
+msgstr "Не удалось пометить {len} сообщений как не спам: {e}"
+
+msgid "Could not move message: {e}"
+msgstr "Не удалось переместить сообщение: {e}"
+
+msgid "Could not move {len} messages: {e}"
+msgstr "Не удалось переместить сообщения ({len}): {e}"
+
+msgid "Undo failed: {e}"
+msgstr "Не удалось отменить действие: {e}"
+
+msgid "Undo: the messages are no longer where that move put them."
+msgstr "Отмена: сообщения больше не там, куда их переместили."
+
+msgid "Move undone — message restored"
+msgid_plural "Move undone — {n} messages restored"
+msgstr[0] "Перемещение отменено — сообщение восстановлено"
+msgstr[1] "Перемещение отменено — {n} сообщения восстановлены"
+msgstr[2] "Перемещение отменено — {n} сообщений восстановлено"
+
+msgid "Could not delete permanently: {e}"
+msgstr "Не удалось удалить безвозвратно: {e}"
+
+msgid "Could not empty the folder: {e}"
+msgstr "Не удалось очистить папку: {e}"
+
+msgid "Could not create folder: {e}"
+msgstr "Не удалось создать папку: {e}"
+
+msgid "Could not move folder: {e}"
+msgstr "Не удалось переместить папку: {e}"
+
+msgid "Could not delete folder: {e}"
+msgstr "Не удалось удалить папку: {e}"
+
+msgid "Sending…"
+msgstr "Отправка…"
+
+msgid "Message sent, but saving to Sent failed: {e}"
+msgstr "Сообщение отправлено, но сохранить его в «Отправленные» не удалось: {e}"
+
+msgid ""
+"Send failed: {e}. The message is in the Outbox and will be sent when the "
+"connection is back."
+msgstr ""
+"Не удалось отправить: {e}. Сообщение находится в папке «Исходящие» и будет "
+"отправлено при восстановлении соединения."
+
+msgid "Send failed: {e}"
+msgstr "Не удалось отправить: {e}"
+
+msgid "Saving draft…"
+msgstr "Сохранение черновика…"
+
+msgid "Could not save draft: {e}"
+msgstr "Не удалось сохранить черновик: {e}"
+
+msgid "Connecting to {host}…"
+msgstr "Подключение к {host}…"
+
+msgid "Could not list folders: {e}"
+msgstr "Не удалось получить список папок: {e}"
+
+msgid "Connection failed: {e}"
+msgstr "Ошибка подключения: {e}"
+
+msgid "Downloading attachments… {n} remaining"
+msgid_plural "Downloading attachments… {n} remaining"
+msgstr[0] "Загрузка вложений… осталось {n}"
+msgstr[1] "Загрузка вложений… осталось {n}"
+msgstr[2] "Загрузка вложений… осталось {n}"
+
+msgid "“{subject}” will be sent {when}"
+msgstr "Письмо «{subject}» будет отправлено {when}"
+
+msgid "Could not schedule the message: there is no local store to keep it in."
+msgstr "Не удалось отложить отправку сообщения: нет локального хранилища для него."
+
+msgid "Still could not send “{subject}”: {e}"
+msgstr "Всё ещё не удаётся отправить «{subject}»: {e}"
+
+msgid ""
+"no OpenPGP key of your own for {addr}; generate one under Settings, OpenPGP"
+msgstr ""
+"отсутствует собственный ключ OpenPGP для {addr}; создайте его в разделе "
+"Параметры → OpenPGP"
+
+msgid "no OpenPGP key for {addr}"
+msgstr "нет ключа OpenPGP для {addr}"
+
+msgid "Could not fetch mail: {e}"
+msgstr "Не удалось получить почту: {e}"
+
+msgid "Could not delete message: {e}"
+msgstr "Не удалось удалить сообщение: {e}"
+
+msgid "POP3 accounts don't support folders"
+msgstr "Учётные записи POP3 не поддерживают папки"
+
+msgid "Inbox"
+msgstr "Входящие"
+
+msgid "Could not move messages: {e}"
+msgstr "Не удалось переместить сообщения: {e}"
+
+msgid "Could not rename folder: unknown folder"
+msgstr "Не удалось переименовать папку: неизвестная папка"
+
+msgid "Could not rename folder: {e}"
+msgstr "Не удалось переименовать папку: {e}"
+
+msgid "Could not delete folder: unknown folder"
+msgstr "Не удалось удалить папку: неизвестная папка"
+
+msgid "Email Client"
+msgstr "Почтовый клиент"
+
+msgid "A clean, fast GNOME-native email client"
+msgstr "Простой и быстрый почтовый клиент для GNOME"
+
+msgid "Email;Mail;IMAP;"
+msgstr "Email;Mail;IMAP;Почта;Электронная почта;Письма;"
+
+msgid "Private, GNOME-native email client"
+msgstr "Конфиденциальный почтовый клиент для GNOME"
+
+msgid ""
+"Vireo is a desktop email client for Wayland that feels at home in GNOME. It "
+"talks IMAP and SMTP directly, keeps your mail and credentials on your "
+"machine, and blocks trackers by default — no telemetry, no analytics."
+msgstr ""
+"Vireo — это почтовый клиент для Wayland, созданный в стиле среды GNOME. "
+"Приложение работает напрямую по протоколам IMAP и SMTP, хранит вашу почту и "
+"учётные данные на устройстве и блокирует трекеры по умолчанию: никакой "
+"телеметрии и аналитики."
+
+msgid "Features:"
+msgstr "Возможности:"
+
+msgid "Multiple IMAP and POP3 accounts, with a unified Inboxes view"
+msgstr "Несколько учётных записей IMAP и POP3 с общим списком «Входящие»"
+
+msgid ""
+"Google, Microsoft and custom OAuth 2.0 sign-in, plus GNOME Online Accounts "
+"import"
+msgstr ""
+"Авторизация через Google, Microsoft и пользовательский OAuth 2.0, а также "
+"импорт из «Сетевых учётных записей GNOME»"
+
+msgid "Whole-mailbox sync and search with infinite scroll"
+msgstr "Синхронизация всего почтового ящика и поиск с бесконечной прокруткой"
+
+msgid "Deletions and moves made on other devices sync back automatically"
+msgstr "Удаления и перемещения, сделанные на других устройствах, автоматически синхронизируются"
+
+msgid "Conversation threading, compose, reply, forward, and editable drafts"
+msgstr "Ветки бесед, создание, ответ, пересылка и редактируемые черновики"
+
+msgid "Remote content blocked by default; per-message light or dark reading"
+msgstr "Удалённое содержимое блокируется по умолчанию; чтение каждого письма в светлой или тёмной теме"
+
+msgid "Passwords and OAuth tokens kept in the system keyring"
+msgstr "Пароли и токены OAuth хранятся в системной связке ключей"
+
+msgid "The unified inbox in light mode"
+msgstr "Общие входящие в светлом режиме"
+
+msgid "Hyprlab"
+msgstr "Hyprlab"
+
+#~ msgid "Add Account"
+#~ msgstr "Добавить учётную запись"
+
+#~ msgid "Show name initials instead of an emoji"
+#~ msgstr "Показывать инициалы имени вместо эмодзи"
+
+#~ msgid "All Inboxes"
+#~ msgstr "Все входящие"
+
+#~ msgid "All Inboxes unread count"
+#~ msgstr "Счётчик непрочитанных в «Все входящие»"
+
+#~ msgid ""
+#~ "Show the combined unread chip next to All Inboxes while its per-account "
+#~ "list is folded up."
+#~ msgstr ""
+#~ "Показывать общий счётчик непрочитанных рядом с «Все входящие», когда "
+#~ "список учётных записей свёрнут."
+
+#~ msgid "Filtered Folders section"
+#~ msgstr "Раздел «Отфильтрованные папки»"
+
+#~ msgid ""
+#~ "Inside All Inboxes, folding away with it, or in the scrolling sidebar "
+#~ "above or below the accounts."
+#~ msgstr ""
+#~ "Внутри раздела «Все входящие» (сворачиваясь вместе с ним) или на боковой "
+#~ "панели — выше или ниже списка учётных записей."
+
+#~ msgid "Where the Tags section sits, with the same choices."
+#~ msgstr "Где располагается раздел «Теги» (с аналогичными вариантами выбора)."
+
+#~ msgid "Inside All Inboxes"
+#~ msgstr "Внутри «Все входящие»"
+
+#~ msgid "Filtered Folders"
+#~ msgstr "Отфильтрованные папки"

@@ -118,6 +118,9 @@ msgstr "Quitter"
 msgid "Actions"
 msgstr "Actions"
 
+msgid "Double-click to open in a new window"
+msgstr "Double-cliquez pour ouvrir dans une nouvelle fenêtre"
+
 msgid "Tags"
 msgstr "Mots-clés"
 

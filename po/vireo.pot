@@ -112,6 +112,9 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
+msgid "Double-click to open in a new window"
+msgstr ""
+
 msgid "Tags"
 msgstr ""
 
