@@ -1,3 +1,4 @@
 # Languages with a translation, one code per line (msgfmt --desktop/--xml
 # read this to know which po files to merge into the launcher and metainfo).
 fr
+pt_PT
