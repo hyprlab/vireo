@@ -1,0 +1,3888 @@
+# Translation template for Vireo.
+# This file is distributed under the same license as the Vireo package.
+# Paulo Fino <somepaulo@duck.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vireo\n"
+"Report-Msgid-Bugs-To: https://github.com/hyprlab/vireo/issues\n"
+"POT-Creation-Date:\n"
+"PO-Revision-Date: 2026-09-12 16:30-0300\n"
+"Last-Translator: Paulo Fino <somepaulo@duck.com>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 50.0\n"
+
+msgid "Refresh or long-press for Status Bar"
+msgstr "Atualizar ou pressionar e segurar para mostrar a barra de status"
+
+msgid "Main Menu"
+msgstr "Menu principal"
+
+msgid "Expand sidebar"
+msgstr "Expandir a barra lateral"
+
+msgid "Collapse sidebar"
+msgstr "Recolher a barra lateral"
+
+msgid "Search messages (Ctrl+F)"
+msgstr "Pesquisar mensagens (Ctrl+F)"
+
+msgid "Show only unread"
+msgstr "Mostrar somente as não lidas"
+
+msgid "Show only starred"
+msgstr "Mostrar somente as que têm estrela"
+
+msgid "Sort messages"
+msgstr "Ordenar mensagens"
+
+msgid "Edit this message"
+msgstr "Editar esta mensagem"
+
+msgid "Try to send this message now"
+msgstr "Tentar enviar esta mensagem agora"
+
+msgid "Send all"
+msgstr "Enviar tudo"
+
+msgid "Reply"
+msgstr "Responder"
+
+msgid "Reply All"
+msgstr "Responder a todos"
+
+msgid "Forward"
+msgstr "Encaminhar"
+
+msgid "Mark as Read"
+msgstr "Marcar como lida"
+
+msgid "Mark as Unread"
+msgstr "Marcar como não lida"
+
+msgid "Flag"
+msgstr "Marcar com estrela"
+
+msgid "Print Preview (Ctrl+Shift+P)"
+msgstr "Visualizar impressão (Ctrl+Shift+P)"
+
+msgid "Find in message (Ctrl+F)"
+msgstr "Localizar na mensagem (Ctrl+F)"
+
+msgid "Not Spam"
+msgstr "Não é spam"
+
+msgid "Mark as Spam"
+msgstr "Marcar como spam"
+
+msgid "Archive"
+msgstr "Arquivar"
+
+msgid "Downloading attachments…"
+msgstr "Baixando anexos…"
+
+msgid "Close"
+msgstr "Fechar"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Next"
+msgstr "Próximo"
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid "Download…"
+msgstr "Baixar…"
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Show Accounts"
+msgstr "Mostrar contas"
+
+msgid "Print Preview…"
+msgstr "Visualizar impressão…"
+
+msgid "Print Message…"
+msgstr "Imprimir mensagem…"
+
+msgid "Quit"
+msgstr "Sair"
+
+msgid "Actions"
+msgstr "Ações"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Move To…"
+msgstr "Mover para…"
+
+msgid "Attachments"
+msgstr "Anexos"
+
+msgid "Toggle sidebar"
+msgstr "Alternar barra lateral"
+
+msgid "Date (Newest first)"
+msgstr "Data (mais recentes primeiro)"
+
+msgid "Date (Oldest first)"
+msgstr "Data (mais antigas primeiro)"
+
+msgid "Sender (A–Z)"
+msgstr "Remetente (A–Z)"
+
+msgid "Subject (A–Z)"
+msgstr "Assunto (A–Z)"
+
+msgid "Unread first"
+msgstr "Não lidas primeiro"
+
+msgid "Flagged first"
+msgstr "Com estrela primeiro"
+
+msgid "Added to Contacts"
+msgstr "Adicionado aos contatos"
+
+msgid "Added email to {name}"
+msgstr "Email adicionado a {name}"
+
+msgid "Already in Contacts ({name})"
+msgstr "Já existe nos contatos ({name})"
+
+msgid "Could not add contact: {e}"
+msgstr "Não foi possível adicionar o contato: {e}"
+
+msgid "Save Attachment"
+msgstr "Salvar anexo"
+
+msgid ""
+"Couldn't restart automatically — quit and reopen Vireo to finish switching "
+"the icon."
+msgstr ""
+"Não foi possível reiniciar automaticamente — saia e volte a abrir o "
+"Vireo para concluir a mudança de ícone."
+
+msgid "Open a message first, then print it."
+msgstr "Abra primeiro uma mensagem e, em seguida, imprima-a."
+
+msgid "Nothing to undo"
+msgstr "Nada para desfazer"
+
+msgid "Undoing move…"
+msgstr "Desfazendo movimentação…"
+
+msgid "No message with the ID {id} was found"
+msgstr "Não foi encontrada nenhuma mensagem com o ID {id}"
+
+msgid "No Drafts folder available for this account"
+msgstr "Não existe uma pasta Rascunhos disponível para esta conta"
+
+msgid "Could not save account: {e}"
+msgstr "Não foi possível salvar a conta: {e}"
+
+msgid "Enable Console mode in Settings → System & Appearance"
+msgstr "Ative o modo de console em Configurações → Sistema e aparência"
+
+msgid "Export Settings"
+msgstr "Exportar configurações"
+
+msgid "Settings exported to {display}"
+msgstr "Configurações exportadas para {display}"
+
+msgid "Export failed: {e}"
+msgstr "Falha ao exportar: {e}"
+
+msgid "Export Log"
+msgstr "Exportar registro"
+
+msgid "Log exported to {display}"
+msgstr "Registro exportado para {display}"
+
+msgid "Import Settings"
+msgstr "Importar configurações"
+
+msgid "Settings Imported"
+msgstr "Configurações importadas"
+
+msgid ""
+"{n} mail account(s), the cloud storage accounts and all preferences were "
+"imported. Restart Vireo to apply them. Passwords and sign-ins are not part "
+"of a backup; re-enter them on first use if this is a new machine."
+msgstr ""
+"Foram importadas {n} contas de email, as contas de armazenamento na "
+"nuvem e todas as preferências. Reinicie o Vireo para aplicá-las. As "
+"senhas e os dados de acesso não fazem parte de um backup; se este for um "
+"computador novo, digite-os novamente no primeiro uso."
+
+msgid "Later"
+msgstr "Mais tarde"
+
+msgid "Restart Vireo"
+msgstr "Reiniciar o Vireo"
+
+msgid "Import failed: {e}"
+msgstr "Falha ao importar: {e}"
+
+msgid "Could not import account: {e}"
+msgstr "Não foi possível importar a conta: {e}"
+
+msgid "No address book available"
+msgstr "Não está disponível nenhum catálogo de endereços"
+
+msgid "Could not update contact: {e}"
+msgstr "Não foi possível atualizar o contato: {e}"
+
+msgid "Reveal Status Bar"
+msgstr "Mostrar a barra de status"
+
+msgid "Console"
+msgstr "Console"
+
+msgid "Keyboard Shortcuts"
+msgstr "Atalhos de teclado"
+
+msgid ""
+"Single-key shortcuts are switched off. Turn them on in Settings → System & "
+"Appearance."
+msgstr ""
+"Os atalhos de uma só tecla estão desativados. Ative-os em Configurações "
+"→ Sistema e aparência."
+
+msgid "Your tags"
+msgstr "Suas etiquetas"
+
+msgid "Restarting Vireo"
+msgstr "Reiniciando o Vireo"
+
+msgid "Applying your new app icon. Vireo will close and reopen in a moment."
+msgstr "Aplicando o novo ícone do aplicativo. O Vireo fechará e reabrirá em instantes."
+
+msgid "Restart to finish switching icons?"
+msgstr "Reiniciar para concluir a mudança de ícones?"
+
+msgid ""
+"The dock and Vireo's own windows keep the old icon until Vireo restarts."
+msgstr ""
+"O dock e as janelas do Vireo mantêm o ícone antigo até o Vireo ser "
+"reiniciado."
+
+msgid "Restart Now"
+msgstr "Reiniciar agora"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Send Now"
+msgstr "Enviar agora"
+
+msgid "Send All"
+msgstr "Enviar tudo"
+
+msgid "View Source"
+msgstr "Ver fonte"
+
+msgid "Delete"
+msgstr "Excluir"
+
+msgid "Remove Flag"
+msgstr "Remover estrela"
+
+msgid "Print Preview"
+msgstr "Visualizar impressão"
+
+msgid "Move to Inbox"
+msgstr "Mover para a Caixa de entrada"
+
+msgid "Message Source"
+msgstr "Código fonte da mensagem"
+
+msgid "Delete {n} messages"
+msgstr "Excluir {n} mensagens"
+
+msgid "New Message"
+msgstr "Nova mensagem"
+
+msgid "Delete this conversation?"
+msgstr "Excluir esta conversa?"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Delete Conversation"
+msgstr "Excluir conversa"
+
+msgid "Delete this message permanently?"
+msgid_plural "Delete {n} messages permanently?"
+msgstr[0] "Excluir esta mensagem permanentemente?"
+msgstr[1] "Excluir {n} mensagens permanentemente?"
+
+msgid ""
+"It is already in Trash, so it will be erased from the server. This can’t be "
+"undone."
+msgstr ""
+"A mensagem já está na Lixeira e será excluída do servidor. Esta ação não "
+"pode ser desfeita."
+
+msgid ""
+"They are already in Trash, so they will be erased from the server. This "
+"can’t be undone."
+msgstr ""
+"As mensagens já estão na Lixeira e serão excluídas do servidor. Esta "
+"ação não pode ser desfeita."
+
+msgid "No {v1} folder available"
+msgstr "Não está disponível nenhuma pasta {v1}"
+
+msgid "One message stayed put — mail can't be moved between accounts"
+msgstr "Uma mensagem não foi movida — não é possível mover email entre contas"
+
+msgid "{foreign} messages stayed put — mail can't be moved between accounts"
+msgstr "Não foram movidas {foreign} mensagens — não é possível mover email entre contas"
+
+msgid "Vireo couldn’t save your password"
+msgstr "O Vireo não conseguiu salvar sua senha"
+
+msgid "Keyring setup on Linux Mint"
+msgstr "Configuração do chaveiro no Linux Mint"
+
+msgid "Got it"
+msgstr "Entendido"
+
+msgid "New Folder"
+msgstr "Nova pasta"
+
+msgid "Create a new folder for this account."
+msgstr "Criar uma nova pasta para esta conta."
+
+msgid "Create"
+msgstr "Criar"
+
+msgid "Folder name"
+msgstr "Nome da pasta"
+
+msgid "Sub-folders keep their place under the new name."
+msgstr "As subpastas mantêm sua posição sob o novo nome."
+
+msgid "Rename"
+msgstr "Renomear"
+
+msgid "A folder named {new_name} is already there."
+msgstr "Já existe uma pasta com o nome {new_name}."
+
+msgid "Its messages are moved to Trash and the folder is removed."
+msgstr "As mensagens são movidas para a Lixeira e a pasta é removida."
+
+msgid "Empty “{name}”?"
+msgstr "Esvaziar «{name}»?"
+
+msgid ""
+"Every message in it will be erased from the server. This can’t be undone."
+msgstr ""
+"Todas as mensagens da pasta serão excluídas do servidor. Esta ação não "
+"pode ser desfeita."
+
+msgid "Empty"
+msgstr "Esvaziar"
+
+msgid "No Junk folder available for this account"
+msgstr "Não existe uma pasta Spam disponível para esta conta"
+
+msgid "No Inbox folder available for this account"
+msgstr "Não existe uma pasta Caixa de entrada disponível para esta conta"
+
+msgid "No address book available to add contacts"
+msgstr "Não está disponível nenhum catálogo de endereços para adicionar contatos"
+
+msgid "Add to Contacts"
+msgstr "Adicionar aos contatos"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Address book"
+msgstr "Catálogo de endereços"
+
+msgid "Remove Account?"
+msgstr "Remover conta?"
+
+msgid "Remove"
+msgstr "Remover"
+
+#. One-sentence description, directly under the version chip.
+msgid "A clean, fast, GNOME-native email client."
+msgstr "Um cliente de email simples, rápido e nativo do GNOME."
+
+msgid ""
+"This is a beta build for trying upcoming changes early. Expect bugs and "
+"instability — please report anything broken on GitHub. It shares your "
+"accounts and mail with the stable Vireo install."
+msgstr ""
+"Esta é uma versão beta para testar antecipadamente as próximas "
+"alterações. Podem ocorrer erros e instabilidade — informe no GitHub "
+"qualquer problema que encontrar. Esta versão compartilha suas contas e "
+"mensagens com a instalação estável do Vireo."
+
+msgid "Release Notes"
+msgstr "Notas de lançamento"
+
+msgid "Changelog"
+msgstr "Registro de alterações"
+
+msgid "Full version history"
+msgstr "Histórico completo de versões"
+
+msgid "Keyring Setup Help"
+msgstr "Ajuda para configurar o chaveiro"
+
+msgid "Make account passwords persist on Linux Mint"
+msgstr "Fazer com que as senhas das contas sejam salvas no Linux Mint"
+
+#. Project links. Each row shows its URL as a hover tooltip.
+msgid "Project"
+msgstr "Projeto"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Contact — hyprlab@proton.me"
+msgstr "Contato — hyprlab@proton.me"
+
+msgid "Discord — Join the community"
+msgstr "Discord — Junte-se à comunidade"
+
+msgid "Source Code"
+msgstr "Código fonte"
+
+msgid "License (GNU AGPL v3)"
+msgstr "Licença (GNU AGPL v3)"
+
+msgid "Buy Me a Coffee"
+msgstr "Ofereça-me um café"
+
+#. Contributors — people outside Hyprlab whose patches are in the app.
+msgid "Special thanks to these contributors"
+msgstr "Um agradecimento especial a estes colaboradores"
+
+#. Footer.
+msgid "© 2026 Hyprlab"
+msgstr "© 2026 Hyprlab"
+
+msgid "No {v1} folder available for some messages"
+msgstr "Não está disponível nenhuma pasta {v1} para algumas mensagens"
+
+msgid "Move around"
+msgstr "Navegação"
+
+msgid "Next message"
+msgstr "Próxima mensagem"
+
+msgid "Previous message"
+msgstr "Mensagem anterior"
+
+msgid "Open the selected message"
+msgstr "Abrir a mensagem selecionada"
+
+msgid "Back to the message list"
+msgstr "Voltar à lista de mensagens"
+
+msgid "Next message in the conversation"
+msgstr "Próxima mensagem na conversa"
+
+msgid "Previous message in the conversation"
+msgstr "Mensagem anterior na conversa"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid "Act on a message"
+msgstr "Ações em uma mensagem"
+
+msgid "Reply to all"
+msgstr "Responder a todos"
+
+msgid "Mark as spam"
+msgstr "Marcar como spam"
+
+msgid "Star or unstar"
+msgstr "Adicionar ou remover estrela"
+
+msgid "Mark read or unread"
+msgstr "Marcar como lida ou não lida"
+
+msgid "Select this row (for a bulk action)"
+msgstr "Selecionar esta linha (para uma ação em massa)"
+
+msgid "Add or remove a tag (the first nine, in Settings order)"
+msgstr "Adicionar ou remover uma etiqueta (uma das nove primeiras pela ordem definida nas Configurações)"
+
+msgid "Remove every tag"
+msgstr "Remover todas as etiquetas"
+
+msgid "Everything else"
+msgstr "Tudo o resto"
+
+msgid "Compose"
+msgstr "Compor"
+
+msgid "Back out of a reply and return to the list"
+msgstr "Cancelar uma resposta e voltar à lista"
+
+msgid "Undo the last move or delete"
+msgstr "Desfazer a última movimentação ou exclusão"
+
+msgid "Print the message you are reading"
+msgstr "Imprimir a mensagem que você está lendo"
+
+msgid "Preview it as a PDF first"
+msgstr "Visualizá-la primeiro como PDF"
+
+msgid "Reveal the status bar (also: long-press Refresh)"
+msgstr "Mostrar a barra de status (também: pressionar e segurar Atualizar)"
+
+msgid "Show or hide the accounts in the sidebar"
+msgstr "Mostrar ou ocultar as contas na barra lateral"
+
+msgid "Console mode (when enabled in Settings)"
+msgstr "Modo de console (quando ativado nas Configurações)"
+
+msgid "Close the window (background sync keeps running)"
+msgstr "Fechar a janela (a sincronização em segundo plano continua)"
+
+msgid "Quit Vireo entirely"
+msgstr "Sair completamente do Vireo"
+
+msgid "This list"
+msgstr "Esta lista"
+
+msgid "Save All Attachments"
+msgstr "Salvar todos os anexos"
+
+msgid "Default"
+msgstr "Padrão"
+
+msgid ""
+"Vireo checks for new mail and shows notifications while its window is closed."
+msgstr ""
+"O Vireo procura novas mensagens e mostra notificações enquanto sua "
+"janela está fechada."
+
+msgid "Checking for new mail"
+msgstr "Verificando novas mensagens"
+
+msgid "{n} unread message"
+msgid_plural "{n} unread messages"
+msgstr[0] "{n} mensagem não lida"
+msgstr[1] "{n} mensagens não lidas"
+
+msgid "On This Computer"
+msgstr "Neste computador"
+
+msgid "CardDAV Address Book"
+msgstr "Catálogo de endereços CardDAV"
+
+msgid "Encrypted message"
+msgstr "Mensagem criptografada"
+
+msgid "Encrypted with OpenPGP; could not be decrypted"
+msgstr "Criptografada com OpenPGP; não foi possível descriptografá-la"
+
+msgid "Encrypted with OpenPGP"
+msgstr "Criptografada com OpenPGP"
+
+msgid "Encrypted, and signed by {signer}"
+msgstr "Criptografada e assinada por {signer}"
+
+msgid ""
+"Encrypted; the signature does not match, the message may have been altered"
+msgstr ""
+"Criptografada; a assinatura não corresponde, a mensagem pode ter sido "
+"alterada"
+
+msgid "Encrypted; signed with a key you don't have ({id})"
+msgstr "Criptografada; assinada com uma chave que não possui ({id})"
+
+msgid "Encrypted, and signed by {signer} with an expired key"
+msgstr "Criptografada e assinada por {signer} com uma chave expirada"
+
+msgid "Encrypted, and signed by {signer} with a revoked key"
+msgstr "Criptografada e assinada por {signer} com uma chave revogada"
+
+msgid "Encrypted, and signed by {signer}; the signature has expired"
+msgstr "Criptografada e assinada por {signer}; a assinatura expirou"
+
+msgid "OpenPGP-signed; the signature could not be checked"
+msgstr "Assinada com OpenPGP; não foi possível verificar a assinatura"
+
+msgid "Signed by {signer}"
+msgstr "Assinada por {signer}"
+
+msgid "The OpenPGP signature does not match; the message may have been altered"
+msgstr "A assinatura OpenPGP não corresponde; a mensagem pode ter sido alterada"
+
+msgid "Signed with a key you don't have ({id})"
+msgstr "Assinada com uma chave que não possui ({id})"
+
+msgid "Signed by {signer} with an expired key"
+msgstr "Assinada por {signer} com uma chave expirada"
+
+msgid "Signed by {signer} with a revoked key"
+msgstr "Assinada por {signer} com uma chave revogada"
+
+msgid "Signed by {signer}; the signature has expired"
+msgstr "Assinada por {signer}; a assinatura expirou"
+
+msgid "This message hasn't been checked."
+msgstr "Esta mensagem não foi verificada."
+
+msgid "{n} hours ago"
+msgstr "há {n} horas"
+
+msgid "yesterday"
+msgstr "ontem"
+
+msgid "{n} days ago"
+msgstr "há {n} dias"
+
+msgid "Waiting since {ago}"
+msgstr "Em espera desde {ago}"
+
+msgid "Scheduled for {when}"
+msgstr "Agendada para {when}"
+
+msgid "New message"
+msgstr "Nova mensagem"
+
+msgid "GnuPG (gpg) is not installed, so this message cannot be read."
+msgstr "O GnuPG (gpg) não está instalado, por isso não é possível ler esta mensagem."
+
+msgid "Decrypted with your key."
+msgstr "Descriptografada com sua chave."
+
+msgid "Encrypted to key {id}, which is not in your keyring."
+msgstr "Criptografada para a chave {id}, que não se encontra no seu chaveiro."
+
+msgid "The encrypted block is damaged or not OpenPGP data."
+msgstr "O bloco criptografado está danificado ou não contém dados OpenPGP."
+
+msgid "Signing key {id} is trusted in your keyring."
+msgstr "A chave de assinatura {id} é confiável no seu chaveiro."
+
+msgid "Signing key {id} is only marginally trusted in your keyring."
+msgstr "A chave de assinatura {id} é somente marginalmente confiável no seu chaveiro."
+
+msgid "Signing key {id} is marked as not trusted in your keyring."
+msgstr "A chave de assinatura {id} está marcada como não confiável no seu chaveiro."
+
+msgid ""
+"Signing key {id} is in your keyring but not marked as trusted; check its "
+"fingerprint with the sender."
+msgstr ""
+"A chave de assinatura {id} está no seu chaveiro, mas não está marcada "
+"como confiável; confirme a respectiva impressão digital junto do "
+"remetente."
+
+msgid "Signed with key {id}."
+msgstr "Assinada com a chave {id}."
+
+msgid "Import the sender's public key to verify it."
+msgstr "Importe a chave pública do remetente para verificá-la."
+
+msgid "No key was found in that file."
+msgstr "Não foi encontrada nenhuma chave nesse arquivo."
+
+msgid "Nothing to export."
+msgstr "Nada para exportar."
+
+msgid "gpg did not create the key."
+msgstr "O gpg não criou a chave."
+
+msgid "No key was found for that address."
+msgstr "Não foi encontrada nenhuma chave para esse endereço."
+
+msgid "gpg could not sign the key."
+msgstr "O gpg não conseguiu assinar a chave."
+
+msgid "gpg could not delete the key."
+msgstr "O gpg não conseguiu excluir a chave."
+
+msgid "gpg did not sign the message."
+msgstr "O gpg não assinou a mensagem."
+
+msgid "gpg did not encrypt the message."
+msgstr "O gpg não criptografou a mensagem."
+
+msgid "Open Vireo"
+msgstr "Abrir o Vireo"
+
+msgid "No unread mail"
+msgstr "Nenhuma mensagem não lida"
+
+msgid "View all {n} unread…"
+msgstr "Ver todas as {n} não lidas…"
+
+msgid "Accounts"
+msgstr "Contas"
+
+msgid "Requires an app-specific password (not your normal login password)."
+msgstr "Requer uma senha específica do aplicativo (não a senha normal de acesso)."
+
+msgid "Enter your server details manually."
+msgstr "Digite manualmente os dados do servidor."
+
+msgid "Sign in with your browser — no password needed."
+msgstr "Entre pelo navegador — não é necessária uma senha."
+
+msgid "Sign in through GNOME Online Accounts."
+msgstr "Entre pelas Contas online do GNOME."
+
+msgid "Requires Proton Mail Bridge running locally."
+msgstr "Requer que o Proton Mail Bridge esteja em execução localmente."
+
+msgid "Enable POP/IMAP access in GMX settings first."
+msgstr "Ative primeiro o acesso POP/IMAP nas configurações do GMX."
+
+msgid "Enter your provider's OAuth endpoints, then sign in."
+msgstr "Digite os endpoints OAuth do provedor e depois entre."
+
+msgid "Mail Accounts"
+msgstr "Contas de email"
+
+msgid "Drag to set the order they appear in the sidebar."
+msgstr "Arraste para definir a ordem pela qual aparecem na barra lateral."
+
+msgid "Add Account…"
+msgstr "Adicionar conta…"
+
+msgid "GNOME Online Accounts"
+msgstr "Contas online do GNOME"
+
+msgid "Mail accounts from GNOME Settings. Toggle one on to use it in Vireo."
+msgstr "Contas de email das Configurações do GNOME. Ative uma delas para usá-la no Vireo."
+
+msgid ""
+"Label messages with one or more coloured tags. Tags are stored on the mail "
+"server as IMAP keywords, so Thunderbird and other clients show the same "
+"tags.\n"
+"\n"
+"Drag a tag to reorder: the order here is the sidebar's, and the first nine "
+"answer to the 1–9 keys."
+msgstr ""
+"Atribua uma ou mais etiquetas coloridas às mensagens. As etiquetas são "
+"salvas no servidor de email como palavras-chave IMAP, portanto o "
+"Thunderbird e outros clientes mostram as mesmas etiquetas.\n"
+"\n"
+"Arraste uma etiqueta para reordená-la: esta é a ordem usada na barra "
+"lateral, e as nove primeiras correspondem às teclas 1–9."
+
+msgid "Add Tag…"
+msgstr "Adicionar etiqueta…"
+
+msgid "Look through every mailbox for tags other clients have set"
+msgstr "Procurar em todas as caixas de email etiquetas definidas por outros clientes"
+
+msgid "Find Tags…"
+msgstr "Localizar etiquetas…"
+
+msgid "Search filters"
+msgstr "Pesquisar filtros"
+
+msgid "Filters"
+msgstr "Filtros"
+
+msgid ""
+"File incoming mail into folders or tag it automatically, by sender, subject "
+"or recipients. Applied to each account's Inbox as Vireo syncs it."
+msgstr ""
+"Arquive automaticamente em pastas ou etiquete as mensagens recebidas, "
+"dependendo do remetente, assunto ou destinatários. As regras são "
+"aplicadas à Caixa de entrada de cada conta durante a sincronização do "
+"Vireo."
+
+msgid "Add Filter…"
+msgstr "Adicionar filtro…"
+
+msgid "Search senders"
+msgstr "Pesquisar remetentes"
+
+msgid "Allowed Senders"
+msgstr "Remetentes permitidos"
+
+msgid "Messages from these senders load remote content automatically."
+msgstr "As mensagens destes remetentes carregam automaticamente o conteúdo remoto."
+
+msgid "Email address"
+msgstr "Endereço de email"
+
+msgid "Allow this sender"
+msgstr "Permitir este remetente"
+
+msgid "Blacklist"
+msgstr "Lista de bloqueio"
+
+msgid ""
+"Incoming mail from these senders is deleted automatically (moved to Trash). "
+"Enter an email address, or a whole domain like \"example.com\" to block "
+"every sender there."
+msgstr ""
+"As mensagens recebidas desses remetentes são excluídas automaticamente "
+"(movidas para a Lixeira). Digite um endereço de email ou um domínio "
+"completo, como \"example.com\", para bloquear todos os remetentes desse "
+"domínio."
+
+msgid "Address or domain"
+msgstr "Endereço ou domínio"
+
+msgid "Block this sender"
+msgstr "Bloquear este remetente"
+
+msgid "Account"
+msgstr "Conta"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "GNOME Online Account"
+msgstr "Conta online do GNOME"
+
+msgid "Show in Vireo"
+msgstr "Mostrar no Vireo"
+
+msgid ""
+"Switching this off returns the account to the import list — it stays in "
+"GNOME Online Accounts."
+msgstr ""
+"Ao desativar esta opção, a conta volta à lista de importação — continua "
+"a existir nas Contas online do GNOME."
+
+msgid ""
+"This account is managed by GNOME Online Accounts.\n"
+"Its address, servers and password are changed in Settings → Online Accounts."
+msgstr ""
+"Esta conta é gerenciada pelas Contas online do GNOME.\n"
+"O endereço, os servidores e a senha são alterados em Configurações → "
+"Contas online."
+
+msgid "Open Online Accounts…"
+msgstr "Abrir Contas online…"
+
+msgid "Mail Account"
+msgstr "Conta de email"
+
+msgid "Provider"
+msgstr "Provedor"
+
+msgid "Choose your email provider."
+msgstr "Escolha seu provedor de email."
+
+msgid "Display Name"
+msgstr "Nome de exibição"
+
+msgid "Email Address"
+msgstr "Endereço de email"
+
+msgid "Incoming Protocol"
+msgstr "Protocolo de entrada"
+
+msgid "Incoming Server"
+msgstr "Servidor de entrada"
+
+msgid "Port (IMAP 993 / POP3 995)"
+msgstr "Porta (IMAP 993/POP3 995)"
+
+msgid "SMTP Server (optional)"
+msgstr "Servidor SMTP (opcional)"
+
+msgid "SMTP Port (default 587)"
+msgstr "Porta SMTP (padrão: 587)"
+
+msgid "Username"
+msgstr "Nome de usuário"
+
+msgid "Password"
+msgstr "Senha"
+
+msgid "OAuth Client ID"
+msgstr "ID de cliente OAuth"
+
+msgid "OAuth Client Secret (optional)"
+msgstr "Segredo do cliente OAuth (opcional)"
+
+msgid "Authorization URL"
+msgstr "URL de autorização"
+
+msgid "Token URL"
+msgstr "URL do token"
+
+msgid "Scopes (space-separated)"
+msgstr "Escopos (separados por espaços)"
+
+msgid "Sign In with Browser"
+msgstr "Entrar pelo navegador"
+
+msgid ""
+"Google and Microsoft sign-in use GNOME Online Accounts.\n"
+"\n"
+"1. Open Online Accounts and sign in there.\n"
+"2. Come back to Vireo and reopen this window — the account then appears "
+"under “GNOME Online Accounts” at the top of this window. Enable it there."
+msgstr ""
+"O acesso ao Google e à Microsoft usa as Contas online do GNOME.\n"
+"\n"
+"1. Abra Contas online e entre por lá.\n"
+"2. Volte ao Vireo e reabra esta janela — a conta aparecerá em “Contas "
+"online do GNOME”, na parte superior. Ative-a ali."
+
+msgid "Separate SMTP credentials"
+msgstr "Credenciais SMTP separadas"
+
+msgid ""
+"Use a different username and password for sending. Off = use the credentials "
+"above."
+msgstr ""
+"Use outro nome de usuário e outra senha para enviar. Desativado = usar "
+"as credenciais acima."
+
+msgid "SMTP Username"
+msgstr "Nome de usuário SMTP"
+
+msgid "SMTP Password"
+msgstr "Senha SMTP"
+
+msgid "Test Connection"
+msgstr "Testar conexão"
+
+#. Rendered as Pango markup — a bare "&" breaks it.
+msgid "Appearance"
+msgstr "Aparência"
+
+msgid "How this account is shown in the sidebar and the Inboxes view."
+msgstr "Como esta conta é exibida na barra lateral e na visualização Caixas de entrada."
+
+msgid "Label (defaults to email address)"
+msgstr "Etiqueta (por padrão, o endereço de email)"
+
+msgid "Account accent color"
+msgstr "Cor de destaque da conta"
+
+msgid "The circle, and this account's marks in the sidebar and lists"
+msgstr "O círculo e as marcas desta conta na barra lateral e nas listas"
+
+msgid "Circle shows"
+msgstr "Conteúdo do círculo"
+
+msgid "Initials or emoji"
+msgstr "Iniciais ou emoji"
+
+msgid "Picture"
+msgstr "Imagem"
+
+msgid "Emoji"
+msgstr "Emoji"
+
+msgid "Shown in the circle instead of the initials"
+msgstr "Apresentada no círculo em vez das iniciais"
+
+msgid "Choose…"
+msgstr "Escolher…"
+
+msgid "Use initials"
+msgstr "Usar iniciais"
+
+msgid "A photo or logo from this computer"
+msgstr "Uma foto ou logotipo deste computador"
+
+msgid "Send-as aliases"
+msgstr "Endereços alternativos de envio"
+
+msgid ""
+"Extra addresses this account can send as. An alias can use this account's "
+"SMTP server, or bring its own."
+msgstr ""
+"Endereços adicionais a partir dos quais esta conta pode enviar. Um "
+"endereço alternativo pode usar o servidor SMTP desta conta ou seu "
+"próprio servidor."
+
+msgid "Add Alias…"
+msgstr "Adicionar endereço alternativo…"
+
+msgid "Syncing"
+msgstr "Sincronização"
+
+msgid "Instant new mail (IMAP push)"
+msgstr "Recebimento imediato de novas mensagens (push IMAP)"
+
+msgid "Turn off for servers that stall on push connections."
+msgstr "Desative em servidores que travam com conexões push."
+
+msgid "Empty Junk automatically"
+msgstr "Esvaziar automaticamente o Spam"
+
+msgid "Delete junk mail older than this for good, checked at each sync."
+msgstr "Excluir permanentemente o email de spam mais antigo do que este período, verificando-o em cada sincronização."
+
+msgid "Empty Trash automatically"
+msgstr "Esvaziar a Lixeira automaticamente"
+
+msgid ""
+"Delete mail in the Trash older than this for good, checked at each sync."
+msgstr ""
+"Excluir permanentemente da Lixeira as mensagens anteriores a este "
+"período, verificando a cada sincronização."
+
+msgid "Special Folders"
+msgstr "Pastas especiais"
+
+msgid ""
+"Where sent, deleted and junk mail goes. "
+"Automatic                                      follows the server's own "
+"markings; pick a folder                                      when a role "
+"isn't detected or lands wrong."
+msgstr ""
+"O local onde são salvas as mensagens enviadas, excluídas e de spam. A "
+"opção Automático segue as marcações do próprio servidor; escolha uma "
+"pasta quando uma função não for detectada ou for atribuída "
+"incorretamente."
+
+msgid "Sent"
+msgstr "Enviadas"
+
+msgid "Drafts"
+msgstr "Rascunhos"
+
+msgid "Trash"
+msgstr "Lixeira"
+
+msgid "Junk"
+msgstr "Spam"
+
+msgid "OpenPGP"
+msgstr "OpenPGP"
+
+msgid ""
+"The key that signs mail sent from this account and opens what is encrypted "
+"to it. Keys are managed under OpenPGP in the sidebar."
+msgstr ""
+"A chave que assina as mensagens enviadas por esta conta e descriptografa "
+"as recebidas para ela. As chaves são gerenciadas em OpenPGP, na barra "
+"lateral."
+
+msgid "Key"
+msgstr "Chave"
+
+msgid "Automatic uses the key whose address matches."
+msgstr "A opção Automático usa a chave cujo endereço corresponde."
+
+msgid "Signature"
+msgstr "Assinatura"
+
+msgid "Appended to new messages sent from this account."
+msgstr "Adicionada às novas mensagens enviadas a partir desta conta."
+
+msgid "Edit HTML…"
+msgstr "Editar HTML…"
+
+msgid "Import File…"
+msgstr "Importar arquivo…"
+
+msgid ""
+"Your password is stored in the system keyring (secret-service), never in "
+"plain text on disk."
+msgstr ""
+"Sua senha é salva no chaveiro do sistema (secret-service), nunca em "
+"texto simples no disco."
+
+msgid "Follow Settings"
+msgstr "Seguir as Configurações"
+
+msgid "On"
+msgstr "Ativado"
+
+msgid "Off"
+msgstr "Desativado"
+
+msgid "Choose a Picture"
+msgstr "Escolher uma imagem"
+
+msgid "Images"
+msgstr "Imagens"
+
+msgid "Testing…"
+msgstr "Testando…"
+
+msgid "Enter a client ID (and endpoints for a custom provider) first"
+msgstr "Digite primeiro um ID de cliente (e os pontos de acesso, no caso de um provedor personalizado)"
+
+msgid "Opening browser… complete sign-in there."
+msgstr "Abrindo o navegador… conclua o acesso por lá."
+
+msgid "Signature HTML"
+msgstr "HTML da assinatura"
+
+msgid ""
+"Paste or edit the signature's HTML. Scripts and style sheets are removed; "
+"inline styles, tables and images are kept."
+msgstr ""
+"Cole ou edite o HTML da assinatura. Os scripts e as folhas de estilo são "
+"removidos; os estilos incorporados, as tabelas e as imagens são "
+"mantidos."
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "Import Signature"
+msgstr "Importar assinatura"
+
+msgid "HTML and text files"
+msgstr "Arquivos HTML e de texto"
+
+msgid "Could Not Read the File"
+msgstr "Não foi possível ler o arquivo"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Enter a client ID and sign in before saving"
+msgstr "Digite um ID de cliente e entre antes de salvar"
+
+msgid "✓ Signed in — save the account to finish"
+msgstr "✓ Sessão iniciada — salve a conta para concluir"
+
+msgid "Sign-in failed: {e}"
+msgstr "Falha ao entrar: {e}"
+
+msgid "✓ SMTP: connected"
+msgstr "✓ SMTP: conectado"
+
+msgid "✗ SMTP: {e}"
+msgstr "✗ SMTP: {e}"
+
+msgid "Sends through {host}"
+msgstr "Envia através de {host}"
+
+msgid "Sends through this account"
+msgstr "Envia através desta conta"
+
+msgid "Remove this alias"
+msgstr "Remover este endereço alternativo"
+
+msgid "Display name (optional)"
+msgstr "Nome de exibição (opcional)"
+
+msgid "Sending"
+msgstr "Envio"
+
+msgid "Own SMTP server"
+msgstr "Servidor SMTP próprio"
+
+msgid "SMTP server"
+msgstr "Servidor SMTP"
+
+msgid "SMTP port"
+msgstr "Porta SMTP"
+
+msgid "SMTP username"
+msgstr "Nome de usuário SMTP"
+
+msgid "SMTP password"
+msgstr "Senha SMTP"
+
+msgid "Test SMTP"
+msgstr "Testar SMTP"
+
+msgid "Vireo"
+msgstr "Vireo"
+
+msgid "Imported from GNOME Online Accounts"
+msgstr "Importada das Contas online do GNOME"
+
+msgid "Added directly in Vireo"
+msgstr "Adicionada diretamente no Vireo"
+
+msgid "Enable this account"
+msgstr "Ativar esta conta"
+
+msgid "Use this account in Vireo"
+msgstr "Usar esta conta no Vireo"
+
+msgid "Automatic"
+msgstr "Automático"
+
+msgid "Never"
+msgstr "Nunca"
+
+msgid "After {n} day"
+msgid_plural "After {n} days"
+msgstr[0] "Após {n} dia"
+msgstr[1] "Após {n} dias"
+
+msgid ", tagged {tag}"
+msgstr ", com a etiqueta {tag}"
+
+msgid "Remove filter"
+msgstr "Remover filtro"
+
+msgid "Searching…"
+msgstr "Pesquisando…"
+
+msgid "No New Tags"
+msgstr "Nenhuma etiqueta nova"
+
+msgid "No tags were found in your mailboxes that are not already set up here."
+msgstr "Não foram encontradas nas suas caixas de email etiquetas que ainda não estejam configuradas aqui."
+
+msgid "Tags Found"
+msgstr "Etiquetas encontradas"
+
+msgid ""
+"{n} tags are in use in your mailboxes but not set up here. Import them all, "
+"or choose which to add. Names and colours can be changed afterwards."
+msgstr ""
+"Há {n} etiquetas em uso nas suas caixas de email que ainda não estão "
+"configuradas aqui. Importe todas ou escolha quais adicionar. Os nomes e "
+"as cores podem ser alterados depois."
+
+msgid "Import Selected"
+msgstr "Importar selecionadas"
+
+msgid "Import All"
+msgstr "Importar todas"
+
+msgid "{n} messages"
+msgstr "Mensagens: {n}"
+
+msgid ""
+"Press this key on a message to add or remove the tag (with single-key "
+"shortcuts on)"
+msgstr ""
+"Pressione esta tecla em uma mensagem para adicionar ou remover a "
+"etiqueta (com os atalhos de uma só tecla ativados)"
+
+msgid "Remove tag"
+msgstr "Remover etiqueta"
+
+msgid "Edit Tag"
+msgstr "Editar etiqueta"
+
+msgid "Add Tag"
+msgstr "Adicionar etiqueta"
+
+msgid "Keyword"
+msgstr "Palavra-chave"
+
+msgid ""
+"How the tag is stored on the server: letters, digits and most punctuation, "
+"no spaces. Thunderbird's built-in tags are $label1 to $label5."
+msgstr ""
+"A forma como a etiqueta é salva no servidor: letras, algarismos e a "
+"maioria dos sinais de pontuação, sem espaços. As etiquetas incorporadas "
+"do Thunderbird vão de $label1 a $label5."
+
+msgid "Colour"
+msgstr "Cor"
+
+msgid "Custom colour…"
+msgstr "Cor personalizada…"
+
+msgid "Tag Colour"
+msgstr "Cor da etiqueta"
+
+msgid "Edit Filter"
+msgstr "Editar filtro"
+
+msgid "Add Filter"
+msgstr "Adicionar filtro"
+
+msgid "Where"
+msgstr "Campo"
+
+msgid "From address"
+msgstr "Endereço do remetente"
+
+msgid "From name"
+msgstr "Nome do remetente"
+
+msgid "Subject"
+msgstr "Assunto"
+
+msgid "To or Cc"
+msgstr "Para ou Cc"
+
+msgid "Match"
+msgstr "Correspondência"
+
+msgid "contains"
+msgstr "contém"
+
+msgid "is exactly"
+msgstr "é exatamente"
+
+msgid "starts with"
+msgstr "começa por"
+
+msgid "ends with"
+msgstr "termina com"
+
+msgid "Text to match"
+msgstr "Texto a procurar"
+
+msgid "Move to"
+msgstr "Mover para"
+
+msgid "Where matching mail is filed; or leave it in the Inbox and only tag it"
+msgstr "Pasta onde a mensagem correspondente será arquivada; ou deixe-a na Caixa de entrada e apenas atribua uma etiqueta"
+
+#. Entry 0 files nowhere (a tag-only rule, #71): its path is "".
+msgid "Leave in Inbox"
+msgstr "Deixar na Caixa de entrada"
+
+msgid "Tag with"
+msgstr "Atribuir etiqueta"
+
+msgid "None"
+msgstr "Nenhuma"
+
+msgid "Count unread mail"
+msgstr "Contar email não lido"
+
+msgid "Include the folder's unread mail in the tray icon's unread count"
+msgstr "Incluir o email não lido da pasta na contagem de mensagens não lidas do ícone da área de notificação"
+
+msgid "Thumbnail size"
+msgstr "Tamanho das miniaturas"
+
+msgid "Sorted Z to A — switch to A to Z"
+msgstr "Ordenação Z–A — mudar para A–Z"
+
+msgid "Sorted A to Z — switch to Z to A"
+msgstr "Ordenação A–Z — mudar para Z–A"
+
+msgid "Show as thumbnails"
+msgstr "Mostrar como miniaturas"
+
+msgid "Show as a list"
+msgstr "Mostrar como lista"
+
+msgid "Save All…"
+msgstr "Salvar tudo…"
+
+msgid "Save every attachment to a folder"
+msgstr "Salvar todos os anexos em uma pasta"
+
+msgid "Key imported"
+msgstr "Chave importada"
+
+msgid ""
+"The key is in your keyring now. Trust it under Settings, OpenPGP, once you "
+"have checked its fingerprint with its owner."
+msgstr ""
+"A chave agora está no seu chaveiro. Depois de conferir a impressão "
+"digital com o proprietário, marque-a como confiável em Configurações, "
+"OpenPGP."
+
+msgid "Already in your keyring"
+msgstr "Já existe no seu chaveiro"
+
+msgid "That key was imported before."
+msgstr "Essa chave já tinha sido importada."
+
+msgid "Could not import the key"
+msgstr "Não foi possível importar a chave"
+
+msgid "Import OpenPGP key"
+msgstr "Importar chave OpenPGP"
+
+msgid "Search by sender, subject, type, filename…"
+msgstr "Pesquisar por remetente, assunto, tipo, nome de arquivo…"
+
+msgid "Loading attachments…"
+msgstr "Carregando anexos…"
+
+msgid "No attachments"
+msgstr "Sem anexos"
+
+msgid "Attachments from your inboxes will appear here."
+msgstr "Os anexos das suas caixas de entrada irão aparecer aqui."
+
+msgid "No matching attachments"
+msgstr "Nenhum anexo correspondente"
+
+msgid "Try a different search or clear the filter."
+msgstr "Experimente outra pesquisa ou limpe o filtro."
+
+msgid "Thumbnail grid"
+msgstr "Grade de miniaturas"
+
+msgid "Table"
+msgstr "Tabela"
+
+msgid "Show only this type"
+msgstr "Mostrar somente este tipo"
+
+msgid "All types"
+msgstr "Todos os tipos"
+
+msgid "PDFs"
+msgstr "PDF"
+
+msgid "Documents"
+msgstr "Documentos"
+
+msgid "Archives"
+msgstr "Arquivos compactados"
+
+msgid "Audio & Video"
+msgstr "Áudio e vídeo"
+
+msgid "Other"
+msgstr "Outro"
+
+msgid "Sort"
+msgstr "Ordenar"
+
+msgid "Newest first"
+msgstr "Mais recentes primeiro"
+
+msgid "Oldest first"
+msgstr "Mais antigos primeiro"
+
+msgid "Name (A–Z)"
+msgstr "Nome (A–Z)"
+
+msgid "Name (Z–A)"
+msgstr "Nome (Z–A)"
+
+msgid "Sender (Z–A)"
+msgstr "Remetente (Z–A)"
+
+msgid "Largest first"
+msgstr "Maiores primeiro"
+
+msgid "Smallest first"
+msgstr "Menores primeiro"
+
+msgid "Type (A–Z)"
+msgstr "Tipo (A–Z)"
+
+msgid "Type (Z–A)"
+msgstr "Tipo (Z–A)"
+
+msgid "Open in the default app"
+msgstr "Abrir no aplicativo padrão"
+
+msgid "Go to Message"
+msgstr "Ir para a mensagem"
+
+msgid "The file could not be opened"
+msgstr "Não foi possível abrir o arquivo"
+
+msgid "Response"
+msgstr "Resposta"
+
+msgid "Cloud Storage"
+msgstr "Armazenamento na nuvem"
+
+msgid "Cloud storage"
+msgstr "Armazenamento na nuvem"
+
+msgid ""
+"Connect your cloud storage provider to upload and share large files instead "
+"of an attachment. A cloud icon appears in the compose toolbar once a "
+"provider is added.\n"
+"\n"
+"Supported providers: Nextcloud, ownCloud, OpenCloud, OneDrive, Dropbox and "
+"Seafile."
+msgstr ""
+"Conecte seu provedor de armazenamento na nuvem para enviar e "
+"compartilhar arquivos grandes em vez de anexá-los. Após adicionar um "
+"provedor, um ícone de nuvem aparecerá na barra de ferramentas de "
+"composição.\n"
+"\n"
+"Provedores compatíveis: Nextcloud, ownCloud, OpenCloud, OneDrive, "
+"Dropbox e Seafile."
+
+msgid "No cloud accounts yet."
+msgstr "Ainda não existem contas de armazenamento na nuvem."
+
+msgid "Cloud Account"
+msgstr "Conta de armazenamento na nuvem"
+
+msgid "Remove {name}?"
+msgstr "Remover {name}?"
+
+msgid ""
+"Vireo forgets the account and its sign-in. Files already uploaded, and the "
+"links in messages you sent, stay where they are."
+msgstr ""
+"O Vireo removerá a conta e seus dados de acesso. Os arquivos já enviados "
+"e os links nas mensagens enviadas permanecerão onde estão."
+
+msgid "Removed {name}"
+msgstr "Conta {name} removida"
+
+msgid "Could not store the sign-in in the keyring: {e}"
+msgstr "Não foi possível salvar os dados de acesso no chaveiro: {e}"
+
+msgid "Edit Cloud Account"
+msgstr "Editar conta de armazenamento na nuvem"
+
+msgid "Add Cloud Account"
+msgstr "Adicionar conta de armazenamento na nuvem"
+
+msgid "links expire after {n} days"
+msgstr "os links expiram após {n} dias"
+
+msgid "password-protected"
+msgstr "protegidas por senha"
+
+msgid "Offer this account in the composer"
+msgstr "Disponibilizar esta conta no compositor"
+
+msgid "Service"
+msgstr "Serviço"
+
+msgid "Nickname (optional)"
+msgstr "Apelido (opcional)"
+
+msgid "Server URL"
+msgstr "URL do servidor"
+
+msgid "Two-step verification code, if the account uses it"
+msgstr "Código de verificação em duas etapas, se usado pela conta"
+
+msgid ""
+"Sign in with your Seafile password. If the account uses two-step "
+"verification, also enter the current code from your authenticator app: Vireo "
+"turns it into an API token once and keeps that instead of the password. A "
+"token obtained another way can be pasted in the password field."
+msgstr ""
+"Acesse com sua senha do Seafile. Se a conta usar verificação em duas "
+"etapas, digite também o código atual do aplicativo autenticador: o Vireo "
+"o converterá uma vez em um token de API e salvará o token em vez da "
+"senha. Você também pode colar no campo da senha um token obtido de outra "
+"forma."
+
+msgid "Online account"
+msgstr "Conta online"
+
+msgid "Dropbox app key"
+msgstr "Chave do aplicativo Dropbox"
+
+msgid "Library"
+msgstr "Biblioteca"
+
+msgid "Upload folder"
+msgstr "Pasta de envio"
+
+msgid "Links expire after"
+msgstr "Os links expiram após"
+
+msgid "Days; 0 keeps the link indefinitely"
+msgstr "Dias; 0 mantém o link indefinidamente"
+
+msgid "Protect links with a password"
+msgstr "Proteger links com uma senha"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately"
+msgstr ""
+"Uma senha de download é criada para cada arquivo e mostrada a você para "
+"ser enviada separadamente"
+
+msgid "Link defaults"
+msgstr "Padrões dos links"
+
+msgid ""
+"How share links from this account are made unless you choose otherwise for "
+"an email: the upload dialog in the composer shows these values and lets you "
+"change them for that upload alone."
+msgstr ""
+"Como os links de compartilhamento desta conta são criados, a menos que "
+"você escolha outras opções para uma mensagem: a janela de envio do "
+"editor mostra estes valores e permite alterá-los somente para esse "
+"envio."
+
+msgid "Check Connection"
+msgstr "Verificar conexão"
+
+msgid "{email} (Files is off)"
+msgstr "{email} (Arquivos desativados)"
+
+msgid ""
+"No Microsoft 365 account in GNOME Online Accounts yet. Add one under "
+"Settings, Online Accounts; OneDrive then signs in through it, and nothing "
+"more is needed here."
+msgstr ""
+"Ainda não existe uma conta Microsoft 365 nas Contas online do GNOME. "
+"Adicione uma em Configurações, Contas online; o OneDrive iniciará então "
+"sessão através dela e não será necessário configurar mais nada aqui."
+
+msgid ""
+"OneDrive signs in through the GNOME Online Accounts account chosen above; "
+"there is no password to enter. An account marked Files is off still works "
+"here, but you may want to turn Files on for it under Settings, Online "
+"Accounts."
+msgstr ""
+"O OneDrive entra pela conta escolhida acima nas Contas online do GNOME; "
+"não há senha para digitar. Uma conta marcada como Arquivos desativados "
+"ainda funciona aqui, mas talvez você queira ativar Arquivos em "
+"Configurações, Contas online."
+
+msgid ""
+"Uploads and plain share links work with any OneDrive. Link expiry and "
+"download passwords are a Microsoft 365 subscription or OneDrive for Business "
+"feature: on a free personal OneDrive the link is refused when either is set, "
+"so keep Links expire after at 0 and the password switch off there."
+msgstr ""
+"Os envios e os links de compartilhamento simples funcionam com qualquer "
+"OneDrive. A expiração dos links e as senhas de download são "
+"funcionalidades de uma assinatura Microsoft 365 ou do OneDrive para "
+"Empresas: em uma conta pessoal gratuita do OneDrive, o link é recusada "
+"se alguma destas opções estiver definida, por isso deve manter «Os links "
+"expiram após» em 0 e desativar a senha."
+
+msgid ""
+"Days; 0 keeps the link indefinitely. Needs Microsoft 365 or OneDrive for "
+"Business"
+msgstr ""
+"Dias; 0 mantém o link indefinidamente. Requer Microsoft 365 ou OneDrive "
+"para Empresas"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Needs Microsoft 365 or OneDrive for Business"
+msgstr ""
+"Uma senha de download é criada para cada arquivo e mostrada a você para "
+"ser enviada separadamente. Requer Microsoft 365 ou OneDrive para "
+"Empresas"
+
+msgid "User name"
+msgstr "Nome de usuário"
+
+msgid "App password (leave empty to keep)"
+msgstr "Senha do aplicativo (deixe em branco para manter)"
+
+msgid "App password"
+msgstr "Senha do aplicativo"
+
+msgid "E-mail"
+msgstr "Email"
+
+msgid "Password (leave empty to keep)"
+msgstr "Senha (deixe em branco para manter)"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Dropbox allows link passwords and expiry dates on paid plans "
+"only."
+msgstr ""
+"Uma senha de download é criada para cada arquivo e mostrada a você para "
+"ser enviada separadamente. O Dropbox só permite senhas e datas de "
+"expiração de links nos planos pagos."
+
+msgid "Connect with Dropbox…"
+msgstr "Conectar ao Dropbox…"
+
+msgid ""
+"Dropbox only lets an app sign in when it is registered, so make one for "
+"yourself (it takes a minute and stays private):\n"
+"1. Open dropbox.com/developers/apps, signed in to your Dropbox, and press "
+"Create app.\n"
+"2. Choose Scoped access, then App folder (Vireo sees only its own folder "
+"under Apps) or Full Dropbox (uploads go to the folder named above).\n"
+"3. Give the app a name that no one else has used, such as Vireo for your "
+"name, and press Create app.\n"
+"4. On the Permissions tab, tick account_info.read, files.content.write and "
+"sharing.write, then press Submit.\n"
+"5. On the Settings tab, under OAuth 2, add the redirect URI {uri} and press "
+"Add.\n"
+"6. Copy the App key from the top of the Settings tab into the field above.\n"
+"The app may stay in Development status; that allows your own account. Leave "
+"the field empty to use the app key this build was made with, when it has one."
+msgstr ""
+"O Dropbox só permite que um aplicativo entre quando estiver registrado, "
+"então crie um para você (leva um minuto e permanece privado):\n"
+"1. Abra dropbox.com/developers/apps com sua conta do Dropbox e pressione "
+"Create app.\n"
+"2. Escolha Scoped access e depois App folder (o Vireo vê somente sua "
+"própria pasta em Apps) ou Full Dropbox (os arquivos são enviados para a "
+"pasta indicada acima).\n"
+"3. Dê ao aplicativo um nome ainda não usado, como Vireo seguido do seu "
+"nome, e pressione Create app.\n"
+"4. Na aba Permissions, selecione account_info.read, files.content.write "
+"e sharing.write e pressione Submit.\n"
+"5. Na aba Settings, em OAuth 2, adicione o URI de redirecionamento {uri} "
+"e pressione Add.\n"
+"6. Copie a App key no topo da aba Settings para o campo acima.\n"
+"O aplicativo pode permanecer com o status Development; isso permite usar "
+"sua própria conta. Deixe o campo vazio para usar a chave de aplicativo "
+"incluída nesta versão, se houver."
+
+msgid "Connected as {who}."
+msgstr "Conexão estabelecida como {who}."
+
+msgid "Choose an online account first."
+msgstr "Escolha primeiro uma conta online."
+
+msgid "Signing in…"
+msgstr "Acessando…"
+
+msgid "Enter the app key of a Dropbox app first."
+msgstr "Digite primeiro a chave de um aplicativo Dropbox."
+
+msgid "Waiting for the sign-in in your browser…"
+msgstr "Aguardando o acesso no navegador…"
+
+msgid "Fill in the server URL, e-mail and password first."
+msgstr "Preencha primeiro a URL do servidor, o email e a senha."
+
+msgid "Fill in the server URL, user name and app password first."
+msgstr "Preencha primeiro a URL do servidor, o nome de usuário e a senha do aplicativo."
+
+msgid "Signed in as {who}."
+msgstr "Sessão iniciada como {who}."
+
+msgid ""
+"You can upload files and share plain links with this OneDrive. Link expiry "
+"and download passwords are not available on a free personal OneDrive (they "
+"need a Microsoft 365 subscription), so both are turned off for this account."
+msgstr ""
+"Pode enviar arquivos e compartilhar links simples com este OneDrive. A "
+"expiração dos links e as senhas de download não estão disponíveis em uma "
+"conta pessoal gratuita do OneDrive (requerem uma assinatura Microsoft "
+"365), por isso ambas estão desativadas para esta conta."
+
+msgid ""
+"You can upload files, share links and set an expiry with this OneDrive. "
+"Download passwords are not available on OneDrive for Business links, so that "
+"option is turned off for this account."
+msgstr ""
+"Pode enviar arquivos, compartilhar links e definir uma data de expiração "
+"com este OneDrive. As senhas de download não estão disponíveis nos links "
+"do OneDrive para Empresas, por isso essa opção está desativada para esta "
+"conta."
+
+msgid ""
+"You can upload files and share links with this OneDrive, with a download "
+"password. Link expiry is not available on it, so that option is turned off "
+"for this account."
+msgstr ""
+"Pode enviar arquivos e compartilhar links com este OneDrive usando uma "
+"senha de download. A expiração dos links não está disponível nesta "
+"conta, por isso essa opção está desativada."
+
+msgid "Signed in as {who}. {terms}"
+msgstr "Sessão iniciada como {who}. {terms}"
+
+msgid "Collapse into reader"
+msgstr "Recolher no leitor"
+
+msgid "Open in window"
+msgstr "Abrir em uma janela"
+
+msgid "Save Draft"
+msgstr "Salvar rascunho"
+
+msgid "Save to Drafts"
+msgstr "Salvar em Rascunhos"
+
+msgid "Delete Draft"
+msgstr "Excluir rascunho"
+
+msgid "Move this draft to Trash"
+msgstr "Mover este rascunho para a Lixeira"
+
+msgid "Schedule"
+msgstr "Agendar"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Send later"
+msgstr "Enviar mais tarde"
+
+msgid "Send now"
+msgstr "Enviar agora"
+
+msgid "Tomorrow morning (8:00)"
+msgstr "Amanhã de manhã (8:00)"
+
+msgid "Tomorrow afternoon (13:00)"
+msgstr "Amanhã à tarde (13:00)"
+
+msgid "Monday morning (8:00)"
+msgstr "Segunda-feira de manhã (8:00)"
+
+msgid "Pick a date and time…"
+msgstr "Escolher uma data e hora…"
+
+msgid "Encrypt with OpenPGP to every recipient's key"
+msgstr "Criptografar com a chave OpenPGP de cada destinatário"
+
+msgid "Sign with your OpenPGP key"
+msgstr "Assinar com sua chave OpenPGP"
+
+msgid "Attach files"
+msgstr "Anexar arquivos"
+
+msgid "Upload to cloud storage and share a link"
+msgstr "Enviar para o armazenamento na nuvem e compartilhar um link"
+
+msgid "Open Contacts"
+msgstr "Abrir Contatos"
+
+msgid "Show From, To and Subject"
+msgstr "Mostrar De, Para e Assunto"
+
+msgid "Send now instead"
+msgstr "Enviar agora"
+
+msgid "Download password for {name}: {password}"
+msgstr "Senha de download de {name}: {password}"
+
+msgid "Copy"
+msgstr "Copiar"
+
+msgid "From"
+msgstr "De"
+
+msgid "To"
+msgstr "Para"
+
+msgid "Cc"
+msgstr "Cc"
+
+msgid "Bcc"
+msgstr "Bcc"
+
+msgid "Reply-To"
+msgstr "Responder a"
+
+msgid "More"
+msgstr "Mais"
+
+msgid "Show Cc, Bcc and Reply-To"
+msgstr "Mostrar Cc, Bcc e Responder a"
+
+msgid "Upload to Cloud Storage"
+msgstr "Enviar para o armazenamento na nuvem"
+
+msgid "Not signed in"
+msgstr "Sessão não iniciada"
+
+msgid ""
+"The sign-in for {name} is not in the keyring. Open Settings, Cloud Storage, "
+"and enter it again."
+msgstr ""
+"Os dados de acesso de {name} não estão no chaveiro. Abra Configurações, "
+"Armazenamento na nuvem, e digite-os novamente."
+
+msgid "link expires {date}"
+msgstr "o link expira em {date}"
+
+msgid "Could not upload {name}"
+msgstr "Não foi possível enviar {name}"
+
+msgid "Attach Files"
+msgstr "Anexar arquivos"
+
+msgid "Cannot send with OpenPGP"
+msgstr "Não é possível enviar com OpenPGP"
+
+msgid "{name} (link)"
+msgstr "{name} (link)"
+
+msgid "Uploading…"
+msgstr "Enviando…"
+
+msgid "Upload {n} file and put its share link in the message."
+msgid_plural "Upload {n} files and put their share links in the message."
+msgstr[0] "Enviar {n} arquivo e inserir o link de compartilhamento na mensagem."
+msgstr[1] "Enviar {n} arquivos e inserir os links de compartilhamento na mensagem."
+
+msgid "Upload"
+msgstr "Enviar"
+
+msgid "Protect with a password"
+msgstr "Proteger com uma senha"
+
+msgid "Download password (empty: generated)"
+msgstr "Senha de download (vazio: gerada)"
+
+msgid ""
+"There is no OpenPGP key of your own for {addr}. Generate one under Settings, "
+"OpenPGP, or choose a key in the account's settings."
+msgstr ""
+"Não possui uma chave OpenPGP para {addr}. Gere uma em Configurações, "
+"OpenPGP, ou escolha uma chave nas configurações da conta."
+
+msgid ""
+"There is no OpenPGP key for {addr}. Ask them for their public key, or fetch "
+"it under Settings, OpenPGP."
+msgstr ""
+"Não existe uma chave OpenPGP para {addr}. Solicite a chave pública desse "
+"contato ou procure-a em Configurações, OpenPGP."
+
+msgid "That time has passed"
+msgstr "Essa hora já passou"
+
+msgid "Choose a time later than now."
+msgstr "Escolha uma hora posterior à atual."
+
+msgid "Contacts"
+msgstr "Contatos"
+
+msgid "Open in GNOME Contacts"
+msgstr "Abrir nos Contatos do GNOME"
+
+msgid "Search contacts"
+msgstr "Pesquisar contatos"
+
+msgid "No Contacts"
+msgstr "Sem contatos"
+
+msgid "Add contacts in GNOME Contacts to see them here."
+msgstr "Adicione contatos no Contatos do GNOME para vê-los aqui."
+
+msgid "Open GNOME Contacts"
+msgstr "Abrir Contatos do GNOME"
+
+msgid "New contact"
+msgstr "Novo contato"
+
+msgid "Contacts you add in GNOME Contacts appear here."
+msgstr "Os contatos adicionados nos Contatos do GNOME aparecem aqui."
+
+msgid "Sort contacts"
+msgstr "Ordenar contatos"
+
+msgid "Edit contact"
+msgstr "Editar contato"
+
+msgid "First name"
+msgstr "Nome"
+
+msgid "Last name"
+msgstr "Sobrenome"
+
+msgid "Delete Contact?"
+msgstr "Excluir contato?"
+
+msgid "Delete…"
+msgstr "Excluir…"
+
+msgid "View photo"
+msgstr "Ver foto"
+
+msgid "Edit Contact"
+msgstr "Editar contato"
+
+msgid "New Contact"
+msgstr "Novo contato"
+
+msgid "Add email"
+msgstr "Adicionar email"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Add phone"
+msgstr "Adicionar telefone"
+
+msgid "Add website"
+msgstr "Adicionar um site"
+
+msgid "Search folders"
+msgstr "Pesquisar pastas"
+
+msgid "Mark as read"
+msgstr "Marcar como lida"
+
+msgid "Star"
+msgstr "Adicionar estrela"
+
+msgid "Not spam"
+msgstr "Não é spam"
+
+msgid "Add sender to Contacts"
+msgstr "Adicionar remetente aos contatos"
+
+msgid "Mark as unread"
+msgstr "Marcar como não lida"
+
+msgid "Remove star"
+msgstr "Remover estrela"
+
+msgid "Show conversation"
+msgstr "Mostrar conversa"
+
+msgid "Choose which folders to search"
+msgstr "Escolher as pastas a pesquisar"
+
+msgid "All folders"
+msgstr "Todas as pastas"
+
+msgid "This folder"
+msgstr "Esta pasta"
+
+msgid "Clear selection"
+msgstr "Limpar seleção"
+
+msgid "Loading more…"
+msgstr "Carregando mais…"
+
+msgid "No Messages"
+msgstr "Sem mensagens"
+
+msgid "There's nothing here right now."
+msgstr "No momento, não existe aqui nada."
+
+msgid "Remove Stars"
+msgstr "Remover estrelas"
+
+msgid "Star Conversation"
+msgstr "Adicionar estrela à conversa"
+
+msgid "Remove Star"
+msgstr "Remover estrela"
+
+msgid "Mark All as Read"
+msgstr "Marcar tudo como lido"
+
+msgid "Mark All as Unread"
+msgstr "Marcar tudo como não lido"
+
+msgid "Add Sender to Contacts"
+msgstr "Adicionar remetente aos contatos"
+
+msgid "Fetch the sender's key"
+msgstr "Obter a chave do remetente"
+
+msgid "Trust this key…"
+msgstr "Confiar nesta chave…"
+
+msgid "A pass proves the address wasn't forged — not that the message is safe."
+msgstr "Um resultado positivo prova que o endereço não foi falsificado — não que a mensagem seja segura."
+
+msgid "No message selected"
+msgstr "Nenhuma mensagem selecionada"
+
+msgid "Choose a message from the list to read it here."
+msgstr "Escolha uma mensagem da lista para lê-la aqui."
+
+msgid "Remote content (images, trackers) is blocked to protect your privacy."
+msgstr "O conteúdo remoto (imagens, rastreadores) está bloqueado para proteger sua privacidade."
+
+msgid "Load"
+msgstr "Carregar"
+
+msgid "Always allow sender"
+msgstr "Permitir sempre este remetente"
+
+msgid "Find in message"
+msgstr "Localizar na mensagem"
+
+msgid "No matches"
+msgstr "Sem correspondências"
+
+msgid "{cur} of {total}"
+msgstr "{cur} de {total}"
+
+msgid "Previous match"
+msgstr "Correspondência anterior"
+
+msgid "Next match"
+msgstr "Próxima correspondência"
+
+msgid "Close find"
+msgstr "Fechar pesquisa"
+
+#. Dimming comes from the cover's own foreground, which
+#. is picked for the message theme — `dim-label` would
+#. fade it against the app's instead.
+msgid "Loading…"
+msgstr "Carregando…"
+
+msgid "That key is no longer in your keyring."
+msgstr "Essa chave não está mais no seu chaveiro."
+
+msgid "Trust this key?"
+msgstr "Confiar nesta chave?"
+
+msgid ""
+"Compare the fingerprint with the one {uid} gives you in person or over "
+"another channel. Trusting a key you have not checked lets an impostor's "
+"signature pass as theirs."
+msgstr ""
+"Compare a impressão digital com a fornecida por {uid} pessoalmente ou "
+"por outro canal. Confiar em uma chave que você não verificou permite que "
+"a assinatura de um impostor seja aceita como pertencente a essa pessoa."
+
+msgid "Trust"
+msgstr "Confiar"
+
+msgid "Key trusted."
+msgstr "Chave considerada confiável."
+
+msgid ""
+"Generate a key of your own first (Settings, OpenPGP): trusting a key means "
+"signing it with yours."
+msgstr ""
+"Gere primeiro uma chave própria (Configurações, OpenPGP): confiar em uma "
+"chave significa assiná-la com a sua."
+
+msgid "Copied"
+msgstr "Copiado"
+
+#. Same order as the reader toolbar and the list's
+#. Actions Palette, View Source closing the line.
+msgid "Reply to this message"
+msgstr "Responder a esta mensagem"
+
+msgid "Reply to everyone on this message"
+msgstr "Responder a todos nesta mensagem"
+
+msgid "Forward this message"
+msgstr "Encaminhar esta mensagem"
+
+msgid "Mark as read or unread"
+msgstr "Marcar como lida ou não lida"
+
+msgid "Flag this message"
+msgstr "Marcar esta mensagem com estrela"
+
+msgid "Archive this message"
+msgstr "Arquivar esta mensagem"
+
+msgid "Delete this message"
+msgstr "Excluir esta mensagem"
+
+msgid "View source"
+msgstr "Ver fonte"
+
+msgid "Back to my fonts and colours"
+msgstr "Voltar aos meus fontes e cores"
+
+msgid "Show the sender's fonts and colours"
+msgstr "Mostrar os fontes e as cores do remetente"
+
+msgid "{n} recipient"
+msgid_plural "{n} recipients"
+msgstr[0] "{n} destinatário"
+msgstr[1] "{n} destinatários"
+
+msgid "Hide recipients"
+msgstr "Ocultar destinatários"
+
+msgid "Show recipients"
+msgstr "Mostrar destinatários"
+
+msgid "Save Image"
+msgstr "Salvar imagem"
+
+msgid "The sender's key was imported from the message."
+msgstr "A chave do remetente foi importada da mensagem."
+
+msgid "The sender's key was fetched and imported."
+msgstr "A chave do remetente foi obtida e importada."
+
+msgid "The sender's key was already in your keyring."
+msgstr "A chave do remetente já se encontrava no seu chaveiro."
+
+msgid "Load attachments from server"
+msgstr "Carregar anexos do servidor"
+
+msgid "Clear all"
+msgstr "Limpar tudo"
+
+msgid "Collapse status bar"
+msgstr "Recolher a barra de status"
+
+msgid "Export log"
+msgstr "Exportar registro"
+
+msgid "Status bar ({n})"
+msgstr "Barra de status ({n})"
+
+msgid "2 years"
+msgstr "2 anos"
+
+msgid "1 year"
+msgstr "1 ano"
+
+msgid "5 years"
+msgstr "5 anos"
+
+msgid "GnuPG"
+msgstr "GnuPG"
+
+msgid ""
+"Vireo reads and writes the keyring of the GnuPG on this computer, the same "
+"one the gpg command and other mail programs use."
+msgstr ""
+"O Vireo lê e escreve no chaveiro do GnuPG deste computador, o mesmo que "
+"é usado pelo comando gpg e por outros programas de email."
+
+msgid "Your keys"
+msgstr "Suas chaves"
+
+msgid ""
+"A key of your own signs what you send and opens what is encrypted to you. "
+"Send its public half to the people who should write to you encrypted."
+msgstr ""
+"Uma chave própria assina o que você envia e descriptografa o que recebe. "
+"Envie a parte pública às pessoas que devem escrever para você usando "
+"criptografia."
+
+msgid "Import…"
+msgstr "Importar…"
+
+msgid "Generate…"
+msgstr "Gerar…"
+
+msgid "Other people's keys"
+msgstr "Chaves de outras pessoas"
+
+msgid ""
+"The keys you encrypt to and check signatures with. A key is trusted once you "
+"have vouched for it; check its fingerprint with its owner first."
+msgstr ""
+"As chaves usadas para criptografar e verificar assinaturas. Uma chave se "
+"torna confiável depois que você confirma sua autenticidade; primeiro "
+"confira a impressão digital com o proprietário."
+
+msgid "Fetch by address…"
+msgstr "Obter por endereço…"
+
+msgid ""
+"GnuPG {version} found. Vireo reads and writes its keyring, the same one the "
+"gpg command and other mail programs use."
+msgstr ""
+"GnuPG {version} encontrado. O Vireo lê e escreve no respectivo chaveiro, "
+"o mesmo que é usado pelo comando gpg e por outros programas de email."
+
+msgid ""
+"GnuPG was not found. Install the gnupg package to read encrypted mail and "
+"check signatures; the Flatpak build carries it."
+msgstr ""
+"O GnuPG não foi encontrado. Instale o pacote gnupg para ler email "
+"criptografado e verificar assinaturas; a versão Flatpak já o inclui."
+
+msgid "No key of your own yet. Generate one for your address."
+msgstr "Ainda não possui uma chave própria. Gere uma para seu endereço."
+
+msgid "No keys from other people yet."
+msgstr "Ainda não existem chaves de outras pessoas."
+
+msgid "Generating the key…"
+msgstr "Gerando a chave…"
+
+msgid "Import Key"
+msgstr "Importar chave"
+
+msgid "OpenPGP keys"
+msgstr "Chaves OpenPGP"
+
+msgid "All files"
+msgstr "Todos os arquivos"
+
+msgid "Could not import: {e}"
+msgstr "Não foi possível importar: {e}"
+
+msgid "Export Public Key"
+msgstr "Exportar chave pública"
+
+msgid "Delete your key?"
+msgstr "Excluir sua chave?"
+
+msgid ""
+"{uid} will be removed, secret half included. Mail encrypted to it can never "
+"be read again, unless you have a backup of the key."
+msgstr ""
+"{uid} será removida, incluindo a parte secreta. As mensagens "
+"criptografadas com esta chave nunca mais poderão ser lidas, a menos que "
+"você tenha um backup da chave."
+
+msgid "Remove this key?"
+msgstr "Remover esta chave?"
+
+msgid ""
+"{uid} will be removed from your keyring. It can be imported or fetched again "
+"later."
+msgstr ""
+"{uid} será removida do seu chaveiro. Você poderá importá-la ou obtê-la "
+"novamente mais tarde."
+
+msgid "Could not delete: {e}"
+msgstr "Não foi possível excluir: {e}"
+
+msgid "Fetch a Key"
+msgstr "Obter uma chave"
+
+msgid ""
+"Looks the address up where its provider publishes keys (WKD), then on the "
+"keyservers."
+msgstr ""
+"Procura o endereço onde o respectivo provedor publica chaves (WKD) e, em "
+"seguida, nos servidores de chaves."
+
+msgid "Fetch"
+msgstr "Obter"
+
+msgid "Looking for a key for {addr}…"
+msgstr "Procurando uma chave para {addr}…"
+
+msgid ""
+"Generate a key of your own first: trusting a key means signing it with yours."
+msgstr ""
+"Gere primeiro uma chave própria: confiar em uma chave significa "
+"assiná-la com a sua."
+
+msgid "Could not sign the key: {e}"
+msgstr "Não foi possível assinar a chave: {e}"
+
+msgid "Your key is ready."
+msgstr "Sua chave está pronta."
+
+msgid "Could not generate the key: {e}"
+msgstr "Não foi possível gerar a chave: {e}"
+
+msgid "No key found: {e}"
+msgstr "Nenhuma chave encontrada: {e}"
+
+msgid "Generate a Key"
+msgstr "Gerar uma chave"
+
+msgid ""
+"A signing key with an encryption subkey, made by GnuPG and kept in its "
+"keyring. The passphrase is asked for when the key is used; the agent "
+"remembers it for a while."
+msgstr ""
+"Uma chave de assinatura com uma subchave de criptografia, criada pelo "
+"GnuPG e salva no respectivo chaveiro. A senha é solicitada quando a "
+"chave é usada; o agente memoriza-a durante algum tempo."
+
+msgid "Generate"
+msgstr "Gerar"
+
+msgid "Address"
+msgstr "Endereço"
+
+msgid "Expires"
+msgstr "Expira"
+
+msgid "Passphrase"
+msgstr "Senha"
+
+msgid "Confirm passphrase"
+msgstr "Confirmar senha"
+
+msgid "The passphrases differ"
+msgstr "As senhas são diferentes"
+
+msgid "Type the same passphrase twice."
+msgstr "Digite duas vezes a mesma senha."
+
+msgid "expires {date}"
+msgstr "expira em {date}"
+
+msgid "expired {date}"
+msgstr "expirou em {date}"
+
+msgid "signs and encrypts"
+msgstr "assina e criptografa"
+
+msgid "signs only: no encryption subkey"
+msgstr "somente assina: sem subchave de criptografia"
+
+msgid "{n} more address"
+msgid_plural "{n} more addresses"
+msgstr[0] "mais {n} endereço"
+msgstr[1] "mais {n} endereços"
+
+msgid "Export public key…"
+msgstr "Exportar chave pública…"
+
+msgid "Delete this key"
+msgstr "Excluir esta chave"
+
+msgid "Trusted"
+msgstr "Confiável"
+
+msgid "Trust…"
+msgstr "Confiar…"
+
+msgid "Remove this key"
+msgstr "Remover esta chave"
+
+msgid "{n} key imported."
+msgid_plural "{n} keys imported."
+msgstr[0] "{n} chave importada."
+msgstr[1] "{n} chaves importadas."
+
+msgid "That key was already in your keyring."
+msgstr "Essa chave já se encontrava no seu chaveiro."
+
+msgid "Vireo icon"
+msgstr "Ícone do Vireo"
+
+msgid "Envelope, white"
+msgstr "Envelope branco"
+
+msgid "Envelope, black"
+msgstr "Envelope preto"
+
+msgid "Follow system"
+msgstr "Seguir o sistema"
+
+msgid "Light"
+msgstr "Claro"
+
+msgid "Dark"
+msgstr "Escuro"
+
+msgid "Aug 23, 2026"
+msgstr "ago 23, 2026"
+
+msgid "23 Aug 2026"
+msgstr "23 ago 2026"
+
+msgid "2026 Aug 23"
+msgstr "2026 ago 23"
+
+msgid "12-hour (5:40 PM)"
+msgstr "12 horas (5:40 PM)"
+
+msgid "24-hour (17:40)"
+msgstr "24 horas (17:40)"
+
+msgid "Manually"
+msgstr "Manualmente"
+
+msgid "Every minute"
+msgstr "A cada minuto"
+
+msgid "Every 5 minutes"
+msgstr "A cada 5 minutos"
+
+msgid "Every 15 minutes"
+msgstr "A cada 15 minutos"
+
+msgid "Every 30 minutes"
+msgstr "A cada 30 minutos"
+
+msgid "Senders"
+msgstr "Remetentes"
+
+msgid "General"
+msgstr "Geral"
+
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgid "Message List"
+msgstr "Lista de mensagens"
+
+msgid "Reading"
+msgstr "Leitura"
+
+msgid "Composing"
+msgstr "Composição"
+
+msgid "Privacy"
+msgstr "Privacidade"
+
+msgid "Date and Time"
+msgstr "Data e hora"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "Backup"
+msgstr "Backup"
+
+msgid "Save the filter?"
+msgstr "Salvar o filtro?"
+
+msgid ""
+"The filter editor is open. Save what you changed, or discard it, before "
+"moving on."
+msgstr ""
+"O editor de filtros está aberto. Antes de continuar, salve ou descarte "
+"as alterações."
+
+msgid "Save the tag?"
+msgstr "Salvar a etiqueta?"
+
+msgid ""
+"The tag editor is open. Save what you changed, or discard it, before moving "
+"on."
+msgstr ""
+"O editor de etiquetas está aberto. Antes de continuar, salve ou descarte "
+"as alterações."
+
+msgid "Save the account?"
+msgstr "Salvar a conta?"
+
+msgid ""
+"The account editor is open. Save what you changed, or discard it, before "
+"moving on."
+msgstr ""
+"O editor de contas está aberto. Antes de continuar, salve ou descarte as "
+"alterações."
+
+msgid "Discard"
+msgstr "Descartar"
+
+msgid "Check for new mail"
+msgstr "Procurar novas mensagens"
+
+msgid "Uses IMAP IDLE to receive messages the moment they arrive."
+msgstr "Usa IMAP IDLE para receber as mensagens assim que estas chegam."
+
+msgid "Notifications"
+msgstr "Notificações"
+
+msgid "Desktop notifications"
+msgstr "Notificações da área de trabalho"
+
+msgid ""
+"Show system notifications for new mail and error alerts when Vireo isn't "
+"focused."
+msgstr ""
+"Mostrar notificações do sistema para novas mensagens e alertas de erro "
+"quando o Vireo não estiver em primeiro plano."
+
+msgid "Show sender and subject"
+msgstr "Mostrar remetente e assunto"
+
+msgid ""
+"Name who wrote and what about in the notification. Turn this off to keep "
+"both off the lock screen."
+msgstr ""
+"Mostra na notificação quem escreveu e qual é o assunto. Desative para "
+"manter ambos fora da tela de bloqueio."
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "The app itself. Message content has its own setting under Reading."
+msgstr "O próprio aplicativo. O conteúdo das mensagens tem uma configuração própria em Leitura."
+
+msgid "App icon"
+msgstr "Ícone do aplicativo"
+
+msgid "This window opens to"
+msgstr "Esta janela abre em"
+
+msgid "The view shown first when Settings is opened from the menu."
+msgstr "A visualização exibida primeiro quando as Configurações são abertas pelo menu."
+
+msgid "Accounts in the sidebar"
+msgstr "Contas na barra lateral"
+
+msgid ""
+"Each account's own section: its folders, filtered folders and tags. Off "
+"leaves the unified section alone. Also in the main menu, and Ctrl+Shift+A."
+msgstr ""
+"A seção própria de cada conta: as respectivas pastas, pastas filtradas e "
+"etiquetas. Quando desativada, a seção unificada não é alterada. As "
+"contas também estão disponíveis no menu principal e através de "
+"Ctrl+Shift+A."
+
+msgid "Chevron placement"
+msgstr "Posição das setas"
+
+msgid ""
+"Which side of Inboxes and the account rows their expand/collapse chevrons "
+"sit on."
+msgstr ""
+"O lado em que aparecem as setas para expandir ou recolher as Caixas de "
+"entrada e as linhas das contas."
+
+msgid "Attachments in the sidebar"
+msgstr "Anexos na barra lateral"
+
+msgid ""
+"A shortcut for browsing every account's attachments, pinned at the bottom of "
+"the sidebar."
+msgstr ""
+"Um atalho para consultar os anexos de todas as contas, fixado na parte "
+"inferior da barra lateral."
+
+msgid "Contacts in the sidebar"
+msgstr "Contatos na barra lateral"
+
+msgid ""
+"A shortcut that opens your contacts, pinned at the bottom of the sidebar."
+msgstr ""
+"Um atalho que abre seus contatos, fixado na parte inferior da barra "
+"lateral."
+
+msgid "Expand the sidebar on hover"
+msgstr "Expandir a barra lateral ao passar o ponteiro"
+
+msgid ""
+"Whenever the sidebar is collapsed to its icon rail, hovering it floats the "
+"full sidebar out over the panes; it folds back a moment after the pointer "
+"leaves."
+msgstr ""
+"Quando a barra lateral está reduzida à barra de ícones, passar o "
+"ponteiro sobre ela faz com que a barra completa flutue sobre os painéis; "
+"volta a recolher-se pouco depois de o ponteiro sair."
+
+msgid "Remember the sidebar layout"
+msgstr "Memorizar a disposição da barra lateral"
+
+msgid ""
+"Reopen with the accounts, folders and sections as you left them. Off starts "
+"every launch with everything folded up."
+msgstr ""
+"Ao reabrir, restaura as contas, pastas e seções como você as deixou. "
+"Quando desativado, cada inicialização começa com tudo recolhido."
+
+msgid "Remember icon rail state"
+msgstr "Memorizar o estado da barra de ícones"
+
+msgid ""
+"Reopen with icon rail in the last used state. Off starts every launch with "
+"the full sidebar."
+msgstr ""
+"Ao reabrir, restaura a barra de ícones no último estado usado. Quando "
+"desativado, cada inicialização começa com a barra lateral completa."
+
+msgid "Unified"
+msgstr "Unificadas"
+
+msgid ""
+"The section at the top of the sidebar that combines every account. Only "
+"shown with more than one account."
+msgstr ""
+"A seção no topo da barra lateral que reúne todas as contas. Só é "
+"mostrada quando existe mais do que uma conta."
+
+msgid "Inboxes"
+msgstr "Caixas de entrada"
+
+msgid ""
+"A unified inbox combining every account, at the top of the sidebar. Only "
+"shown with more than one account."
+msgstr ""
+"Uma caixa de entrada unificada que reúne todas as contas no topo da "
+"barra lateral. Só é mostrada quando existe mais do que uma conta."
+
+msgid "Starred"
+msgstr "Com estrela"
+
+msgid ""
+"Every account's starred folder as one list, opening to each account's own."
+msgstr ""
+"Reúne em uma única lista as mensagens com estrela de todas as contas; ao "
+"expandir, mostra a pasta de cada conta."
+
+msgid "Every account's sent mail as one list, opening to each account's own."
+msgstr "Reúne em uma única lista as mensagens enviadas de todas as contas; ao expandir, mostra a pasta de cada conta."
+
+msgid "Every account's drafts as one list, opening to each account's own."
+msgstr "Reúne em uma única lista os rascunhos de todas as contas; ao expandir, mostra a pasta de cada conta."
+
+msgid "Every account's archive as one list, opening to each account's own."
+msgstr "Reúne em uma única lista as mensagens arquivadas de todas as contas; ao expandir, mostra a pasta de cada conta."
+
+msgid ""
+"List every folder your filter rules file into in a collapsible section of "
+"the unified view."
+msgstr ""
+"Lista, em uma seção recolhível da visualização unificada, todas as "
+"pastas nas quais as regras de filtragem arquivam mensagens."
+
+msgid ""
+"The tags, each showing every account's mail with it. Each account keeps its "
+"own Tags section either way."
+msgstr ""
+"As etiquetas, mostrando cada uma o email correspondente de todas as "
+"contas. Cada conta mantém sempre sua própria seção Etiquetas."
+
+msgid "Unread counts"
+msgstr "Contagens de mensagens não lidas"
+
+msgid ""
+"Which unified rows show their combined unread chip while folded up. "
+"Expanded, the rows beneath carry the counts. Sent never shows one."
+msgstr ""
+"As linhas unificadas que mostram a contagem total de mensagens não lidas "
+"quando estão recolhidas. Quando expandidas, as linhas abaixo mostram as "
+"contagens. A pasta Enviadas nunca apresenta uma."
+
+msgid "Filters placement"
+msgstr "Posição dos filtros"
+
+msgid ""
+"In the unified section, as a row like Inboxes whose caret opens the folders; "
+"or above or below the accounts as a heading with its own list."
+msgstr ""
+"Na seção unificada, como uma linha semelhante a Caixas de entrada cuja "
+"seta abre as pastas; ou acima ou abaixo das contas, como um cabeçalho "
+"com sua própria lista."
+
+msgid "Tags placement"
+msgstr "Posição das etiquetas"
+
+msgid ""
+"The same choices for the Tags section: a unified row, or a heading above or "
+"below the accounts."
+msgstr ""
+"As mesmas opções para a seção Etiquetas: uma linha unificada ou um "
+"cabeçalho acima ou abaixo das contas."
+
+msgid "Icon rail"
+msgstr "Barra de ícones"
+
+msgid "The sidebar collapsed to icons, by its button or in a narrow window."
+msgstr "A barra lateral reduzida a ícones através do respectivo botão ou em uma janela estreita."
+
+msgid "Unread dots instead of counts"
+msgstr "Pontos em vez de contagens de mensagens não lidas"
+
+msgid ""
+"Mark folders and accounts that have unread mail with a dot in the accent "
+"colour rather than the number of messages. The count stays in the tooltip."
+msgstr ""
+"Assinalar as pastas e contas que contêm email não lido com um ponto na "
+"cor de destaque, em vez do número de mensagens. A contagem permanece na "
+"dica."
+
+msgid "Fold up expanded items"
+msgstr "Recolher elementos expandidos"
+
+msgid ""
+"When the sidebar collapses to the icon rail, the items switched on below "
+"start folded up. A long-press in the rail still expands or collapses any of "
+"them, and the full sidebar comes back exactly as you left it."
+msgstr ""
+"Quando a barra lateral é reduzida à barra de ícones, os elementos "
+"ativados abaixo começam também recolhidos. Um toque longo na barra "
+"continua a expandir ou recolher qualquer um deles, e a barra lateral "
+"completa reaparece exatamente como a deixou."
+
+msgid "All accounts"
+msgstr "Todas as contas"
+
+msgid "Every account's folder list."
+msgstr "A lista de pastas de cada conta."
+
+msgid "The account list under Inboxes."
+msgstr "A lista de contas sob Caixas de entrada."
+
+msgid "The account list under the unified Starred row."
+msgstr "A lista de contas sob a linha unificada Com estrela."
+
+msgid "The account list under the unified Sent row."
+msgstr "A lista de contas sob a linha unificada Enviadas."
+
+msgid "The account list under the unified Drafts row."
+msgstr "A lista de contas sob a linha unificada Rascunhos."
+
+msgid "The account list under the unified Archive row."
+msgstr "A lista de contas sob a linha unificada Arquivo."
+
+msgid "The folders under the Filters row."
+msgstr "As pastas sob a linha Filtros."
+
+msgid "The tags under the Tags row."
+msgstr "As etiquetas sob a linha Etiquetas."
+
+msgid "Sender avatars"
+msgstr "Avatares dos remetentes"
+
+msgid ""
+"The sender's avatar beside each message, in the list and above the message. "
+"Turning it off gives the sender and subject more room."
+msgstr ""
+"O avatar do remetente junto de cada mensagem, na lista e acima da "
+"mensagem. Desativá-lo dá mais espaço ao remetente e ao assunto."
+
+msgid "Preview lines"
+msgstr "Linhas de prévia"
+
+msgid ""
+"How much of each message to show under its subject. Off also stops previews "
+"being downloaded."
+msgstr ""
+"Quanto de cada mensagem será exibido sob o assunto. Quando desativado, "
+"também interrompe o download das prévias."
+
+msgid "Actions Palette in the message list"
+msgstr "Paleta de ações na lista de mensagens"
+
+msgid ""
+"The ⋯ action row under each message summary. Turning it off returns its "
+"space to the row; messages are still acted on from their cards and the right-"
+"click menu."
+msgstr ""
+"A linha de ações ⋯ sob o resumo de cada mensagem. Desativá-la devolve "
+"esse espaço à linha; as mensagens continuam a poder ser manipuladas a "
+"partir dos respectivos cartões e do menu de contexto."
+
+msgid "Open the Actions Palette on hover"
+msgstr "Abrir a Paleta de ações ao passar o ponteiro"
+
+msgid ""
+"The message list's ⋯ palette slides open by itself while the pointer rests "
+"on a row."
+msgstr ""
+"A paleta ⋯ da lista de mensagens abre-se automaticamente enquanto o "
+"ponteiro permanece sobre uma linha."
+
+msgid "Actions Palette as a menu"
+msgstr "Paleta de ações como menu"
+
+msgid ""
+"The ⋯ opens the row's menu, the same one a right-click shows, instead of "
+"sliding the palette out."
+msgstr ""
+"O botão ⋯ abre o menu da linha, o mesmo que aparece ao clicar com o "
+"botão direito, em vez de fazer deslizar a paleta para fora."
+
+msgid "Swipe actions"
+msgstr "Ações de deslize"
+
+msgid ""
+"Drag a message sideways with the mouse, or swipe it with two fingers on a "
+"trackpad, to archive or delete it."
+msgstr ""
+"Arraste uma mensagem lateralmente com o mouse ou deslize-a com dois "
+"dedos no touchpad para arquivá-la ou excluí-la."
+
+msgid "Reverse swipe directions"
+msgstr "Inverter as direções de deslize"
+
+msgid ""
+"Swipe (mouse-drag or trackpad) a message left to delete it and right to "
+"archive it. Turning this on swaps the two: left archives, right deletes."
+msgstr ""
+"Deslize uma mensagem para a esquerda, com o mouse ou touchpad, para "
+"excluí-la e para a direita para arquivá-la. Ao ativar esta opção, as "
+"duas ações são invertidas: a esquerda arquiva e a direita exclui."
+
+msgid "Actions Palette timeout"
+msgstr "Tempo limite da Paleta de ações"
+
+msgid ""
+"Seconds an actions palette stays open after the cursor leaves it — the "
+"list's and the message cards' alike."
+msgstr ""
+"O número de segundos durante os quais uma paleta de ações permanece "
+"aberta depois que o cursor sair — tanto na lista como nos cartões das "
+"mensagens."
+
+msgid "Conversations"
+msgstr "Conversas"
+
+msgid "Group messages by conversation"
+msgstr "Agrupar mensagens por conversa"
+
+msgid "Collapse replies into a single threaded conversation."
+msgstr "Recolher as respostas em uma única conversa encadeada."
+
+msgid "Expandable conversations"
+msgstr "Conversas expansíveis"
+
+msgid ""
+"Allow a conversation to expand/collapse its messages in the list. When off, "
+"the row keeps its count chip but the messages are displayed only as cards in "
+"the reading pane."
+msgstr ""
+"Permitir expandir ou recolher as mensagens de uma conversa na lista. "
+"Quando desativada, a linha mantém a contagem, mas as mensagens são "
+"apresentadas somente como cartões no painel de leitura."
+
+msgid "Expand conversations by default"
+msgstr "Expandir conversas por padrão"
+
+msgid ""
+"Show every message of a conversation in the list. When off, conversations "
+"start collapsed to their newest message."
+msgstr ""
+"Mostrar na lista todas as mensagens de uma conversa. Quando desativada, "
+"as conversas começam recolhidas na mensagem mais recente."
+
+msgid "Newest message first"
+msgstr "Mensagem mais recente primeiro"
+
+msgid ""
+"Show a conversation's latest message at the top of the reading pane. Off "
+"reads oldest to newest, downward."
+msgstr ""
+"Mostrar a mensagem mais recente de uma conversa no topo do painel de "
+"leitura. Quando desativada, a leitura é feita de cima para baixo, da "
+"mais antiga para a mais recente."
+
+msgid "Confirm conversation deletion"
+msgstr "Confirmar a exclusão de conversas"
+
+msgid ""
+"Warn before deleting when a whole conversation is selected, since every "
+"message in the thread goes with it."
+msgstr ""
+"Avisar antes de excluir quando está selecionada uma conversa inteira, "
+"uma vez que todas as mensagens do tópico serão excluídas."
+
+msgid ""
+"When an opened message counts as read. Conversations mark each message as it "
+"comes into view."
+msgstr ""
+"O momento em que uma mensagem aberta é considerada lida. Nas conversas, "
+"cada mensagem é marcada quando fica visível."
+
+msgid "Message appearance"
+msgstr "Aparência das mensagens"
+
+msgid "Theme for email content only, not the app itself."
+msgstr "Tema somente para o conteúdo das mensagens, não para o próprio aplicativo."
+
+msgid "Use my own font"
+msgstr "Usar minha própria fonte"
+
+msgid ""
+"Show every message in the font and size chosen below instead of the "
+"sender's. Headings keep their relative size; code stays monospaced."
+msgstr ""
+"Mostrar todas as mensagens com a fonte e o tamanho escolhidos abaixo, em "
+"vez dos definidos pelo remetente. Os títulos mantêm o tamanho relativo; "
+"o código permanece monoespaçado."
+
+msgid "Message font"
+msgstr "Fonte das mensagens"
+
+msgid "The interface font unless another is chosen."
+msgstr "A fonte da interface, a menos que outra seja escolhida."
+
+msgid "Use my own colours"
+msgstr "Usar minhas próprias cores"
+
+msgid ""
+"Ignore the text and background colours senders set, so every message reads "
+"in the same black or white on the reader's ground. Pictures are kept; links "
+"take the accent colour."
+msgstr ""
+"Ignorar as cores do texto e do fundo definidas pelos remetentes, para "
+"que todas as mensagens sejam apresentadas com o mesmo preto ou branco "
+"sobre o fundo do leitor. As imagens são mantidas; os links usam a cor de "
+"destaque."
+
+msgid "Message card actions"
+msgstr "Ações nos cartões de mensagens"
+
+msgid "How each message's action icons show in the reader, single or threaded."
+msgstr "A forma como os ícones de ação de cada mensagem aparecem no leitor, isolada ou encadeada."
+
+msgid "Single messages as cards"
+msgstr "Mensagens individuais como cartões"
+
+msgid ""
+"Show a lone message as an inset card with the same border as a "
+"conversation's messages. Off fills the pane edge to edge."
+msgstr ""
+"Mostrar uma mensagem isolada em um cartão recuado com o mesmo contorno "
+"das mensagens de uma conversa. Quando desativada, ocupa o painel de "
+"margem a margem."
+
+msgid "Always show recipients"
+msgstr "Mostrar sempre os destinatários"
+
+msgid ""
+"Show who each message went to under its sender, without clicking the "
+"recipients chip. With one recipient the chip is dropped entirely."
+msgstr ""
+"Mostrar sob o remetente a quem foi enviada cada mensagem, sem clicar no "
+"indicador dos destinatários. Quando existe somente um destinatário, o "
+"indicador é completamente omitido."
+
+msgid "Compose in the main window"
+msgstr "Compor na janela principal"
+
+msgid ""
+"New message slides down over the reading pane, like a reply — pop it out to "
+"a window from its header. Off = open a separate window directly."
+msgstr ""
+"A nova mensagem desliza para baixo sobre o painel de leitura, como uma "
+"resposta — pode destacá-la para uma janela através do cabeçalho. "
+"Desativado = abrir diretamente uma janela separada."
+
+msgid "Show From, To and Subject in the reply panel"
+msgstr "Mostrar De, Para e Assunto no painel de resposta"
+
+msgid ""
+"The inline reply opens with its address and subject rows showing. Off, they "
+"stay folded away behind a button in the panel's header."
+msgstr ""
+"A resposta incorporada abre com as linhas de endereço e assunto "
+"visíveis. Quando desativada, estas permanecem recolhidas atrás de um "
+"botão no cabeçalho do painel."
+
+msgid "Send new messages from"
+msgstr "Enviar novas mensagens a partir de"
+
+msgid "Replies still answer from the address the original was sent to."
+msgstr "As respostas continuam a ser enviadas a partir do endereço para o qual foi enviada a mensagem original."
+
+msgid "Paste as plain text"
+msgstr "Colar como texto sem formatação"
+
+msgid ""
+"Pasting into a message strips the clipboard's formatting. Off, a paste keeps "
+"its formatting. Right-clicking the editor always offers both."
+msgstr ""
+"Colar em uma mensagem remove a formatação da área de transferência. "
+"Quando desativado, a formatação é mantida. O menu de contexto do editor "
+"sempre oferece as duas opções."
+
+msgid "Spelling"
+msgstr "Ortografia"
+
+msgid "Check spelling as you type"
+msgstr "Verificar a ortografia ao escrever"
+
+msgid ""
+"Misspelled words in the message body are underlined; right-click a word for "
+"corrections."
+msgstr ""
+"As palavras com erros ortográficos no corpo da mensagem são sublinhadas; "
+"clique em uma palavra com o botão direito para ver as correções."
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Dictionaries the app can see"
+msgstr "Dicionários disponíveis para o aplicativo"
+
+msgid "Added words"
+msgstr "Palavras adicionadas"
+
+msgid ""
+"Words the spell checker was taught. The message body applies changes after a "
+"restart."
+msgstr ""
+"Palavras ensinadas ao verificador ortográfico. As alterações são "
+"aplicadas ao corpo das mensagens depois de reiniciar."
+
+msgid ""
+"Vireo collects no telemetry and sends no analytics. Remote content (images, "
+"trackers) is blocked by default. Allow it per message, trust a sender to "
+"always load it, or turn on \"Always load remote content\" below."
+msgstr ""
+"O Vireo não coleta telemetria nem envia dados analíticos. O conteúdo "
+"remoto (imagens e rastreadores) é bloqueado por padrão. Permita-o em "
+"cada mensagem, confie em um remetente para sempre carregá-lo ou ative "
+"“Sempre carregar conteúdo remoto” abaixo."
+
+msgid "Always load remote content"
+msgstr "Sempre carregar conteúdo remoto"
+
+msgid ""
+"Show images and other remote content in every new message without asking. "
+"Off by default, since remote content can be used to track when and where you "
+"read a message."
+msgstr ""
+"Mostrar imagens e outro conteúdo remoto em todas as mensagens novas sem "
+"perguntar. Desativado por padrão, pois o conteúdo remoto pode ser usado "
+"para saber quando e onde lê uma mensagem."
+
+msgid "Warn when remote content is blocked"
+msgstr "Avisar quando o conteúdo remoto estiver bloqueado"
+
+msgid ""
+"Shows the banner offering to load it. Turning this off only hides the notice "
+"— remote content is still blocked just the same."
+msgstr ""
+"Mostra o aviso que oferece a opção de carregar o conteúdo. Desativar "
+"esta opção apenas oculta o aviso — o conteúdo remoto continua bloqueado."
+
+msgid "Use Gravatar when a contact has no photo"
+msgstr "Usar o Gravatar quando um contato não tiver foto"
+
+msgid ""
+"Local GNOME Contacts photos are always preferred. Gravatar sends a hash of "
+"the sender's email."
+msgstr ""
+"As fotos locais dos Contatos do GNOME sempre têm prioridade. O Gravatar "
+"envia um hash do email do remetente."
+
+msgid "Show sender logos"
+msgstr "Mostrar logotipos dos remetentes"
+
+msgid ""
+"Fills the sender's avatar with the brand's own site icon, fetched from the "
+"sender's domain. That domain learns your IP address, which is what blocking "
+"remote content otherwise avoids."
+msgstr ""
+"Preenche o avatar do remetente com o ícone do site da marca, obtido a "
+"partir do domínio do remetente. Esse domínio fica a conhecer seu "
+"endereço IP, precisamente o que o bloqueio de conteúdo remoto evita."
+
+msgid ""
+"By default dates follow the system's own arrangement — its field order, "
+"month names and clock. Choose a format here to use it whatever the system is "
+"set to."
+msgstr ""
+"Por padrão, as datas seguem a disposição do sistema — a ordem dos "
+"campos, os nomes dos meses e o relógio. Escolha aqui um formato para "
+"usá-lo independentemente das configurações do sistema."
+
+msgid "Date format"
+msgstr "Formato da data"
+
+msgid "Clock"
+msgstr "Relógio"
+
+msgid "Keep running in the background"
+msgstr "Manter em execução em segundo plano"
+
+msgid ""
+"Closing the window hides it instead of quitting, so new mail still arrives. "
+"Vireo then appears under Background Apps in the system menu, where it can be "
+"quit."
+msgstr ""
+"Fechar a janela oculta-a em vez de sair, permitindo que as novas "
+"mensagens continuem a chegar. O Vireo aparece então em Aplicativos em "
+"segundo plano no menu do sistema, onde pode ser encerrado."
+
+msgid "Start at login"
+msgstr "Iniciar ao entrar na sessão"
+
+msgid ""
+"Start checking for mail when you log in. Vireo starts without a window and "
+"waits in the system menu."
+msgstr ""
+"Começa a verificar as mensagens quando você inicia a sessão. O Vireo é "
+"iniciado sem uma janela e permanece no menu do sistema."
+
+msgid "Show a tray icon"
+msgstr "Mostrar um ícone na área de notificação"
+
+msgid ""
+"An icon in the system tray, with a red dot while any inbox has unread mail. "
+"Click it to open Vireo. GNOME needs the AppIndicator extension; other "
+"desktops show it as they are."
+msgstr ""
+"Um ícone na área de notificação do sistema, com um ponto vermelho "
+"enquanto alguma caixa de entrada tiver email não lido. Clique nele para "
+"abrir o Vireo. O GNOME requer a extensão AppIndicator; outros ambientes "
+"de trabalho mostram-no tal como está."
+
+msgid "Tray icon"
+msgstr "Ícone da área de notificação"
+
+msgid ""
+"The Vireo icon, or a plain envelope in white or black to match the panel."
+msgstr ""
+"O ícone do Vireo ou um envelope simples branco ou preto, de acordo com o "
+"painel."
+
+msgid "Unread mail in the tray menu"
+msgstr "Email não lido no menu da área de notificação"
+
+msgid ""
+"List the newest unread inbox messages in the icon's menu; click one to open "
+"it."
+msgstr ""
+"Listar no menu do ícone as mensagens não lidas mais recentes das caixas "
+"de entrada; clique em uma para abri-la."
+
+msgid "Single-key shortcuts"
+msgstr "Atalhos de uma só tecla"
+
+msgid ""
+"Act on mail with one key and no modifier — j/k to move, r to reply, a to "
+"archive. Press Ctrl+? for the full list."
+msgstr ""
+"Executar ações no email com uma tecla sem modificador — j/k para "
+"navegar, r para responder e a para arquivar. Pressione Ctrl+? para ver a "
+"lista completa."
+
+msgid "Console mode"
+msgstr "Modo de console"
+
+msgid ""
+"A verbose live console in the status bar showing everything Vireo is doing "
+"under the hood."
+msgstr ""
+"Um console detalhado e em tempo real na barra de status, mostrando tudo "
+"o que o Vireo está fazendo internamente."
+
+msgid ""
+"Save everything the console has recorded since Vireo started, to attach to a "
+"bug report. Email addresses are shortened to their domain."
+msgstr ""
+"Salvar tudo o que o console registrou desde que o Vireo foi iniciado, "
+"para anexar a um relatório de erro. Os endereços de email são abreviados "
+"para o respectivo domínio."
+
+msgid ""
+"Everything Vireo keeps, as one file: mail and cloud storage accounts, "
+"preferences, filters, tags, the sidebar and window layout, the app icon "
+"choice and the words taught to the spell checker. Passwords and sign-ins "
+"stay in the system keyring and are never exported; OpenPGP keys stay in "
+"GnuPG."
+msgstr ""
+"Tudo o que o Vireo salva em um único arquivo: contas de email e de "
+"armazenamento na nuvem, preferências, filtros, etiquetas, disposição da "
+"barra lateral e das janelas, ícone escolhido para o aplicativo e "
+"palavras adicionadas ao corretor ortográfico. As senhas e os dados de "
+"acesso permanecem no chaveiro do sistema e nunca são exportados; as "
+"chaves OpenPGP permanecem no GnuPG."
+
+msgid "Export settings"
+msgstr "Exportar configurações"
+
+msgid "Import settings"
+msgstr "Importar configurações"
+
+msgid ""
+"Replaces the current accounts and preferences in place. Don't remove "
+"accounts first: removal also deletes their keyring passwords, which no "
+"backup carries."
+msgstr ""
+"Substitui no local as contas e preferências atuais. Não remova primeiro "
+"as contas: removê-las também exclui do chaveiro as respectivas senhas, "
+"que não estão incluídas em nenhum backup."
+
+msgid "In the unified section"
+msgstr "Na seção unificada"
+
+msgid "Above the accounts"
+msgstr "Acima das contas"
+
+msgid "Below the accounts"
+msgstr "Abaixo das contas"
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "1 line"
+msgstr "1 linha"
+
+msgid "2 lines"
+msgstr "2 linhas"
+
+msgid "3 lines"
+msgstr "3 linhas"
+
+msgid "Shown in the dock, app grid and switcher, and by the tray icon."
+msgstr "Exibido no dock, na grade e no alternador de aplicativos, além do ícone da área de notificação."
+
+msgid "When displayed"
+msgstr "Quando apresentado"
+
+msgid "After two seconds"
+msgstr "Após dois segundos"
+
+msgid "Hidden behind a toggle"
+msgstr "Oculto atrás de um botão de alternância"
+
+msgid "Shown while hovering"
+msgstr "Apresentado ao passar o ponteiro"
+
+msgid "Always visible"
+msgstr "Sempre visível"
+
+msgid "Account of the current folder"
+msgstr "Conta da pasta atual"
+
+msgid "System language — {language}"
+msgstr "Idioma do sistema — {language}"
+
+msgid "Add a word"
+msgstr "Adicionar uma palavra"
+
+msgid "Forget this word"
+msgstr "Esquecer esta palavra"
+
+msgid "Print Message"
+msgstr "Imprimir mensagem"
+
+msgid "Save as PDF"
+msgstr "Salvar como PDF"
+
+msgid "Could not save the PDF: {error}"
+msgstr "Não foi possível salvar o PDF: {error}"
+
+msgid "Print…"
+msgstr "Imprimir…"
+
+msgid "Save as PDF…"
+msgstr "Salvar como PDF…"
+
+msgid "Send as Attachment Instead"
+msgstr "Enviar como anexo em alternativa"
+
+msgid "Small"
+msgstr "Pequena"
+
+msgid "Medium"
+msgstr "Média"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Original Size"
+msgstr "Tamanho original"
+
+msgid "Will be recompressed to the size shown when this is sent"
+msgstr "Será recomprimida para o tamanho indicado quando for enviada"
+
+msgid "Recompress to This Size on Send"
+msgstr "Recomprimir para este tamanho ao enviar"
+
+msgid "Paste with Formatting"
+msgstr "Colar com formatação"
+
+msgid "Paste as Plain Text"
+msgstr "Colar como texto sem formatação"
+
+msgid "Bold"
+msgstr "Negrito"
+
+msgid "Italic"
+msgstr "Itálico"
+
+msgid "Underline"
+msgstr "Sublinhado"
+
+msgid "Strikethrough"
+msgstr "Rasurado"
+
+msgid "Bulleted list"
+msgstr "Lista com marcas"
+
+msgid "Numbered list"
+msgstr "Lista numerada"
+
+#. Adwaita has no blockquote glyph; the indent icon reads as "quote".
+msgid "Quote"
+msgstr "Citar"
+
+#. `LINK` is a sentinel command (handled specially); the icon is real.
+msgid "Insert link"
+msgstr "Inserir link"
+
+msgid "Clear formatting"
+msgstr "Limpar formatação"
+
+msgid "Insert Link"
+msgstr "Inserir link"
+
+msgid "Insert"
+msgstr "Inserir"
+
+msgid "Folder"
+msgstr "Pasta"
+
+msgid "Add account"
+msgstr "Adicionar conta"
+
+msgid "Add first account"
+msgstr "Adicionar a primeira conta"
+
+msgid "No accounts yet"
+msgstr "Ainda não existem contas"
+
+msgid "Outbox"
+msgstr "Caixa de saída"
+
+msgid "Mark Inbox as Read"
+msgstr "Marcar a Caixa de entrada como lida"
+
+msgid "Refresh"
+msgstr "Atualizar"
+
+msgid "New Folder…"
+msgstr "Nova pasta…"
+
+msgid "Account Settings…"
+msgstr "Configurações da conta…"
+
+msgid "Remove Account…"
+msgstr "Remover conta…"
+
+msgid "Show or hide sub-folders"
+msgstr "Mostrar ou ocultar subpastas"
+
+msgid "Folders"
+msgstr "Pastas"
+
+msgid "Folders ({len})"
+msgstr "Pastas ({len})"
+
+msgid "Add Folder"
+msgstr "Adicionar pasta"
+
+msgid "Show each inbox"
+msgstr "Mostrar cada caixa de entrada"
+
+msgid "Show each account"
+msgstr "Mostrar cada conta"
+
+msgid "Show each folder"
+msgstr "Mostrar cada pasta"
+
+msgid "Show each tag"
+msgstr "Mostrar cada etiqueta"
+
+msgid "Long-press to expand or collapse"
+msgstr "Pressionar e segurar para expandir ou recolher"
+
+msgid "Edit Filter…"
+msgstr "Editar filtro…"
+
+msgid "Rename Folder…"
+msgstr "Renomear pasta…"
+
+msgid "Delete Folder…"
+msgstr "Excluir pasta…"
+
+msgid "Empty Trash…"
+msgstr "Esvaziar lixeira…"
+
+msgid "Empty Junk…"
+msgstr "Esvaziar spam…"
+
+msgid "Edit Tag…"
+msgstr "Editar etiqueta…"
+
+msgid "Welcome to Vireo"
+msgstr "Bem-vindo ao Vireo"
+
+msgid ""
+"A clean, fast home for your mail.\n"
+"Let's set things up — it takes about a minute."
+msgstr ""
+"Um espaço simples e rápido para seu email.\n"
+"Vamos configurá-lo — demora cerca de um minuto."
+
+msgid "Get Started"
+msgstr "Começar"
+
+msgid "Add your email account"
+msgstr "Adicione sua conta de email"
+
+msgid "Found in GNOME Online Accounts"
+msgstr "Encontrada nas Contas online do GNOME"
+
+msgid "Your name"
+msgstr "Seu nome"
+
+msgid "Server details"
+msgstr "Dados do servidor"
+
+msgid "Filled in for known providers"
+msgstr "Preenchidos para os provedores conhecidos"
+
+msgid "IMAP server"
+msgstr "Servidor IMAP"
+
+msgid "IMAP port"
+msgstr "Porta IMAP"
+
+msgid "Test & Add"
+msgstr "Testar e adicionar"
+
+msgid ""
+"Google and Microsoft accounts sign in through GNOME Settings → Online "
+"Accounts, then appear above."
+msgstr ""
+"As contas do Google e da Microsoft entram pelas Configurações do GNOME → "
+"Contas online e depois aparecem acima."
+
+msgid "Scan Again"
+msgstr "Procurar novamente"
+
+msgid "Privacy, your way"
+msgstr "Privacidade à sua maneira"
+
+msgid ""
+"Vireo sends no telemetry, ever. These control what leaves your machine while "
+"you read."
+msgstr ""
+"O Vireo nunca envia telemetria. Estas opções controlam o que sai do seu "
+"computador enquanto lê."
+
+msgid "Block remote images"
+msgstr "Bloquear imagens remotas"
+
+msgid "Stops senders tracking when and where you open mail"
+msgstr "Impede os remetentes de saberem quando e onde abre o email"
+
+msgid "Fetch Gravatar portraits"
+msgstr "Obter retratos do Gravatar"
+
+msgid "Asks gravatar.com about each sender's address"
+msgstr "Consulta o gravatar.com sobre o endereço de cada remetente"
+
+msgid "Fetch sender logos"
+msgstr "Obter logotipos dos remetentes"
+
+msgid "Looks up company icons for the message list"
+msgstr "Procura ícones das empresas para a lista de mensagens"
+
+msgid "Show message content in notifications"
+msgstr "Mostrar o conteúdo das mensagens nas notificações"
+
+msgid "Off keeps senders and subjects off the lock screen"
+msgstr "Quando desativado, mantém remetentes e assuntos fora da tela de bloqueio"
+
+msgid "Make it yours"
+msgstr "Personalize-o"
+
+msgid "A few popular choices — everything can be changed later in Settings."
+msgstr "Algumas opções populares — tudo pode ser alterado mais tarde nas Configurações."
+
+msgid "Message text shown under each subject"
+msgstr "Texto da mensagem apresentado sob cada assunto"
+
+msgid "Colourful initials beside each message"
+msgstr "Iniciais coloridas junto de cada mensagem"
+
+msgid "Conversation view"
+msgstr "Visualização de conversas"
+
+msgid "Group messages into threads"
+msgstr "Agrupar mensagens em tópicos"
+
+#. The app icon: the whole set as one sideways-scrolling row on its
+#. own card, the default ringed.
+msgid "Pick your app icon"
+msgstr "Escolha o ícone do aplicativo"
+
+msgid "You're all set"
+msgstr "Está tudo pronto"
+
+msgid ""
+"Enjoy! If you encounter an issue or have a feature request,\n"
+"please open an issue on our <a href=\"{url}\">Github</a>."
+msgstr ""
+"Divirta-se! Se encontrar algum problema ou tiver uma sugestão de "
+"funcionalidade,\n"
+"abra um pedido no nosso <a href=\"{url}\">Github</a>."
+
+msgid "Start Reading"
+msgstr "Começar a ler"
+
+#. Fixed footer: Continue lives with the dots so it never scrolls
+#. away with a tall page. Hidden on the hero and final pages, which
+#. carry their own calls to action.
+msgid "Continue"
+msgstr "Continuar"
+
+msgid "Enter your email address and password first."
+msgstr "Digite primeiro seu endereço de email e a senha."
+
+msgid "Checking the connection…"
+msgstr "Verificando a conexão…"
+
+msgid "✓ {email} — added"
+msgstr "✓ {email} — adicionada"
+
+msgid "✓ {email} — connected and added"
+msgstr "✓ {email} — conectado e adicionado"
+
+msgid "{email} — mail server: {e}"
+msgstr "{email} — servidor de email: {e}"
+
+msgid "{email} — sending (SMTP): {e}"
+msgstr "{email} — envio (SMTP): {e}"
+
+msgid "Your mail provider confirmed this really came from {from}."
+msgstr "Seu provedor de email confirmou que esta mensagem veio realmente de {from}."
+
+msgid ""
+"This message failed the checks that prove it came from {from}. Treat it as a "
+"forgery."
+msgstr ""
+"Esta mensagem falhou as verificações que provam que veio de {from}. "
+"Trate-a como uma falsificação."
+
+msgid "This message carries a valid signature from {from}."
+msgstr "Esta mensagem contém uma assinatura válida de {from}."
+
+msgid ""
+"This message couldn't be confirmed as coming from {from}, and the checks "
+"that ran on it failed."
+msgstr ""
+"Não foi possível confirmar que esta mensagem veio de {from} e as "
+"verificações feitas falharam."
+
+msgid "Your mail provider didn't report any sender checks for this message."
+msgstr "Seu provedor de email não comunicou quaisquer verificações do remetente para esta mensagem."
+
+msgid "Nothing here proves this came from {from} — or that it didn't."
+msgstr "Nada aqui prova que esta mensagem veio de {from} — nem que não veio."
+
+msgid "{name}: passed"
+msgstr "{name}: aprovado"
+
+msgid "{name}: FAILED"
+msgstr "{name}: FALHOU"
+
+msgid "{name}: inconclusive"
+msgstr "{name}: inconclusivo"
+
+msgid "DMARC (is the From: address genuine)"
+msgstr "DMARC (o endereço De: é genuíno)"
+
+msgid "DKIM (signature)"
+msgstr "DKIM (assinatura)"
+
+msgid "SPF (sending server)"
+msgstr "SPF (servidor de envio)"
+
+msgid "Signed by: {d}"
+msgstr "Assinada por: {d}"
+
+msgid "Checked by: {who}"
+msgstr "Verificada por: {who}"
+
+msgid "From: {from}"
+msgstr "De: {from}"
+
+msgid "Replies would go to {reply}, not {from}"
+msgstr "As respostas seriam enviadas para {reply}, não para {from}"
+
+msgid "Bounces would go to {rp}"
+msgstr "As mensagens devolvidas seriam enviadas para {rp}"
+
+msgid "The sender's name says \"{claimed}\" but the address is {from}"
+msgstr "O nome do remetente indica «{claimed}», mas o endereço é {from}"
+
+msgid "runtime error: {e}"
+msgstr "erro de execução: {e}"
+
+msgid "Syncing…"
+msgstr "Sincronizando…"
+
+msgid "Could not load {path}: {e}"
+msgstr "Não foi possível carregar {path}: {e}"
+
+msgid "Could not load message: {e}"
+msgstr "Não foi possível carregar a mensagem: {e}"
+
+msgid "Could not load conversation: {e}"
+msgstr "Não foi possível carregar a conversa: {e}"
+
+msgid "Could not load source: {e}"
+msgstr "Não foi possível carregar o código fonte: {e}"
+
+msgid "Could not load attachments: {e}"
+msgstr "Não foi possível carregar os anexos: {e}"
+
+msgid "Could not update message: {e}"
+msgstr "Não foi possível atualizar a mensagem: {e}"
+
+msgid "Could not flag message: {e}"
+msgstr "Não foi possível marcar a mensagem com estrela: {e}"
+
+msgid ""
+"This server does not store tags, so Vireo keeps them on this computer only"
+msgstr ""
+"Este servidor não salva etiquetas, por isso o Vireo as mantém somente "
+"neste computador"
+
+msgid "Could not tag message: {e}"
+msgstr "Não foi possível atribuir uma etiqueta à mensagem: {e}"
+
+msgid "Could not mark folder read: {e}"
+msgstr "Não foi possível marcar a pasta como lida: {e}"
+
+msgid "Could not mark as spam: {e}"
+msgstr "Não foi possível marcar como spam: {e}"
+
+msgid "Could not mark as not spam: {e}"
+msgstr "Não foi possível marcar como não sendo spam: {e}"
+
+msgid "Could not mark {len} messages as not spam: {e}"
+msgstr "Não foi possível marcar {len} mensagens como não sendo spam: {e}"
+
+msgid "Could not move message: {e}"
+msgstr "Não foi possível mover a mensagem: {e}"
+
+msgid "Could not move {len} messages: {e}"
+msgstr "Não foi possível mover {len} mensagens: {e}"
+
+msgid "Undo failed: {e}"
+msgstr "Falha ao desfazer: {e}"
+
+msgid "Undo: the messages are no longer where that move put them."
+msgstr "Não é possível desfazer: as mensagens já não se encontram no local para onde foram movidas."
+
+msgid "Move undone — message restored"
+msgid_plural "Move undone — {n} messages restored"
+msgstr[0] "Movimentação cancelada — mensagem restaurada"
+msgstr[1] "Movimentação cancelada — {n} mensagens restauradas"
+
+msgid "Could not delete permanently: {e}"
+msgstr "Não foi possível excluir permanentemente: {e}"
+
+msgid "Could not empty the folder: {e}"
+msgstr "Não foi possível esvaziar a pasta: {e}"
+
+msgid "Could not create folder: {e}"
+msgstr "Não foi possível criar a pasta: {e}"
+
+msgid "Could not move folder: {e}"
+msgstr "Não foi possível mover a pasta: {e}"
+
+msgid "Could not delete folder: {e}"
+msgstr "Não foi possível excluir a pasta: {e}"
+
+msgid "Sending…"
+msgstr "Enviando…"
+
+msgid "Message sent, but saving to Sent failed: {e}"
+msgstr "A mensagem foi enviada, mas não foi possível salvá-la em Enviadas: {e}"
+
+msgid ""
+"Send failed: {e}. The message is in the Outbox and will be sent when the "
+"connection is back."
+msgstr ""
+"Falha ao enviar: {e}. A mensagem está na Caixa de saída e será enviada "
+"quando a conexão for restabelecida."
+
+msgid "Send failed: {e}"
+msgstr "Falha ao enviar: {e}"
+
+msgid "Saving draft…"
+msgstr "Salvando o rascunho…"
+
+msgid "Could not save draft: {e}"
+msgstr "Não foi possível salvar o rascunho: {e}"
+
+msgid "Connecting to {host}…"
+msgstr "Conectando a {host}…"
+
+msgid "Could not list folders: {e}"
+msgstr "Não foi possível listar as pastas: {e}"
+
+msgid "Connection failed: {e}"
+msgstr "Falha na conexão: {e}"
+
+msgid "Downloading attachments… {n} remaining"
+msgid_plural "Downloading attachments… {n} remaining"
+msgstr[0] "Baixando anexos… falta {n}"
+msgstr[1] "Baixando anexos… faltam {n}"
+
+msgid "“{subject}” will be sent {when}"
+msgstr "«{subject}» será enviada {when}"
+
+msgid "Could not schedule the message: there is no local store to keep it in."
+msgstr "Não foi possível agendar a mensagem: não existe armazenamento local onde a salvar."
+
+msgid "Still could not send “{subject}”: {e}"
+msgstr "Continuou a não ser possível enviar «{subject}»: {e}"
+
+msgid ""
+"no OpenPGP key of your own for {addr}; generate one under Settings, OpenPGP"
+msgstr ""
+"não possui uma chave OpenPGP para {addr}; gere uma em Configurações, "
+"OpenPGP"
+
+msgid "no OpenPGP key for {addr}"
+msgstr "não existe uma chave OpenPGP para {addr}"
+
+msgid "Could not fetch mail: {e}"
+msgstr "Não foi possível obter o email: {e}"
+
+msgid "Could not delete message: {e}"
+msgstr "Não foi possível excluir a mensagem: {e}"
+
+msgid "POP3 accounts don't support folders"
+msgstr "As contas POP3 não suportam pastas"
+
+msgid "Inbox"
+msgstr "Caixa de entrada"
+
+msgid "Could not move messages: {e}"
+msgstr "Não foi possível mover as mensagens: {e}"
+
+msgid "Could not rename folder: unknown folder"
+msgstr "Não foi possível renomear a pasta: pasta desconhecida"
+
+msgid "Could not rename folder: {e}"
+msgstr "Não foi possível renomear a pasta: {e}"
+
+msgid "Could not delete folder: unknown folder"
+msgstr "Não foi possível excluir a pasta: pasta desconhecida"
+
+msgid "Email Client"
+msgstr "Cliente de email"
+
+msgid "A clean, fast GNOME-native email client"
+msgstr "Um cliente de email simples, rápido e nativo do GNOME"
+
+msgid "Email;Mail;IMAP;"
+msgstr "Email;Email;IMAP;"
+
+msgid "Private, GNOME-native email client"
+msgstr "Cliente de email privado e nativo do GNOME"
+
+msgid ""
+"Vireo is a desktop email client for Wayland that feels at home in GNOME. It "
+"talks IMAP and SMTP directly, keeps your mail and credentials on your "
+"machine, and blocks trackers by default — no telemetry, no analytics."
+msgstr ""
+"O Vireo é um cliente de email para Wayland que se integra naturalmente "
+"ao GNOME. Comunica-se diretamente por IMAP e SMTP, mantém suas mensagens "
+"e credenciais no computador e bloqueia rastreadores por padrão — sem "
+"telemetria nem dados analíticos."
+
+msgid "Features:"
+msgstr "Recursos:"
+
+msgid "Multiple IMAP and POP3 accounts, with a unified Inboxes view"
+msgstr "Várias contas IMAP e POP3, com uma vista unificada das Caixas de entrada"
+
+msgid ""
+"Google, Microsoft and custom OAuth 2.0 sign-in, plus GNOME Online Accounts "
+"import"
+msgstr ""
+"Acesso no Google, Microsoft e serviços OAuth 2.0 personalizados, além da "
+"importação das Contas online do GNOME"
+
+msgid "Whole-mailbox sync and search with infinite scroll"
+msgstr "Sincronização e pesquisa de toda a caixa de email com rolagem infinita"
+
+msgid "Deletions and moves made on other devices sync back automatically"
+msgstr "Exclusões e movimentações feitas em outros dispositivos são sincronizadas automaticamente"
+
+msgid "Conversation threading, compose, reply, forward, and editable drafts"
+msgstr "Organização por conversas, composição, resposta, encaminhamento e rascunhos editáveis"
+
+msgid "Remote content blocked by default; per-message light or dark reading"
+msgstr "Conteúdo remoto bloqueado por padrão; leitura clara ou escura por mensagem"
+
+msgid "Passwords and OAuth tokens kept in the system keyring"
+msgstr "Senhas e tokens OAuth salvos no chaveiro do sistema"
+
+msgid "The unified inbox in light mode"
+msgstr "A caixa de entrada unificada no modo claro"
+
+msgid "Hyprlab"
+msgstr "Hyprlab"
