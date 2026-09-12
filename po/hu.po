@@ -1,0 +1,3552 @@
+# Translation template for Vireo.
+# This file is distributed under the same license as the Vireo package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vireo\n"
+"Report-Msgid-Bugs-To: https://github.com/hyprlab/vireo/issues\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Last-Translator: s7stM <system7@protonmail.com>\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zed 1.18.1\n"
+
+msgid "Main Menu"
+msgstr "Főmenü"
+
+msgid "Expand sidebar"
+msgstr "Oldalsáv kibontása"
+
+msgid "Collapse sidebar"
+msgstr "Oldalsáv összecsukása"
+
+msgid "Search messages (Ctrl+F)"
+msgstr "Üzenetek keresése (Ctrl+F)"
+
+msgid "Show only unread"
+msgstr "Csak olvasatlanok megjelenítése"
+
+msgid "Show only starred"
+msgstr "Csak csillagozottak megjelenítése"
+
+msgid "Sort messages"
+msgstr "Üzenetek rendezése"
+
+msgid "Edit this message"
+msgstr "Üzenet szerkesztése"
+
+msgid "Try to send this message now"
+msgstr "Üzenet küldésének megkísérlése most"
+
+msgid "Send all"
+msgstr "Összes küldése"
+
+msgid "Reply"
+msgstr "Válasz"
+
+msgid "Reply All"
+msgstr "Válasz mindenkinek"
+
+msgid "Forward"
+msgstr "Továbbítás"
+
+msgid "Mark as Read"
+msgstr "Megjelölés olvasottként"
+
+msgid "Mark as Unread"
+msgstr "Megjelölés olvasatlanként"
+
+msgid "Flag"
+msgstr "Megjelölés"
+
+msgid "Find in message (Ctrl+F)"
+msgstr "Keresés az üzenetben (Ctrl+F)"
+
+msgid "Print Preview (Ctrl+Shift+P)"
+msgstr "Nyomtatási előnézet (Ctrl+Shift+P)"
+
+msgid "Mark as Spam"
+msgstr "Megjelölés levélszemétként"
+
+msgid "Archive"
+msgstr "Archiválás"
+
+msgid "Downloading attachments…"
+msgstr "Mellékletek letöltése…"
+
+msgid "Close"
+msgstr "Bezárás"
+
+msgid "Previous"
+msgstr "Előző"
+
+msgid "Next"
+msgstr "Következő"
+
+msgid "Open"
+msgstr "Megnyitás"
+
+msgid "Download…"
+msgstr "Letöltés…"
+
+msgid "Settings"
+msgstr "Beállítások"
+
+msgid "Print Preview…"
+msgstr "Nyomtatási előnézet…"
+
+msgid "Print Message…"
+msgstr "Nyomtatás…"
+
+msgid "Quit"
+msgstr "Kilépés"
+
+msgid "Actions"
+msgstr "Műveletek"
+
+msgid "Tags"
+msgstr "Címkék"
+
+msgid "Refresh or long-press for Status Bar"
+msgstr "Frissítsen, vagy tartsa hosszan lenyomva az állapotsávhoz"
+
+msgid "Attachments"
+msgstr "Mellékletek"
+
+msgid "Toggle sidebar"
+msgstr "Oldalsáv ki/bekapcsolása"
+
+msgid "Date (Newest first)"
+msgstr "Dátum (legújabb elöl)"
+
+msgid "Date (Oldest first)"
+msgstr "Dátum (legrégebbi elöl)"
+
+msgid "Sender (A–Z)"
+msgstr "Feladó (A–Z)"
+
+msgid "Subject (A–Z)"
+msgstr "Tárgy (A–Z)"
+
+msgid "Unread first"
+msgstr "Olvasatlanok elöl"
+
+msgid "Flagged first"
+msgstr "Megjelöltek elöl"
+
+msgid "Added to Contacts"
+msgstr "Hozzáadva a névjegyekhez"
+
+msgid "Added email to {name}"
+msgstr "E-mail-cím hozzáadva ehhez: {name}"
+
+msgid "Already in Contacts ({name})"
+msgstr "Már a névjegyek között van ({name})"
+
+msgid "Could not add contact: {e}"
+msgstr "A névjegy nem adható hozzá: {e}"
+
+msgid "Save Attachment"
+msgstr "Melléklet mentése"
+
+msgid ""
+"Couldn't restart automatically — quit and reopen Vireo to finish switching "
+"the icon."
+msgstr ""
+"Nem sikerült automatikusan újraindítani — lépjen ki a Vireóból, "
+"majd nyissa meg újra az ikonváltás befejezéséhez."
+
+msgid "Open a message first, then print it."
+msgstr "Előbb nyisson meg egy üzenetet, majd nyomtassa ki."
+
+msgid "Nothing to undo"
+msgstr "Nincs visszavonható művelet"
+
+msgid "Undoing move…"
+msgstr "Áthelyezés visszavonása…"
+
+msgid "No message with the ID {id} was found"
+msgstr "Nem található üzenet ezzel az azonosítóval: {id}"
+
+msgid "No Drafts folder available for this account"
+msgstr "Ehhez a fiókhoz nem érhető el Piszkozatok mappa"
+
+msgid "Could not save account: {e}"
+msgstr "A fiók nem menthető: {e}"
+
+msgid "Enable Console mode in Settings → System & Appearance"
+msgstr "Engedélyezze a konzolmódot a Beállítások → Rendszer és megjelenés menüben"
+
+msgid "Export Settings"
+msgstr "Beállítások exportálása"
+
+msgid "Settings exported to {display}"
+msgstr "A beállítások exportálva ide: {display}"
+
+msgid "Export failed: {e}"
+msgstr "Az exportálás sikertelen: {e}"
+
+msgid "Export Log"
+msgstr "Napló exportálása"
+
+msgid "Log exported to {display}"
+msgstr "A napló exportálva ide: {display}"
+
+msgid "Import Settings"
+msgstr "Beállítások importálása"
+
+msgid "Settings Imported"
+msgstr "Beállítások importálva"
+
+msgid "Later"
+msgstr "Később"
+
+msgid "Restart Vireo"
+msgstr "A Vireo újraindítása"
+
+msgid "Import failed: {e}"
+msgstr "Az importálás sikertelen: {e}"
+
+msgid "Could not import account: {e}"
+msgstr "A fiók nem importálható: {e}"
+
+msgid "No address book available"
+msgstr "Nem érhető el címjegyzék"
+
+msgid "Could not update contact: {e}"
+msgstr "A névjegy nem frissíthető: {e}"
+
+msgid "Reveal Status Bar"
+msgstr "Állapotsáv megjelenítése"
+
+msgid "Console"
+msgstr "Konzol"
+
+msgid "Keyboard Shortcuts"
+msgstr "Billentyűparancsok"
+
+msgid ""
+"Single-key shortcuts are switched off. Turn them on in Settings → System & "
+"Appearance."
+msgstr ""
+"Az egybillentyűs parancsikonok ki vannak kapcsolva. Kapcsolja be "
+"őket a Beállítások → Rendszer és megjelenés menüben."
+
+msgid "Restarting Vireo"
+msgstr "A Vireo újraindítása"
+
+msgid "Applying your new app icon. Vireo will close and reopen in a moment."
+msgstr "Az új alkalmazásikon alkalmazása. A Vireo hamarosan bezárul és újra megnyílik."
+
+msgid "Restart to finish switching icons?"
+msgstr "Újraindítja az ikonváltás befejezéséhez?"
+
+msgid ""
+"The dock and Vireo's own windows keep the old icon until Vireo restarts."
+msgstr ""
+"A dokk és a Vireo saját ablakai a régi ikont használják a Vireo "
+"újraindításáig."
+
+msgid "Restart Now"
+msgstr "Újraindítás most"
+
+msgid "Edit"
+msgstr "Szerkesztés"
+
+msgid "Send Now"
+msgstr "Küldés most"
+
+msgid "Send All"
+msgstr "Összes küldése"
+
+msgid "View Source"
+msgstr "Forrás megtekintése"
+
+msgid "Delete"
+msgstr "Törlés"
+
+msgid "Remove Flag"
+msgstr "Jelölés eltávolítása"
+
+msgid "Print Preview"
+msgstr "Nyomtatási előnézet"
+
+msgid "Move to Inbox"
+msgstr "Áthelyezés a Beérkezett üzenetek közé"
+
+msgid "Message Source"
+msgstr "Üzenetforrás"
+
+msgid "Delete {n} messages"
+msgstr "{n} üzenet törlése"
+
+msgid "New Message"
+msgstr "Új üzenet"
+
+msgid "Delete this conversation?"
+msgstr "Törli ezt a beszélgetést?"
+
+msgid "Cancel"
+msgstr "Mégse"
+
+msgid "Delete Conversation"
+msgstr "Beszélgetés törlése"
+
+msgid "Delete this message permanently?"
+msgid_plural "Delete {n} messages permanently?"
+msgstr[0] "Véglegesen törli ezt az üzenetet?"
+msgstr[1] "Véglegesen töröl {n} üzenetet?"
+
+msgid ""
+"It is already in Trash, so it will be erased from the server. This can’t be "
+"undone."
+msgstr ""
+"Már a Kukában van, ezért törlődik a kiszolgálóról. Ez nem vonható "
+"vissza."
+
+msgid ""
+"They are already in Trash, so they will be erased from the server. This "
+"can’t be undone."
+msgstr ""
+"Már a Kukában vannak, ezért törlődnek a kiszolgálóról. Ez nem vonható "
+"vissza."
+
+msgid "No {v1} folder available"
+msgstr "Nem érhető el {v1} mappa"
+
+msgid "One message stayed put — mail can't be moved between accounts"
+msgstr "Egy üzenet a helyén maradt — a levelek nem helyezhetők át fiókok között"
+
+msgid "{foreign} messages stayed put — mail can't be moved between accounts"
+msgstr "{foreign} üzenet a helyén maradt — a levelek nem helyezhetők át fiókok között"
+
+msgid "Vireo couldn’t save your password"
+msgstr "A Vireo nem tudta menteni a jelszavát"
+
+msgid "Keyring setup on Linux Mint"
+msgstr "Kulcstartó beállítása Linux Minten"
+
+msgid "Got it"
+msgstr "Értem"
+
+msgid "New Folder"
+msgstr "Új mappa"
+
+msgid "Create a new folder for this account."
+msgstr "Új mappa létrehozása ehhez a fiókhoz."
+
+msgid "Create"
+msgstr "Létrehozás"
+
+msgid "Folder name"
+msgstr "Mappanév"
+
+msgid "Sub-folders keep their place under the new name."
+msgstr "Az almappák az új név alatt maradnak."
+
+msgid "Rename"
+msgstr "Átnevezés"
+
+msgid "A folder named {new_name} is already there."
+msgstr "Már létezik {new_name} nevű mappa."
+
+msgid "Its messages are moved to Trash and the folder is removed."
+msgstr "A benne lévő üzenetek a Kukába kerülnek, a mappa pedig törlődik."
+
+msgid "Empty “{name}”?"
+msgstr "Kiüríti ezt: „{name}”?"
+
+msgid ""
+"Every message in it will be erased from the server. This can’t be undone."
+msgstr ""
+"A benne lévő összes üzenet törlődik a kiszolgálóról. Ez nem vonható "
+"vissza."
+
+msgid "Empty"
+msgstr "Kiürítés"
+
+msgid "No Junk folder available for this account"
+msgstr "Ehhez a fiókhoz nem érhető el Levélszemét mappa"
+
+msgid "No address book available to add contacts"
+msgstr "Névjegyek hozzáadásához nem érhető el címjegyzék"
+
+msgid "Add to Contacts"
+msgstr "Hozzáadás a névjegyekhez"
+
+msgid "Add"
+msgstr "Hozzáadás"
+
+msgid "Name"
+msgstr "Név"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Address book"
+msgstr "Címjegyzék"
+
+msgid "Remove Account?"
+msgstr "Eltávolítja a fiókot?"
+
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#. One-sentence description, directly under the version chip.
+msgid "A clean, fast, GNOME-native email client."
+msgstr "Tiszta, gyors, GNOME-ba illeszkedő levelezőkliens."
+
+msgid ""
+"This is a beta build for trying upcoming changes early. Expect bugs and "
+"instability — please report anything broken on GitHub. It shares your "
+"accounts and mail with the stable Vireo install."
+msgstr ""
+"Ez egy béta verzió a közelgő változtatások korai kipróbálásához. "
+"Számítson hibákra és instabilitásra — kérjük, jelentse a hibákat a "
+"GitHubon. Megosztja fiókjait és leveleit a stabil Vireo-telepítéssel."
+
+msgid "Release Notes"
+msgstr "Kiadási megjegyzések"
+
+msgid "Changelog"
+msgstr "Változásnapló"
+
+msgid "Full version history"
+msgstr "Teljes verziótörténet"
+
+msgid "Keyring Setup Help"
+msgstr "Segítség a kulcstartó beállításához"
+
+msgid "Make account passwords persist on Linux Mint"
+msgstr "A fiókjelszavak megőrzése Linux Minten"
+
+#. Project links. Each row shows its URL as a hover tooltip.
+msgid "Project"
+msgstr "Projekt"
+
+msgid "Website"
+msgstr "Webhely"
+
+msgid "Contact — hyprlab@proton.me"
+msgstr "Kapcsolat — hyprlab@proton.me"
+
+msgid "Discord — Join the community"
+msgstr "Discord — Csatlakozás a közösséghez"
+
+msgid "Source Code"
+msgstr "Forráskód"
+
+msgid "License (GNU AGPL v3)"
+msgstr "Licenc (GNU AGPL v3)"
+
+msgid "Buy Me a Coffee"
+msgstr "Hívj meg egy kávéra"
+
+#. Contributors — people outside Hyprlab whose patches are in the app.
+msgid "Special thanks to these contributors"
+msgstr "Külön köszönet ezeknek a közreműködőknek"
+
+#. Footer.
+msgid "© 2026 Hyprlab"
+msgstr "© 2026 Hyprlab"
+
+msgid "No {v1} folder available for some messages"
+msgstr "Néhány üzenethez nem érhető el {v1} mappa"
+
+msgid "Move around"
+msgstr "Navigáció"
+
+msgid "Next message"
+msgstr "Következő üzenet"
+
+msgid "Previous message"
+msgstr "Előző üzenet"
+
+msgid "Open the selected message"
+msgstr "Kijelölt üzenet megnyitása"
+
+msgid "Back to the message list"
+msgstr "Vissza az üzenetlistához"
+
+msgid "Next message in the conversation"
+msgstr "A beszélgetés következő üzenete"
+
+msgid "Previous message in the conversation"
+msgstr "A beszélgetés előző üzenete"
+
+msgid "Search"
+msgstr "Keresés"
+
+msgid "Act on a message"
+msgstr "Művelet az üzeneten"
+
+msgid "Reply to all"
+msgstr "Válasz mindenkinek"
+
+msgid "Mark as spam"
+msgstr "Megjelölés levélszemétként"
+
+msgid "Star or unstar"
+msgstr "Csillagozás vagy csillag eltávolítása"
+
+msgid "Mark read or unread"
+msgstr "Megjelölés olvasottként vagy olvasatlanként"
+
+msgid "Select this row (for a bulk action)"
+msgstr "Sor kijelölése (csoportos művelethez)"
+
+msgid "Everything else"
+msgstr "Minden egyéb"
+
+msgid "Compose"
+msgstr "Levélírás"
+
+msgid "Back out of a reply and return to the list"
+msgstr "Kilépés a válaszból és visszatérés a listához"
+
+msgid "Undo the last move or delete"
+msgstr "Legutóbbi áthelyezés vagy törlés visszavonása"
+
+msgid "Print the message you are reading"
+msgstr "Olvasott üzenet nyomtatása"
+
+msgid "Preview it as a PDF first"
+msgstr "Először PDF-ként való megtekintés"
+
+msgid "Reveal the status bar (also: long-press Refresh)"
+msgstr "Állapotsáv megjelenítése (vagy a Frissítés hosszan lenyomva tartása)"
+
+msgid "Console mode (when enabled in Settings)"
+msgstr "Konzolmód (ha engedélyezve van a Beállításokban)"
+
+msgid "Close the window (background sync keeps running)"
+msgstr "Ablak bezárása (a háttérben futó szinkronizálás folytatódik)"
+
+msgid "Quit Vireo entirely"
+msgstr "Kilépés teljesen a Vireóból"
+
+msgid "This list"
+msgstr "Ez a lista"
+
+msgid "Save All Attachments"
+msgstr "Összes melléklet mentése"
+
+msgid "Default"
+msgstr "Alapértelmezett"
+
+msgid ""
+"Vireo checks for new mail and shows notifications while its window is closed."
+msgstr ""
+"A Vireo új leveleket keres és értesítéseket jelenít meg, miközben "
+"az ablaka zárva van."
+
+msgid "Checking for new mail"
+msgstr "Új levelek keresése"
+
+msgid "{n} unread message"
+msgid_plural "{n} unread messages"
+msgstr[0] "{n} olvasatlan üzenet"
+msgstr[1] "{n} olvasatlan üzenet"
+
+msgid "On This Computer"
+msgstr "Ezen a számítógépen"
+
+msgid "CardDAV Address Book"
+msgstr "CardDAV-címjegyzék"
+
+msgid "Encrypted message"
+msgstr "Titkosított üzenet"
+
+msgid "Encrypted with OpenPGP; could not be decrypted"
+msgstr "OpenPGP-vel titkosítva; nem sikerült visszafejteni"
+
+msgid "Encrypted with OpenPGP"
+msgstr "OpenPGP-vel titkosítva"
+
+msgid "Encrypted, and signed by {signer}"
+msgstr "Titkosítva és aláírva: {signer}"
+
+msgid ""
+"Encrypted; the signature does not match, the message may have been altered"
+msgstr ""
+"Titkosítva; az aláírás nem egyezik, az üzenetet "
+"módosíthatták"
+
+msgid "Encrypted; signed with a key you don't have ({id})"
+msgstr "Titkosítva; az aláíráshoz használt kulcs nincs meg ({id})"
+
+msgid "Encrypted, and signed by {signer} with an expired key"
+msgstr "Titkosítva és aláírva: {signer}, lejárt kulccsal"
+
+msgid "Encrypted, and signed by {signer} with a revoked key"
+msgstr "Titkosítva és aláírva: {signer}, visszavont kulccsal"
+
+msgid "Encrypted, and signed by {signer}; the signature has expired"
+msgstr "Titkosítva és aláírva: {signer}; az aláírás lejárt"
+
+msgid "OpenPGP-signed; the signature could not be checked"
+msgstr "OpenPGP-vel aláírva; az aláírás nem ellenőrizhető"
+
+msgid "Signed by {signer}"
+msgstr "Aláírta: {signer}"
+
+msgid "The OpenPGP signature does not match; the message may have been altered"
+msgstr "Az OpenPGP-aláírás nem egyezik; az üzenetet módosíthatták"
+
+msgid "Signed with a key you don't have ({id})"
+msgstr "Az aláíráshoz használt kulcs nincs meg ({id})"
+
+msgid "Signed by {signer} with an expired key"
+msgstr "Aláírta: {signer}, lejárt kulccsal"
+
+msgid "Signed by {signer} with a revoked key"
+msgstr "Aláírta: {signer}, visszavont kulccsal"
+
+msgid "Signed by {signer}; the signature has expired"
+msgstr "Aláírta: {signer}; az aláírás lejárt"
+
+msgid "This message hasn't been checked."
+msgstr "Ezt az üzenetet még nem ellenőrizték."
+
+msgid "{n} hours ago"
+msgstr "{n} órája"
+
+msgid "yesterday"
+msgstr "tegnap"
+
+msgid "{n} days ago"
+msgstr "{n} napja"
+
+msgid "Waiting since {ago}"
+msgstr "Várakozás {ago} óta"
+
+msgid "Scheduled for {when}"
+msgstr "Ütemezve ekkorra: {when}"
+
+msgid "New message"
+msgstr "Új üzenet"
+
+msgid "GnuPG (gpg) is not installed, so this message cannot be read."
+msgstr "A GnuPG (gpg) nincs telepítve, ezért ez az üzenet nem olvasható."
+
+msgid "Decrypted with your key."
+msgstr "A saját kulcsával visszafejtve."
+
+msgid "Encrypted to key {id}, which is not in your keyring."
+msgstr "A(z) {id} kulccsal titkosítva, amely nincs a kulcstartóján."
+
+msgid "The encrypted block is damaged or not OpenPGP data."
+msgstr "A titkosított blokk sérült, vagy nem OpenPGP-adat."
+
+msgid "Signing key {id} is trusted in your keyring."
+msgstr "A(z) {id} aláírókulcs megbízható a kulcstartóján."
+
+msgid "Signing key {id} is only marginally trusted in your keyring."
+msgstr "A(z) {id} aláírókulcs csak csekély mértékben megbízható a kulcstartóján."
+
+msgid "Signing key {id} is marked as not trusted in your keyring."
+msgstr "A(z) {id} aláírókulcs nem megbízhatóként van megjelölve a kulcstartóján."
+
+msgid ""
+"Signing key {id} is in your keyring but not marked as trusted; check its "
+"fingerprint with the sender."
+msgstr ""
+"A(z) {id} aláírókulcs a kulcstartóján van, de nincs megbízhatóként "
+"megjelölve; ellenőrizze az ujjlenyomatát a feladóval."
+
+msgid "Signed with key {id}."
+msgstr "A(z) {id} kulccsal aláírva."
+
+msgid "Import the sender's public key to verify it."
+msgstr "Az ellenőrzéshez importálja a feladó nyilvános kulcsát."
+
+msgid "No key was found in that file."
+msgstr "A fájlban nem található kulcs."
+
+msgid "Nothing to export."
+msgstr "Nincs exportálható adat."
+
+msgid "gpg did not create the key."
+msgstr "A gpg nem hozta létre a kulcsot."
+
+msgid "No key was found for that address."
+msgstr "Ehhez a címhez nem található kulcs."
+
+msgid "gpg could not sign the key."
+msgstr "A gpg nem tudta aláírni a kulcsot."
+
+msgid "gpg could not delete the key."
+msgstr "A gpg nem tudta törölni a kulcsot."
+
+msgid "gpg did not sign the message."
+msgstr "A gpg nem írta alá az üzenetet."
+
+msgid "gpg did not encrypt the message."
+msgstr "A gpg nem titkosította az üzenetet."
+
+msgid "Open Vireo"
+msgstr "Vireo megnyitása"
+
+msgid "No unread mail"
+msgstr "Nincs olvasatlan levél"
+
+msgid "View all {n} unread…"
+msgstr "Mind a(z) {n} olvasatlan megtekintése…"
+
+msgid "Accounts"
+msgstr "Fiókok"
+
+msgid "Requires an app-specific password (not your normal login password)."
+msgstr "Alkalmazásjelszó szükséges (nem a szokásos bejelentkezési jelszava)."
+
+msgid "Sign in with your browser — no password needed."
+msgstr "Jelentkezzen be a böngészőben — nincs szükség jelszóra."
+
+msgid "Sign in through GNOME Online Accounts."
+msgstr "Bejelentkezés a GNOME Online-fiókokon keresztül."
+
+msgid "Requires Proton Mail Bridge running locally."
+msgstr "A Proton Mail Bridge helyi futtatása szükséges."
+
+msgid "Enable POP/IMAP access in GMX settings first."
+msgstr "Először engedélyezze a POP/IMAP-hozzáférést a GMX beállításaiban."
+
+msgid "Enter your provider's OAuth endpoints, then sign in."
+msgstr "Adja meg a szolgáltató OAuth-végpontjait, majd jelentkezzen be."
+
+msgid "Enter your server details manually."
+msgstr "Adja meg kézzel a kiszolgáló adatait."
+
+msgid "Mail Accounts"
+msgstr "Levelezési fiókok"
+
+msgid "Drag to set the order they appear in the sidebar."
+msgstr "Húzással állítsa be az oldalsávban való megjelenési sorrendet."
+
+msgid "GNOME Online Accounts"
+msgstr "GNOME Online-fiókok"
+
+msgid "Mail accounts from GNOME Settings. Toggle one on to use it in Vireo."
+msgstr "A GNOME beállításaiból származó levelezési fiókok. Kapcsoljon be egyet a Vireóban való használatához."
+
+msgid "Add Account"
+msgstr "Fiók hozzáadása"
+
+msgid ""
+"Label messages with one or more coloured tags. Tags are stored on the mail "
+"server as IMAP keywords, so Thunderbird and other clients show the same tags."
+msgstr ""
+"Üzenetek címkézése egy vagy több színes címkével. A címkék "
+"IMAP-kulcsszóként tárolódnak a levelezőkiszolgálón, így a Thunderbird "
+"és más kliensek ugyanazokat a címkéket jelenítik meg."
+
+msgid "Add Tag…"
+msgstr "Címke hozzáadása…"
+
+msgid "Search filters"
+msgstr "Keresési szűrők"
+
+msgid "Filters"
+msgstr "Szűrők"
+
+msgid ""
+"File incoming mail into folders or tag it automatically, by sender, subject "
+"or recipients. Applied to each account's Inbox as Vireo syncs it."
+msgstr ""
+"Beérkező levelek automatikus mappázása vagy címkézése feladó, tárgy "
+"vagy címzettek alapján. A szabályok az egyes fiókok Beérkezett üzenetek "
+"mappájára érvényesülnek szinkronizáláskor."
+
+msgid "Add Filter…"
+msgstr "Szűrő hozzáadása…"
+
+msgid "Search senders"
+msgstr "Feladók keresése"
+
+msgid "Allowed Senders"
+msgstr "Engedélyezett feladók"
+
+msgid "Messages from these senders load remote content automatically."
+msgstr "Az ezektől a feladóktól érkező üzenetek automatikusan betöltik a távoli tartalmakat."
+
+msgid "Email address"
+msgstr "E-mail-cím"
+
+msgid "Allow this sender"
+msgstr "Feladó engedélyezése"
+
+msgid "Blacklist"
+msgstr "Tiltólista"
+
+msgid ""
+"Incoming mail from these senders is deleted automatically (moved to Trash). "
+"Enter an email address, or a whole domain like \"example.com\" to block "
+"every sender there."
+msgstr ""
+"Az ezektől a feladóktól érkező levelek automatikusan törlődnek (a "
+"Kukába kerülnek). Adjon meg egy e-mail-címet vagy egy teljes tartományt, "
+"például az „example.com” címet, hogy letiltsa az összes ottani feladót."
+
+msgid "Address or domain"
+msgstr "Cím vagy tartomány"
+
+msgid "Block this sender"
+msgstr "Feladó blokkolása"
+
+msgid "Account"
+msgstr "Fiók"
+
+msgid "Save"
+msgstr "Mentés"
+
+msgid "GNOME Online Account"
+msgstr "GNOME Online-fiók"
+
+msgid "Show in Vireo"
+msgstr "Megjelenítés a Vireóban"
+
+msgid ""
+"Switching this off returns the account to the import list — it stays in "
+"GNOME Online Accounts."
+msgstr ""
+"Kikapcsolva a fiók visszakerül az importálási listára — a GNOME "
+"Online-fiókok között marad."
+
+msgid ""
+"This account is managed by GNOME Online Accounts.\n"
+"Its address, servers and password are changed in Settings → Online Accounts."
+msgstr ""
+"Ezt a fiókot a GNOME Online-fiókok kezelik.\n"
+"A címe, kiszolgálói és jelszava a Beállítások → Online-fiókok "
+"menüben módosítható."
+
+msgid "Open Online Accounts…"
+msgstr "Online-fiókok megnyitása…"
+
+msgid "Mail Account"
+msgstr "Levelezési fiók"
+
+msgid "Provider"
+msgstr "Szolgáltató"
+
+msgid "Choose your email provider."
+msgstr "Válassza ki az e-mail-szolgáltatóját."
+
+msgid "Display Name"
+msgstr "Megjelenítési név"
+
+msgid "Email Address"
+msgstr "E-mail-cím"
+
+msgid "Incoming Protocol"
+msgstr "Bejövő protokoll"
+
+msgid "Incoming Server"
+msgstr "Bejövő kiszolgáló"
+
+msgid "Port (IMAP 993 / POP3 995)"
+msgstr "Port (IMAP 993 / POP3 995)"
+
+msgid "SMTP Server (optional)"
+msgstr "SMTP-kiszolgáló (nem kötelező)"
+
+msgid "SMTP Port (default 587)"
+msgstr "SMTP-port (alapértelmezett: 587)"
+
+msgid "Username"
+msgstr "Felhasználónév"
+
+msgid "Password"
+msgstr "Jelszó"
+
+msgid "OAuth Client ID"
+msgstr "OAuth-ügyfélazonosító"
+
+msgid "OAuth Client Secret (optional)"
+msgstr "OAuth-ügyféltitok (nem kötelező)"
+
+msgid "Authorization URL"
+msgstr "Engedélyezési URL"
+
+msgid "Token URL"
+msgstr "Token-URL"
+
+msgid "Scopes (space-separated)"
+msgstr "Hatókörök (szóközzel elválasztva)"
+
+msgid "Sign In with Browser"
+msgstr "Bejelentkezés böngészővel"
+
+msgid ""
+"Google and Microsoft sign-in use GNOME Online Accounts.\n"
+"\n"
+"1. Open Online Accounts and sign in there.\n"
+"2. Come back to Vireo and reopen this window — the account then appears "
+"under “GNOME Online Accounts” at the top of this window. Enable it there."
+msgstr ""
+"A Google- és Microsoft-bejelentkezés a GNOME Online-fiókokat használja.\n"
+"\n"
+"1. Nyissa meg az Online-fiókokat, és jelentkezzen be ott.\n"
+"2. Térjen vissza a Vireóhoz, és nyissa meg újra ezt az ablakot — a fiók ekkor az ablak tetején, a „GNOME Online-fiókok” alatt jelenik meg. Ott engedélyezze."
+
+msgid "Separate SMTP credentials"
+msgstr "Külön SMTP-hitelesítő adatok"
+
+msgid ""
+"Use a different username and password for sending. Off = use the credentials "
+"above."
+msgstr ""
+"Másik felhasználónév és jelszó használata küldéshez. Kikapcsolva = a "
+"fenti hitelesítő adatok használata."
+
+msgid "SMTP Username"
+msgstr "SMTP-felhasználónév"
+
+msgid "SMTP Password"
+msgstr "SMTP-jelszó"
+
+msgid "Test Connection"
+msgstr "Kapcsolat tesztelése"
+
+#. Rendered as Pango markup — a bare "&" breaks it.
+msgid "Appearance"
+msgstr "Megjelenés"
+
+msgid "How this account is shown in the sidebar and the All Inboxes view."
+msgstr "A fiók megjelenése az oldalsávban és az Összes Beérkezett nézetben."
+
+msgid "Label (defaults to email address)"
+msgstr "Címke (alapértelmezés szerint az e-mail-cím)"
+
+msgid "Circle color"
+msgstr "Kör színe"
+
+msgid "Emoji"
+msgstr "Emodzsi"
+
+msgid "Optional — shown instead of initials"
+msgstr "Nem kötelező — a monogram helyett jelenik meg"
+
+msgid "Use initials"
+msgstr "Monogram használata"
+
+msgid "Show name initials instead of an emoji"
+msgstr "Névmonogram megjelenítése emodzsi helyett"
+
+msgid "Send-as aliases"
+msgstr "Küldési aliasok"
+
+msgid ""
+"Extra addresses this account can send as. An alias can use this account's "
+"SMTP server, or bring its own."
+msgstr ""
+"További címek, amelyekről ez a fiók küldhet. Az alias használhatja ennek "
+"a fióknak az SMTP-kiszolgálóját, vagy sajátot hozhat."
+
+msgid "Add Alias…"
+msgstr "Alias hozzáadása…"
+
+msgid "Syncing"
+msgstr "Szinkronizálás"
+
+msgid "Instant new mail (IMAP push)"
+msgstr "Azonnali új levelek (IMAP push)"
+
+msgid "Turn off for servers that stall on push connections."
+msgstr "Kapcsolja ki a push-kapcsolatoknál akadozó kiszolgálók esetén."
+
+msgid "Empty Junk automatically"
+msgstr "Levélszemét automatikus kiürítése"
+
+msgid "Delete junk mail older than this for good, checked at each sync."
+msgstr "Az ennél régebbi levélszemét végleges törlése, minden szinkronizáláskor ellenőrizve."
+
+msgid "Empty Trash automatically"
+msgstr "Kuka automatikus kiürítése"
+
+msgid ""
+"Delete mail in the Trash older than this for good, checked at each sync."
+msgstr ""
+"Az ennél régebbi, Kukában lévő levelek végleges törlése, minden "
+"szinkronizáláskor ellenőrizve."
+
+msgid "Special Folders"
+msgstr "Speciális mappák"
+
+msgid ""
+"Where sent, deleted and junk mail goes. "
+"Automatic                                      follows the server's own "
+"markings; pick a folder                                      when a role "
+"isn't detected or lands wrong."
+msgstr ""
+"Az elküldött, törölt és levélszemét levelek helye. "
+"Az Automatikus a kiszolgáló saját jelöléseit követi; "
+"válasszon mappát, ha egy szerepkör nem észlelhető, "
+"vagy rossz helyre kerül."
+
+msgid "Sent"
+msgstr "Elküldött"
+
+msgid "Drafts"
+msgstr "Piszkozatok"
+
+msgid "Trash"
+msgstr "Kuka"
+
+msgid "Junk"
+msgstr "Levélszemét"
+
+msgid "OpenPGP"
+msgstr "OpenPGP"
+
+msgid ""
+"The key that signs mail sent from this account and opens what is encrypted "
+"to it. Keys are managed under OpenPGP in the sidebar."
+msgstr ""
+"A kulcs, amely aláírja az ebből a fiókból küldött leveleket, és megnyitja "
+"az erre titkosított tartalmakat. A kulcsok az oldalsáv OpenPGP-szakaszában "
+"kezelhetők."
+
+msgid "Key"
+msgstr "Kulcs"
+
+msgid "Automatic uses the key whose address matches."
+msgstr "Az automatikus beállítás a megfelelő címhez tartozó kulcsot használja."
+
+msgid "Signature"
+msgstr "Aláírás"
+
+msgid "Appended to new messages sent from this account."
+msgstr "Az ebből a fiókból küldött új üzenetekhez fűzve."
+
+msgid "Edit HTML…"
+msgstr "HTML szerkesztése…"
+
+msgid "Import File…"
+msgstr "Fájl importálása…"
+
+msgid "Remove Account"
+msgstr "Fiók eltávolítása"
+
+msgid ""
+"Your password is stored in the system keyring (secret-service), never in "
+"plain text on disk."
+msgstr ""
+"A jelszava a rendszer kulcstartóján (secret-service) tárolódik, soha nem "
+"egyszerű szövegként a lemezen."
+
+msgid "Follow Settings"
+msgstr "Beállítások követése"
+
+msgid "On"
+msgstr "Be"
+
+msgid "Off"
+msgstr "Ki"
+
+msgid "Testing…"
+msgstr "Tesztelés…"
+
+msgid "Enter a client ID (and endpoints for a custom provider) first"
+msgstr "Először adja meg az ügyfélazonosítót (és egyéni szolgáltató esetén a végpontokat)"
+
+msgid "Opening browser… complete sign-in there."
+msgstr "Böngésző megnyitása… fejezze be ott a bejelentkezést."
+
+msgid "Signature HTML"
+msgstr "Aláírás HTML-kódja"
+
+msgid ""
+"Paste or edit the signature's HTML. Scripts and style sheets are removed; "
+"inline styles, tables and images are kept."
+msgstr ""
+"Illessze be vagy szerkessze az aláírás HTML-kódját. A parancsfájlok és "
+"stíluslapok eltávolításra kerülnek; a beágyazott stílusok, táblázatok és "
+"képek megmaradnak."
+
+msgid "Apply"
+msgstr "Alkalmazás"
+
+msgid "Import Signature"
+msgstr "Aláírás importálása"
+
+msgid "HTML and text files"
+msgstr "HTML- és szövegfájlok"
+
+msgid "Could Not Read the File"
+msgstr "A fájl nem olvasható"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Enter a client ID and sign in before saving"
+msgstr "Mentés előtt adja meg az ügyfélazonosítót és jelentkezzen be"
+
+msgid "✓ Signed in — save the account to finish"
+msgstr "✓ Bejelentkezve — a befejezéshez mentse a fiókot"
+
+msgid "Sign-in failed: {e}"
+msgstr "A bejelentkezés sikertelen: {e}"
+
+msgid "✓ SMTP: connected"
+msgstr "✓ SMTP: kapcsolódva"
+
+msgid "✗ SMTP: {e}"
+msgstr "✗ SMTP: {e}"
+
+msgid "Sends through {host}"
+msgstr "Küldés ezen keresztül: {host}"
+
+msgid "Sends through this account"
+msgstr "Küldés ezen a fiókon keresztül"
+
+msgid "Remove this alias"
+msgstr "Alias eltávolítása"
+
+msgid "Display name (optional)"
+msgstr "Megjelenítési név (nem kötelező)"
+
+msgid "Sending"
+msgstr "Küldés"
+
+msgid "Own SMTP server"
+msgstr "Saját SMTP-kiszolgáló"
+
+msgid "SMTP server"
+msgstr "SMTP-kiszolgáló"
+
+msgid "SMTP port"
+msgstr "SMTP-port"
+
+msgid "SMTP username"
+msgstr "SMTP-felhasználónév"
+
+msgid "SMTP password"
+msgstr "SMTP-jelszó"
+
+msgid "Test SMTP"
+msgstr "SMTP tesztelése"
+
+msgid "Vireo"
+msgstr "Vireo"
+
+msgid "Imported from GNOME Online Accounts"
+msgstr "Importálva a GNOME Online-fiókokból"
+
+msgid "Added directly in Vireo"
+msgstr "Közvetlenül a Vireóban hozzáadva"
+
+msgid "Enable this account"
+msgstr "Fiók engedélyezése"
+
+msgid "Use this account in Vireo"
+msgstr "Fiók használata a Vireóban"
+
+msgid "Automatic"
+msgstr "Automatikus"
+
+msgid "Never"
+msgstr "Soha"
+
+msgid "After {n} day"
+msgid_plural "After {n} days"
+msgstr[0] "{n} nap múlva"
+msgstr[1] "{n} nap múlva"
+
+msgid ", tagged {tag}"
+msgstr ", {tag} címkével"
+
+msgid "Remove filter"
+msgstr "Szűrő eltávolítása"
+
+msgid "Remove tag"
+msgstr "Címke eltávolítása"
+
+msgid "Edit Tag"
+msgstr "Címke szerkesztése"
+
+msgid "Add Tag"
+msgstr "Címke hozzáadása"
+
+msgid "Keyword"
+msgstr "Kulcsszó"
+
+msgid ""
+"How the tag is stored on the server: letters, digits and most punctuation, "
+"no spaces. Thunderbird's built-in tags are $label1 to $label5."
+msgstr ""
+"A címke tárolása a kiszolgálón: betűk, számjegyek és a legtöbb írásjel, "
+"szóközök nélkül. A Thunderbird beépített címkéi a $label1–$label5."
+
+msgid "Colour"
+msgstr "Szín"
+
+msgid "Custom colour…"
+msgstr "Egyéni szín…"
+
+msgid "Tag Colour"
+msgstr "Címke színe"
+
+msgid "Edit Filter"
+msgstr "Szűrő szerkesztése"
+
+msgid "Add Filter"
+msgstr "Szűrő hozzáadása"
+
+msgid "Where"
+msgstr "Hol"
+
+msgid "From address"
+msgstr "Feladó címe"
+
+msgid "From name"
+msgstr "Feladó neve"
+
+msgid "Subject"
+msgstr "Tárgy"
+
+msgid "To or Cc"
+msgstr "Címzett vagy Másolat"
+
+msgid "Match"
+msgstr "Egyezés"
+
+msgid "contains"
+msgstr "tartalmazza"
+
+msgid "is exactly"
+msgstr "pontosan ez"
+
+msgid "starts with"
+msgstr "ezzel kezdődik"
+
+msgid "ends with"
+msgstr "ezzel végződik"
+
+msgid "Text to match"
+msgstr "Egyeztetendő szöveg"
+
+msgid "Move to"
+msgstr "Áthelyezés ide"
+
+msgid "Where matching mail is filed; or leave it in the Inbox and only tag it"
+msgstr "Az egyező levelek helye; vagy hagyja őket a Beérkezett üzenetek között, és csak címkézze őket"
+
+#. Entry 0 files nowhere (a tag-only rule, #71): its path is "".
+msgid "Leave in Inbox"
+msgstr "Hagyás a Beérkezett üzenetek között"
+
+msgid "Tag with"
+msgstr "Címkézés ezzel"
+
+msgid "None"
+msgstr "Nincs"
+
+msgid "Count unread mail"
+msgstr "Olvasatlan levelek számlálása"
+
+msgid "Include the folder's unread mail in the unread count and the tray icon"
+msgstr "A mappa olvasatlan leveleinek beszámítása az olvasatlanok számába és a tálcaikonba"
+
+msgid "Show under All Inboxes"
+msgstr "Megjelenítés az Összes beérkezett között"
+
+msgid "Thumbnail size"
+msgstr "Bélyegkép mérete"
+
+msgid "Sorted Z to A — switch to A to Z"
+msgstr "Z-től A-ig rendezve — váltás A-tól Z-ig"
+
+msgid "Sorted A to Z — switch to Z to A"
+msgstr "A-tól Z-ig rendezve — váltás Z-től A-ig"
+
+msgid "Show as thumbnails"
+msgstr "Megjelenítés bélyegképként"
+
+msgid "Show as a list"
+msgstr "Megjelenítés listaként"
+
+msgid "Save All…"
+msgstr "Összes mentése…"
+
+msgid "Save every attachment to a folder"
+msgstr "Minden melléklet mentése egy mappába"
+
+msgid "Key imported"
+msgstr "Kulcs importálva"
+
+msgid ""
+"The key is in your keyring now. Trust it under Settings, OpenPGP, once you "
+"have checked its fingerprint with its owner."
+msgstr ""
+"A kulcs most a kulcstartóján van. Miután ellenőrizte az ujjlenyomatát "
+"a tulajdonosával, tegye megbízhatóvá a Beállítások → OpenPGP alatt."
+
+msgid "Already in your keyring"
+msgstr "Már a kulcstartóján van"
+
+msgid "That key was imported before."
+msgstr "Ezt a kulcsot korábban már importálták."
+
+msgid "Could not import the key"
+msgstr "A kulcs nem importálható"
+
+msgid "Import OpenPGP key"
+msgstr "OpenPGP-kulcs importálása"
+
+msgid "Search by sender, subject, type, filename…"
+msgstr "Keresés feladó, tárgy, típus vagy fájlnév alapján…"
+
+msgid "Loading attachments…"
+msgstr "Mellékletek betöltése…"
+
+msgid "No attachments"
+msgstr "Nincsenek mellékletek"
+
+msgid "Attachments from your inboxes will appear here."
+msgstr "A beérkezett üzenetek mellékletei itt jelennek meg."
+
+msgid "No matching attachments"
+msgstr "Nincs egyező melléklet"
+
+msgid "Try a different search or clear the filter."
+msgstr "Próbáljon másképp keresni, vagy törölje a szűrőt."
+
+msgid "Thumbnail grid"
+msgstr "Bélyegképrács"
+
+msgid "Table"
+msgstr "Táblázat"
+
+msgid "Show only this type"
+msgstr "Csak ennek a típusnak a megjelenítése"
+
+msgid "All types"
+msgstr "Minden típus"
+
+msgid "Images"
+msgstr "Képek"
+
+msgid "PDFs"
+msgstr "PDF-ek"
+
+msgid "Documents"
+msgstr "Dokumentumok"
+
+msgid "Archives"
+msgstr "Archívumok"
+
+msgid "Audio & Video"
+msgstr "Hang és videó"
+
+msgid "Other"
+msgstr "Egyéb"
+
+msgid "Sort"
+msgstr "Rendezés"
+
+msgid "Newest first"
+msgstr "Legújabb elöl"
+
+msgid "Oldest first"
+msgstr "Legrégebbi elöl"
+
+msgid "Name (A–Z)"
+msgstr "Név (A–Z)"
+
+msgid "Name (Z–A)"
+msgstr "Név (Z–A)"
+
+msgid "Sender (Z–A)"
+msgstr "Feladó (Z–A)"
+
+msgid "Largest first"
+msgstr "Legnagyobb elöl"
+
+msgid "Smallest first"
+msgstr "Legkisebb elöl"
+
+msgid "Type (A–Z)"
+msgstr "Típus (A–Z)"
+
+msgid "Type (Z–A)"
+msgstr "Típus (Z–A)"
+
+msgid "Open in the default app"
+msgstr "Megnyitás az alapértelmezett alkalmazásban"
+
+msgid "Go to Message"
+msgstr "Ugrás az üzenethez"
+
+msgid "The file could not be opened"
+msgstr "A fájl nem nyitható meg"
+
+msgid "Response"
+msgstr "Válasz"
+
+msgid "Nextcloud, ownCloud or OpenCloud"
+msgstr "Nextcloud, ownCloud vagy OpenCloud"
+
+msgid "Dropbox"
+msgstr "Dropbox"
+
+msgid "Seafile"
+msgstr "Seafile"
+
+msgid "OneDrive"
+msgstr "OneDrive"
+
+msgid "Cloud Storage"
+msgstr "Felhőtárhely"
+
+msgid "Cloud storage"
+msgstr "Felhőtárhely"
+
+msgid ""
+"Upload a large file to Nextcloud, ownCloud, OpenCloud, OneDrive, Dropbox or "
+"Seafile and put a share link in the message instead of an attachment."
+msgstr ""
+"Nagy fájl feltöltése Nextcloudba, ownCloudba, OpenCloudba, OneDrive-ra, "
+"Dropboxba vagy Seafile-ba, és megosztási hivatkozás elhelyezése az üzenetben "
+"melléklet helyett."
+
+msgid "Add Account…"
+msgstr "Fiók hozzáadása…"
+
+msgid "No cloud accounts yet."
+msgstr "Még nincsenek felhőfiókok."
+
+msgid "Cloud Account"
+msgstr "Felhőfiók"
+
+msgid "Removed {name}"
+msgstr "Eltávolítva: {name}"
+
+msgid "Could not store the sign-in in the keyring: {e}"
+msgstr "A bejelentkezés nem tárolható a kulcstartón: {e}"
+
+msgid "Edit Cloud Account"
+msgstr "Felhőfiók szerkesztése"
+
+msgid "Add Cloud Account"
+msgstr "Felhőfiók hozzáadása"
+
+msgid "links expire after {n} days"
+msgstr "a hivatkozások {n} nap múlva lejárnak"
+
+msgid "password-protected"
+msgstr "jelszóval védett"
+
+msgid "Service"
+msgstr "Szolgáltatás"
+
+msgid "Server URL"
+msgstr "Kiszolgáló URL-je"
+
+msgid "Two-step verification code, if the account uses it"
+msgstr "Kétlépcsős azonosítási kód, ha a fiók használ ilyet"
+
+msgid ""
+"Sign in with your Seafile password. If the account uses two-step "
+"verification, also enter the current code from your authenticator app: Vireo "
+"turns it into an API token once and keeps that instead of the password. A "
+"token obtained another way can be pasted in the password field."
+msgstr ""
+"Jelentkezzen be Seafile-jelszavával. Ha a fiók kétlépcsős azonosítást használ, "
+"adja meg a hitelesítőalkalmazás aktuális kódját is: a Vireo egyszer API-tokenként "
+"alakítja át, és a jelszó helyett ezt őrzi meg. Más módon szerzett token "
+"beilleszthető a jelszómezőbe."
+
+msgid "Online account"
+msgstr "Online-fiók"
+
+msgid "Dropbox app key"
+msgstr "Dropbox-alkalmazáskulcs"
+
+msgid "Library"
+msgstr "Könyvtár"
+
+msgid "Upload folder"
+msgstr "Feltöltési mappa"
+
+msgid "Links expire after"
+msgstr "Hivatkozások lejárata"
+
+msgid "Days; 0 keeps the link indefinitely"
+msgstr "Napok; a 0 korlátlan ideig érvényben tartja a hivatkozást"
+
+msgid "Protect links with a password"
+msgstr "Hivatkozások védelme jelszóval"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately"
+msgstr ""
+"Minden fájlhoz letöltési jelszó készül és megjelenik, hogy külön "
+"továbbadhassa."
+
+msgid "Link defaults"
+msgstr "Hivatkozások alapértelmezései"
+
+msgid ""
+"How share links from this account are made unless you choose otherwise for "
+"an email: the upload dialog in the composer shows these values and lets you "
+"change them for that upload alone."
+msgstr ""
+"A fiók megosztási hivatkozásainak létrehozása, hacsak egy e-mailhez mást nem "
+"választ: a levélíró feltöltési párbeszédablaka ezeket az értékeket jeleníti meg, "
+"és csak az adott feltöltéshez engedi módosítani őket."
+
+msgid "Check Connection"
+msgstr "Kapcsolat ellenőrzése"
+
+msgid "{email} (Files is off)"
+msgstr "{email} (a Fájlok ki van kapcsolva)"
+
+msgid ""
+"No Microsoft 365 account in GNOME Online Accounts yet. Add one under "
+"Settings, Online Accounts; OneDrive then signs in through it, and nothing "
+"more is needed here."
+msgstr ""
+"Még nincs Microsoft 365-fiók a GNOME Online-fiókok között. Adjon hozzá egyet a "
+"Beállítások → Online-fiókok alatt; a OneDrive ezután azon keresztül jelentkezik "
+"be, és itt nincs több teendő."
+
+msgid ""
+"OneDrive signs in through the GNOME Online Accounts account chosen above; "
+"there is no password to enter. An account marked Files is off still works "
+"here, but you may want to turn Files on for it under Settings, Online "
+"Accounts."
+msgstr ""
+"A OneDrive a fent kiválasztott GNOME Online-fiókon keresztül jelentkezik be; "
+"nincs megadandó jelszó. A Fájlok kikapcsolt jelölésű fiók itt továbbra is működik, "
+"de érdemes lehet bekapcsolni rajta a Fájlokat a Beállítások → Online-fiókok alatt."
+
+msgid ""
+"Uploads and plain share links work with any OneDrive. Link expiry and "
+"download passwords are a Microsoft 365 subscription or OneDrive for Business "
+"feature: on a free personal OneDrive the link is refused when either is set, "
+"so keep Links expire after at 0 and the password switch off there."
+msgstr ""
+"A feltöltések és az egyszerű megosztási hivatkozások bármely OneDrive-val működnek. "
+"A hivatkozás lejárata és a letöltési jelszavak Microsoft 365-előfizetéshez vagy "
+"OneDrive Vállalati verzióhoz kötött funkciók: ingyenes személyes OneDrive esetén "
+"a hivatkozás elutasításra kerül, ha bármelyik be van állítva, ezért ott hagyja a "
+"Hivatkozások lejárata értékét 0-n, a jelszókapcsolót pedig kikapcsolva."
+
+msgid ""
+"Days; 0 keeps the link indefinitely. Needs Microsoft 365 or OneDrive for "
+"Business"
+msgstr ""
+"Napok; a 0 korlátlan ideig érvényben tartja a hivatkozást. Microsoft 365 vagy "
+"OneDrive Vállalati verzió szükséges"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Needs Microsoft 365 or OneDrive for Business"
+msgstr ""
+"Minden fájlhoz letöltési jelszó készül és megjelenik, hogy külön továbbadhassa. "
+"Microsoft 365 vagy OneDrive Vállalati verzió szükséges"
+
+msgid "Account name, such as Work OneDrive (optional)"
+msgstr "Fióknév, például Munkahelyi OneDrive (nem kötelező)"
+
+msgid "Account name, such as Work Nextcloud (optional)"
+msgstr "Fióknév, például Munkahelyi Nextcloud (nem kötelező)"
+
+msgid "User name"
+msgstr "Felhasználónév"
+
+msgid "App password (leave empty to keep)"
+msgstr "Alkalmazásjelszó (hagyja üresen a megtartáshoz)"
+
+msgid "App password"
+msgstr "Alkalmazásjelszó"
+
+msgid "Account name, such as Team Seafile (optional)"
+msgstr "Fióknév, például Csapat Seafile (nem kötelező)"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Password (leave empty to keep)"
+msgstr "Jelszó (hagyja üresen a megtartáshoz)"
+
+msgid "Account name, such as Personal Dropbox (optional)"
+msgstr "Fióknév, például Személyes Dropbox (nem kötelező)"
+
+msgid ""
+"A download password is made for each file and shown to you, to pass on "
+"separately. Dropbox allows link passwords and expiry dates on paid plans "
+"only."
+msgstr ""
+"Minden fájlhoz letöltési jelszó készül és megjelenik, hogy külön továbbadhassa. "
+"A Dropbox csak fizetős csomagokban engedélyezi a hivatkozások jelszavait és "
+"lejárati dátumait."
+
+msgid "Connect with Dropbox…"
+msgstr "Kapcsolódás a Dropboxhoz…"
+
+msgid ""
+"Dropbox only lets an app sign in when it is registered, so make one for "
+"yourself (it takes a minute and stays private):\n"
+"1. Open dropbox.com/developers/apps, signed in to your Dropbox, and press "
+"Create app.\n"
+"2. Choose Scoped access, then App folder (Vireo sees only its own folder "
+"under Apps) or Full Dropbox (uploads go to the folder named above).\n"
+"3. Give the app a name that no one else has used, such as Vireo for your "
+"name, and press Create app.\n"
+"4. On the Permissions tab, tick account_info.read, files.content.write and "
+"sharing.write, then press Submit.\n"
+"5. On the Settings tab, under OAuth 2, add the redirect URI {uri} and press "
+"Add.\n"
+"6. Copy the App key from the top of the Settings tab into the field above.\n"
+"The app may stay in Development status; that allows your own account. Leave "
+"the field empty to use the app key this build was made with, when it has one."
+msgstr ""
+"A Dropbox csak regisztrált alkalmazásnak engedélyezi a bejelentkezést, ezért hozzon létre egyet magának (egy percig tart, és privát marad):\n"
+"1. Nyissa meg a dropbox.com/developers/apps oldalt Dropbox-fiókjával bejelentkezve, majd nyomja meg az Alkalmazás létrehozása gombot.\n"
+"2. Válassza a Hatókörözött hozzáférést, majd az Alkalmazásmappát (a Vireo csak a saját, Alkalmazások alatti mappáját látja), vagy a Teljes Dropboxot (a feltöltések a fent megadott mappába kerülnek).\n"
+"3. Adjon az alkalmazásnak egy még nem használt nevet, például Vireo az Ön neve számára, majd nyomja meg az Alkalmazás létrehozása gombot.\n"
+"4. Az Engedélyek lapon jelölje be az account_info.read, files.content.write és sharing.write engedélyeket, majd nyomja meg a Küldés gombot.\n"
+"5. A Beállítások lapon, az OAuth 2 alatt adja hozzá a(z) {uri} átirányítási URI-t, majd nyomja meg a Hozzáadás gombot.\n"
+"6. Másolja az alkalmazáskulcsot a Beállítások lap tetejéről a fenti mezőbe.\n"
+"Az alkalmazás maradhat Fejlesztés állapotban; ez lehetővé teszi saját fiókja használatát. Hagyja üresen a mezőt a buildhez tartozó alkalmazáskulcs használatához, ha van ilyen."
+
+msgid "Connected as {who}."
+msgstr "Kapcsolódva mint: {who}."
+
+msgid "Choose an online account first."
+msgstr "Először válasszon egy online-fiókot."
+
+msgid "Signing in…"
+msgstr "Bejelentkezés…"
+
+msgid "Enter the app key of a Dropbox app first."
+msgstr "Először adja meg egy Dropbox-alkalmazás alkalmazáskulcsát."
+
+msgid "Waiting for the sign-in in your browser…"
+msgstr "Várakozás a böngészőben történő bejelentkezésre…"
+
+msgid "Fill in the server URL, e-mail and password first."
+msgstr "Először töltse ki a kiszolgáló URL-jét, az e-mail-címet és a jelszót."
+
+msgid "Fill in the server URL, user name and app password first."
+msgstr "Először töltse ki a kiszolgáló URL-jét, a felhasználónevet és az alkalmazásjelszót."
+
+msgid "Signed in as {who}."
+msgstr "Bejelentkezve mint: {who}."
+
+msgid ""
+"You can upload files and share plain links with this OneDrive. Link expiry "
+"and download passwords are not available on a free personal OneDrive (they "
+"need a Microsoft 365 subscription), so both are turned off for this account."
+msgstr ""
+"Ezzel a OneDrive-fiókkal fájlokat tölthet fel és egyszerű hivatkozásokat oszthat meg. "
+"A hivatkozás lejárata és a letöltési jelszavak nem érhetők el ingyenes személyes "
+"OneDrive esetén (Microsoft 365-előfizetés szükséges hozzájuk), ezért mindkettő ki "
+"van kapcsolva ennél a fióknál."
+
+msgid ""
+"You can upload files, share links and set an expiry with this OneDrive. "
+"Download passwords are not available on OneDrive for Business links, so that "
+"option is turned off for this account."
+msgstr ""
+"Ezzel a OneDrive-fiókkal fájlokat tölthet fel, hivatkozásokat oszthat meg és "
+"lejáratot állíthat be. A letöltési jelszavak nem érhetők el OneDrive Vállalati "
+"verzió hivatkozásainál, ezért ez a lehetőség ki van kapcsolva ennél a fióknál."
+
+msgid ""
+"You can upload files and share links with this OneDrive, with a download "
+"password. Link expiry is not available on it, so that option is turned off "
+"for this account."
+msgstr ""
+"Ezzel a OneDrive-fiókkal fájlokat tölthet fel és hivatkozásokat oszthat meg "
+"letöltési jelszóval. A hivatkozás lejárata nem érhető el rajta, ezért ez a "
+"lehetőség ki van kapcsolva ennél a fióknál."
+
+msgid "Signed in as {who}. {terms}"
+msgstr "Bejelentkezve mint: {who}. {terms}"
+
+msgid "Collapse into reader"
+msgstr "Összecsukás olvasóvá"
+
+msgid "Open in window"
+msgstr "Megnyitás ablakban"
+
+msgid "Save Draft"
+msgstr "Piszkozat mentése"
+
+msgid "Save to Drafts"
+msgstr "Mentés a Piszkozatok közé"
+
+msgid "Delete Draft"
+msgstr "Piszkozat törlése"
+
+msgid "Move this draft to Trash"
+msgstr "Piszkozat áthelyezése a Kukába"
+
+msgid "Schedule"
+msgstr "Ütemezés"
+
+msgid "Send"
+msgstr "Küldés"
+
+msgid "Send later"
+msgstr "Küldés később"
+
+msgid "Send now"
+msgstr "Küldés most"
+
+msgid "Tomorrow morning (8:00)"
+msgstr "Holnap délelőtt (8:00)"
+
+msgid "Tomorrow afternoon (13:00)"
+msgstr "Holnap délután (13:00)"
+
+msgid "Monday morning (8:00)"
+msgstr "Hétfő délelőtt (8:00)"
+
+msgid "Pick a date and time…"
+msgstr "Dátum és idő kiválasztása…"
+
+msgid "Encrypt with OpenPGP to every recipient's key"
+msgstr "Titkosítás OpenPGP-vel minden címzett kulcsára"
+
+msgid "Sign with your OpenPGP key"
+msgstr "Aláírás a saját OpenPGP-kulccsal"
+
+msgid "Attach files"
+msgstr "Fájlok csatolása"
+
+msgid "Upload to cloud storage and share a link"
+msgstr "Feltöltés felhőtárhelyre és hivatkozás megosztása"
+
+msgid "Open Contacts"
+msgstr "Névjegyek megnyitása"
+
+msgid "Show From, To and Subject"
+msgstr "Feladó, címzett és tárgy megjelenítése"
+
+msgid "Send now instead"
+msgstr "Küldés inkább most"
+
+msgid "Download password for {name}: {password}"
+msgstr "Letöltési jelszó ehhez: {name}: {password}"
+
+msgid "Copy"
+msgstr "Másolás"
+
+msgid "From"
+msgstr "Feladó"
+
+msgid "To"
+msgstr "Címzett"
+
+msgid "Cc"
+msgstr "Másolat"
+
+msgid "Bcc"
+msgstr "Titkos másolat"
+
+msgid "Reply-To"
+msgstr "Válaszcím"
+
+msgid "More"
+msgstr "Továbbiak"
+
+msgid "Show Cc, Bcc and Reply-To"
+msgstr "Másolat, titkos másolat és válaszcím megjelenítése"
+
+msgid "Upload to Cloud Storage"
+msgstr "Feltöltés felhőtárhelyre"
+
+msgid "Not signed in"
+msgstr "Nincs bejelentkezve"
+
+msgid ""
+"The sign-in for {name} is not in the keyring. Open Settings, Cloud Storage, "
+"and enter it again."
+msgstr ""
+"A(z) {name} bejelentkezése nincs a kulcstartón. Nyissa meg a Beállítások → "
+"Felhőtárhely menüt, és adja meg újra."
+
+msgid "link expires {date}"
+msgstr "a hivatkozás lejár: {date}"
+
+msgid "Could not upload {name}"
+msgstr "Nem sikerült feltölteni: {name}"
+
+msgid "Attach Files"
+msgstr "Fájlok csatolása"
+
+msgid "Cannot send with OpenPGP"
+msgstr "Nem lehet küldeni OpenPGP-vel"
+
+msgid "{name} (link)"
+msgstr "{name} (hivatkozás)"
+
+msgid "Uploading…"
+msgstr "Feltöltés…"
+
+msgid "Upload {n} file and put its share link in the message."
+msgid_plural "Upload {n} files and put their share links in the message."
+msgstr[0] "Töltsön fel {n} fájlt, és helyezze el a megosztási hivatkozását az üzenetben."
+msgstr[1] "Töltsön fel {n} fájlt, és helyezze el a megosztási hivatkozásaikat az üzenetben."
+
+msgid "Upload"
+msgstr "Feltöltés"
+
+msgid "Protect with a password"
+msgstr "Védelem jelszóval"
+
+msgid "Download password (empty: generated)"
+msgstr "Letöltési jelszó (üresen automatikusan létrejön)"
+
+msgid ""
+"There is no OpenPGP key of your own for {addr}. Generate one under Settings, "
+"OpenPGP, or choose a key in the account's settings."
+msgstr ""
+"Nincs saját OpenPGP-kulcsa ehhez: {addr}. Hozzon létre egyet a Beállítások → "
+"OpenPGP alatt, vagy válasszon kulcsot a fiók beállításaiban."
+
+msgid ""
+"There is no OpenPGP key for {addr}. Ask them for their public key, or fetch "
+"it under Settings, OpenPGP."
+msgstr ""
+"Nincs OpenPGP-kulcs ehhez: {addr}. Kérje el a nyilvános kulcsukat, vagy kérje "
+"le a Beállítások → OpenPGP alatt."
+
+msgid "That time has passed"
+msgstr "Ez az időpont már elmúlt"
+
+msgid "Choose a time later than now."
+msgstr "Válasszon a jelenleginél későbbi időpontot."
+
+msgid "Contacts"
+msgstr "Névjegyek"
+
+msgid "Open in GNOME Contacts"
+msgstr "Megnyitás a GNOME Névjegyekben"
+
+msgid "Search contacts"
+msgstr "Névjegyek keresése"
+
+msgid "No Contacts"
+msgstr "Nincsenek névjegyek"
+
+msgid "Add contacts in GNOME Contacts to see them here."
+msgstr "Adjon hozzá névjegyeket a GNOME Névjegyekben a megtekintésükhöz."
+
+msgid "Open GNOME Contacts"
+msgstr "GNOME Névjegyek megnyitása"
+
+msgid "New contact"
+msgstr "Új névjegy"
+
+msgid "Contacts you add in GNOME Contacts appear here."
+msgstr "A GNOME Névjegyekben hozzáadott névjegyek itt jelennek meg."
+
+msgid "Sort contacts"
+msgstr "Névjegyek rendezése"
+
+msgid "Edit contact"
+msgstr "Névjegy szerkesztése"
+
+msgid "First name"
+msgstr "Keresztnév"
+
+msgid "Last name"
+msgstr "Vezetéknév"
+
+msgid "Delete Contact?"
+msgstr "Törli a névjegyet?"
+
+msgid "Delete…"
+msgstr "Törlés…"
+
+msgid "View photo"
+msgstr "Fénykép megtekintése"
+
+msgid "Edit Contact"
+msgstr "Névjegy szerkesztése"
+
+msgid "New Contact"
+msgstr "Új névjegy"
+
+msgid "Add email"
+msgstr "E-mail hozzáadása"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Add phone"
+msgstr "Telefonszám hozzáadása"
+
+msgid "Add website"
+msgstr "Webhely hozzáadása"
+
+msgid "Mark as read"
+msgstr "Megjelölés olvasottként"
+
+msgid "Mark as unread"
+msgstr "Megjelölés olvasatlanként"
+
+msgid "Remove star"
+msgstr "Csillag eltávolítása"
+
+msgid "Star"
+msgstr "Csillagozás"
+
+msgid "Add sender to Contacts"
+msgstr "Feladó hozzáadása a névjegyekhez"
+
+msgid "Show conversation"
+msgstr "Beszélgetés megjelenítése"
+
+msgid "Choose which folders to search"
+msgstr "Válassza ki a keresendő mappákat"
+
+msgid "All folders"
+msgstr "Minden mappa"
+
+msgid "This folder"
+msgstr "Ez a mappa"
+
+msgid "Clear selection"
+msgstr "Kijelölés törlése"
+
+msgid "Loading more…"
+msgstr "Továbbiak betöltése…"
+
+msgid "No Messages"
+msgstr "Nincsenek üzenetek"
+
+msgid "There's nothing here right now."
+msgstr "Itt jelenleg nincs semmi."
+
+msgid "Remove Stars"
+msgstr "Csillagok eltávolítása"
+
+msgid "Star Conversation"
+msgstr "Beszélgetés csillagozása"
+
+msgid "Remove Star"
+msgstr "Csillag eltávolítása"
+
+msgid "Mark All as Read"
+msgstr "Összes megjelölése olvasottként"
+
+msgid "Mark All as Unread"
+msgstr "Összes megjelölése olvasatlanként"
+
+msgid "Add Sender to Contacts"
+msgstr "Feladó hozzáadása a névjegyekhez"
+
+msgid "Fetch the sender's key"
+msgstr "Feladó kulcsának lekérése"
+
+msgid "Trust this key…"
+msgstr "Kulcs megbízhatóvá tétele…"
+
+msgid "A pass proves the address wasn't forged — not that the message is safe."
+msgstr "A sikeres ellenőrzés bizonyítja, hogy a címet nem hamisították meg — azt nem, hogy az üzenet biztonságos."
+
+msgid "No message selected"
+msgstr "Nincs kijelölt üzenet"
+
+msgid "Choose a message from the list to read it here."
+msgstr "Válasszon ki egy üzenetet a listából az itteni olvasásához."
+
+msgid "Remote content (images, trackers) is blocked to protect your privacy."
+msgstr "A távoli tartalom (képek, követők) az adatvédelem érdekében blokkolva van."
+
+msgid "Load"
+msgstr "Betöltés"
+
+msgid "Always allow sender"
+msgstr "Feladó mindig engedélyezve"
+
+msgid "Find in message"
+msgstr "Keresés az üzenetben"
+
+msgid "No matches"
+msgstr "Nincs találat"
+
+msgid "{cur} of {total}"
+msgstr "{cur} / {total}"
+
+msgid "Previous match"
+msgstr "Előző találat"
+
+msgid "Next match"
+msgstr "Következő találat"
+
+msgid "Close find"
+msgstr "Keresés bezárása"
+
+#. Dimming comes from the cover's own foreground, which
+#. is picked for the message theme — `dim-label` would
+#. fade it against the app's instead.
+msgid "Loading…"
+msgstr "Betöltés…"
+
+msgid "That key is no longer in your keyring."
+msgstr "Ez a kulcs már nincs a kulcstartóján."
+
+msgid "Trust this key?"
+msgstr "Megbízik ebben a kulcsban?"
+
+msgid ""
+"Compare the fingerprint with the one {uid} gives you in person or over "
+"another channel. Trusting a key you have not checked lets an impostor's "
+"signature pass as theirs."
+msgstr ""
+"Hasonlítsa össze az ujjlenyomatot azzal, amelyet {uid} személyesen vagy "
+"más csatornán ad meg. Egy ellenőrizetlen kulcs megbízhatóvá tétele lehetővé "
+"teszi, hogy egy csaló aláírása az övéként tűnjön fel."
+
+msgid "Trust"
+msgstr "Megbízás"
+
+msgid "Key trusted."
+msgstr "A kulcs megbízhatóvá téve."
+
+msgid ""
+"Generate a key of your own first (Settings, OpenPGP): trusting a key means "
+"signing it with yours."
+msgstr ""
+"Először hozzon létre saját kulcsot (Beállítások, OpenPGP): egy kulcs "
+"megbízhatóvá tétele azt jelenti, hogy aláírja a sajátjával."
+
+msgid "Copied"
+msgstr "Másolva"
+
+#. Same order as the reader toolbar and the list's
+#. Actions Palette, View Source closing the line.
+msgid "Reply to this message"
+msgstr "Válasz erre az üzenetre"
+
+msgid "Reply to everyone on this message"
+msgstr "Válasz az üzenet minden címzettjének"
+
+msgid "Forward this message"
+msgstr "Üzenet továbbítása"
+
+msgid "Mark as read or unread"
+msgstr "Megjelölés olvasottként vagy olvasatlanként"
+
+msgid "Flag this message"
+msgstr "Üzenet megjelölése"
+
+msgid "Archive this message"
+msgstr "Üzenet archiválása"
+
+msgid "Delete this message"
+msgstr "Üzenet törlése"
+
+msgid "View source"
+msgstr "Forrás megtekintése"
+
+msgid "Back to my fonts and colours"
+msgstr "Vissza a saját betűtípusaimhoz és színeimhez"
+
+msgid "Show the sender's fonts and colours"
+msgstr "Feladó betűtípusainak és színeinek megjelenítése"
+
+msgid "{n} recipient"
+msgid_plural "{n} recipients"
+msgstr[0] "{n} címzett"
+msgstr[1] "{n} címzett"
+
+msgid "Hide recipients"
+msgstr "Címzettek elrejtése"
+
+msgid "Show recipients"
+msgstr "Címzettek megjelenítése"
+
+msgid "Save Image"
+msgstr "Kép mentése"
+
+msgid "The sender's key was imported from the message."
+msgstr "A feladó kulcsa importálva az üzenetből."
+
+msgid "The sender's key was fetched and imported."
+msgstr "A feladó kulcsa lekérve és importálva."
+
+msgid "The sender's key was already in your keyring."
+msgstr "A feladó kulcsa már a kulcstartóján volt."
+
+msgid "Load attachments from server"
+msgstr "Mellékletek betöltése a kiszolgálóról"
+
+msgid "Clear all"
+msgstr "Összes törlése"
+
+msgid "Collapse status bar"
+msgstr "Állapotsáv összecsukása"
+
+msgid "Export log"
+msgstr "Napló exportálása"
+
+msgid "Status bar ({n})"
+msgstr "Állapotsáv ({n})"
+
+msgid "2 years"
+msgstr "2 év"
+
+msgid "1 year"
+msgstr "1 év"
+
+msgid "5 years"
+msgstr "5 év"
+
+msgid "GnuPG"
+msgstr "GnuPG"
+
+msgid ""
+"Vireo reads and writes the keyring of the GnuPG on this computer, the same "
+"one the gpg command and other mail programs use."
+msgstr ""
+"A Vireo ezen a számítógépen a GnuPG kulcstartóját olvassa és írja, ugyanazt, "
+"amelyet a gpg parancs és más levelezőprogramok használnak."
+
+msgid "Your keys"
+msgstr "Saját kulcsok"
+
+msgid ""
+"A key of your own signs what you send and opens what is encrypted to you. "
+"Send its public half to the people who should write to you encrypted."
+msgstr ""
+"A saját kulcsa aláírja, amit küld, és megnyitja, amit Önnek titkosítottak. "
+"Küldje el a nyilvános részét azoknak, akik titkosítva szeretnének Önnek írni."
+
+msgid "Import…"
+msgstr "Importálás…"
+
+msgid "Generate…"
+msgstr "Létrehozás…"
+
+msgid "Other people's keys"
+msgstr "Mások kulcsai"
+
+msgid ""
+"The keys you encrypt to and check signatures with. A key is trusted once you "
+"have vouched for it; check its fingerprint with its owner first."
+msgstr ""
+"Ezekkel a kulcsokkal titkosít és ellenőriz aláírásokat. Egy kulcs akkor "
+"megbízható, ha Ön igazolta; először ellenőrizze az ujjlenyomatát a "
+"tulajdonosával."
+
+msgid "Fetch by address…"
+msgstr "Lekérés cím alapján…"
+
+msgid ""
+"GnuPG {version} found. Vireo reads and writes its keyring, the same one the "
+"gpg command and other mail programs use."
+msgstr ""
+"A GnuPG {version} megtalálható. A Vireo a kulcstartóját olvassa és írja, "
+"ugyanazt, amelyet a gpg parancs és más levelezőprogramok használnak."
+
+msgid ""
+"GnuPG was not found. Install the gnupg package to read encrypted mail and "
+"check signatures; the Flatpak build carries it."
+msgstr ""
+"A GnuPG nem található. Telepítse a gnupg csomagot a titkosított levelek "
+"olvasásához és az aláírások ellenőrzéséhez; a Flatpak-verzió tartalmazza."
+
+msgid "No key of your own yet. Generate one for your address."
+msgstr "Még nincs saját kulcsa. Hozzon létre egyet a címéhez."
+
+msgid "No keys from other people yet."
+msgstr "Még nincsenek másoktól származó kulcsok."
+
+msgid "Generating the key…"
+msgstr "Kulcs létrehozása…"
+
+msgid "Import Key"
+msgstr "Kulcs importálása"
+
+msgid "OpenPGP keys"
+msgstr "OpenPGP-kulcsok"
+
+msgid "All files"
+msgstr "Minden fájl"
+
+msgid "Could not import: {e}"
+msgstr "Nem importálható: {e}"
+
+msgid "Export Public Key"
+msgstr "Nyilvános kulcs exportálása"
+
+msgid "Delete your key?"
+msgstr "Törli a kulcsát?"
+
+msgid ""
+"{uid} will be removed, secret half included. Mail encrypted to it can never "
+"be read again, unless you have a backup of the key."
+msgstr ""
+"{uid} eltávolításra kerül, a titkos részével együtt. A vele titkosított levelek "
+"többé nem olvashatók, hacsak nincs biztonsági másolata a kulcsról."
+
+msgid "Remove this key?"
+msgstr "Eltávolítja ezt a kulcsot?"
+
+msgid ""
+"{uid} will be removed from your keyring. It can be imported or fetched again "
+"later."
+msgstr ""
+"{uid} eltávolításra kerül a kulcstartójáról. Később újra importálható vagy "
+"lekérhető."
+
+msgid "Could not delete: {e}"
+msgstr "Nem törölhető: {e}"
+
+msgid "Fetch a Key"
+msgstr "Kulcs lekérése"
+
+msgid ""
+"Looks the address up where its provider publishes keys (WKD), then on the "
+"keyservers."
+msgstr ""
+"Megkeresi a címet ott, ahol a szolgáltatója közzéteszi a kulcsokat (WKD), "
+"majd a kulcsszervereken."
+
+msgid "Fetch"
+msgstr "Lekérés"
+
+msgid "Looking for a key for {addr}…"
+msgstr "Kulcs keresése ehhez: {addr}…"
+
+msgid ""
+"Generate a key of your own first: trusting a key means signing it with yours."
+msgstr ""
+"Először hozzon létre saját kulcsot: egy kulcs megbízhatóvá tétele azt jelenti, "
+"hogy aláírja a sajátjával."
+
+msgid "Could not sign the key: {e}"
+msgstr "A kulcs nem írható alá: {e}"
+
+msgid "Your key is ready."
+msgstr "A kulcsa elkészült."
+
+msgid "Could not generate the key: {e}"
+msgstr "A kulcs nem hozható létre: {e}"
+
+msgid "No key found: {e}"
+msgstr "Nem található kulcs: {e}"
+
+msgid "Generate a Key"
+msgstr "Kulcs létrehozása"
+
+msgid ""
+"A signing key with an encryption subkey, made by GnuPG and kept in its "
+"keyring. The passphrase is asked for when the key is used; the agent "
+"remembers it for a while."
+msgstr ""
+"GnuPG által létrehozott, titkosítási alkulccsal rendelkező aláírókulcs, amely "
+"a kulcstartón tárolódik. A jelmondatot a kulcs használatakor kéri a rendszer; "
+"az ügynök egy ideig megjegyzi."
+
+msgid "Generate"
+msgstr "Létrehozás"
+
+msgid "Address"
+msgstr "Cím"
+
+msgid "Expires"
+msgstr "Lejárat"
+
+msgid "Passphrase"
+msgstr "Jelmondat"
+
+msgid "Confirm passphrase"
+msgstr "Jelmondat megerősítése"
+
+msgid "The passphrases differ"
+msgstr "A jelmondatok eltérnek"
+
+msgid "Type the same passphrase twice."
+msgstr "Írja be kétszer ugyanazt a jelmondatot."
+
+msgid "expires {date}"
+msgstr "lejár: {date}"
+
+msgid "expired {date}"
+msgstr "lejárt: {date}"
+
+msgid "signs and encrypts"
+msgstr "aláír és titkosít"
+
+msgid "signs only: no encryption subkey"
+msgstr "csak aláír: nincs titkosítási alkulcs"
+
+msgid "{n} more address"
+msgid_plural "{n} more addresses"
+msgstr[0] "még {n} cím"
+msgstr[1] "még {n} cím"
+
+msgid "Export public key…"
+msgstr "Nyilvános kulcs exportálása…"
+
+msgid "Delete this key"
+msgstr "Kulcs törlése"
+
+msgid "Trusted"
+msgstr "Megbízható"
+
+msgid "Trust…"
+msgstr "Megbízhatóvá tétel…"
+
+msgid "Remove this key"
+msgstr "Kulcs eltávolítása"
+
+msgid "{n} key imported."
+msgid_plural "{n} keys imported."
+msgstr[0] "{n} kulcs importálva."
+msgstr[1] "{n} kulcs importálva."
+
+msgid "That key was already in your keyring."
+msgstr "Ez a kulcs már a kulcstartóján volt."
+
+msgid "Vireo icon"
+msgstr "Vireo ikonja"
+
+msgid "Envelope, white"
+msgstr "Boríték, fehér"
+
+msgid "Envelope, black"
+msgstr "Boríték, fekete"
+
+msgid "Follow system"
+msgstr "Rendszer követése"
+
+msgid "Light"
+msgstr "Világos"
+
+msgid "Dark"
+msgstr "Sötét"
+
+msgid "Aug 23, 2026"
+msgstr "2026. aug. 23."
+
+msgid "23 Aug 2026"
+msgstr "2026. aug. 23."
+
+msgid "2026 Aug 23"
+msgstr "2026. aug. 23."
+
+msgid "12-hour (5:40 PM)"
+msgstr "12 órás (17:40)"
+
+msgid "24-hour (17:40)"
+msgstr "24 órás (17:40)"
+
+msgid "Manually"
+msgstr "Kézzel"
+
+msgid "Every minute"
+msgstr "Percenként"
+
+msgid "Every 5 minutes"
+msgstr "5 percenként"
+
+msgid "Every 15 minutes"
+msgstr "15 percenként"
+
+msgid "Every 30 minutes"
+msgstr "30 percenként"
+
+msgid "Senders"
+msgstr "Feladók"
+
+msgid "General"
+msgstr "Általános"
+
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+msgid "Message List"
+msgstr "Üzenetlista"
+
+msgid "Reading"
+msgstr "Olvasás"
+
+msgid "Composing"
+msgstr "Levélírás"
+
+msgid "Privacy"
+msgstr "Adatvédelem"
+
+msgid "Date and Time"
+msgstr "Dátum és idő"
+
+msgid "System"
+msgstr "Rendszer"
+
+msgid "Backup"
+msgstr "Biztonsági mentés"
+
+msgid "Save the account?"
+msgstr "Menti a fiókot?"
+
+msgid ""
+"The account editor is open. Save what you changed, or discard it, before "
+"moving on."
+msgstr ""
+"A fiókszerkesztő meg van nyitva. Mentse a módosításokat, vagy vesse el őket, "
+"mielőtt továbblép."
+
+msgid "Discard"
+msgstr "Elvetés"
+
+msgid "Check for new mail"
+msgstr "Új levelek keresése"
+
+msgid "Uses IMAP IDLE to receive messages the moment they arrive."
+msgstr "IMAP IDLE használata az üzenetek érkezésük pillanatában történő fogadásához."
+
+msgid "Notifications"
+msgstr "Értesítések"
+
+msgid "Desktop notifications"
+msgstr "Asztali értesítések"
+
+msgid ""
+"Show system notifications for new mail and error alerts when Vireo isn't "
+"focused."
+msgstr ""
+"Rendszerértesítések megjelenítése új levelekről és hibákról, amikor a Vireo "
+"nincs fókuszban."
+
+msgid "Show sender and subject"
+msgstr "Feladó és tárgy megjelenítése"
+
+msgid ""
+"Name who wrote and what about in the notification. Turn this off to keep "
+"both off the lock screen."
+msgstr ""
+"A feladó nevének és a tárgynak a megjelenítése az értesítésben. Kapcsolja ki, "
+"hogy mindkettő rejtve maradjon a zárolási képernyőn."
+
+msgid "Style"
+msgstr "Stílus"
+
+msgid "The app itself. Message content has its own setting under Reading."
+msgstr "Maga az alkalmazás. Az üzenettartalom saját beállítással rendelkezik az Olvasás alatt."
+
+msgid "App icon"
+msgstr "Alkalmazásikon"
+
+msgid "This window opens to"
+msgstr "Az ablak megnyitási helye"
+
+msgid "The view shown first when Settings is opened from the menu."
+msgstr "A Beállítások menüből történő megnyitásakor először megjelenő nézet."
+
+msgid "All Inboxes"
+msgstr "Összes beérkezett"
+
+msgid ""
+"A unified inbox combining every account, at the top of the sidebar. Only "
+"shown with more than one account."
+msgstr ""
+"Egységes beérkezett nézet, amely minden fiókot egyesít az oldalsáv tetején. "
+"Csak egynél több fiók esetén jelenik meg."
+
+msgid "All Inboxes unread count"
+msgstr "Az Összes beérkezett olvasatlan üzeneteinek száma"
+
+msgid ""
+"Show the combined unread chip next to All Inboxes while its per-account list "
+"is folded up."
+msgstr ""
+"Az egyesített olvasatlan jelvény megjelenítése az Összes beérkezett mellett, "
+"amikor a fiókonkénti lista össze van csukva."
+
+msgid "Filtered Folders section"
+msgstr "Szűrt mappák szakasza"
+
+msgid ""
+"rule chooses whether its folder appears there; this switch hides the section "
+"altogether."
+msgstr ""
+"Minden szabály kiválasztja, hogy a mappája megjelenjen-e ott; ez a kapcsoló "
+"teljesen elrejti a szakaszt."
+
+msgid "Filtered Folders placement"
+msgstr "Szűrt mappák elhelyezése"
+
+msgid ""
+"Inside All Inboxes, folding away with it, or in the scrolling sidebar above "
+"or below the accounts."
+msgstr ""
+"Az Összes beérkezett között, azzal együtt összecsukva, vagy a görgethető "
+"oldalsávban a fiókok felett vagy alatt."
+
+msgid "Tags placement"
+msgstr "Címkék elhelyezése"
+
+msgid "Where the Tags section sits, with the same choices."
+msgstr "A Címkék szakasz helye, ugyanazokkal a lehetőségekkel."
+
+msgid "Chevron placement"
+msgstr "Nyíl elhelyezése"
+
+msgid ""
+"Which side of All Inboxes and the account rows their expand/collapse "
+"chevrons sit on."
+msgstr ""
+"Az Összes beérkezett és a fióksorok kibontási/összecsukási nyilai melyik "
+"oldalon legyenek."
+
+msgid "Attachments in the sidebar"
+msgstr "Mellékletek az oldalsávban"
+
+msgid ""
+"A shortcut for browsing every account's attachments, pinned at the bottom of "
+"the sidebar."
+msgstr ""
+"Parancsikon minden fiók mellékleteinek böngészéséhez, az oldalsáv aljára "
+"rögzítve."
+
+msgid "Contacts in the sidebar"
+msgstr "Névjegyek az oldalsávban"
+
+msgid ""
+"A shortcut that opens your contacts, pinned at the bottom of the sidebar."
+msgstr ""
+"A névjegyeket megnyitó parancsikon, az oldalsáv aljára "
+"rögzítve."
+
+msgid "Expand the sidebar on hover"
+msgstr "Oldalsáv kibontása rámutatáskor"
+
+msgid ""
+"Whenever the sidebar is collapsed to its icon rail, hovering it floats the "
+"full sidebar out over the panes; it folds back a moment after the pointer "
+"leaves."
+msgstr ""
+"Amikor az oldalsáv ikoncsíkra van összecsukva, rámutatáskor a teljes oldalsáv "
+"a panelek fölé úszik; a mutató távozása után egy pillanattal visszacsukódik."
+
+msgid "Sender avatars"
+msgstr "Feladó avatárjai"
+
+msgid ""
+"The sender's avatar beside each message, in the list and above the message. "
+"Turning it off gives the sender and subject more room."
+msgstr ""
+"A feladó avatárja minden üzenet mellett, a listában és az üzenet felett. "
+"Kikapcsolva több hely jut a feladónak és a tárgynak."
+
+msgid "Preview lines"
+msgstr "Előnézeti sorok"
+
+msgid ""
+"How much of each message to show under its subject. Off also stops previews "
+"being downloaded."
+msgstr ""
+"Az egyes üzenetekből a tárgy alatt megjelenő mennyiség. Kikapcsolva az "
+"előnézetek letöltése is leáll."
+
+msgid "Actions Palette in the message list"
+msgstr "Műveletpaletta az üzenetlistában"
+
+msgid ""
+"The ⋯ action row under each message summary. Turning it off returns its "
+"space to the row; messages are still acted on from their cards and the right-"
+"click menu."
+msgstr ""
+"A ⋯ műveletsor minden üzenetösszefoglaló alatt. Kikapcsolva a helye visszakerül "
+"a sorba; az üzenetek továbbra is kezelhetők a kártyáikról és a jobb kattintásos "
+"menüből."
+
+msgid "Open the Actions Palette on hover"
+msgstr "Műveletpaletta megnyitása rámutatáskor"
+
+msgid ""
+"The message list's ⋯ palette slides open by itself while the pointer rests "
+"on a row."
+msgstr ""
+"Az üzenetlista ⋯ palettája magától kinyílik, miközben a mutató egy "
+"soron áll."
+
+msgid "Swipe actions"
+msgstr "Pöccintési műveletek"
+
+msgid ""
+"Drag a message sideways with the mouse, or swipe it with two fingers on a "
+"trackpad, to archive or delete it."
+msgstr ""
+"Húzza oldalra az üzenetet az egérrel, vagy pöccintse két ujjal az "
+"érintőpadon az archiváláshoz vagy törléshez."
+
+msgid "Reverse swipe directions"
+msgstr "Pöccintési irányok megfordítása"
+
+msgid ""
+"Swipe (mouse-drag or trackpad) a message left to delete it and right to "
+"archive it. Turning this on swaps the two: left archives, right deletes."
+msgstr ""
+"Pöccintse az üzenetet balra (egérhúzással vagy érintőpaddal) a törléshez, "
+"jobbra az archiváláshoz. Bekapcsolva ez felcseréli a kettőt: balra archivál, "
+"jobbra töröl."
+
+msgid "Actions Palette timeout"
+msgstr "Műveletpaletta időkorlátja"
+
+msgid ""
+"Seconds an actions palette stays open after the cursor leaves it — the "
+"list's and the message cards' alike."
+msgstr ""
+"A műveletpaletta nyitva maradásának másodpercei a kurzor távozása után — a "
+"listában és az üzenetkártyákon egyaránt."
+
+msgid "Conversations"
+msgstr "Beszélgetések"
+
+msgid "Group messages by conversation"
+msgstr "Üzenetek csoportosítása beszélgetés szerint"
+
+msgid "Collapse replies into a single threaded conversation."
+msgstr "Válaszok összecsukása egyetlen szálas beszélgetésbe."
+
+msgid "Expandable conversations"
+msgstr "Kibontható beszélgetések"
+
+msgid ""
+"the row keeps its count chip but the messages are displayed only as cards in "
+"the reading pane."
+msgstr ""
+"A sor megtartja a számlálóját, de az üzenetek csak kártyákként jelennek meg "
+"az olvasópanelen."
+
+msgid "Expand conversations by default"
+msgstr "Beszélgetések kibontása alapértelmezés szerint"
+
+msgid ""
+"Show every message of a conversation in the list. When off, conversations "
+"start collapsed to their newest message."
+msgstr ""
+"A beszélgetés minden üzenetének megjelenítése a listában. Kikapcsolva a "
+"beszélgetések a legújabb üzenetükre összecsukva indulnak."
+
+msgid "Newest message first"
+msgstr "Legújabb üzenet elöl"
+
+msgid ""
+"Show a conversation's latest message at the top of the reading pane. Off "
+"reads oldest to newest, downward."
+msgstr ""
+"A beszélgetés legújabb üzenetének megjelenítése az olvasópanel tetején. "
+"Kikapcsolva a legrégebbitől a legújabb felé, lefelé olvas."
+
+msgid "Confirm conversation deletion"
+msgstr "Beszélgetés törlésének megerősítése"
+
+msgid ""
+"Warn before deleting when a whole conversation is selected, since every "
+"message in the thread goes with it."
+msgstr ""
+"Figyelmeztetés törlés előtt egy teljes beszélgetés kijelölésekor, mivel a szál "
+"minden üzenete törlődik vele."
+
+msgid ""
+"When an opened message counts as read. Conversations mark each message as it "
+"comes into view."
+msgstr ""
+"Mikor számít olvasottnak a megnyitott üzenet. A beszélgetések minden üzenetet "
+"akkor jelölnek, amikor láthatóvá válik."
+
+msgid "Message appearance"
+msgstr "Üzenet megjelenése"
+
+msgid "Theme for email content only, not the app itself."
+msgstr "Csak az e-mail-tartalom témája, nem magának az alkalmazásnak a témája."
+
+msgid "Use my own font"
+msgstr "Saját betűtípus használata"
+
+msgid ""
+"Show every message in the font and size chosen below instead of the "
+"sender's. Headings keep their relative size; code stays monospaced."
+msgstr ""
+"Minden üzenet megjelenítése az alább választott betűtípussal és mérettel a "
+"feladóé helyett. A címsorok megtartják relatív méretüket; a kód rögzített "
+"szélességű marad."
+
+msgid "Message font"
+msgstr "Üzenet betűtípusa"
+
+msgid "The interface font unless another is chosen."
+msgstr "A kezelőfelület betűtípusa, hacsak nincs más kiválasztva."
+
+msgid "Use my own colours"
+msgstr "Saját színek használata"
+
+msgid ""
+"Ignore the text and background colours senders set, so every message reads "
+"in the same black or white on the reader's ground. Pictures are kept; links "
+"take the accent colour."
+msgstr ""
+"A feladók által beállított szöveg- és háttérszínek figyelmen kívül hagyása, "
+"hogy minden üzenet azonos fekete vagy fehér színnel jelenjen meg az olvasó "
+"hátterén. A képek megmaradnak; a hivatkozások kiemelőszínt kapnak."
+
+msgid "Message card actions"
+msgstr "Üzenetkártya-műveletek"
+
+msgid "How each message's action icons show in the reader, single or threaded."
+msgstr "Az egyes üzenetek műveletikonjainak megjelenése az olvasóban, önálló vagy szálas nézetben."
+
+msgid "Single messages as cards"
+msgstr "Önálló üzenetek kártyaként"
+
+msgid ""
+"Show a lone message as an inset card with the same border as a "
+"conversation's messages. Off fills the pane edge to edge."
+msgstr ""
+"Önálló üzenet megjelenítése beágyazott kártyaként, a beszélgetés üzeneteivel "
+"azonos szegéllyel. Kikapcsolva az üzenet kitölti a panelt."
+
+msgid "Always show recipients"
+msgstr "Címzettek mindig jelenjenek meg"
+
+msgid ""
+"Show who each message went to under its sender, without clicking the "
+"recipients chip. With one recipient the chip is dropped entirely."
+msgstr ""
+"Az egyes üzenetek címzettjeinek megjelenítése a feladó alatt, a címzettjelvényre "
+"kattintás nélkül. Egy címzett esetén a jelvény teljesen elmarad."
+
+msgid "Compose in the main window"
+msgstr "Levélírás a főablakban"
+
+msgid ""
+"New message slides down over the reading pane, like a reply — pop it out to "
+"a window from its header. Off = open a separate window directly."
+msgstr ""
+"Az új üzenet válaszhoz hasonlóan lecsúszik az olvasópanelre — a fejlécéből "
+"külön ablakba emelhető. Kikapcsolva közvetlenül külön ablakban nyílik meg."
+
+msgid "Show From, To and Subject in the reply panel"
+msgstr "Feladó, címzett és tárgy megjelenítése a válaszpanelen"
+
+msgid ""
+"The inline reply opens with its address and subject rows showing. Off, they "
+"stay folded away behind a button in the panel's header."
+msgstr ""
+"A beágyazott válasz a cím- és tárgysorok megjelenítésével nyílik meg. "
+"Kikapcsolva ezek a panel fejlécének gombja mögött maradnak összecsukva."
+
+msgid "Paste as plain text"
+msgstr "Beillesztés egyszerű szövegként"
+
+msgid ""
+"Pasting into a message strips the clipboard's formatting. Off, a paste keeps "
+"its formatting. Right-clicking the editor always offers both."
+msgstr ""
+"Az üzenetbe beillesztés eltávolítja a vágólap formázását. Kikapcsolva a "
+"beillesztés megőrzi a formázást. A szerkesztő jobb kattintásos menüje mindig "
+"mindkettőt felajánlja."
+
+msgid "Spelling"
+msgstr "Helyesírás"
+
+msgid "Check spelling as you type"
+msgstr "Helyesírás-ellenőrzés gépelés közben"
+
+msgid ""
+"Misspelled words in the message body are underlined; right-click a word for "
+"corrections."
+msgstr ""
+"Az üzenet törzsében a hibásan írt szavak alá vannak húzva; a javításokhoz "
+"kattintson jobb gombbal egy szóra."
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "Dictionaries the app can see"
+msgstr "Az alkalmazás által elérhető szótárak"
+
+msgid "Added words"
+msgstr "Hozzáadott szavak"
+
+msgid ""
+"Words the spell checker was taught. The message body applies changes after a "
+"restart."
+msgstr ""
+"A helyesírás-ellenőrzőnek megtanított szavak. Az üzenettörzs az újraindítás "
+"után alkalmazza a módosításokat."
+
+msgid ""
+"Vireo collects no telemetry and sends no analytics. Remote content (images, "
+"trackers) is blocked by default. Allow it per message, trust a sender to "
+"always load it, or turn on \"Always load remote content\" below."
+msgstr ""
+"A Vireo nem gyűjt telemetriát és nem küld elemzési adatokat. A távoli tartalom "
+"(képek, követők) alapértelmezés szerint blokkolva van. Engedélyezze üzenetenként, "
+"bízzon meg egy feladóban az állandó betöltéshez, vagy kapcsolja be alább a "
+"„Távoli tartalom mindig töltődjön be” lehetőséget."
+
+msgid "Always load remote content"
+msgstr "Távoli tartalom mindig töltődjön be"
+
+msgid ""
+"Show images and other remote content in every new message without asking. "
+"Off by default, since remote content can be used to track when and where you "
+"read a message."
+msgstr ""
+"Képek és más távoli tartalmak megjelenítése minden új üzenetben kérdezés "
+"nélkül. Alapértelmezés szerint ki van kapcsolva, mert a távoli tartalom "
+"követheti, mikor és hol olvas el egy üzenetet."
+
+msgid "Warn when remote content is blocked"
+msgstr "Figyelmeztetés távoli tartalom blokkolásakor"
+
+msgid ""
+"Shows the banner offering to load it. Turning this off only hides the notice "
+"— remote content is still blocked just the same."
+msgstr ""
+"Megjeleníti a betöltést felajánló sávot. Kikapcsolva csak az értesítés rejtőzik "
+"el — a távoli tartalom ugyanúgy blokkolva marad."
+
+msgid "Use Gravatar when a contact has no photo"
+msgstr "Gravatar használata, ha a névjegyhez nincs fénykép"
+
+msgid ""
+"Local GNOME Contacts photos are always preferred. Gravatar sends a hash of "
+"the sender's email."
+msgstr ""
+"A helyi GNOME Névjegyek fényképei mindig előnyt élveznek. A Gravatar elküldi "
+"a feladó e-mail-címének kivonatát."
+
+msgid "Show sender logos"
+msgstr "Feladói logók megjelenítése"
+
+msgid ""
+"Fills the sender's avatar with the brand's own site icon, fetched from the "
+"sender's domain. That domain learns your IP address, which is what blocking "
+"remote content otherwise avoids."
+msgstr ""
+"A feladó avatárját a márka saját webhelyikonjával tölti ki, a feladó "
+"tartományából lekérve. A tartomány megismeri az IP-címét, amit a távoli tartalom "
+"blokkolása egyébként megakadályozna."
+
+msgid ""
+"By default dates follow the system's own arrangement — its field order, "
+"month names and clock. Choose a format here to use it whatever the system is "
+"set to."
+msgstr ""
+"Alapértelmezés szerint a dátumok a rendszer elrendezését követik — a mezők "
+"sorrendjét, a hónapneveket és az órát. Válasszon itt formátumot a "
+"rendszerbeállítástól független használatához."
+
+msgid "Date format"
+msgstr "Dátumformátum"
+
+msgid "Clock"
+msgstr "Óra"
+
+msgid "Keep running in the background"
+msgstr "Futás a háttérben"
+
+msgid ""
+"Closing the window hides it instead of quitting, so new mail still arrives. "
+"Vireo then appears under Background Apps in the system menu, where it can be "
+"quit."
+msgstr ""
+"Az ablak bezárása elrejti azt a kilépés helyett, így az új levelek továbbra is "
+"megérkeznek. A Vireo ezután a rendszer menüjének Háttérben futó alkalmazások "
+"szakaszában jelenik meg, ahol kiléphet belőle."
+
+msgid "Start at login"
+msgstr "Indítás bejelentkezéskor"
+
+msgid ""
+"Start checking for mail when you log in. Vireo starts without a window and "
+"waits in the system menu."
+msgstr ""
+"Levelek keresésének megkezdése bejelentkezéskor. A Vireo ablak nélkül indul, "
+"és a rendszer menüjében várakozik."
+
+msgid "Show a tray icon"
+msgstr "Tálcaikon megjelenítése"
+
+msgid ""
+"An icon in the system tray, with a red dot while any inbox has unread mail. "
+"Click it to open Vireo. GNOME needs the AppIndicator extension; other "
+"desktops show it as they are."
+msgstr ""
+"Ikon a rendszertálcán, piros ponttal, ha bármelyik beérkezett mappában "
+"olvasatlan levél van. Kattintson rá a Vireo megnyitásához. A GNOME-hoz az "
+"AppIndicator-kiterjesztés szükséges; más asztali környezetek natívan jelenítik "
+"meg."
+
+msgid "Tray icon"
+msgstr "Tálcaikon"
+
+msgid ""
+"The Vireo icon, or a plain envelope in white or black to match the panel."
+msgstr ""
+"A Vireo ikonja, vagy a panelhez illő fehér vagy fekete "
+"egyszerű boríték."
+
+msgid "Unread mail in the tray menu"
+msgstr "Olvasatlan levelek a tálcamenüben"
+
+msgid ""
+"List the newest unread inbox messages in the icon's menu; click one to open "
+"it."
+msgstr ""
+"A legújabb olvasatlan beérkezett üzenetek listázása az ikon menüjében; "
+"kattintson egyre a megnyitásához."
+
+msgid "Single-key shortcuts"
+msgstr "Egybillentyűs parancsikonok"
+
+msgid ""
+"Act on mail with one key and no modifier — j/k to move, r to reply, a to "
+"archive. Press Ctrl+? for the full list."
+msgstr ""
+"Levelek kezelése egyetlen módosító nélküli billentyűvel — j/k a navigáláshoz, "
+"r a válaszhoz, a az archiváláshoz. A teljes listához nyomja meg a Ctrl+? "
+"billentyűparancsot."
+
+msgid "Console mode"
+msgstr "Konzolmód"
+
+msgid ""
+"A verbose live console in the status bar showing everything Vireo is doing "
+"under the hood."
+msgstr ""
+"Részletes, élő konzol az állapotsávban, amely megmutat mindent, amit a Vireo "
+"a háttérben végez."
+
+msgid ""
+"Save everything the console has recorded since Vireo started, to attach to a "
+"bug report. Email addresses are shortened to their domain."
+msgstr ""
+"A Vireo indulása óta a konzol által rögzített minden adat mentése hibajelentéshez "
+"való csatoláshoz. Az e-mail-címek csak a tartományukra rövidülnek."
+
+msgid ""
+"Accounts and preferences as one file. Passwords stay in the system keyring "
+"and are never exported."
+msgstr ""
+"Fiókok és beállítások egyetlen fájlban. A jelszavak a rendszer kulcstartóján "
+"maradnak, és soha nem kerülnek exportálásra."
+
+msgid "Export settings"
+msgstr "Beállítások exportálása"
+
+msgid "Import settings"
+msgstr "Beállítások importálása"
+
+msgid ""
+"Replaces the current accounts and preferences in place. Don't remove "
+"accounts first: removal also deletes their keyring passwords, which no "
+"backup carries."
+msgstr ""
+"Helyben lecseréli a jelenlegi fiókokat és beállításokat. Ne távolítsa el előbb a "
+"fiókokat: az eltávolítás a kulcstartón lévő jelszavaikat is törli, ezeket pedig "
+"egyetlen biztonsági mentés sem tartalmazza."
+
+msgid "Inside All Inboxes"
+msgstr "Az Összes beérkezett között"
+
+msgid "Above the accounts"
+msgstr "A fiókok felett"
+
+msgid "Below the accounts"
+msgstr "A fiókok alatt"
+
+msgid "Left"
+msgstr "Balra"
+
+msgid "Right"
+msgstr "Jobbra"
+
+msgid "1 line"
+msgstr "1 sor"
+
+msgid "2 lines"
+msgstr "2 sor"
+
+msgid "3 lines"
+msgstr "3 sor"
+
+msgid "Shown in the dock, app grid and switcher, and by the tray icon."
+msgstr "Megjelenik a dokkban, az alkalmazásrácsban és a váltóban, valamint a tálcaikonon."
+
+msgid "When displayed"
+msgstr "Megjelenítés ideje"
+
+msgid "After two seconds"
+msgstr "Két másodperc után"
+
+msgid "Hidden behind a toggle"
+msgstr "Kapcsoló mögött rejtve"
+
+msgid "Shown while hovering"
+msgstr "Megjelenítés rámutatáskor"
+
+msgid "Always visible"
+msgstr "Mindig látható"
+
+msgid "System language — {language}"
+msgstr "Rendszernyelv — {language}"
+
+msgid "Add a word"
+msgstr "Szó hozzáadása"
+
+msgid "Forget this word"
+msgstr "Szó elfelejtése"
+
+msgid "Print Message"
+msgstr "Üzenet nyomtatása"
+
+msgid "Save as PDF"
+msgstr "Mentés PDF-ként"
+
+msgid "Could not save the PDF: {error}"
+msgstr "A PDF nem menthető: {error}"
+
+msgid "Print…"
+msgstr "Nyomtatás…"
+
+msgid "Save as PDF…"
+msgstr "Mentés PDF-ként…"
+
+msgid "Send as Attachment Instead"
+msgstr "Küldés inkább mellékletként"
+
+msgid "Small"
+msgstr "Kicsi"
+
+msgid "Medium"
+msgstr "Közepes"
+
+msgid "Large"
+msgstr "Nagy"
+
+msgid "Original Size"
+msgstr "Eredeti méret"
+
+msgid "Will be recompressed to the size shown when this is sent"
+msgstr "Küldéskor a megjelenített méretre lesz újratömörítve"
+
+msgid "Recompress to This Size on Send"
+msgstr "Újratömörítés erre a méretre küldéskor"
+
+msgid "Paste with Formatting"
+msgstr "Beillesztés formázással"
+
+msgid "Paste as Plain Text"
+msgstr "Beillesztés egyszerű szövegként"
+
+msgid "Bold"
+msgstr "Félkövér"
+
+msgid "Italic"
+msgstr "Dőlt"
+
+msgid "Underline"
+msgstr "Aláhúzott"
+
+msgid "Strikethrough"
+msgstr "Áthúzott"
+
+msgid "Bulleted list"
+msgstr "Felsorolás"
+
+msgid "Numbered list"
+msgstr "Számozott lista"
+
+#. Adwaita has no blockquote glyph; the indent icon reads as "quote".
+msgid "Quote"
+msgstr "Idézet"
+
+#. `LINK` is a sentinel command (handled specially); the icon is real.
+msgid "Insert link"
+msgstr "Hivatkozás beszúrása"
+
+msgid "Clear formatting"
+msgstr "Formázás törlése"
+
+msgid "Insert Link"
+msgstr "Hivatkozás beszúrása"
+
+msgid "Insert"
+msgstr "Beszúrás"
+
+msgid "Add account"
+msgstr "Fiók hozzáadása"
+
+msgid "Add first account"
+msgstr "Első fiók hozzáadása"
+
+msgid "No accounts yet"
+msgstr "Még nincsenek fiókok"
+
+msgid "Show each inbox"
+msgstr "Minden beérkezett megjelenítése"
+
+msgid "Refresh"
+msgstr "Frissítés"
+
+msgid "Account Settings…"
+msgstr "Fiókbeállítások…"
+
+msgid "Outbox"
+msgstr "Kimenő"
+
+msgid "Mark Inbox as Read"
+msgstr "Beérkezett megjelölése olvasottként"
+
+msgid "New Folder…"
+msgstr "Új mappa…"
+
+msgid "Remove Account…"
+msgstr "Fiók eltávolítása…"
+
+msgid "Show or hide sub-folders"
+msgstr "Almappák megjelenítése vagy elrejtése"
+
+msgid "Folders"
+msgstr "Mappák"
+
+msgid "Folders ({len})"
+msgstr "Mappák ({len})"
+
+msgid "Add Folder"
+msgstr "Mappa hozzáadása"
+
+msgid "Filtered Folders"
+msgstr "Szűrt mappák"
+
+msgid "Rename Folder…"
+msgstr "Mappa átnevezése…"
+
+msgid "Delete Folder…"
+msgstr "Mappa törlése…"
+
+msgid "Empty Trash…"
+msgstr "Kuka kiürítése…"
+
+msgid "Empty Junk…"
+msgstr "Levélszemét kiürítése…"
+
+msgid "Welcome to Vireo"
+msgstr "Üdvözli a Vireo"
+
+msgid ""
+"A clean, fast home for your mail.\n"
+"Let's set things up — it takes about a minute."
+msgstr ""
+"Tiszta, gyors otthon levelei számára.\n"
+"Állítsuk be — körülbelül egy percet vesz igénybe."
+
+msgid "Get Started"
+msgstr "Kezdés"
+
+msgid "Add your email account"
+msgstr "E-mail-fiók hozzáadása"
+
+msgid "Found in GNOME Online Accounts"
+msgstr "Megtalálható a GNOME Online-fiókok között"
+
+msgid "Your name"
+msgstr "Az Ön neve"
+
+msgid "Server details"
+msgstr "Kiszolgáló adatai"
+
+msgid "Filled in for known providers"
+msgstr "Ismert szolgáltatókhoz kitöltve"
+
+msgid "IMAP server"
+msgstr "IMAP-kiszolgáló"
+
+msgid "IMAP port"
+msgstr "IMAP-port"
+
+msgid "Test & Add"
+msgstr "Tesztelés és hozzáadás"
+
+msgid ""
+"Google and Microsoft accounts sign in through GNOME Settings → Online "
+"Accounts, then appear above."
+msgstr ""
+"A Google- és Microsoft-fiókok a GNOME Beállítások → Online-fiókok menüjén "
+"keresztül jelentkeznek be, majd fent jelennek meg."
+
+msgid "Scan Again"
+msgstr "Újraellenőrzés"
+
+msgid "Privacy, your way"
+msgstr "Adatvédelem az Ön módján"
+
+msgid ""
+"Vireo sends no telemetry, ever. These control what leaves your machine while "
+"you read."
+msgstr ""
+"A Vireo soha nem küld telemetriát. Ezek a beállítások szabályozzák, mi hagyja el "
+"a gépét olvasás közben."
+
+msgid "Block remote images"
+msgstr "Távoli képek blokkolása"
+
+msgid "Stops senders tracking when and where you open mail"
+msgstr "Megakadályozza, hogy a feladók kövessék, mikor és hol nyitja meg a leveleket"
+
+msgid "Fetch Gravatar portraits"
+msgstr "Gravatar-portrék lekérése"
+
+msgid "Asks gravatar.com about each sender's address"
+msgstr "Lekérdezi a gravatar.com-ot minden feladó címéről"
+
+msgid "Fetch sender logos"
+msgstr "Feladói logók lekérése"
+
+msgid "Looks up company icons for the message list"
+msgstr "Cégikonok keresése az üzenetlistához"
+
+msgid "Show message content in notifications"
+msgstr "Üzenettartalom megjelenítése az értesítésekben"
+
+msgid "Off keeps senders and subjects off the lock screen"
+msgstr "Kikapcsolva a feladók és tárgyak nem jelennek meg a zárolási képernyőn"
+
+msgid "Make it yours"
+msgstr "Tegye személyessé"
+
+msgid "A few popular choices — everything can be changed later in Settings."
+msgstr "Néhány népszerű választás — minden később módosítható a Beállításokban."
+
+msgid "Message text shown under each subject"
+msgstr "Az egyes tárgyak alatt megjelenő üzenetszöveg"
+
+msgid "Colourful initials beside each message"
+msgstr "Színes monogramok minden üzenet mellett"
+
+msgid "Conversation view"
+msgstr "Beszélgetésnézet"
+
+msgid "Group messages into threads"
+msgstr "Üzenetek csoportosítása szálakba"
+
+#. The app icon: the whole set as one sideways-scrolling row on its
+#. own card, the default ringed.
+msgid "Pick your app icon"
+msgstr "Válassza ki az alkalmazás ikonját"
+
+msgid "You're all set"
+msgstr "Minden készen áll"
+
+msgid ""
+"Enjoy! If you encounter an issue or have a feature request,\n"
+"please open an issue on our <a href=\"{url}\">Github</a>."
+msgstr ""
+"Jó használatot! Ha hibát tapasztal, vagy funkciót szeretne kérni,\n"
+"nyisson hibajegyet a <a href=\"{url}\">GitHubon</a>."
+
+msgid "Start Reading"
+msgstr "Olvasás megkezdése"
+
+#. Fixed footer: Continue lives with the dots so it never scrolls
+#. away with a tall page. Hidden on the hero and final pages, which
+#. carry their own calls to action.
+msgid "Continue"
+msgstr "Folytatás"
+
+msgid "Enter your email address and password first."
+msgstr "Először adja meg az e-mail-címét és a jelszavát."
+
+msgid "Checking the connection…"
+msgstr "Kapcsolat ellenőrzése…"
+
+msgid "✓ {email} — added"
+msgstr "✓ {email} — hozzáadva"
+
+msgid "✓ {email} — connected and added"
+msgstr "✓ {email} — kapcsolódva és hozzáadva"
+
+msgid "{email} — mail server: {e}"
+msgstr "{email} — levelezőkiszolgáló: {e}"
+
+msgid "{email} — sending (SMTP): {e}"
+msgstr "{email} — küldés (SMTP): {e}"
+
+msgid "Your mail provider confirmed this really came from {from}."
+msgstr "A levelezőszolgáltatója megerősítette, hogy ez valóban innen származik: {from}."
+
+msgid ""
+"This message failed the checks that prove it came from {from}. Treat it as a "
+"forgery."
+msgstr ""
+"Ez az üzenet nem ment át azokon az ellenőrzéseken, amelyek bizonyítják, hogy innen "
+"származik: {from}. Kezelje hamisítványként."
+
+msgid "This message carries a valid signature from {from}."
+msgstr "Ezen az üzeneten érvényes aláírás található ettől: {from}."
+
+msgid ""
+"This message couldn't be confirmed as coming from {from}, and the checks "
+"that ran on it failed."
+msgstr ""
+"Nem sikerült megerősíteni, hogy ez az üzenet innen származik: {from}, és a "
+"rajta lefuttatott ellenőrzések sikertelenek voltak."
+
+msgid "Your mail provider didn't report any sender checks for this message."
+msgstr "A levelezőszolgáltató nem jelentett feladó-ellenőrzést ehhez az üzenethez."
+
+msgid "Nothing here proves this came from {from} — or that it didn't."
+msgstr "Itt semmi nem bizonyítja, hogy ez innen származik: {from} — de azt sem, hogy nem."
+
+msgid "{name}: passed"
+msgstr "{name}: sikeres"
+
+msgid "{name}: FAILED"
+msgstr "{name}: SIKERTELEN"
+
+msgid "{name}: inconclusive"
+msgstr "{name}: nem egyértelmű"
+
+msgid "DMARC (is the From: address genuine)"
+msgstr "DMARC (hiteles-e a Feladó: cím)"
+
+msgid "DKIM (signature)"
+msgstr "DKIM (aláírás)"
+
+msgid "SPF (sending server)"
+msgstr "SPF (küldő kiszolgáló)"
+
+msgid "Signed by: {d}"
+msgstr "Aláírta: {d}"
+
+msgid "Checked by: {who}"
+msgstr "Ellenőrizte: {who}"
+
+msgid "From: {from}"
+msgstr "Feladó: {from}"
+
+msgid "Replies would go to {reply}, not {from}"
+msgstr "A válaszok ide mennének: {reply}, nem ide: {from}"
+
+msgid "Bounces would go to {rp}"
+msgstr "A visszapattanó levelek ide mennének: {rp}"
+
+msgid "The sender's name says \"{claimed}\" but the address is {from}"
+msgstr "A feladó neve „{claimed}”, de a cím: {from}"
+
+msgid "runtime error: {e}"
+msgstr "futásidejű hiba: {e}"
+
+msgid "Syncing…"
+msgstr "Szinkronizálás…"
+
+msgid "Could not load {path}: {e}"
+msgstr "Nem tölthető be: {path}: {e}"
+
+msgid "Could not load message: {e}"
+msgstr "Az üzenet nem tölthető be: {e}"
+
+msgid "Could not load conversation: {e}"
+msgstr "A beszélgetés nem tölthető be: {e}"
+
+msgid "Could not load source: {e}"
+msgstr "A forrás nem tölthető be: {e}"
+
+msgid "Could not load attachments: {e}"
+msgstr "A mellékletek nem tölthetők be: {e}"
+
+msgid "Could not update message: {e}"
+msgstr "Az üzenet nem frissíthető: {e}"
+
+msgid "Could not flag message: {e}"
+msgstr "Az üzenet nem jelölhető meg: {e}"
+
+msgid ""
+"This server does not store tags, so Vireo keeps them on this computer only"
+msgstr ""
+"Ez a kiszolgáló nem tárol címkéket, ezért a Vireo csak ezen a számítógépen "
+"őrzi őket"
+
+msgid "Could not tag message: {e}"
+msgstr "Az üzenet nem címkézhető: {e}"
+
+msgid "Could not mark folder read: {e}"
+msgstr "A mappa nem jelölhető olvasottként: {e}"
+
+msgid "Could not mark as spam: {e}"
+msgstr "Nem jelölhető levélszemétként: {e}"
+
+msgid "Could not move message: {e}"
+msgstr "Az üzenet nem helyezhető át: {e}"
+
+msgid "Could not move {len} messages: {e}"
+msgstr "{len} üzenet nem helyezhető át: {e}"
+
+msgid "Undo failed: {e}"
+msgstr "A visszavonás sikertelen: {e}"
+
+msgid "Undo: the messages are no longer where that move put them."
+msgstr "Visszavonás: az üzenetek már nincsenek ott, ahová az áthelyezés tette őket."
+
+msgid "Move undone — message restored"
+msgid_plural "Move undone — {n} messages restored"
+msgstr[0] "Áthelyezés visszavonva — üzenet visszaállítva"
+msgstr[1] "Áthelyezés visszavonva — {n} üzenet visszaállítva"
+
+msgid "Could not delete permanently: {e}"
+msgstr "Nem törölhető véglegesen: {e}"
+
+msgid "Could not empty the folder: {e}"
+msgstr "A mappa nem üríthető ki: {e}"
+
+msgid "Could not create folder: {e}"
+msgstr "A mappa nem hozható létre: {e}"
+
+msgid "Could not move folder: {e}"
+msgstr "A mappa nem helyezhető át: {e}"
+
+msgid "Could not delete folder: {e}"
+msgstr "A mappa nem törölhető: {e}"
+
+msgid "Sending…"
+msgstr "Küldés…"
+
+msgid "Message sent, but saving to Sent failed: {e}"
+msgstr "Az üzenet elküldve, de az Elküldött mappába mentés sikertelen: {e}"
+
+msgid ""
+"Send failed: {e}. The message is in the Outbox and will be sent when the "
+"connection is back."
+msgstr ""
+"A küldés sikertelen: {e}. Az üzenet a Kimenőben van, és a kapcsolat "
+"helyreállásakor elküldésre kerül."
+
+msgid "Send failed: {e}"
+msgstr "A küldés sikertelen: {e}"
+
+msgid "Saving draft…"
+msgstr "Piszkozat mentése…"
+
+msgid "Could not save draft: {e}"
+msgstr "A piszkozat nem menthető: {e}"
+
+msgid "Connecting to {host}…"
+msgstr "Kapcsolódás ehhez: {host}…"
+
+msgid "Could not list folders: {e}"
+msgstr "A mappák nem listázhatók: {e}"
+
+msgid "Connection failed: {e}"
+msgstr "A kapcsolat sikertelen: {e}"
+
+msgid "Downloading attachments… {n} remaining"
+msgid_plural "Downloading attachments… {n} remaining"
+msgstr[0] "Mellékletek letöltése… még {n} van hátra"
+msgstr[1] "Mellékletek letöltése… még {n} van hátra"
+
+msgid "“{subject}” will be sent {when}"
+msgstr "A(z) „{subject}” küldése ekkor történik: {when}"
+
+msgid "Could not schedule the message: there is no local store to keep it in."
+msgstr "Az üzenet nem ütemezhető: nincs helyi tároló a megőrzéséhez."
+
+msgid "Still could not send “{subject}”: {e}"
+msgstr "A(z) „{subject}” továbbra sem küldhető el: {e}"
+
+msgid ""
+"no OpenPGP key of your own for {addr}; generate one under Settings, OpenPGP"
+msgstr ""
+"nincs saját OpenPGP-kulcs ehhez: {addr}; hozzon létre egyet a Beállítások → "
+"OpenPGP alatt"
+
+msgid "no OpenPGP key for {addr}"
+msgstr "nincs OpenPGP-kulcs ehhez: {addr}"
+
+msgid "Could not fetch mail: {e}"
+msgstr "A levelek nem kérhetők le: {e}"
+
+msgid "Could not delete message: {e}"
+msgstr "Az üzenet nem törölhető: {e}"
+
+msgid "POP3 accounts don't support folders"
+msgstr "A POP3-fiókok nem támogatják a mappákat"
+
+msgid "Inbox"
+msgstr "Beérkezett üzenetek"
+
+msgid "Could not move messages: {e}"
+msgstr "Az üzenetek nem helyezhetők át: {e}"
+
+msgid "Could not rename folder: unknown folder"
+msgstr "A mappa nem nevezhető át: ismeretlen mappa"
+
+msgid "Could not rename folder: {e}"
+msgstr "A mappa nem nevezhető át: {e}"
+
+msgid "Could not delete folder: unknown folder"
+msgstr "A mappa nem törölhető: ismeretlen mappa"
+
+msgid "Email Client"
+msgstr "Levelezőkliens"
+
+msgid "A clean, fast GNOME-native email client"
+msgstr "Tiszta, gyors, GNOME-ba illeszkedő levelezőkliens"
+
+msgid "Email;Mail;IMAP;"
+msgstr "E-mail;Levél;IMAP;"
+
+msgid "Private, GNOME-native email client"
+msgstr "Privát, GNOME-ba illeszkedő levelezőkliens"
+
+msgid ""
+"Vireo is a desktop email client for Wayland that feels at home in GNOME. It "
+"talks IMAP and SMTP directly, keeps your mail and credentials on your "
+"machine, and blocks trackers by default — no telemetry, no analytics."
+msgstr ""
+"A Vireo egy Waylandhez készült asztali levelezőkliens, amely otthonosan érzi "
+"magát a GNOME-ban. Közvetlenül IMAP-pal és SMTP-vel kommunikál, a leveleket és "
+"hitelesítő adatokat a gépén tartja, és alapértelmezés szerint blokkolja a követőket "
+"— nincs telemetria, nincs elemzés."
+
+msgid "Features:"
+msgstr "Funkciók:"
+
+msgid "Multiple IMAP and POP3 accounts, with a unified All Inboxes view"
+msgstr "Több IMAP- és POP3-fiók egységes Összes beérkezett nézettel"
+
+msgid ""
+"Google, Microsoft and custom OAuth 2.0 sign-in, plus GNOME Online Accounts "
+"import"
+msgstr ""
+"Google-, Microsoft- és egyéni OAuth 2.0-bejelentkezés, valamint GNOME Online-fiókok "
+"importálása"
+
+msgid "Whole-mailbox sync and search with infinite scroll"
+msgstr "Teljes postafiók-szinkronizálás és keresés végtelen görgetéssel"
+
+msgid "Deletions and moves made on other devices sync back automatically"
+msgstr "A más eszközökön végzett törlések és áthelyezések automatikusan visszaszinkronizálódnak"
+
+msgid "Conversation threading, compose, reply, forward, and editable drafts"
+msgstr "Beszélgetésszálak, levélírás, válasz, továbbítás és szerkeszthető piszkozatok"
+
+msgid "Remote content blocked by default; per-message light or dark reading"
+msgstr "A távoli tartalom alapértelmezés szerint blokkolva; üzenetenként világos vagy sötét olvasás"
+
+msgid "Passwords and OAuth tokens kept in the system keyring"
+msgstr "A jelszavak és OAuth-tokenek a rendszer kulcstartóján tárolódnak"
+
+msgid "The unified inbox in light mode"
+msgstr "Az egységes beérkezett nézet világos módban"
+
+msgid "Hyprlab"
+msgstr "Hyprlab"
