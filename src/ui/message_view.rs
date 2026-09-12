@@ -1953,7 +1953,7 @@ impl MessageView {
                 sections.push_str(&format!(
                     "<section class=\"vireo-msg{sel}{unread_cls}\" data-key=\"{aid}:{id}\">\
                        <header class=\"vireo-msg-hdr\" data-key=\"{aid}:{id}\" \
-                         title=\"Double-click to open in a new window\">\
+                         title=\"{hdr_title}\">\
                          <div class=\"vireo-hdr-line\">\
                            {ava}{dot}<span class=\"vireo-from\">{from}</span>{verify}{addr}\
                            <span class=\"vireo-tags\" data-key=\"{aid}:{id}\">{tags}</span>\
@@ -1964,6 +1964,9 @@ impl MessageView {
                        </header>{body}</section>",
                     aid = m.account_id,
                     id = m.id,
+                    hdr_title = gtk::glib::markup_escape_text(
+                        &i18n("Double-click to open in a new window")
+                    ),
                     tags = LIVE_TAGS.with(|t| tag_chips_html(&t.borrow(), &m.keywords)),
                     // The ⋯ toggle that expands/collapses the action row when
                     // the hidden-until-hover preference is on; CSS keeps it
@@ -1971,9 +1974,10 @@ impl MessageView {
                     acts_toggle = if !thread.is_empty() {
                         format!(
                             "<button type=\"button\" class=\"vireo-acts-toggle\" \
-                             title=\"Actions\" data-key=\"{aid}:{id}\">{svg}</button>",
+                             title=\"{acts_title}\" data-key=\"{aid}:{id}\">{svg}</button>",
                             aid = m.account_id,
                             id = m.id,
+                            acts_title = gtk::glib::markup_escape_text(&i18n("Actions")),
                             // The same ⋯ the list's Actions Palette toggle uses.
                             svg = inline_icon_svg("view-more-horizontal-symbolic"),
                         )
